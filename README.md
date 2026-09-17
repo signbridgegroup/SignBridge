@@ -72,6 +72,10 @@ models/
 
 
 
+These include the intermediate Isharah, KArSL, transfer-learning, and unified checkpoints used during the project experiments.
+
+
+
 \## Training Scripts
 
 
@@ -108,7 +112,7 @@ including:
 
 
 
-Dataset preparation and feature extraction scripts are available under:
+Dataset preparation, split generation, pose preparation, and shared-feature extraction scripts are available under:
 
 
 
@@ -120,11 +124,15 @@ preprocessing/
 
 
 
+The repository includes the preprocessing scripts required for the Jordanian IT, KArSL, Isharah, and unified training pipelines used in SignBridge.
+
+
+
 \## Metadata
 
 
 
-Dataset splits, vocabularies, preparation summaries, training histories, and audit files are stored under:
+Dataset splits, vocabularies, preparation summaries, training histories, audit files, label mappings, and model-preparation metadata are stored under:
 
 
 
@@ -133,6 +141,20 @@ Dataset splits, vocabularies, preparation summaries, training histories, and aud
 metadata/
 
 ```
+
+
+
+The metadata directory contains separate resources for:
+
+
+
+\- Jordanian IT
+
+\- KArSL
+
+\- Isharah
+
+\- Unified training
 
 
 
@@ -148,7 +170,7 @@ Large raw datasets are intentionally not stored directly in this GitHub reposito
 
 
 
-The project includes a domain-specific Jordanian Sign Language dataset containing IT-related signs.
+The SignBridge project includes a domain-specific Jordanian Sign Language dataset containing IT-related signs collected for this research project.
 
 
 
@@ -166,6 +188,8 @@ The repository includes:
 
 \- sequence metadata
 
+\- dataset audit files
+
 \- processed Jordanian IT motion files
 
 
@@ -174,7 +198,7 @@ Raw videos are hosted externally.
 
 
 
-Jordanian IT dataset link:
+Jordanian IT dataset download:
 
 
 
@@ -186,7 +210,7 @@ ADD\_GOOGLE\_DRIVE\_LINK\_HERE
 
 
 
-Expected local location:
+Expected local location after download:
 
 
 
@@ -202,11 +226,23 @@ data/jordanian\_it/
 
 
 
-Official source:
+KArSL is an Arabic Sign Language isolated-sign dataset used in the SignBridge recognition experiments.
 
 
 
-https://github.com/Hamzah-Luqman/KArSL/blob/main/index.html
+Official dataset page:
+
+
+
+https://hamzah-luqman.github.io/KArSL/
+
+
+
+Official GitHub repository:
+
+
+
+https://github.com/Hamzah-Luqman/KArSL
 
 
 
@@ -222,7 +258,7 @@ data/external/karsl/
 
 
 
-Raw KArSL files are not redistributed in this repository.
+Raw KArSL files are not redistributed through this repository.
 
 
 
@@ -230,7 +266,19 @@ Raw KArSL files are not redistributed in this repository.
 
 
 
-Official source:
+Isharah is a continuous sign-language dataset used in the continuous sign-recognition experiments.
+
+
+
+Official project page:
+
+
+
+https://snalyami.github.io/Isharah\_CSLR/
+
+
+
+Official GitHub repository:
 
 
 
@@ -250,7 +298,7 @@ data/external/isharah/
 
 
 
-Raw Isharah files are not redistributed in this repository.
+Raw Isharah files are not redistributed through this repository.
 
 
 
@@ -270,7 +318,45 @@ motion\_library/jordanian\_it/
 
 
 
-Large externally derived KArSL and Isharah motion libraries are not included.
+This contains the runtime motion files used for the Jordanian IT sign vocabulary.
+
+
+
+Large externally derived KArSL and Isharah motion libraries are not included in the repository.
+
+
+
+\## Models
+
+
+
+The repository includes the trained checkpoints used during the project:
+
+
+
+```text
+
+models/
+
+├── best\_isharah\_ctc.pt
+
+├── best\_karsl\_isolated\_model.pt
+
+├── best\_transfer\_model.pt
+
+├── best\_unified\_ctc.pt
+
+├── best\_unified\_karsl\_multitask.pt
+
+├── hand\_landmarker.task
+
+└── holistic\_landmarker.task
+
+```
+
+
+
+The MediaPipe task files are included so the recognition pipeline can use the same landmark-extraction resources as the current project setup.
 
 
 
@@ -278,19 +364,61 @@ Large externally derived KArSL and Isharah motion libraries are not included.
 
 
 
+Open PowerShell and navigate to the backend:
+
+
+
 ```powershell
 
 cd signbridge\_integration/backend
 
+```
+
+
+
+Create a virtual environment:
+
+
+
+```powershell
+
 python -m venv .venv
+
+```
+
+
+
+Activate it:
+
+
+
+```powershell
 
 .\\.venv\\Scripts\\Activate.ps1
 
+```
+
+
+
+Install dependencies:
+
+
+
+```powershell
+
 pip install -r requirements.txt
 
-Copy-Item ..\\.env.example .env
+```
 
-python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+
+Create the local environment file from the provided template:
+
+
+
+```powershell
+
+Copy-Item ..\\.env.example .env
 
 ```
 
@@ -304,7 +432,35 @@ Do not commit `.env`.
 
 
 
+Start the backend:
+
+
+
+```powershell
+
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+```
+
+
+
+The backend should then be available at:
+
+
+
+```text
+
+http://127.0.0.1:8000
+
+```
+
+
+
 \## Frontend Setup
+
+
+
+Open another terminal and navigate to the frontend:
 
 
 
@@ -312,7 +468,27 @@ Do not commit `.env`.
 
 cd signbridge\_integration/frontend
 
+```
+
+
+
+Install frontend dependencies:
+
+
+
+```powershell
+
 npm install
+
+```
+
+
+
+Start the Vite development server:
+
+
+
+```powershell
 
 npm run dev
 
@@ -320,7 +496,43 @@ npm run dev
 
 
 
-Open the local URL shown by Vite.
+Open the local URL displayed by Vite in the terminal.
+
+
+
+\## Environment Variables
+
+
+
+The integration uses environment variables for configuration and API credentials.
+
+
+
+The example environment file is located at:
+
+
+
+```text
+
+signbridge\_integration/.env.example
+
+```
+
+
+
+Sensitive `.env` files are excluded from version control.
+
+
+
+\## Avatar and Motion Assets
+
+
+
+The frontend contains the avatar and motion assets used by the SignBridge prototype.
+
+
+
+Some avatar and motion-generation assets originate from third-party tools or services. Their original licenses, terms of use, and redistribution conditions remain applicable.
 
 
 
@@ -328,25 +540,31 @@ Open the local URL shown by Vite.
 
 
 
-To reproduce the full pipeline:
+To reproduce the complete SignBridge pipeline:
 
 
 
 1\. Clone this repository.
 
-2\. Download the required datasets.
+2\. Download the required datasets from their official or project-provided sources.
 
-3\. Place them in the documented dataset directories.
+3\. Place the datasets in the documented local directories.
 
-4\. Install the required dependencies.
+4\. Install the required Python dependencies.
 
-5\. Run the preprocessing scripts.
+5\. Install the frontend dependencies.
 
-6\. Run the corresponding training scripts.
+6\. Configure the required environment variables.
+
+7\. Run the preprocessing scripts when reproducing dataset preparation.
+
+8\. Run the corresponding training scripts when reproducing model training.
+
+9\. Start the backend and frontend for the integrated SignBridge application.
 
 
 
-Large raw videos, generated feature arrays, caches, and temporary files are excluded from GitHub.
+Large raw videos, extracted frame collections, generated feature arrays, caches, temporary files, virtual environments, and frontend build dependencies are intentionally excluded from GitHub because of size and reproducibility considerations.
 
 
 
@@ -364,13 +582,17 @@ SignBridge combines:
 
 \- continuous sign recognition
 
+\- isolated sign recognition
+
 \- multi-source training
+
+\- transfer learning
 
 \- retrieval-augmented educational assistance
 
-\- simplified educational explanations
+\- educational content simplification
 
-\- web-based interaction
+\- web-based sign interaction
 
 \- avatar-based sign presentation
 
@@ -386,6 +608,10 @@ SignBridge combines:
 
 \- Third-party avatar and motion assets remain subject to their original licenses and terms.
 
+\- Large external datasets must be downloaded separately.
+
+\- The included metadata, training scripts, preprocessing scripts, checkpoints, and Jordanian IT motion library correspond to the SignBridge research and integration workflow.
+
 
 
 \## Project
@@ -393,4 +619,6 @@ SignBridge combines:
 
 
 SignBridge – SigmaX Research Project
+
+
 
