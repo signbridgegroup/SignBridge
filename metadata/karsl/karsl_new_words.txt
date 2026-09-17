@@ -1,0 +1,398 @@
+﻿2	1	1
+3	2	2
+4	3	3
+5	4	4
+6	5	5
+7	6	6
+8	7	7
+9	8	8
+10	9	9
+11	10	10
+12	20	20
+13	30	30
+14	40	40
+15	50	50
+16	60	60
+17	70	70
+18	80	80
+19	90	90
+20	100	100
+21	200	200
+22	300	300
+23	400	400
+24	500	500
+25	600	600
+26	700	700
+27	800	800
+28	900	900
+29	1000	1000
+30	1000000	1000000
+31	10000000	10000000
+35	ث	tha
+40	ذ	thal
+44	ش	shiin
+45	ص	Saad
+46	ض	Daad
+47	ط	Taa
+48	ظ	Zaa
+50	غ	ghayn
+51	ف	faa
+53	ك	kaaf
+60	ة	taa marbuuTa
+62	ؤ	Waaw with hamza
+63	ئ	Alif maqsoura with hamza
+64	ئـ	hamza on line
+65	ء	hamza
+71	هيكل عظمي	Skeleton
+72	جمجة	skull
+73	عمود فقري	Backbone
+74	قفص صدري	Chest
+75	جهاز تنفسي	Respiratory device
+76	قصبة هوائية	Trachea
+77	رئتان	lungs
+78	شهيق - زفير	Ins and Outs
+79	جهاز هضمي	digestive system
+81	بلعوم	pharynx
+82	كبد	liver
+83	البنكرياس	pancreas
+84	الأمعاء الدقيقة	Small intestine
+85	الأمعاء الغليظة	Large intestine
+86	الزائدة الدودية	Appendix
+87	جهاز عصبي	nervous system
+89	حواس خمس	five senses
+90	عضلة	muscle
+91	أنسجة	tissue
+93	إسعافات أولية	first aid
+94	جرح نازف	wound
+95	حروق	burning
+96	مخدر/ بنج	anesthetist
+97	عملية جراحية	surgery
+98	شاش / ضمادة	gauze
+99	شريط لاصق / بلاستر	adhesive tape
+100	صيدلية	pharmacy
+101	تحليل دم	blood analysis
+102	فحص سريري	physical examination
+103	فحص النظر	sight examination
+104	ميزان حرارة	thermometer
+105	سماعة أذن	stethoscope
+106	جهاز قياس الضغط	sphygmometroscope
+107	نبض القلب	pulse
+108	تحليل طبي	analysis
+109	معمل التحاليل / مختبر	analysis laboratory
+110	صورة اشعة	ray photo
+111	التهاب	inflammation
+112	تورم	swelling
+114	عدوى	infection
+115	صداع	headache
+119	إمساك	constipation
+120	مغص	colic
+121	مرض السكر / سكري	diabetes
+122	أزمة قلبية	heart attack
+123	سرطان	cancer
+124	مرض فقدان المناعة / الإيدز	Aids
+125	تساقط الشعر	Loss of hair
+126	سكتة قلبية	Heart failure
+127	شلل نصفي	hemiplegia
+128	شلل دماغي	Cerebral paralysis
+129	ضغط الدم	blood pressure
+130	حساسية	allergy
+131	حكة / هرش	itch
+133	دورة شهرية	monthly circulation
+135	كبسولة	capsule
+136	دواء شراب	liquid medicine
+137	مرهم	ointment
+138	قطارة	dropper
+139	أخذ إبرة	acupuncture
+140	تلقيح	pollination
+141	تطعيم	inoculation
+142	أشعة ليزر	laser ray
+144	إدمان	addiction
+145	توحد / أوتيزم	oneness
+146	منغولي	mongoloid
+147	بكتريا	bacterium
+148	جرثومة	microbe
+149	فيروس	virus
+150	إنتشار	spread
+151	إعاقة	hindrance
+152	إعاقة ذهنية	mentality hindrance
+153	اعاقة جسدية	physical disability
+154	اعاقة بصرية	visual impairment
+155	إعاقة سمعية	hearing hindrance
+156	وباء	epidemic
+157	مناعة	immunity
+158	عصب	nerve
+159	معافى	healthy
+160	يأكل	eat
+161	يشرب	drink
+162	ينام	sleep
+163	يستيقظ	wake up
+164	يسمع	hear
+165	يسكت	silence
+166	يشم	inhale
+167	يصعد	rise
+168	ينزل	descend
+169	يفتح	open
+170	يقفل ( يغلق )	close
+171	يبني	build
+172	يكسر	break
+173	يمشي	walk
+174	يحب	love
+176	يشوي	grill
+177	يحرث	plow
+178	يزرع	plant
+179	يسقي	irrigate
+180	يحصد	harvest
+181	يفكر	think
+182	يساعد	help
+183	يدخن	smoke
+184	يدعم	support
+185	يختار	choose
+186	ينادي	call
+187	يتنامى	grow
+188	يصبغ	dye
+189	يقف	stand
+190	يستحم	bathe
+191	يدخل	enter
+192	أسرة	family
+193	جدة	grandmother
+200	رضيع	baby
+201	توأم	twin
+202	رجل	man
+204	شابة	young woman
+207	حمل	pregnant
+208	ولادة	childbirth
+210	عمة	aunt
+212	خالة	maternal aunt
+213	ابن الأخ	nephew
+214	ابن الأخت	nephew
+215	ابن العم	cousin
+217	ابنة	daughter
+218	ناس	people
+219	طلاق	divorce
+220	خطوبة	engagement
+221	حفلة	party
+222	وفاة	death
+229	سمين	fat
+232	محبط	offended
+233	مشمئز	disgusted
+234	مرتبك	confused
+235	قلق	worried
+236	مشوش	deranged
+237	خائف	afraid
+240	شجاع	courageous
+241	جبان	coward
+242	طموح	ambitious
+243	معجب	admirable
+244	غائر من	to be jealous of
+245	غائر على	to protect jealously
+246	ودود	affectionate
+248	بخيل	miserly
+249	طماع	greedy
+250	كذاب	liar
+251	أناني	selfish
+252	متكبر	proud
+253	متواضع	humble
+257	احتقار	contempt
+258	اعتماد على الذات	self-dependence
+262	حسد	envy
+264	غدر	betrayal
+265	صبر	patient
+266	لوم	blame
+267	الحق	truth
+268	خيانة	treason
+269	إيثار	preference
+270	تضحية	self sacrifice
+271	شفقة	pity
+274	بجانب	side
+276	بين	between
+278	حول	around
+284	من خلال	through
+286	هناك	there
+287	يسار	left
+289	أهلا وسهلاً	welcome
+293	شكراً	thanks
+295	ضيف	guest
+296	عدو	enemy
+297	عيب	fault
+298	هدية	gift
+299	بيت	house
+301	سقف	roof
+303	شباك	window
+304	غرفة	room
+305	غرفة نوم	bedroom
+307	مرتبة سرير ( حشية)	mattress
+308	شرشف ( غطاء سرير)	bedsheet
+309	وسادة ( مخدة)	pillow
+310	شماعة ( مشجب)	clothes rail
+311	خزانة ملابس	wardrobe
+312	مطبخ	kitchen
+313	فرن غازي	Oven
+314	بوتاغاز (طابخ)	cooker
+316	سكين	knife
+317	شوكة	fork
+318	ملعقة	spoon
+319	فنجان	cupful
+320	مجمد (فريزر)	freezer
+322	حافظ حرارة ( ترمس)	thermos
+323	غرفة طعام	food room
+324	إبريق	pitcher
+325	طاولة	table
+326	كنكة ( دلة)	dalah
+329	غسالة	washing machine
+330	منشفة	towel carpet
+331	سجادة (زربية)	carpet
+332	موكيت ( فرش أرضي) moquette	moquette
+333	ثريا (نجفة)	chandelier
+334	مسجل	cassette
+335	شريط كاست	cassette tape
+337	طبق هوائي (دش)	satellite
+338	شريط فيديو	video tape
+339	كاميرا فيديو	video camera
+340	كاميرا فوتوغرافية	photo camera
+342	غرفة ضيوف	guests room
+343	فيديو	video
+344	مبخرة	censer
+345	مدفأة	heater
+346	مفتاح	key
+347	مروحة	fan
+348	تدفئة مركزية	central heater
+349	كهرباء	electrics
+350	مكيف	air conditioner
+351	سلك كهربائي	wire
+352	قابس كهربائي ( فيش)	plug
+353	حقيبة سفر	bag
+354	مكواة	iron
+355	ميزان حرارة جوي	thermometer
+356	الله تعالى	God
+357	محمد رسول الله	Muhammad is the Messenger of Allah
+358	عيسى المسيح	Essa Christ
+359	القرآن الكريم	The Holy Quran
+360	الخلفاء الراشدون	Rightly Guided Caliphs
+361	السنة النبوية	Sunnah
+362	أركان الإسلام	Pillars of Islam
+363	أركان الإيمان	Pillars of Faith
+364	الشهادتين	The two certificates
+365	يصلي / الصلاة	pray
+366	الزكاة	zakat
+367	الصوم	Fasting
+368	العمرة	Umrah
+369	الحج	Pilgrimage
+370	ملائكة	Angels
+371	رسول	messenger
+372	يوم القيامة	Doomsday
+373	القضاء والقدر	Fate and destiny
+374	أركان الصلاة	Pillars of prayer
+376	النية	Intention
+377	شر	Evil
+378	طهارة	purity
+379	مبطلات الصلاة	Prayer invalidators
+380	تيمم	tayammum
+382	يؤذن	authorized
+383	مسح على الخفين	Wipe on the slippers
+384	صلاة الفجر	Al-fajr prayer
+385	صلاة الظهر	Salat Aduher
+386	صلاة العصر	Asr prayer
+387	صلاة المغرب	Maghreb's prayer
+388	صلاة العشاء	eshaa pray
+389	خطبة	speech
+390	خطبة الجمعة	Friday sermon
+391	خطيب	Fiance
+392	خطبة العيد	Eid sermon
+394	سورة	surah
+396	سورة الفاتحة	Al-Fatihah
+397	آية	any
+398	ليلة القدر	Night of Power
+400	عيد الفطر	Eid al-Fitr
+401	عيد الأضحى	Eid al-Adha
+403	مكة	Mecca
+404	الكعبة	Kaaba
+405	المدينة المنورة	Medina
+406	منى	Mona
+407	جبل عرفات	Arafat Mountain
+408	الصفا والمروة	Safa and Marwa
+409	مزدلفة	Muzdalifah
+410	رمي الجمرات	Throwing pebbles
+411	طواف	circumambulation
+412	ماء زمزم	Zamzam water
+413	الأضحية	the sacrifice
+414	فك الإحرام	break the ihram
+415	طواف الوداع	farewell circumambulation
+416	المسجد الأقصى	Al-Aqsa Mosque
+417	يسبح	swim
+418	الحمد لله	Thank God
+419	سبحان الله	How great is our God
+420	إيمان	Faith
+421	الشرك بالله	Polytheism
+422	أعوذ بالله	I seek refuge in God
+423	شيطان	Satan
+424	جن	genie
+425	الضالون	the lost
+426	المغضوب عليهم	angered them
+427	صنم	fetish
+428	زنى	fornication
+429	الجنة	the Paradise
+430	النار	fire
+431	روح	spirit
+432	حقوق	rights
+433	واجبات	Duties
+434	حسنات	Deeds
+435	سيئات	sins
+436	حلال	halal
+437	حرام	forbidden
+438	مغفرة	forgiveness
+439	دين	religion
+440	مسيحي	Christian
+441	يهودي	Jewish
+442	كنيسة	church
+443	إسراء ومعراج	Isra and Miraj
+444	حواء	Eve
+445	آدم	Adam
+446	صدقة	charity
+447	نبي	Prophet
+448	هداية	guidance
+449	أمانة	honesty
+450	شهيد	martyr
+451	حقوق الوالدين	Parental rights
+452	عقوق الوالدين	Disobedience to parents
+454	رحمة	Mercy
+455	عيد رأس السنة	New Year's Holiday
+456	فروض	homework
+457	قبة الصخرة	Dome of the Rock
+458	خلق	Create
+459	مهندس	engineer
+460	مصور فوتوغرافي	photographer
+461	جزار / قصاب	Meat man
+462	سائق	driver
+463	صائغ	jeweler
+464	خادم	servant
+465	رئيس قسم	chairman
+467	لحام كهربائي	weld
+468	مترجم لغة الإشارة	Sign language translator
+469	مذيع	announcer
+470	مترجم لغات	translator
+472	سفير	ambassador
+473	وزير	minister
+475	أمير البلاد / رئيس الجمهورية	Premier Minister
+476	شيخ	sheikh
+477	محافظ / وال	governor
+478	ولي عهد / وكيل وزارة	under secretary of state
+479	رئيس مجلس الشعب (النواب)	speaker
+480	أمين عام	general secretary
+481	صحفي	journalist
+482	رسام	draftsman
+483	خياط / تارزي	tailor
+484	ضابط	policeman
+485	طيار	pilot
+486	جندي	soldier
+487	حلاق	barber
+488	صباغ	dyer
+489	رجل إطفاء / دفاع مدني	fireman
+490	نجار	carpenter
+492	طباخ	chef
+494	موظف	agent
+495	أمين صندوق	treasurer
+496	صيدلي	pharmacist
+498	ممرضة	nurse
+499	ممرض	orderly
+500	محام	lawyer
+501	انتقال	traveling

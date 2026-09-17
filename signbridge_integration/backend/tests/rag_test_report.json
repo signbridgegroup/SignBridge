@@ -1,0 +1,848 @@
+{
+  "total_cases": 48,
+  "passed": 48,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "failures_by_reason": {},
+  "per_subject": {
+    "database_ch1": {
+      "total": 12,
+      "passed": 12
+    },
+    "stack": {
+      "total": 12,
+      "passed": 12
+    },
+    "queue": {
+      "total": 6,
+      "passed": 6
+    },
+    "pointers": {
+      "total": 6,
+      "passed": 6
+    },
+    "database_ch2": {
+      "total": 4,
+      "passed": 4
+    },
+    "database_ch4": {
+      "total": 2,
+      "passed": 2
+    },
+    "stack+queue": {
+      "total": 1,
+      "passed": 1
+    },
+    "unrelated": {
+      "total": 5,
+      "passed": 5
+    }
+  },
+  "per_language_form": {
+    "formal_arabic": {
+      "total": 9,
+      "passed": 9
+    },
+    "colloquial_arabic": {
+      "total": 7,
+      "passed": 7
+    },
+    "transliteration": {
+      "total": 4,
+      "passed": 4
+    },
+    "english": {
+      "total": 9,
+      "passed": 9
+    },
+    "typo": {
+      "total": 5,
+      "passed": 5
+    },
+    "code_switch": {
+      "total": 13,
+      "passed": 13
+    },
+    "incomplete": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "failed_queries": [],
+  "all_results": [
+    {
+      "query": "ما هي قاعدة البيانات؟",
+      "subject": "database_ch1",
+      "language_form": "formal_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-11-part-01"
+      ]
+    },
+    {
+      "query": "شو هي قاعدة البيانات؟",
+      "subject": "database_ch1",
+      "language_form": "colloquial_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-03-part-02"
+      ]
+    },
+    {
+      "query": "ما هي الداتا بيس؟",
+      "subject": "database_ch1",
+      "language_form": "transliteration",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-11-part-01"
+      ]
+    },
+    {
+      "query": "ما هي الداتابيس؟",
+      "subject": "database_ch1",
+      "language_form": "transliteration",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-11-part-01"
+      ]
+    },
+    {
+      "query": "شو يعني داتابيس؟",
+      "subject": "database_ch1",
+      "language_form": "colloquial_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-03-part-02"
+      ]
+    },
+    {
+      "query": "what is a database?",
+      "subject": "database_ch1",
+      "language_form": "english",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-03-part-02"
+      ]
+    },
+    {
+      "query": "define database",
+      "subject": "database_ch1",
+      "language_form": "english",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-03-part-02"
+      ]
+    },
+    {
+      "query": "database meaning",
+      "subject": "database_ch1",
+      "language_form": "english",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-03-part-02"
+      ]
+    },
+    {
+      "query": "داتا بيس شو هي",
+      "subject": "database_ch1",
+      "language_form": "colloquial_arabic",
+      "intent": "alternate_structure",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-03-part-02"
+      ]
+    },
+    {
+      "query": "دااتابيس",
+      "subject": "database_ch1",
+      "language_form": "typo",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-03-part-02"
+      ]
+    },
+    {
+      "query": "ما هي الدايتابيس",
+      "subject": "database_ch1",
+      "language_form": "typo",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-01-part-01",
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-11-part-01"
+      ]
+    },
+    {
+      "query": "ما هو الستاك؟",
+      "subject": "stack",
+      "language_form": "formal_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-01",
+        "stacks-slide-01-part-01",
+        "stacks-slide-04-part-02"
+      ]
+    },
+    {
+      "query": "ما هو المكدس؟",
+      "subject": "stack",
+      "language_form": "formal_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-01",
+        "stacks-slide-01-part-01",
+        "stacks-slide-04-part-02"
+      ]
+    },
+    {
+      "query": "شو يعني stack؟",
+      "subject": "stack",
+      "language_form": "code_switch",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-01",
+        "stacks-slide-01-part-01",
+        "stacks-slide-04-part-03"
+      ]
+    },
+    {
+      "query": "اشرحلي المكدس",
+      "subject": "stack",
+      "language_form": "colloquial_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-01",
+        "stacks-slide-01-part-01",
+        "stacks-slide-04-part-02"
+      ]
+    },
+    {
+      "query": "كيف بشتغل ال stack؟",
+      "subject": "stack",
+      "language_form": "code_switch",
+      "intent": "operation",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-01",
+        "stacks-slide-06-part-02",
+        "stacks-slide-14-part-02"
+      ]
+    },
+    {
+      "query": "what is a stack?",
+      "subject": "stack",
+      "language_form": "english",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-01",
+        "stacks-slide-01-part-01",
+        "stacks-slide-04-part-03"
+      ]
+    },
+    {
+      "query": "shu ya3ni stak",
+      "subject": "stack",
+      "language_form": "transliteration",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-03",
+        "stacks-slide-04-part-01",
+        "stacks-slide-25-part-05"
+      ]
+    },
+    {
+      "query": "ما الفرق بين push و pop؟",
+      "subject": "stack",
+      "language_form": "code_switch",
+      "intent": "comparison",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-06-part-02",
+        "stacks-slide-02-part-01",
+        "stacks-slide-25-part-01"
+      ]
+    },
+    {
+      "query": "شو بعمل push؟",
+      "subject": "stack",
+      "language_form": "colloquial_arabic",
+      "intent": "operation",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-06-part-02",
+        "stacks-slide-14-part-02",
+        "stacks-slide-06-part-01"
+      ]
+    },
+    {
+      "query": "شو بعمل pop؟",
+      "subject": "stack",
+      "language_form": "colloquial_arabic",
+      "intent": "operation",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-06-part-02",
+        "stacks-slide-02-part-01",
+        "stacks-slide-13-part-02"
+      ]
+    },
+    {
+      "query": "ستاك",
+      "subject": "stack",
+      "language_form": "incomplete",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-03",
+        "stacks-slide-04-part-01",
+        "stacks-slide-25-part-05"
+      ]
+    },
+    {
+      "query": "staack",
+      "subject": "stack",
+      "language_form": "typo",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack"
+      ],
+      "top_sources": [
+        "stacks-slide-04-part-03",
+        "stacks-slide-04-part-01",
+        "stacks-slide-25-part-05"
+      ]
+    },
+    {
+      "query": "ما هو ال queue؟",
+      "subject": "queue",
+      "language_form": "code_switch",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "queue"
+      ],
+      "top_sources": [
+        "queue_slide_001_part_01",
+        "queue_slide_007_part_01",
+        "queue_slide_013_part_01"
+      ]
+    },
+    {
+      "query": "اشرح الطابور",
+      "subject": "queue",
+      "language_form": "formal_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "queue"
+      ],
+      "top_sources": [
+        "queue_slide_001_part_01",
+        "queue_slide_005_part_01",
+        "queue_slide_024_part_01"
+      ]
+    },
+    {
+      "query": "شو يعني طابور؟",
+      "subject": "queue",
+      "language_form": "colloquial_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "queue"
+      ],
+      "top_sources": [
+        "queue_slide_001_part_01",
+        "queue_slide_011_part_01",
+        "queue_slide_005_part_01"
+      ]
+    },
+    {
+      "query": "what is a queue?",
+      "subject": "queue",
+      "language_form": "english",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "queue"
+      ],
+      "top_sources": [
+        "queue_slide_001_part_01",
+        "queue_slide_007_part_01",
+        "queue_slide_005_part_01"
+      ]
+    },
+    {
+      "query": "ما الفرق بين enqueue و dequeue؟",
+      "subject": "queue",
+      "language_form": "code_switch",
+      "intent": "comparison",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "queue"
+      ],
+      "top_sources": [
+        "queue_slide_001_part_01",
+        "queue_slide_019_part_01",
+        "queue_slide_018_part_01"
+      ]
+    },
+    {
+      "query": "queu what is it?",
+      "subject": "queue",
+      "language_form": "typo",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "queue"
+      ],
+      "top_sources": [
+        "queue_slide_001_part_01",
+        "queue_slide_013_part_01",
+        "queue_slide_015_part_01"
+      ]
+    },
+    {
+      "query": "ما هو pointer؟",
+      "subject": "pointers",
+      "language_form": "code_switch",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "pointers"
+      ],
+      "top_sources": [
+        "pointer_slide_005_part_01",
+        "pointer_slide_014_part_01",
+        "pointer_slide_007_part_01"
+      ]
+    },
+    {
+      "query": "شو يعني بوينتر؟",
+      "subject": "pointers",
+      "language_form": "transliteration",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "pointers"
+      ],
+      "top_sources": [
+        "pointer_slide_005_part_01",
+        "pointer_slide_007_part_01",
+        "pointer_slide_014_part_01"
+      ]
+    },
+    {
+      "query": "اشرح المؤشر",
+      "subject": "pointers",
+      "language_form": "formal_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "pointers"
+      ],
+      "top_sources": [
+        "pointer_slide_005_part_01",
+        "pointer_slide_014_part_01",
+        "pointer_slide_007_part_01"
+      ]
+    },
+    {
+      "query": "what is a pointer?",
+      "subject": "pointers",
+      "language_form": "english",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "pointers"
+      ],
+      "top_sources": [
+        "pointer_slide_005_part_01",
+        "pointer_slide_014_part_01",
+        "pointer_slide_007_part_01"
+      ]
+    },
+    {
+      "query": "ما الفرق بين shallow copy و deep copy؟",
+      "subject": "pointers",
+      "language_form": "code_switch",
+      "intent": "comparison",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "pointers"
+      ],
+      "top_sources": [
+        "pointer_slide_033_part_01",
+        "pointer_slide_031_part_01",
+        "pointer_slide_032_part_01"
+      ]
+    },
+    {
+      "query": "pointr meaning",
+      "subject": "pointers",
+      "language_form": "typo",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "pointers"
+      ],
+      "top_sources": [
+        "pointer_slide_007_part_01",
+        "pointer_slide_014_part_01",
+        "pointer_slide_022_part_01"
+      ]
+    },
+    {
+      "query": "ما هو primary key؟",
+      "subject": "database_ch2",
+      "language_form": "code_switch",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch2"
+      ],
+      "top_sources": [
+        "database-ch2-slide-19-part-02",
+        "database-ch2-slide-19-part-07",
+        "database-ch2-slide-19-part-03"
+      ]
+    },
+    {
+      "query": "شو يعني المفتاح الأساسي؟",
+      "subject": "database_ch2",
+      "language_form": "formal_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch2"
+      ],
+      "top_sources": [
+        "database-ch2-slide-19-part-02",
+        "database-ch2-slide-20-part-03",
+        "database-ch2-slide-19-part-03"
+      ]
+    },
+    {
+      "query": "ما هو ال E-R Model؟",
+      "subject": "database_ch2",
+      "language_form": "code_switch",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch2"
+      ],
+      "top_sources": [
+        "database-ch2-slide-19-part-02",
+        "database-ch2-slide-19-part-07",
+        "database-ch2-slide-20-part-03"
+      ]
+    },
+    {
+      "query": "اشرح entity",
+      "subject": "database_ch2",
+      "language_form": "code_switch",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch2"
+      ],
+      "top_sources": [
+        "database-ch2-slide-19-part-07",
+        "database-ch2-slide-20-part-03",
+        "database-ch2-slide-19-part-04"
+      ]
+    },
+    {
+      "query": "شو يعني normalization؟",
+      "subject": "database_ch4",
+      "language_form": "code_switch",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch4"
+      ],
+      "top_sources": [
+        "database-ch4-slide-02-part-01",
+        "database-ch4-slide-06-part-01",
+        "database-ch4-slide-01-part-01"
+      ]
+    },
+    {
+      "query": "اشرح التطبيع",
+      "subject": "database_ch4",
+      "language_form": "formal_arabic",
+      "intent": "definition",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch4"
+      ],
+      "top_sources": [
+        "database-ch4-slide-01-part-01",
+        "database-ch4-slide-02-part-01",
+        "database-ch4-slide-06-part-01"
+      ]
+    },
+    {
+      "query": "ما الفرق بين schema و instance؟",
+      "subject": "database_ch1",
+      "language_form": "code_switch",
+      "intent": "comparison",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "database_ch1"
+      ],
+      "top_sources": [
+        "database-ch1-slide-10-part-01",
+        "database-ch1-slide-01-part-02",
+        "database-ch1-slide-10-part-02"
+      ]
+    },
+    {
+      "query": "ما الفرق بين stack و queue؟",
+      "subject": "stack+queue",
+      "language_form": "code_switch",
+      "intent": "comparison",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "queue",
+        "stack"
+      ],
+      "top_sources": [
+        "queue_slide_001_part_01",
+        "queue_slide_005_part_01",
+        "queue_slide_013_part_01"
+      ]
+    },
+    {
+      "query": "ما هي عاصمة فرنسا؟",
+      "subject": "unrelated",
+      "language_form": "formal_arabic",
+      "intent": "unrelated",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack",
+        "queue",
+        "pointers",
+        "database_ch1",
+        "database_ch2",
+        "database_ch3",
+        "database_ch4"
+      ]
+    },
+    {
+      "query": "what is the weather today?",
+      "subject": "unrelated",
+      "language_form": "english",
+      "intent": "unrelated",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack",
+        "queue",
+        "pointers",
+        "database_ch1",
+        "database_ch2",
+        "database_ch3",
+        "database_ch4"
+      ]
+    },
+    {
+      "query": "how do I bake a cake?",
+      "subject": "unrelated",
+      "language_form": "english",
+      "intent": "unrelated",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack",
+        "queue",
+        "pointers",
+        "database_ch1",
+        "database_ch2",
+        "database_ch3",
+        "database_ch4"
+      ]
+    },
+    {
+      "query": "من هو رئيس الوزراء؟",
+      "subject": "unrelated",
+      "language_form": "formal_arabic",
+      "intent": "unrelated",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack",
+        "queue",
+        "pointers",
+        "database_ch1",
+        "database_ch2",
+        "database_ch3",
+        "database_ch4"
+      ]
+    },
+    {
+      "query": "what is the capital of Japan?",
+      "subject": "unrelated",
+      "language_form": "english",
+      "intent": "unrelated",
+      "passed": true,
+      "reason": null,
+      "routed_domains": [
+        "stack",
+        "queue",
+        "pointers",
+        "database_ch1",
+        "database_ch2",
+        "database_ch3",
+        "database_ch4"
+      ]
+    }
+  ]
+}

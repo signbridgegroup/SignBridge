@@ -1,0 +1,77 @@
+{
+  "purpose": "shared sources for unified continuous sign recognition",
+  "shared_features_per_frame": 198,
+  "feature_layout": {
+    "upper_pose_global_xy": [
+      0,
+      28
+    ],
+    "left_hand_global_xy": [
+      28,
+      70
+    ],
+    "right_hand_global_xy": [
+      70,
+      112
+    ],
+    "left_hand_local_xy": [
+      112,
+      154
+    ],
+    "right_hand_local_xy": [
+      154,
+      196
+    ],
+    "left_hand_observed": [
+      196,
+      197
+    ],
+    "right_hand_observed": [
+      197,
+      198
+    ]
+  },
+  "isharah_glosses": 680,
+  "jordanian_it_labels": 165,
+  "overlapping_tokens": [],
+  "unified_real_tokens": 845,
+  "vocabulary_including_special_tokens": 847,
+  "jordanian_samples": 967,
+  "jordanian_total_prepared_frames": 105555,
+  "jordanian_split_counts": {
+    "test": 335,
+    "train": 401,
+    "validation": 231
+  },
+  "jordanian_signer_counts_by_split": {
+    "train": {
+      "02": 196,
+      "06": 174,
+      "07": 31
+    },
+    "validation": {
+      "05": 231
+    },
+    "test": {
+      "01": 193,
+      "03": 140,
+      "08": 2
+    }
+  },
+  "it_duration_restoration": {
+    "source_fixed_frames": 200,
+    "target": "active_frames_used from sequence_metadata.csv",
+    "minimum_frames": 12,
+    "maximum_frames": 200,
+    "coordinate_resampling": "linear",
+    "observed_mask_resampling": "nearest"
+  },
+  "test_policy": "test samples are converted and indexed but remain assigned to the untouched signer-independent test split",
+  "source_paths": {
+    "isharah_data": "C:\\SignBridge_Project\\data\\processed\\isharah1000_shared198",
+    "isharah_gloss_library": "C:\\SignBridge_Project\\data\\processed\\isharah_gloss_clip_library",
+    "jordanian_it_data": "C:\\SignBridge_Project\\data\\processed\\model_data",
+    "jordanian_splits": "C:\\SignBridge_Project\\data\\processed\\model_data\\splits_signer_independent"
+  },
+  "elapsed_seconds": 1.0
+}

@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SignBridge: an AI-powered Jordanian Sign Language learning assistant" />
+    <link rel="icon" type="image/png" href="/brand/signbridge-logo.png" />
+    <title>SignBridge</title>
+  </head>
+  <body data-screen="home">
+    <a class="skip-link" href="#main-content" data-i18n="a11y.skip_link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="#hero" data-i18n-aria-label="a11y.brand_home">
+          <span class="brand-mark" aria-hidden="true"><img src="/brand/signbridge-logo.png" alt="" /></span>
+        </a>
+
+        <nav class="header-nav" data-i18n-aria-label="a11y.header_nav">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#how" data-i18n="nav.how">How it works</a>
+          <a href="#experience" data-i18n="nav.experience">Try the platform</a>
+        </nav>
+
+        <div class="header-controls">
+          <details class="language-picker">
+            <summary data-i18n-aria-label="a11y.lang_switch">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5S14.4 18.1 12 20.5C9.6 18.1 8.4 15.2 8.4 12S9.6 5.9 12 3.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span data-current-language>العربية</span>
+              <svg class="language-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m7 10 5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </summary>
+            <div class="language-menu">
+              <button type="button" class="lang-switch-button" data-lang="en" data-i18n="lang.en">English</button>
+              <button type="button" class="lang-switch-button" data-lang="ar" data-i18n="lang.ar">العربية</button>
+            </div>
+          </details>
+          <button type="button" id="theme-toggle" class="theme-toggle" data-i18n-aria-label="a11y.theme_switch" aria-pressed="false">
+            <svg class="theme-toggle-icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <svg class="theme-toggle-icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 15.4A8.2 8.2 0 0 1 8.6 4 8.4 8.4 0 1 0 20 15.4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span class="theme-toggle-label" data-i18n="theme.light">Light</span>
+          </button>
+          <button type="button" id="color-vision-toggle" class="accessibility-toggle" data-i18n-aria-label="a11y.color_vision_switch" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4C7.4 4 3.7 7.2 2 12c1.7 4.8 5.4 8 10 8s8.3-3.2 10-8c-1.7-4.8-5.4-8-10-8Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M4.4 19.6 19.6 4.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="accessibility-toggle-label" data-i18n="accessibility.colorblind_off">Color-friendly</span>
+          </button>
+          <a href="#experience" class="primary-button header-cta" data-i18n="nav.cta">Try SignBridge</a>
+          <button type="button" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" data-i18n-aria-label="a11y.mobile_menu_open">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobile-menu" class="mobile-menu" data-i18n-aria-label="a11y.header_nav">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#experience" data-i18n="nav.experience">Try the platform</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="landing-hero" id="hero" aria-labelledby="landing-title">
+        <div class="landing-orb landing-orb-one" aria-hidden="true"></div>
+        <div class="landing-orb landing-orb-two" aria-hidden="true"></div>
+        <div class="landing-hero-inner">
+          <div class="landing-copy reveal-on-scroll">
+            <p class="landing-eyebrow" data-i18n="project.eyebrow">AI · Accessibility · Jordanian Sign Language</p>
+            <h1 id="landing-title" data-i18n="project.title">Learning should be accessible in every language — including sign language.</h1>
+            <p class="landing-lead" data-i18n="project.lead">SignBridge is an AI-powered educational assistant that connects course questions, Jordanian Sign Language recognition, retrieval-backed answers, and a 3D signing avatar in one experience.</p>
+            <div class="landing-actions">
+              <a class="primary-button landing-primary" href="#experience" data-i18n="hero.cta.primary">Try SignBridge now</a>
+              <a class="landing-secondary" href="#about" data-i18n="project.learn_more">Learn about the project</a>
+            </div>
+            <div class="university-pill">
+              <span class="university-mark" aria-hidden="true">UJ</span>
+              <span><strong data-i18n="project.university_title">Built by University of Jordan students</strong><small data-i18n="project.university_subtitle">A student-led AI project for more inclusive education.</small></span>
+            </div>
+          </div>
+          <div class="hero-watermark-wrap reveal-on-scroll reveal-soft" aria-hidden="true">
+            <img class="hero-watermark" src="/images/signbridge-hands-watermark.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section project-about" id="about" aria-labelledby="about-title">
+        <div class="project-section-inner about-layout">
+          <div class="about-copy-block reveal-on-scroll">
+            <p class="section-kicker" data-i18n="about.eyebrow">About the platform</p>
+            <h2 id="about-title" data-i18n="about.title">A learning assistant built for deaf and hard-of-hearing students</h2>
+            <p class="about-intro" data-i18n="about.body">SignBridge combines AI-powered educational answers with sign-language recognition, giving deaf and hard-of-hearing students direct, understandable access to their course material.</p>
+            <div class="about-university-note">
+              <strong data-i18n="project.team_heading">Who we are</strong>
+              <p data-i18n="project.team_body">We are students from the University of Jordan developing SignBridge as a research-driven educational technology project focused on accessibility, inclusion, and practical AI.</p>
+            </div>
+          </div>
+          <div class="about-points reveal-on-scroll" role="list">
+            <article class="about-point" role="listitem"><span>01</span><div><h3 data-i18n="about.point1.title">Source-backed answers</h3><p data-i18n="about.point1.body">Every educational answer is grounded in real course material, with its sources listed.</p></div></article>
+            <article class="about-point" role="listitem"><span>02</span><div><h3 data-i18n="about.point2.title">Automatic sign recognition</h3><p data-i18n="about.point2.body">The system automatically chooses the right way to analyze a sign — no manual selection needed.</p></div></article>
+            <article class="about-point" role="listitem"><span>03</span><div><h3 data-i18n="about.point3.title">Sign-language visual presentation</h3><p data-i18n="about.point3.body">A 3D avatar presents whatever sign motion is available for the answer.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section project-how" id="how" aria-labelledby="how-title">
+        <div class="project-section-inner">
+          <p class="section-kicker" data-i18n="how.eyebrow">How it works</p>
+          <h2 id="how-title" data-i18n="how.title">From question to visual answer</h2>
+          <div class="how-grid reveal-on-scroll">
+            <article class="how-step"><span class="step-number">1</span><h3 data-i18n="how.step1.title">Ask or sign</h3><p data-i18n="how.step1.body">Type a study question, record a sign with the camera, or upload a video.</p></article>
+            <article class="how-step"><span class="step-number">2</span><h3 data-i18n="how.step2.title">SignBridge processes the request</h3><p data-i18n="how.step2.body">The system routes the request and retrieves the right information.</p></article>
+            <article class="how-step"><span class="step-number">3</span><h3 data-i18n="how.step3.title">A source-backed text answer</h3><p data-i18n="how.step3.body">A clear educational answer appears with a simplified version and its sources.</p></article>
+            <article class="how-step"><span class="step-number">4</span><h3 data-i18n="how.step4.title">Sign-language presentation</h3><p data-i18n="how.step4.body">When motion is available, the 3D avatar presents it visually.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-shell" id="experience" aria-label="SignBridge">
+        <div class="home-copy reveal-on-scroll">
+          <h1 data-i18n="hero.headline">Ask. Sign. Understand.</h1>
+          <p data-i18n="hero.description">SignBridge understands your questions in text or Jordanian Sign Language.</p>
+          <p class="home-note" data-i18n="home.note">A more inclusive Jordan starts with understanding.</p>
+        </div>
+
+        <div class="experience-stage reveal-on-scroll reveal-soft" aria-label="Sign language avatar">
+          <div class="viewer-card">
+            <div id="avatar-stage" data-i18n-aria-label="a11y.avatar_stage" aria-label="Sign-language avatar display"></div>
+            <div class="loading-layer" id="loading-layer">
+              <div class="spinner" aria-hidden="true"></div>
+              <p id="loading-message" data-i18n="avatar.loading">Preparing avatar…</p>
+            </div>
+            <div class="error-card" id="avatar-error-card" hidden>
+              <strong data-i18n="avatar.error_title">Unable to load the avatar</strong>
+              <p id="avatar-error-message"></p>
+            </div>
+            <p class="avatar-caption" id="avatar-caption-text" hidden></p>
+            <div class="stage-overlay-bar">
+              <div class="stage-overlay-group stage-badge-group">
+                <span class="stage-label" id="stage-label" data-view="signing" data-i18n="avatar.view.signing">Jordanian Sign Language</span>
+                <div class="backend-status-inline" role="status" aria-live="polite">
+                  <span class="status-dot" id="backend-status-dot"></span>
+                  <span id="backend-status-text" data-i18n="backend.connecting">Connecting…</span>
+                </div>
+              </div>
+              <p class="now-playing" id="now-playing-text" data-i18n="avatar.now_playing.none">Ready to sign</p>
+              <div class="stage-overlay-group stage-overlay-controls">
+                <div class="camera-actions" data-i18n-aria-label="a11y.view_switch" role="group">
+                  <button type="button" class="view-button is-active" data-view="signing" data-i18n="avatar.view.signing">Signing view</button>
+                  <button type="button" class="view-button" data-view="full" data-i18n="avatar.view.full">Full body</button>
+                </div>
+                <div class="playback-actions">
+                  <button type="button" class="secondary-button" id="replay-button" data-i18n="avatar.replay" disabled>Replay</button>
+                  <button type="button" class="danger-button" id="stop-button" data-i18n="avatar.stop" disabled>Stop</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <p class="quickmagic-credit" aria-label="QuickMagic attribution">
+              <span class="quickmagic-credit-en">
+                Avatar character and motion animation provided by
+                <a href="https://www.quickmagic.ai/" target="_blank" rel="noopener noreferrer">QuickMagic</a>.
+              </span>
+              <span class="quickmagic-credit-ar">
+                الأفاتار وتحريك الحركات مقدّمان بواسطة
+                <a href="https://www.quickmagic.ai/" target="_blank" rel="noopener noreferrer">QuickMagic</a>.
+              </span>
+            </p>
+        </div>
+
+        <section class="flow-entry" id="flow-entry" aria-labelledby="choice-title">
+          <div class="flow-entry-inner reveal-on-scroll">
+            <h2 id="choice-title" data-i18n="flow.entry.title">How would you like to ask?</h2>
+            <p class="flow-entry-lead" data-i18n="flow.entry.lead">Choose the way that feels best for you.</p>
+            <div class="flow-primary-grid flow-primary-grid--final">
+              <button type="button" class="flow-row" data-choice="ask">
+                <span class="flow-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M7 8h.01M10.5 8h.01M14 8h.01M17 8h.01M7 12h.01M10.5 12h.01M14 12h.01M17 12h.01M7 16h7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+                <span class="flow-row-text">
+                  <span class="flow-row-title" data-i18n="flow.choice.ask.title">Type your question</span>
+                  <span class="flow-row-hint" data-i18n="flow.choice.ask.hint">Write your question in Arabic or English</span>
+                </span>
+                <svg class="flow-row-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button type="button" class="flow-row is-primary" data-choice="camera">
+                <span class="flow-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.4l1-1.6c.3-.5.9-.9 1.5-.9h3.2c.6 0 1.2.4 1.5.9l1 1.6h1.4A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-8Z" stroke="currentColor" stroke-width="1.8"/><path d="m10 10 5 2.5-5 2.5V10Z" fill="currentColor"/></svg></span>
+                <span class="flow-row-text">
+                  <span class="flow-row-title" data-i18n="flow.choice.camera.title">Record a sign video</span>
+                  <span class="flow-row-hint" data-i18n="flow.choice.camera.hint">Use your camera directly</span>
+                </span>
+                <svg class="flow-row-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button type="button" class="flow-row" data-choice="upload">
+                <span class="flow-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15V4m0 0 4 4m-4-4-4 4M5 15v3.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="flow-row-text">
+                  <span class="flow-row-title" data-i18n="flow.choice.upload.title">Upload a video</span>
+                  <span class="flow-row-hint" data-i18n="flow.choice.upload.hint">Choose a clip from your device</span>
+                </span>
+                <svg class="flow-row-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button type="button" class="flow-row flow-row-library-final" data-choice="library">
+                <span class="flow-row-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4.5 6.5A2.5 2.5 0 0 1 7 4h11a1.5 1.5 0 0 1 1.5 1.5v12A2.5 2.5 0 0 1 17 20H7A2.5 2.5 0 0 1 4.5 17.5v-11Z" stroke="currentColor" stroke-width="1.8"/><path d="M8 8.2h8M8 11.8h8M8 15.4h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+                <span class="flow-row-text">
+                  <span class="flow-row-title" data-i18n="flow.choice.library.title">Motion library</span>
+                  <span class="flow-row-hint" data-i18n="flow.choice.library.hint">Browse ready signs and play them instantly</span>
+                </span>
+                <svg class="flow-row-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div class="qa-flow" id="qa-flow" hidden>
+          <button type="button" class="flow-back" id="flow-back">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m15 5-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="flow.back">Back</span>
+          </button>
+
+          <section class="panel ask-panel" id="panel-ask" data-panel="ask" hidden>
+            <div class="screen-heading">
+              <h1 data-i18n="ask.title">What would you like to ask?</h1>
+              <p data-i18n="ask.help">Type your question in Arabic or English, and SignBridge will help you.</p>
+            </div>
+            <div class="question-layout">
+              <form id="ask-form" novalidate>
+                <label for="question-input" data-i18n="ask.label">Your question</label>
+                <textarea id="question-input" rows="5" maxlength="500" data-i18n-placeholder="ask.placeholder" placeholder="Type your question in Arabic or English…" aria-describedby="question-error"></textarea>
+                <div class="input-counter" aria-hidden="true">0 / 500</div>
+                <p class="field-error" id="question-error" role="alert" hidden data-i18n="ask.error">Please enter a question first.</p>
+                <button type="submit" class="primary-button ask-submit"><span aria-hidden="true">✦</span> <span data-i18n="ask.submit">Ask SignBridge</span></button>
+              </form>
+              <aside class="question-suggestions" aria-label="Suggested question types">
+                <p data-i18n="question.suggested">Try one of these</p>
+                <span data-i18n="question.suggest1">Explain a concept</span>
+                <span data-i18n="question.suggest2">Ask about IT</span>
+                <span data-i18n="question.suggest3">Translate my question</span>
+              </aside>
+            </div>
+            <aside class="prefer-sign-card">
+              <h2 data-i18n="ask.alt_prefix">Prefer to sign?</h2>
+              <p data-i18n="ask.alt_help">You can show your question in Jordanian Sign Language instead.</p>
+              <button type="button" class="ask-panel-alt-link" data-choice="camera"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.4l1-1.6c.3-.5.9-.9 1.5-.9h3.2c.6 0 1.2.4 1.5.9l1 1.6h1.4A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-8Z" stroke="currentColor" stroke-width="1.8"/></svg><span data-i18n="flow.choice.camera.title">Record a sign video</span></button>
+              <button type="button" class="ask-panel-alt-link" data-choice="upload"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 15V4m0 0 4 4m-4-4-4 4M5 15v3.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span data-i18n="flow.choice.upload.title">Upload a video</span></button>
+              <img class="prefer-sign-illustration" src="/images/signbridge-anime-guide.png" alt="" aria-hidden="true" />
+            </aside>
+          </section>
+
+          <section class="panel camera-panel" id="panel-camera" data-panel="camera" hidden>
+            <div class="screen-heading">
+              <h1 data-i18n="camera.page_title">Record your question</h1>
+              <p data-i18n="camera.page_help">Make a short, clear sign video and let SignBridge understand it.</p>
+            </div>
+            <div class="camera-page-grid">
+              <div class="camera-workspace">
+                <div class="camera-frame">
+                  <video id="camera-preview" playsinline muted hidden></video>
+                  <video id="camera-playback" playsinline hidden controls></video>
+                  <div class="camera-placeholder" aria-hidden="true">
+                    <img class="camera-reference-poster" src="/images/signbridge-anime-learner.png" alt="" />
+                    <span class="camera-guide-frame"></span>
+                    <div class="camera-placeholder-content"><span>◉</span><p data-i18n="camera.placeholder">Camera ready</p></div>
+                  </div>
+                  <div class="recording-indicator" id="recording-indicator" hidden><span class="recording-dot" aria-hidden="true"></span><span data-i18n="a11y.recording_indicator">Recording</span><span id="recording-timer">00:00</span></div>
+                </div>
+                <div class="camera-controls">
+                  <button type="button" class="primary-button" id="camera-start-button" data-i18n="camera.start">Start camera</button>
+                  <button type="button" class="primary-button record-button" id="camera-record-button" data-i18n="camera.record" hidden>Start recording</button>
+                  <button type="button" class="danger-button" id="camera-stop-button" data-i18n="camera.stop_record" hidden>Stop recording</button>
+                  <button type="button" class="secondary-button" id="camera-retake-button" data-i18n="camera.retake" hidden>Record again</button>
+                  <button type="button" class="primary-button" id="camera-analyze-button" data-i18n="camera.analyze" hidden>Analyze sign</button>
+                  <button type="button" class="ghost-button" id="camera-close-button" data-i18n="camera.close">Close camera</button>
+                </div>
+                <p class="camera-status" id="camera-status" role="status" aria-live="polite"></p>
+              </div>
+              <aside class="recording-guide">
+                <h2 data-i18n="camera.tips_title">For the best result</h2>
+                <p data-i18n="camera.tips_lead">Follow these simple tips before you record.</p>
+                <div class="guide-tip"><span>✋</span><div><h3 data-i18n="camera.tip1_title">Keep hands visible</h3><p data-i18n="camera.tip1_body">Show your upper body and hands in the frame.</p></div></div>
+                <div class="guide-tip"><span>☀</span><div><h3 data-i18n="camera.tip2_title">Use good lighting</h3><p data-i18n="camera.tip2_body">Face a light source and avoid dark backgrounds.</p></div></div>
+                <div class="guide-tip"><span>◌</span><div><h3 data-i18n="camera.tip3_title">Ask one question at a time</h3><p data-i18n="camera.tip3_body">Keep your question clear and simple.</p></div></div>
+              </aside>
+            </div>
+          </section>
+
+          <section class="panel upload-panel" id="panel-upload" data-panel="upload" hidden>
+            <div class="screen-heading">
+              <h1 data-i18n="upload.title">Upload a sign video</h1>
+              <p data-i18n="upload.help">Choose a video containing one or more signs for SignBridge to analyze.</p>
+            </div>
+            <form id="upload-form">
+              <label for="video-file-input" data-i18n="upload.label">Video file (mp4, mov, webm, avi, mkv)</label>
+              <input type="file" id="video-file-input" accept=".mp4,.mov,.webm,.avi,.mkv" required />
+              <video id="upload-preview" playsinline controls hidden></video>
+              <div class="upload-review-actions" id="upload-review-actions" hidden>
+                <button type="button" class="ghost-button" id="upload-choose-another" data-i18n="upload.choose_another">Choose another video</button>
+                <button type="submit" class="primary-button" data-i18n="upload.submit">Analyze video</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="panel library-panel" id="panel-library" data-panel="library" hidden>
+            <div class="screen-heading">
+              <h1 data-i18n="library.title">Motion library</h1>
+              <p data-i18n="library.help">Browse all available avatar motion tokens and play a ready motion directly.</p>
+            </div>
+            <div id="motion-library-root"></div>
+          </section>
+
+          <p class="processing-status" id="processing-status" role="status" aria-live="polite" hidden></p>
+
+          <section class="panel results-panel" id="results-panel" hidden>
+            <div class="results-heading">
+              <h1 data-i18n="results.page_title">Your question</h1>
+              <p data-i18n="results.page_help">Here is what we understood and the answer in text and sign language.</p>
+            </div>
+            <div class="question-received" id="detected-question-text" hidden></div>
+            <div class="result-block" id="result-recognition" hidden>
+              <h3 data-i18n="results.recognition.title">Sign video received</h3>
+              <p id="recognition-status-text" class="recognition-status-text"></p>
+              <details class="dev-diagnostics"><summary data-i18n="results.recognition.dev_details">Technical details</summary><dl class="result-dl" id="recognition-fields"></dl></details>
+            </div>
+            <div class="result-block answer-block" id="result-answer" hidden>
+              <h3 data-i18n="results.answer.title">Answer</h3>
+              <p id="educational-answer-text" class="answer-text"></p>
+              <div class="simplified-answer"><p class="simplified-answer-label" data-i18n="results.answer.simplified_title">Example</p><p id="simplified-answer-text"></p></div>
+              <p class="routed-subject" id="routed-subject-text"></p>
+            </div>
+            <div class="result-block" id="result-unavailable" hidden><p class="unavailable-note" id="unavailable-note-text"></p></div>
+            <details class="answer-details">
+              <summary data-i18n="results.answer.details_summary">Sources and more details</summary>
+              <div class="result-block" id="result-sources" hidden><h4 data-i18n="results.sources.title">Sources</h4><ul id="sources-list"></ul></div>
+              <div class="result-block" id="result-tokens" hidden><h4 data-i18n="results.tokens.title">Sign-token sequence</h4><div class="token-chips" id="sign-tokens-list"></div><p class="token-disclaimer" data-i18n="results.tokens.disclaimer">These tokens guide avatar playback.</p></div>
+              <div class="result-block" id="result-motions" hidden><h4 data-i18n="results.motions.title">Avatar motion availability</h4><p id="motion-coverage-text"></p><div class="missing-motions" id="missing-motions-list"></div></div>
+            </details>
+            <button type="button" class="primary-button ask-again-button" id="ask-again-button" data-i18n="results.ask_again">Ask another question</button>
+          </section>
+
+          <details class="dev-drawer">
+            <summary class="dev-drawer-trigger" data-i18n="devmode.summary">Advanced options (developers only)</summary>
+            <div class="mode-options" role="radiogroup" aria-label="Recognition mode (diagnostic)">
+              <label><input type="radio" name="recognition-mode" value="auto" checked /> <span data-i18n="devmode.auto">Automatic</span></label>
+              <label><input type="radio" name="recognition-mode" value="it" /> <span data-i18n="devmode.it">Force Jordanian IT signs</span></label>
+              <label><input type="radio" name="recognition-mode" value="karsl" /> <span data-i18n="devmode.karsl">Force KArSL</span></label>
+              <label><input type="radio" name="recognition-mode" value="continuous" /> <span data-i18n="devmode.continuous">Force continuous signing</span></label>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="project-section thanks-section" id="thanks" aria-labelledby="thanks-title">
+        <div class="project-section-inner thanks-layout">
+          <div class="thanks-copy reveal-on-scroll">
+            <p class="section-kicker" data-i18n="thanks.eyebrow">Special thanks</p>
+            <h2 id="thanks-title" data-i18n="thanks.title">A heartfelt thank-you to the people who helped us collect data</h2>
+            <p class="thanks-body" data-i18n="thanks.body">We are deeply grateful to the two deaf young men who supported us during data collection and helped us test key parts of the project. Their time, trust, and contribution made a real difference in building SignBridge.</p>
+            <p class="thanks-note" data-i18n="thanks.note">This project would not have reached this stage without community support and genuine collaboration.</p>
+          </div>
+          <div class="thanks-media-grid reveal-on-scroll reveal-soft">
+            <article class="thanks-card tribute-card" aria-label="Ahmad and Majed tribute illustration">
+              <div class="tribute-doodles" aria-hidden="true">
+                <span class="tribute-heart tribute-heart--left">♡</span>
+                <span class="tribute-heart tribute-heart--right">♡</span>
+                <span class="tribute-rays tribute-rays--left">✦</span>
+                <span class="tribute-rays tribute-rays--right">✦</span>
+              </div>
+              <img class="thanks-illustration" src="/images/thanks-ahmad-majed-seamless.png" data-i18n-alt="thanks.illustration_alt" alt="Anime tribute illustration of Ahmad and Majed" />
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="project-section-inner footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <span class="footer-logo-badge"><img class="footer-logo" src="/brand/signbridge-logo.png" alt="" aria-hidden="true" /></span>
+            <span>SignBridge</span>
+          </div>
+          <p data-i18n="footer.tagline">An AI-powered Jordanian Sign Language learning assistant.</p>
+          <p data-i18n="footer.built_with">A research project on educational accessibility for deaf and hard-of-hearing students.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4 data-i18n="footer.nav_title">Sections</h4>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#how" data-i18n="nav.how">How it works</a>
+          <a href="#experience" data-i18n="nav.experience">Try the platform</a>
+          <a href="#thanks" data-i18n="footer.thanks_link">Thanks</a>
+        </div>
+
+        <div class="footer-links footer-contact">
+          <h4 data-i18n="footer.contact_title">Contact</h4>
+          <a href="mailto:signbridgeteam@gmail.com">signbridgeteam@gmail.com</a>
+          <span data-i18n="footer.contact_note">For project communication and collaboration.</span>
+          <span data-i18n="footer.credit">With gratitude to Ahmad and Majed.</span>
+          <span class="footer-designer">Designed by Aisha Ramzi</span>
+        </div>
+      </div>
+      <div class="project-section-inner footer-bottom">
+        <p id="footer-rights"></p>
+        <p data-i18n="footer.rights_note">Built with care for accessible learning.</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

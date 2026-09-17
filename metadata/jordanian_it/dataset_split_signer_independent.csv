@@ -1,0 +1,968 @@
+﻿sample_index,label_id,label,video,signer_id,repetition_id,raw_frames,start_frame,end_frame,active_frames_used,target_frames,left_observed_rate,right_observed_rate,left_short_gap_imputed_rate,right_short_gap_imputed_rate,landmark_file,split
+0,0,&,&_01_1.mov,1,1,175,38,169,132,200,73.5,0.0,0.0,0.0,&\&_01_1.npy,test
+1,0,&,&_01_2.mov,1,2,160,17,141,125,200,54.0,0.0,0.0,0.0,&\&_01_2.npy,test
+2,0,&,&_02_1.mov,2,1,223,32,189,158,200,60.0,0.0,0.0,0.0,&\&_02_1.npy,train
+3,0,&,&_02_2.mov,2,2,166,32,128,97,200,61.0,0.0,0.0,0.0,&\&_02_2.npy,train
+4,0,&,&_05_1.mov,5,1,142,21,109,89,200,74.5,1.0,0.0,0.0,&\&_05_1.npy,validation
+5,0,&,&_05_2.mov,5,2,141,42,140,99,200,64.0,0.0,0.0,0.0,&\&_05_2.npy,validation
+6,1,++,++_02_1.mov,2,1,79,16,71,56,200,46.5,50.5,2.0,0.0,++\++_02_1.npy,train
+7,1,++,++_02_2.mov,2,2,124,25,119,95,200,70.0,70.0,0.0,0.0,++\++_02_2.npy,train
+8,1,++,++_03_1.mov,3,1,107,26,96,71,200,58.5,55.5,0.0,0.0,++\++_03_1.npy,test
+9,1,++,++_03_2.mov,3,2,153,32,143,112,200,69.5,66.0,3.0,6.5,++\++_03_2.npy,test
+10,1,++,++_06_1.mov,6,1,97,29,82,54,200,56.5,54.5,2.0,0.0,++\++_06_1.npy,train
+11,1,++,++_06_2.mov,6,2,106,16,87,72,200,66.0,65.5,0.0,0.0,++\++_06_2.npy,train
+12,2,- -,- -_02_1.mov,2,1,82,7,70,64,200,49.0,0.0,1.5,0.0,- -\- -_02_1.npy,train
+13,2,- -,- -_02_2.mov,2,2,139,22,132,111,200,67.0,0.0,0.0,0.0,- -\- -_02_2.npy,train
+14,2,- -,- -_03_1.mov,3,1,118,15,99,85,200,65.5,0.0,0.0,0.0,- -\- -_03_1.npy,test
+15,2,- -,- -_03_2.mov,3,2,137,17,130,114,200,61.5,0.0,0.0,0.0,- -\- -_03_2.npy,test
+16,2,- -,- -_06_1.mov,6,1,94,25,83,59,200,54.5,0.0,0.0,0.0,- -\- -_06_1.npy,train
+17,2,- -,- -_06_2.mov,6,2,114,21,99,79,200,66.5,0.0,0.0,0.0,- -\- -_06_2.npy,train
+18,3,_p,_p_02_1.mov,2,1,145,16,136,121,200,66.0,1.0,5.5,0.0,_p\_p_02_1.npy,train
+19,3,_p,_p_02_2.mov,2,2,160,24,143,120,200,69.5,2.5,1.0,0.0,_p\_p_02_2.npy,train
+20,3,_p,_p_03_1.mov,3,1,151,33,136,104,200,64.0,0.0,2.0,0.0,_p\_p_03_1.npy,test
+21,3,_p,_p_03_2.mov,3,2,229,47,217,171,200,76.5,0.0,1.5,0.0,_p\_p_03_2.npy,test
+22,3,_p,_p_05_1.mov,5,1,132,31,121,91,200,51.5,2.5,5.0,0.0,_p\_p_05_1.npy,validation
+23,3,_p,_p_05_2.mov,5,2,142,23,122,100,200,71.0,0.0,3.0,0.0,_p\_p_05_2.npy,validation
+24,4,Access,Access_02_1.mov,2,1,105,7,104,98,200,35.5,61.0,1.5,8.0,Access\Access_02_1.npy,train
+25,4,Access,Access_02_2.mov,2,2,214,38,200,163,200,43.0,61.5,1.0,6.5,Access\Access_02_2.npy,train
+26,4,Access,Access_03_1.mov,3,1,116,18,105,88,200,66.0,67.5,1.5,0.0,Access\Access_03_1.npy,test
+27,4,Access,Access_03_2.mov,3,2,164,20,151,132,200,72.0,62.0,0.0,2.0,Access\Access_03_2.npy,test
+28,4,Access,Access_06_1.mov,6,1,96,30,90,61,200,45.0,53.0,11.5,6.5,Access\Access_06_1.npy,train
+29,4,Access,Access_06_2.mov,6,2,119,28,110,83,200,61.0,62.0,12.0,3.5,Access\Access_06_2.npy,train
+30,5,Act,Act_01_1.mov,1,1,118,0,112,113,200,46.5,50.5,0.5,0.0,Act\Act_01_1.npy,test
+31,5,Act,Act_01_2.mov,1,2,165,30,150,121,200,61.5,79.0,0.0,0.0,Act\Act_01_2.npy,test
+32,5,Act,Act_02_1.mov,2,1,145,25,123,99,200,72.0,78.0,5.0,0.0,Act\Act_02_1.npy,train
+33,5,Act,Act_02_2.mov,2,2,157,24,149,126,200,73.5,80.5,7.0,0.0,Act\Act_02_2.npy,train
+34,5,Act,Act_07_1.mp4,7,1,59,1,58,58,200,78.5,82.0,0.0,2.0,Act\Act_07_1.npy,train
+35,6,Add,Add_03_1.mov,3,1,108,20,100,81,200,57.0,0.0,0.0,0.0,Add\Add_03_1.npy,test
+36,6,Add,Add_03_2.mov,3,2,133,35,125,91,200,59.5,0.0,0.0,0.0,Add\Add_03_2.npy,test
+37,6,Add,Add_05_1.mov,5,1,119,36,106,71,200,65.0,0.0,0.0,0.0,Add\Add_05_1.npy,validation
+38,6,Add,Add_05_2.mov,5,2,126,33,111,79,200,61.5,0.0,0.0,0.0,Add\Add_05_2.npy,validation
+39,6,Add,Add_06_1.mov,6,1,112,37,96,60,200,60.5,0.0,2.0,0.0,Add\Add_06_1.npy,train
+40,6,Add,Add_06_2.mov,6,2,120,39,109,71,200,63.5,0.0,1.5,0.0,Add\Add_06_2.npy,train
+41,7,Address,Address_02_1.mov,2,1,158,23,153,131,200,55.5,47.0,0.5,29.0,Address\Address_02_1.npy,train
+42,7,Address,Address_02_2.mov,2,2,243,43,240,198,200,59.0,43.5,0.5,38.0,Address\Address_02_2.npy,train
+43,7,Address,Address_03_1.mov,3,1,130,19,123,105,200,54.5,77.5,1.0,0.0,Address\Address_03_1.npy,test
+44,7,Address,Address_03_2.mov,3,2,195,29,190,162,200,46.5,79.0,1.0,2.5,Address\Address_03_2.npy,test
+45,7,Address,Address_06_1.mov,6,1,107,34,105,72,200,67.0,64.5,0.0,1.5,Address\Address_06_1.npy,train
+46,7,Address,Address_06_2.mov,6,2,146,30,144,115,200,57.5,77.5,0.0,0.0,Address\Address_06_2.npy,train
+47,8,After,After_01_1.mov,1,1,110,17,82,66,200,20.0,0.0,7.5,0.0,After\After_01_1.npy,test
+48,8,After,After_01_2.mov,1,2,133,0,132,133,200,7.0,0.0,0.0,0.0,After\After_01_2.npy,test
+49,8,After,After_05_1.mov,5,1,109,30,108,79,200,54.5,0.0,1.5,0.0,After\After_05_1.npy,validation
+50,8,After,After_05_2.mov,5,2,109,27,108,82,200,55.0,0.0,4.0,0.0,After\After_05_2.npy,validation
+51,8,After,After_06_1.mov,6,1,86,26,84,59,200,47.0,0.0,15.0,0.0,After\After_06_1.npy,train
+52,8,After,After_06_2.mov,6,2,99,0,98,99,200,23.0,0.0,1.0,0.0,After\After_06_2.npy,train
+53,9,Apply,apply_03_1.MOV,3,1,174,0,161,162,200,59.0,24.5,0.0,13.5,Apply\apply_03_1.npy,test
+54,9,Apply,apply_03_2.MOV,3,2,111,18,105,88,200,53.5,28.0,1.5,4.0,Apply\apply_03_2.npy,test
+55,9,Apply,apply_05_1.MOV,5,1,133,33,107,75,200,61.5,56.5,8.5,4.0,Apply\apply_05_1.npy,validation
+56,9,Apply,apply_05_2.MOV,5,2,129,29,118,90,200,70.5,58.0,1.0,2.5,Apply\apply_05_2.npy,validation
+57,9,Apply,apply_06_1.MOV,6,1,117,25,87,63,200,62.5,53.0,0.0,1.5,Apply\apply_06_1.npy,train
+58,9,Apply,apply_06_2.MOV,6,2,103,20,89,70,200,66.5,45.5,1.5,7.5,Apply\apply_06_2.npy,train
+59,10,Array,Array_03_1.mov,3,1,105,26,104,79,200,54.0,58.0,7.5,3.0,Array\Array_03_1.npy,test
+60,10,Array,Array_03_2.mov,3,2,113,25,100,76,200,66.0,63.5,4.0,1.5,Array\Array_03_2.npy,test
+61,10,Array,Array_05_1.mov,5,1,150,47,132,86,200,67.0,65.5,0.0,0.0,Array\Array_05_1.npy,validation
+62,10,Array,Array_05_2.mov,5,2,150,43,142,100,200,71.0,70.0,0.0,0.0,Array\Array_05_2.npy,validation
+63,10,Array,Array_06_1.mov,6,1,128,28,102,75,200,70.0,67.0,1.5,3.0,Array\Array_06_1.npy,train
+64,10,Array,Array_06_2.mov,6,2,109,22,107,86,200,73.5,73.5,3.0,1.5,Array\Array_06_2.npy,train
+65,11,Arrow,Arrow_02_1.mov,2,1,126,25,115,91,200,50.0,59.5,0.0,0.0,Arrow\Arrow_02_1.npy,train
+66,11,Arrow,Arrow_02_2.mov,2,2,201,40,200,161,200,52.0,69.0,0.0,0.5,Arrow\Arrow_02_2.npy,train
+67,11,Arrow,Arrow_03_1.mov,3,1,115,21,100,80,200,67.0,60.0,0.0,4.0,Arrow\Arrow_03_1.npy,test
+68,11,Arrow,Arrow_03_2.mov,3,2,190,37,168,132,200,69.0,63.0,0.0,1.5,Arrow\Arrow_03_2.npy,test
+69,11,Arrow,Arrow_06_1.mov,6,1,95,14,78,65,200,59.0,29.5,0.0,3.5,Arrow\Arrow_06_1.npy,train
+70,11,Arrow,Arrow_06_2.mov,6,2,125,32,111,80,200,68.0,58.0,0.0,7.5,Arrow\Arrow_06_2.npy,train
+71,12,Average,Average_01_1.mov,1,1,113,17,112,96,200,66.0,56.5,2.0,3.0,Average\Average_01_1.npy,test
+72,12,Average,Average_01_2.mov,1,2,188,15,170,156,200,58.5,57.5,7.0,4.5,Average\Average_01_2.npy,test
+73,12,Average,Average_05_1.mov,5,1,129,27,106,80,200,72.0,68.0,0.0,0.0,Average\Average_05_1.npy,validation
+74,12,Average,Average_05_2.mov,5,2,173,29,145,117,200,78.0,74.5,2.5,1.0,Average\Average_05_2.npy,validation
+75,12,Average,Average_06_1.mov,6,1,120,22,111,90,200,77.0,73.5,0.0,3.5,Average\Average_06_1.npy,train
+76,12,Average,Average_06_2.mov,6,2,133,28,130,103,200,76.0,72.0,1.0,3.0,Average\Average_06_2.npy,train
+77,13,Before,Before_01_1.mov,1,1,117,26,92,67,200,35.0,0.0,0.0,0.0,Before\Before_01_1.npy,test
+78,13,Before,Before_01_2.mov,1,2,162,0,138,139,200,24.0,0.0,8.0,0.0,Before\Before_01_2.npy,test
+79,13,Before,Before_05_1.mov,5,1,102,31,95,65,200,48.5,0.0,1.5,0.0,Before\Before_05_1.npy,validation
+80,13,Before,Before_05_2.mov,5,2,103,0,102,103,200,43.5,0.0,0.0,0.0,Before\Before_05_2.npy,validation
+81,13,Before,Before_06_1.mov,6,1,94,25,76,52,200,52.5,0.0,4.0,0.0,Before\Before_06_1.npy,train
+82,13,Before,Before_06_2.mov,6,2,100,29,94,66,200,50.5,0.0,4.5,0.0,Before\Before_06_2.npy,train
+83,14,Big,Big_01_1.mov,1,1,92,9,84,76,200,51.5,43.5,0.0,8.0,Big\Big_01_1.npy,test
+84,14,Big,Big_01_2.mov,1,2,139,16,138,123,200,62.5,43.0,0.0,10.0,Big\Big_01_2.npy,test
+85,14,Big,Big_05_1.mov,5,1,102,31,98,68,200,56.5,52.0,1.5,4.5,Big\Big_05_1.npy,validation
+86,14,Big,Big_05_2.mov,5,2,125,31,113,83,200,66.0,61.5,1.0,4.0,Big\Big_05_2.npy,validation
+87,14,Big,Big_06_1.mov,6,1,82,22,76,55,200,44.0,42.5,2.0,0.0,Big\Big_06_1.npy,train
+88,14,Big,Big_06_2.mov,6,2,101,22,97,76,200,51.5,46.5,1.5,0.0,Big\Big_06_2.npy,train
+89,15,Binary relationship,Binary relationship_02_1.mov,2,1,139,10,138,129,200,78.0,22.5,2.0,0.5,Binary relationship\Binary relationship_02_1.npy,train
+90,15,Binary relationship,Binary relationship_02_2.mov,2,2,257,34,256,223,200,80.5,24.0,0.5,8.0,Binary relationship\Binary relationship_02_2.npy,train
+91,15,Binary relationship,Binary relationship_03_1.mov,3,1,175,32,165,134,200,70.5,26.5,5.0,1.0,Binary relationship\Binary relationship_03_1.npy,test
+92,15,Binary relationship,Binary relationship_03_2.mov,3,2,254,34,234,201,200,80.0,31.5,0.5,0.0,Binary relationship\Binary relationship_03_2.npy,test
+93,15,Binary relationship,Binary relationship_05_1.mov,5,1,168,38,153,116,200,57.0,22.0,6.0,13.5,Binary relationship\Binary relationship_05_1.npy,validation
+94,15,Binary relationship,Binary relationship_05_2.mov,5,2,198,33,195,163,200,59.0,12.0,6.0,6.0,Binary relationship\Binary relationship_05_2.npy,validation
+95,16,Book,book_03_1.MOV,3,1,126,16,105,90,200,67.5,54.5,3.0,9.5,Book\book_03_1.npy,test
+96,16,Book,book_03_2.MOV,3,2,125,20,87,68,200,53.5,57.5,11.5,7.5,Book\book_03_2.npy,test
+97,16,Book,book_05_1.MOV,5,1,133,38,132,95,200,62.5,44.5,0.0,6.5,Book\book_05_1.npy,validation
+98,16,Book,book_05_2.MOV,5,2,121,27,104,78,200,57.0,42.5,1.0,6.5,Book\book_05_2.npy,validation
+99,16,Book,book_06_1.MOV,6,1,123,31,116,86,200,73.0,71.5,1.0,0.0,Book\book_06_1.npy,train
+100,16,Book,book_06_2.MOV,6,2,120,26,81,56,200,55.0,49.0,1.5,0.0,Book\book_06_2.npy,train
+101,17,Bool,Bool_01_1.mov,1,1,97,13,91,79,200,69.0,0.0,0.0,0.0,Bool\Bool_01_1.npy,test
+102,17,Bool,Bool_01_2.mov,1,2,178,24,163,140,200,63.0,0.0,1.5,0.0,Bool\Bool_01_2.npy,test
+103,17,Bool,Bool_05_1.mov,5,1,99,27,91,65,200,59.0,0.0,0.0,0.0,Bool\Bool_05_1.npy,validation
+104,17,Bool,Bool_05_2.mov,5,2,108,31,102,72,200,68.5,1.5,0.0,0.0,Bool\Bool_05_2.npy,validation
+105,17,Bool,Bool_06_1.mov,6,1,91,22,78,57,200,53.0,0.0,0.0,0.0,Bool\Bool_06_1.npy,train
+106,17,Bool,Bool_06_2.mov,6,2,110,21,95,75,200,71.5,0.0,0.0,0.0,Bool\Bool_06_2.npy,train
+107,18,Box,Box_03_1.MOV,3,1,115,21,95,75,200,42.0,51.5,14.5,2.5,Box\Box_03_1.npy,test
+108,18,Box,Box_03_2.MOV,3,2,126,19,118,100,200,33.0,53.0,2.0,7.0,Box\Box_03_2.npy,test
+109,18,Box,box_05_1.MOV,5,1,164,46,154,109,200,65.5,66.0,0.0,0.0,Box\box_05_1.npy,validation
+110,18,Box,Box_05_2.MOV,5,2,121,39,112,74,200,33.0,43.5,4.0,3.0,Box\Box_05_2.npy,validation
+111,18,Box,Box_06_1.MOV,6,1,89,21,77,57,200,52.0,46.0,12.0,0.0,Box\Box_06_1.npy,train
+112,18,Box,Box_06_2.MOV,6,2,92,24,91,68,200,62.5,46.0,1.5,0.0,Box\Box_06_2.npy,train
+113,19,C++,C++_01_1.mov,1,1,242,38,210,173,200,31.0,79.5,3.0,0.0,C++\C++_01_1.npy,test
+114,19,C++,C++_01_2.mov,1,2,177,41,155,115,200,39.5,75.0,4.0,1.0,C++\C++_01_2.npy,test
+115,19,C++,C++_02_1.mov,2,1,281,38,259,222,200,48.0,69.0,0.0,5.0,C++\C++_02_1.npy,train
+116,19,C++,C++_02_2.mov,2,2,179,19,156,138,200,53.0,78.5,0.0,0.0,C++\C++_02_2.npy,train
+117,19,C++,C++_05_1.mov,5,1,187,32,147,116,200,82.5,55.5,0.0,0.0,C++\C++_05_1.npy,validation
+118,19,C++,C++_05_2.mov,5,2,125,16,104,89,200,77.0,60.0,1.0,0.0,C++\C++_05_2.npy,validation
+119,20,Call,Call_02_1.mov,2,1,160,13,137,125,200,73.0,50.5,0.0,1.0,Call\Call_02_1.npy,train
+120,20,Call,Call_02_2.mov,2,2,256,12,195,184,200,80.0,52.0,0.0,0.0,Call\Call_02_2.npy,train
+121,20,Call,Call_03_1.mov,3,1,148,19,131,113,200,68.5,53.5,0.0,0.0,Call\Call_03_1.npy,test
+122,20,Call,Call_03_2.mov,3,2,217,37,198,162,200,81.5,57.5,0.0,0.0,Call\Call_03_2.npy,test
+123,20,Call,Call_05_1.mov,5,1,141,26,120,95,200,64.5,63.5,3.0,0.0,Call\Call_05_1.npy,validation
+124,20,Call,Call_05_2.mov,5,2,147,27,128,102,200,70.0,63.0,6.0,0.0,Call\Call_05_2.npy,validation
+125,21,Char,Char_02_1.mov,2,1,74,12,73,62,200,67.0,0.0,0.0,0.0,Char\Char_02_1.npy,train
+126,21,Char,Char_02_2.mov,2,2,209,34,187,154,200,66.0,0.0,0.0,0.0,Char\Char_02_2.npy,train
+127,21,Char,Char_03_1.mov,3,1,99,21,86,66,200,55.0,0.0,0.0,0.0,Char\Char_03_1.npy,test
+128,21,Char,Char_03_2.mov,3,2,161,37,148,112,200,62.5,0.0,0.0,0.0,Char\Char_03_2.npy,test
+129,21,Char,Char_06_1.mov,6,1,87,25,82,58,200,55.5,0.0,2.0,0.0,Char\Char_06_1.npy,train
+130,21,Char,Char_06_2.mov,6,2,87,28,86,59,200,62.0,0.0,1.5,0.0,Char\Char_06_2.npy,train
+131,22,Check,Check_01_1.mov,1,1,86,14,83,70,200,60.0,61.0,6.0,2.5,Check\Check_01_1.npy,test
+132,22,Check,Check_01_2.mov,1,2,200,31,179,149,200,71.0,76.0,8.0,3.0,Check\Check_01_2.npy,test
+133,22,Check,Check_05_1.mov,5,1,112,31,107,77,200,67.0,65.0,9.0,7.0,Check\Check_05_1.npy,validation
+134,22,Check,Check_05_2.mov,5,2,133,30,132,103,200,80.0,73.0,5.0,6.0,Check\Check_05_2.npy,validation
+135,22,Check,Check_06_1.mov,6,1,110,28,93,66,200,64.0,59.5,0.0,1.5,Check\Check_06_1.npy,train
+136,22,Check,Check_06_2.mov,6,2,107,28,106,79,200,70.5,70.0,0.0,0.0,Check\Check_06_2.npy,train
+137,23,Class,Class_02_1.mov,2,1,140,19,139,121,200,63.0,71.0,0.0,4.0,Class\Class_02_1.npy,train
+138,23,Class,Class_02_2.mov,2,2,262,41,255,215,200,63.5,68.5,1.0,10.0,Class\Class_02_2.npy,train
+139,23,Class,Class_03_1.mov,3,1,141,12,128,117,200,71.0,73.5,3.5,1.0,Class\Class_03_1.npy,test
+140,23,Class,Class_03_2.mov,3,2,266,44,249,206,200,85.0,83.0,2.0,2.5,Class\Class_03_2.npy,test
+141,23,Class,Class_05_1.mov,5,1,148,27,124,98,200,70.0,58.5,2.0,6.5,Class\Class_05_1.npy,validation
+142,23,Class,Class_05_2.mov,5,2,172,20,157,138,200,71.5,66.0,1.5,4.5,Class\Class_05_2.npy,validation
+143,24,Code,Code_01_1.mov,1,1,100,24,93,70,200,44.5,34.0,10.5,16.5,Code\Code_01_1.npy,test
+144,24,Code,Code_01_2.mov,1,2,171,13,147,135,200,58.0,39.0,9.5,10.5,Code\Code_01_2.npy,test
+145,24,Code,Code_05_1.mov,5,1,126,31,118,88,200,44.5,51.5,0.0,2.5,Code\Code_05_1.npy,validation
+146,24,Code,Code_05_2.mov,5,2,149,21,138,118,200,73.5,74.0,1.5,0.0,Code\Code_05_2.npy,validation
+147,24,Code,Code_06_1.mov,6,1,102,27,98,72,200,63.0,60.0,0.0,0.0,Code\Code_06_1.npy,train
+148,24,Code,Code_06_2.mov,6,2,115,16,114,99,200,68.0,62.0,4.0,4.0,Code\Code_06_2.npy,train
+149,25,Coin,coin_03_1.MOV,3,1,122,0,121,122,200,59.5,0.0,0.0,0.0,Coin\coin_03_1.npy,test
+150,25,Coin,coin_03_2.MOV,3,2,86,9,81,73,200,65.0,0.0,0.0,0.0,Coin\coin_03_2.npy,test
+151,25,Coin,coin_05_1.MOV,5,1,119,23,117,95,200,56.0,0.0,0.0,0.0,Coin\coin_05_1.npy,validation
+152,25,Coin,coin_05_2.MOV,5,2,112,32,109,78,200,52.0,0.0,0.0,0.0,Coin\coin_05_2.npy,validation
+153,25,Coin,coin_06_1.MOV,6,1,130,0,120,121,200,47.5,0.0,0.0,0.0,Coin\coin_06_1.npy,train
+154,25,Coin,coin_06_2.MOV,6,2,85,20,72,53,200,55.5,0.0,0.0,0.0,Coin\coin_06_2.npy,train
+155,26,Colon,Colon_01_1.mov,1,1,134,20,117,98,200,54.5,0.0,0.0,0.0,Colon\Colon_01_1.npy,test
+156,26,Colon,Colon_01_2.mov,1,2,102,11,75,65,200,50.0,0.0,4.5,0.0,Colon\Colon_01_2.npy,test
+157,26,Colon,Colon_05_1.mov,5,1,93,17,90,74,200,58.5,0.0,1.5,0.0,Colon\Colon_05_1.npy,validation
+158,26,Colon,Colon_05_2.mov,5,2,103,17,102,86,200,67.0,0.0,1.0,0.0,Colon\Colon_05_2.npy,validation
+159,26,Colon,Colon_06_1.mov,6,1,102,20,94,75,200,55.0,0.0,4.0,0.0,Colon\Colon_06_1.npy,train
+160,26,Colon,Colon_06_2.mov,6,2,89,20,88,69,200,66.0,0.0,1.5,0.0,Colon\Colon_06_2.npy,train
+161,27,Column,column_01_1.MOV,1,1,119,0,102,103,200,0.0,46.5,0.0,12.0,Column\column_01_1.npy,test
+162,27,Column,column_01_2.MOV,1,2,63,0,54,55,200,0.0,24.0,0.0,0.0,Column\column_01_2.npy,test
+163,27,Column,Column_02_1.mov,2,1,122,0,113,114,200,0.0,63.5,0.0,1.5,Column\Column_02_1.npy,train
+164,27,Column,column_02_2.MOV,2,2,64,0,39,40,200,0.0,43.5,0.0,7.5,Column\column_02_2.npy,train
+165,27,Column,column_07_1.mp4,7,1,150,0,145,146,200,78.5,98.0,1.5,2.0,Column\column_07_1.npy,train
+166,28,Comment,Comment_01_1.mov,1,1,158,19,138,120,200,69.5,26.5,0.0,3.5,Comment\Comment_01_1.npy,test
+167,28,Comment,Comment_01_2.mov,1,2,260,27,211,185,200,75.0,25.5,0.0,5.0,Comment\Comment_01_2.npy,test
+168,28,Comment,Comment_05_1.mov,5,1,108,22,91,70,200,56.5,55.0,1.0,0.0,Comment\Comment_05_1.npy,validation
+169,28,Comment,Comment_05_2.mov,5,2,132,29,123,95,200,69.0,65.5,4.0,0.0,Comment\Comment_05_2.npy,validation
+170,28,Comment,Comment_06_1.mov,6,1,92,20,82,63,200,59.5,58.0,6.5,0.0,Comment\Comment_06_1.npy,train
+171,28,Comment,Comment_06_2.mov,6,2,109,27,108,82,200,66.0,52.0,5.5,0.0,Comment\Comment_06_2.npy,train
+172,29,Compare,Compare_02_1.mov,2,1,110,15,87,73,200,51.5,17.0,4.0,4.0,Compare\Compare_02_1.npy,train
+173,29,Compare,Compare_02_2.mov,2,2,186,32,153,122,200,71.5,41.5,3.5,13.5,Compare\Compare_02_2.npy,train
+174,29,Compare,Compare_03_1.mov,3,1,114,12,100,89,200,57.5,52.5,0.0,6.0,Compare\Compare_03_1.npy,test
+175,29,Compare,Compare_03_2.mov,3,2,166,19,156,138,200,68.5,61.5,0.0,0.5,Compare\Compare_03_2.npy,test
+176,29,Compare,Compare_06_1.mov,6,1,112,38,101,64,200,30.0,43.0,19.0,8.0,Compare\Compare_06_1.npy,train
+177,29,Compare,Compare_06_2.mov,6,2,106,31,105,75,200,49.5,47.5,1.5,9.0,Compare\Compare_06_2.npy,train
+178,30,Compiler,Compiler_02_1.mov,2,1,117,10,108,99,200,62.0,53.0,4.0,0.0,Compiler\Compiler_02_1.npy,train
+179,30,Compiler,Compiler_02_2.mov,2,2,189,22,181,160,200,60.0,59.5,5.0,2.0,Compiler\Compiler_02_2.npy,train
+180,30,Compiler,Compiler_03_1.mov,3,1,140,29,135,107,200,51.5,66.0,4.0,3.5,Compiler\Compiler_03_1.npy,test
+181,30,Compiler,Compiler_03_2.mov,3,2,219,24,198,175,200,49.0,81.5,6.0,1.0,Compiler\Compiler_03_2.npy,test
+182,30,Compiler,Compiler_05_1.mov,5,1,136,0,122,123,200,49.0,50.0,2.0,0.0,Compiler\Compiler_05_1.npy,validation
+183,30,Compiler,Compiler_05_2.mov,5,2,150,22,134,113,200,73.0,54.5,3.5,3.5,Compiler\Compiler_05_2.npy,validation
+184,31,Complex- composite,Complex- composite_01_1.MOV,1,1,296,37,279,243,200,89.0,72.0,0.0,0.0,Complex- composite\Complex- composite_01_1.npy,test
+185,31,Complex- composite,Complex- composite_01_2.MOV,1,2,147,30,136,107,200,74.5,60.5,0.0,0.0,Complex- composite\Complex- composite_01_2.npy,test
+186,31,Complex- composite,Complex- composite_02_1.MOV,2,1,158,18,151,134,200,78.5,64.5,0.0,1.0,Complex- composite\Complex- composite_02_1.npy,train
+187,31,Complex- composite,Complex- composite_02_2.MOV,2,2,279,30,273,244,200,86.0,69.0,0.0,0.0,Complex- composite\Complex- composite_02_2.npy,train
+188,31,Complex- composite,Complex- composite_07_1.mp4,7,1,202,0,199,200,200,81.5,67.0,0.0,1.5,Complex- composite\Complex- composite_07_1.npy,train
+189,32,Constant,constant_01_1.mov,1,1,136,30,113,84,200,67.0,65.0,2.5,0.0,Constant\constant_01_1.npy,test
+190,32,Constant,constant_01_2.mov,1,2,184,37,166,130,200,52.0,46.5,3.5,0.0,Constant\constant_01_2.npy,test
+191,32,Constant,constant_02_1.mov,2,1,132,23,120,98,200,54.0,59.0,1.0,7.5,Constant\constant_02_1.npy,train
+192,32,Constant,constant_02_2.mov,2,2,181,32,164,133,200,50.0,55.0,0.0,1.5,Constant\constant_02_2.npy,train
+193,32,Constant,constant_05_1.mov,5,1,193,55,147,93,200,76.0,71.5,1.0,1.0,Constant\constant_05_1.npy,validation
+194,32,Constant,constant_05_2.mov,5,2,207,51,173,123,200,78.0,72.0,0.0,0.5,Constant\constant_05_2.npy,validation
+195,33,Content,content_03_1.mov,3,1,106,12,104,93,200,52.5,35.0,4.0,8.0,Content\content_03_1.npy,test
+196,33,Content,content_03_2.mov,3,2,153,10,147,138,200,49.5,40.0,2.0,13.5,Content\content_03_2.npy,test
+197,33,Content,content_05_1.mov,5,1,165,35,132,98,200,57.5,60.5,3.0,3.5,Content\content_05_1.npy,validation
+198,33,Content,content_05_2.mov,5,2,161,28,154,127,200,74.5,76.5,1.5,1.0,Content\content_05_2.npy,validation
+199,33,Content,content_06_1.mov,6,1,113,23,101,79,200,72.0,31.5,1.0,1.0,Content\content_06_1.npy,train
+200,33,Content,content_06_2.mov,6,2,115,15,111,97,200,79.0,33.5,2.0,2.0,Content\content_06_2.npy,train
+201,34,Copy,copy_03_1.MOV,3,1,136,13,119,107,200,56.0,79.0,0.0,0.0,Copy\copy_03_1.npy,test
+202,34,Copy,copy_03_2.MOV,3,2,96,19,90,72,200,46.0,64.5,0.0,0.0,Copy\copy_03_2.npy,test
+203,34,Copy,copy_05_1.MOV,5,1,143,33,122,90,200,72.5,65.0,0.0,0.0,Copy\copy_05_1.npy,validation
+204,34,Copy,copy_05_2.MOV,5,2,136,30,98,69,200,57.0,45.5,0.0,0.0,Copy\copy_05_2.npy,validation
+205,34,Copy,copy_06_1.MOV,6,1,113,25,89,65,200,61.0,61.0,4.5,1.5,Copy\copy_06_1.npy,train
+206,34,Copy,copy_06_2.MOV,6,2,96,25,80,56,200,54.0,60.0,7.5,1.5,Copy\copy_06_2.npy,train
+207,35,Cout-print-output,Cout-print-output_01_1.mov,1,1,204,58,183,126,200,76.0,0.0,0.0,0.0,Cout-print-output\Cout-print-output_01_1.npy,test
+208,35,Cout-print-output,Cout-print-output_01_2.mov,1,2,270,25,253,229,200,81.5,0.0,0.0,0.0,Cout-print-output\Cout-print-output_01_2.npy,test
+209,35,Cout-print-output,Cout-print-output_02_1.mov,2,1,166,12,131,120,200,78.0,0.0,0.0,0.0,Cout-print-output\Cout-print-output_02_1.npy,train
+210,35,Cout-print-output,Cout-print-output_02_2.mov,2,2,224,32,188,157,200,73.0,0.0,0.0,0.0,Cout-print-output\Cout-print-output_02_2.npy,train
+211,35,Cout-print-output,Cout-print-output_05_1.mov,5,1,167,57,149,93,200,70.5,2.0,0.0,0.0,Cout-print-output\Cout-print-output_05_1.npy,validation
+212,35,Cout-print-output,Cout-print-output_05_2.mov,5,2,169,21,120,100,200,74.0,0.0,2.0,0.0,Cout-print-output\Cout-print-output_05_2.npy,validation
+213,36,Create,Create_01_1.mov,1,1,119,15,99,85,200,48.5,36.0,0.0,5.5,Create\Create_01_1.npy,test
+214,36,Create,Create_01_2.mov,1,2,180,28,168,141,200,66.0,33.0,2.0,0.5,Create\Create_01_2.npy,test
+215,36,Create,Create_05_1.mov,5,1,118,31,112,82,200,61.0,58.0,0.0,0.0,Create\Create_05_1.npy,validation
+216,36,Create,Create_05_2.mov,5,2,132,29,123,95,200,62.5,63.5,0.0,0.0,Create\Create_05_2.npy,validation
+217,36,Create,Create_06_1.mov,6,1,93,18,91,74,200,63.0,59.0,1.0,4.0,Create\Create_06_1.npy,train
+218,36,Create,Create_06_2.mov,6,2,115,30,111,82,200,62.0,61.5,5.5,0.0,Create\Create_06_2.npy,train
+219,37,Customer,Customer_02_1.MOV,2,1,144,19,129,111,200,57.0,0.0,1.0,0.0,Customer\Customer_02_1.npy,train
+220,37,Customer,Customer_02_2.MOV,2,2,100,12,83,72,200,42.5,0.0,7.5,0.0,Customer\Customer_02_2.npy,train
+221,37,Customer,Customer_03_1.MOV,3,1,146,47,133,87,200,65.0,0.0,6.5,0.0,Customer\Customer_03_1.npy,test
+222,37,Customer,Customer_03_2.MOV,3,2,198,0,197,198,200,48.5,0.0,2.5,0.0,Customer\Customer_03_2.npy,test
+223,37,Customer,Customer_05_1.MOV,5,1,132,26,128,103,200,50.5,0.0,3.0,0.0,Customer\Customer_05_1.npy,validation
+224,37,Customer,Customer_05_2.MOV,5,2,128,47,110,64,200,55.0,0.0,1.5,0.0,Customer\Customer_05_2.npy,validation
+225,38,Data,Data_01_1.mov,1,1,134,23,118,96,200,57.5,70.5,0.0,1.0,Data\Data_01_1.npy,test
+226,38,Data,Data_01_2.mov,1,2,182,13,171,159,200,68.0,84.5,0.0,0.5,Data\Data_01_2.npy,test
+227,38,Data,Data_02_1.mov,2,1,246,44,244,201,200,59.0,75.5,0.0,0.0,Data\Data_02_1.npy,train
+228,38,Data,Data_02_2.mov,2,2,167,47,163,117,200,58.0,68.5,0.0,0.0,Data\Data_02_2.npy,train
+229,38,Data,Data_05_1.mov,5,1,160,27,123,97,200,66.5,48.5,3.0,4.0,Data\Data_05_1.npy,validation
+230,38,Data,Data_05_2.mov,5,2,143,11,94,84,200,63.0,59.5,0.0,10.5,Data\Data_05_2.npy,validation
+231,39,Database,database_01_1.MOV,1,1,230,24,207,184,200,58.0,72.0,8.0,8.5,Database\database_01_1.npy,test
+232,39,Database,database_01_2.MOV,1,2,120,9,103,95,200,62.5,69.0,3.0,0.0,Database\database_01_2.npy,test
+233,39,Database,database_02_1.MOV,2,1,106,0,92,93,200,70.0,74.5,1.5,0.0,Database\database_02_1.npy,train
+234,39,Database,database_02_2.MOV,2,2,252,15,237,223,200,82.0,84.5,0.0,2.0,Database\database_02_2.npy,train
+235,39,Database,database_07_1.mp4,7,1,294,31,253,223,200,81.5,74.0,0.0,0.0,Database\database_07_1.npy,train
+236,40,Datatype,Datatype_01_1.mov,1,1,311,31,269,239,200,64.5,51.0,5.0,2.5,Datatype\Datatype_01_1.npy,test
+237,40,Datatype,Datatype_01_2.mov,1,2,222,18,186,169,200,70.0,46.5,1.5,3.5,Datatype\Datatype_01_2.npy,test
+238,40,Datatype,Datatype_02_1.mov,2,1,323,50,304,255,200,59.0,47.0,3.0,0.0,Datatype\Datatype_02_1.npy,train
+239,40,Datatype,Datatype_02_2.mov,2,2,212,19,170,152,200,66.5,60.5,1.0,1.0,Datatype\Datatype_02_2.npy,train
+240,40,Datatype,Datatype_05_1.mov,5,1,252,44,208,165,200,85.0,35.0,3.0,3.5,Datatype\Datatype_05_1.npy,validation
+241,40,Datatype,Datatype_05_2.mov,5,2,183,24,154,131,200,83.0,34.5,0.0,3.5,Datatype\Datatype_05_2.npy,validation
+242,41,Date,date_01_1.MOV,1,1,205,37,199,163,200,83.0,55.0,0.0,0.0,Date\date_01_1.npy,test
+243,41,Date,date_01_2.MOV,1,2,100,23,92,70,200,59.0,59.0,3.0,0.0,Date\date_01_2.npy,test
+244,41,Date,date_02_1.MOV,2,1,219,31,215,185,200,87.0,60.0,0.5,2.0,Date\date_02_1.npy,train
+245,41,Date,date_02_2.MOV,2,2,120,18,113,96,200,77.5,27.0,2.0,11.0,Date\date_02_2.npy,train
+246,41,Date,date_07_1.mp4,7,1,50,3,49,47,200,69.0,57.5,0.0,11.5,Date\date_07_1.npy,train
+247,42,Declare,Declare_02_1.mov,2,1,188,17,164,148,200,56.0,0.0,7.5,0.0,Declare\Declare_02_1.npy,train
+248,42,Declare,Declare_02_2.mov,2,2,262,12,249,238,200,54.5,0.0,10.5,0.0,Declare\Declare_02_2.npy,train
+249,42,Declare,Declare_03_1.mov,3,1,146,15,120,106,200,70.5,0.0,0.5,0.0,Declare\Declare_03_1.npy,test
+250,42,Declare,Declare_03_2.mov,3,2,222,0,193,194,200,71.5,0.0,0.0,0.0,Declare\Declare_03_2.npy,test
+251,42,Declare,Declare_06_1.mov,6,1,113,21,97,77,200,65.5,0.0,1.5,0.0,Declare\Declare_06_1.npy,train
+252,42,Declare,Declare_06_2.mov,6,2,124,12,110,99,200,63.0,0.0,8.0,0.0,Declare\Declare_06_2.npy,train
+253,43,Definition,Definition_01_1.mov,1,1,114,17,95,79,200,56.0,39.0,0.0,16.0,Definition\Definition_01_1.npy,test
+254,43,Definition,Definition_01_2.mov,1,2,220,22,197,176,200,60.0,73.0,0.0,9.5,Definition\Definition_01_2.npy,test
+255,43,Definition,Definition_05_1.mov,5,1,93,31,92,62,200,58.5,55.5,0.0,1.5,Definition\Definition_05_1.npy,validation
+256,43,Definition,Definition_05_2.mov,5,2,124,35,118,84,200,55.0,52.5,0.0,1.5,Definition\Definition_05_2.npy,validation
+257,43,Definition,Definition_06_1.mov,6,1,91,21,87,67,200,59.0,63.5,9.0,4.5,Definition\Definition_06_1.npy,train
+258,43,Definition,Definition_06_2.mov,6,2,113,25,112,88,200,50.0,78.0,9.5,2.0,Definition\Definition_06_2.npy,train
+259,44,Delete-remove-pop,Delete-remove-pop_01_1.mov,1,1,176,28,127,100,200,67.0,69.0,2.0,2.0,Delete-remove-pop\Delete-remove-pop_01_1.npy,test
+260,44,Delete-remove-pop,Delete-remove-pop_01_2.mov,1,2,230,27,198,172,200,82.5,75.5,2.0,5.5,Delete-remove-pop\Delete-remove-pop_01_2.npy,test
+261,44,Delete-remove-pop,Delete-remove-pop_02_1.mov,2,1,143,20,136,117,200,74.5,67.0,0.0,3.0,Delete-remove-pop\Delete-remove-pop_02_1.npy,train
+262,44,Delete-remove-pop,Delete-remove-pop_02_2.mov,2,2,219,18,185,168,200,84.0,77.5,0.0,0.5,Delete-remove-pop\Delete-remove-pop_02_2.npy,train
+263,44,Delete-remove-pop,Delete-remove-pop_05_1.mov,5,1,159,47,135,89,200,78.0,44.0,0.0,2.0,Delete-remove-pop\Delete-remove-pop_05_1.npy,validation
+264,44,Delete-remove-pop,Delete-remove-pop_05_2.mov,5,2,183,20,134,115,200,81.0,70.0,0.0,4.0,Delete-remove-pop\Delete-remove-pop_05_2.npy,validation
+265,45,Depend,Depend_02_1.MOV,2,1,140,23,123,101,200,73.0,16.0,0.0,0.0,Depend\Depend_02_1.npy,train
+266,45,Depend,Depend_02_2.MOV,2,2,88,6,63,58,200,57.5,9.0,0.0,0.0,Depend\Depend_02_2.npy,train
+267,45,Depend,Depend_03_1.MOV,3,1,177,57,163,107,200,69.5,29.0,0.0,0.0,Depend\Depend_03_1.npy,test
+268,45,Depend,Depend_03_2.MOV,3,2,99,26,86,61,200,54.5,30.0,0.0,5.0,Depend\Depend_03_2.npy,test
+269,45,Depend,Depend_05_1.MOV,5,1,108,28,91,64,200,54.0,2.0,0.0,0.0,Depend\Depend_05_1.npy,validation
+270,45,Depend,Depend_05_2.MOV,5,2,148,36,123,88,200,60.5,1.5,0.0,0.0,Depend\Depend_05_2.npy,validation
+271,46,Derived,Derived_01_1.MOV,1,1,166,27,148,122,200,66.5,78.0,0.0,3.5,Derived\Derived_01_1.npy,test
+272,46,Derived,Derived_01_2.MOV,1,2,412,52,388,337,200,77.0,84.0,0.0,2.0,Derived\Derived_01_2.npy,test
+273,46,Derived,Derived_02_1.MOV,2,1,179,23,176,154,200,71.5,76.5,1.0,4.5,Derived\Derived_02_1.npy,train
+274,46,Derived,Derived_02_2.MOV,2,2,357,38,339,302,200,69.0,89.5,0.0,2.0,Derived\Derived_02_2.npy,train
+275,46,Derived,Derived_07_1.mp4,7,1,286,19,278,260,200,81.0,82.5,3.5,2.0,Derived\Derived_07_1.npy,train
+276,47,Description,Description_02_1.MOV,2,1,253,13,246,234,200,89.0,64.0,0.0,0.5,Description\Description_02_1.npy,train
+277,47,Description,Description_02_2.MOV,2,2,181,9,163,155,200,84.0,54.0,0.0,0.0,Description\Description_02_2.npy,train
+278,47,Description,Description_03_1.MOV,3,1,295,30,294,265,200,82.5,55.5,0.0,0.0,Description\Description_03_1.npy,test
+279,47,Description,Description_03_2.MOV,3,2,215,31,198,168,200,77.5,54.0,5.5,0.0,Description\Description_03_2.npy,test
+280,47,Description,Description_05_1.MOV,5,1,229,46,209,164,200,78.5,54.5,0.5,2.5,Description\Description_05_1.npy,validation
+281,47,Description,Description_05_2.MOV,5,2,186,44,170,127,200,72.5,54.0,1.0,0.0,Description\Description_05_2.npy,validation
+282,48,Destroy,Destroy_01_1.mov,1,1,122,30,83,54,200,56.5,48.5,2.0,2.0,Destroy\Destroy_01_1.npy,test
+283,48,Destroy,Destroy_01_2.mov,1,2,150,15,119,105,200,40.0,42.0,2.0,0.0,Destroy\Destroy_01_2.npy,test
+284,48,Destroy,Destroy_02_1.mov,2,1,135,17,93,77,200,62.5,56.5,4.0,8.0,Destroy\Destroy_02_1.npy,train
+285,48,Destroy,Destroy_02_2.mov,2,2,180,28,127,100,200,74.0,72.0,2.0,4.0,Destroy\Destroy_02_2.npy,train
+286,48,Destroy,Destroy_05_1.mov,5,1,206,79,167,89,200,75.5,60.5,0.0,11.0,Destroy\Destroy_05_1.npy,validation
+287,48,Destroy,Destroy_05_2.mov,5,2,217,53,157,105,200,69.0,52.0,3.5,4.0,Destroy\Destroy_05_2.npy,validation
+288,49,Diamond,diamond_01_1.MOV,1,1,187,38,182,145,200,60.0,78.0,0.5,1.0,Diamond\diamond_01_1.npy,test
+289,49,Diamond,diamond_01_2.MOV,1,2,118,30,101,72,200,61.0,56.0,6.0,0.0,Diamond\diamond_01_2.npy,test
+290,49,Diamond,diamond_02_1.MOV,2,1,262,42,261,220,200,54.5,87.0,0.0,0.0,Diamond\diamond_02_1.npy,train
+291,49,Diamond,diamond_02_2.MOV,2,2,120,18,116,99,200,58.0,76.0,3.0,0.0,Diamond\diamond_02_2.npy,train
+292,49,Diamond,diamond_07_1.mp4,7,1,65,5,64,60,200,78.0,65.5,0.0,0.0,Diamond\diamond_07_1.npy,train
+293,50,Disjoint,disjoint_01_1.MOV,1,1,137,33,122,90,200,72.5,76.0,0.0,0.0,Disjoint\disjoint_01_1.npy,test
+294,50,Disjoint,disjoint_01_2.MOV,1,2,109,36,90,55,200,59.0,62.5,0.0,2.0,Disjoint\disjoint_01_2.npy,test
+295,50,Disjoint,disjoint_02_1.MOV,2,1,162,25,155,131,200,84.0,84.0,0.0,0.0,Disjoint\disjoint_02_1.npy,train
+296,50,Disjoint,disjoint_02_2.MOV,2,2,89,14,85,72,200,74.0,74.5,0.0,0.0,Disjoint\disjoint_02_2.npy,train
+297,50,Disjoint,disjoint_07_1.mp4,7,1,55,0,49,50,200,67.0,65.0,2.0,14.0,Disjoint\disjoint_07_1.npy,train
+298,51,Domain,domain_01_1.MOV,1,1,238,39,212,174,200,68.0,83.5,0.0,0.5,Domain\domain_01_1.npy,test
+299,51,Domain,domain_01_2.MOV,1,2,127,20,110,91,200,41.0,76.5,0.0,2.0,Domain\domain_01_2.npy,test
+300,51,Domain,domain_02_1.MOV,2,1,267,37,253,217,200,59.5,89.0,0.0,1.5,Domain\domain_02_1.npy,train
+301,51,Domain,domain_02_2.MOV,2,2,137,24,127,104,200,59.0,79.0,1.0,2.0,Domain\domain_02_2.npy,train
+302,51,Domain,domain_07_1.mp4,7,1,171,0,159,160,200,80.0,86.0,2.0,1.0,Domain\domain_07_1.npy,train
+303,52,dot operator,dot operator_02_1.mov,2,1,86,11,68,58,200,52.5,0.0,0.0,0.0,dot operator\dot operator_02_1.npy,train
+304,52,dot operator,dot operator_02_2.mov,2,2,184,18,174,157,200,78.0,0.0,0.0,0.0,dot operator\dot operator_02_2.npy,train
+305,52,dot operator,dot operator_03_1.mov,3,1,83,14,69,56,200,54.0,0.0,0.0,0.0,dot operator\dot operator_03_1.npy,test
+306,52,dot operator,dot operator_03_2.mov,3,2,141,24,130,107,200,57.5,0.0,1.5,0.0,dot operator\dot operator_03_2.npy,test
+307,52,dot operator,dot operator_06_1.mov,6,1,91,32,90,59,200,45.0,0.0,3.0,0.0,dot operator\dot operator_06_1.npy,train
+308,52,dot operator,dot operator_06_2.mov,6,2,96,24,91,68,200,49.0,0.0,0.0,0.0,dot operator\dot operator_06_2.npy,train
+309,53,Double,Double_02_1.mov,2,1,124,14,112,99,200,38.5,60.0,0.0,5.0,Double\Double_02_1.npy,train
+310,53,Double,Double_02_2.mov,2,2,242,13,233,221,200,56.5,81.0,0.0,0.0,Double\Double_02_2.npy,train
+311,53,Double,Double_03_1.mov,3,1,109,9,96,88,200,43.5,67.5,0.0,1.0,Double\Double_03_1.npy,test
+312,53,Double,Double_03_3.mov,3,3,163,7,139,133,200,49.0,80.0,0.0,0.0,Double\Double_03_3.npy,test
+313,53,Double,Double_06_1.mov,6,1,92,27,86,60,200,57.5,62.0,0.0,0.0,Double\Double_06_1.npy,train
+314,53,Double,Double_06_2.mov,6,2,127,31,111,81,200,63.5,72.0,1.0,0.0,Double\Double_06_2.npy,train
+315,54,element,element_03_1.MOV,3,1,165,30,164,135,200,71.5,4.5,0.0,0.0,element\element_03_1.npy,test
+316,54,element,element_03_2.MOV,3,2,108,0,93,94,200,50.5,0.0,0.0,0.0,element\element_03_2.npy,test
+317,54,element,element_05_1.MOV,5,1,138,40,134,95,200,69.0,3.5,0.0,2.0,element\element_05_1.npy,validation
+318,54,element,element_05_2.MOV,5,2,124,29,101,73,200,62.0,5.5,0.0,5.5,element\element_05_2.npy,validation
+319,54,element,element_06_1.MOV,6,1,98,29,97,69,200,77.5,0.0,0.0,0.0,element\element_06_1.npy,train
+320,54,element,element_06_2.MOV,6,2,107,27,85,59,200,58.5,0.0,1.5,0.0,element\element_06_2.npy,train
+321,55,Else,Else_01_1.MOV,1,1,120,21,93,73,200,56.5,0.0,0.0,0.0,Else\Else_01_1.npy,test
+322,55,Else,Else_01_2.MOV,1,2,197,0,165,166,200,57.0,0.0,0.0,0.0,Else\Else_01_2.npy,test
+323,55,Else,Else_05_1.MOV,5,1,83,24,79,56,200,47.0,0.0,0.0,0.0,Else\Else_05_1.npy,validation
+324,55,Else,Else_05_2.MOV,5,2,101,0,94,95,200,39.0,0.0,2.0,0.0,Else\Else_05_2.npy,validation
+325,55,Else,Else_06_1.MOV,6,1,83,30,82,53,200,42.5,0.0,0.0,0.0,Else\Else_06_1.npy,train
+326,55,Else,Else_06_2.MOV,6,2,109,25,108,84,200,52.0,0.0,5.5,0.0,Else\Else_06_2.npy,train
+327,56,End,End_01_1.MOV,1,1,110,20,102,83,200,69.5,69.5,0.0,0.0,End\End_01_1.npy,test
+328,56,End,End_01_2.MOV,1,2,207,33,171,139,200,74.5,53.0,0.0,16.0,End\End_01_2.npy,test
+329,56,End,End_05_1.MOV,5,1,108,38,107,70,200,57.5,62.5,1.5,5.0,End\End_05_1.npy,validation
+330,56,End,End_05_2.MOV,5,2,137,31,133,103,200,80.0,71.0,1.0,4.0,End\End_05_2.npy,validation
+331,56,End,End_06_1.MOV,6,1,99,18,96,79,200,60.0,67.5,1.5,4.0,End\End_06_1.npy,train
+332,56,End,End_06_2.MOV,6,2,122,23,121,99,200,76.0,75.0,3.0,0.0,End\End_06_2.npy,train
+333,57,Equal_equlaity,Equal_equlaity_01_1.mov,1,1,140,20,123,104,200,55.0,55.0,0.0,1.0,Equal_equlaity\Equal_equlaity_01_1.npy,test
+334,57,Equal_equlaity,Equal_equlaity_01_2.mov,1,2,210,17,193,177,200,67.0,74.5,1.0,1.5,Equal_equlaity\Equal_equlaity_01_2.npy,test
+335,57,Equal_equlaity,Equal_equlaity_02_1.mov,2,1,162,16,138,123,200,69.5,64.0,0.5,0.0,Equal_equlaity\Equal_equlaity_02_1.npy,train
+336,57,Equal_equlaity,Equal_equlaity_02_2.mov,2,2,248,22,205,184,200,73.5,72.5,0.0,2.0,Equal_equlaity\Equal_equlaity_02_2.npy,train
+337,57,Equal_equlaity,Equal_equlaity_05_1.mov,5,1,175,50,158,109,200,74.5,68.0,0.0,2.0,Equal_equlaity\Equal_equlaity_05_1.npy,validation
+338,57,Equal_equlaity,Equal_equlaity_05_2.mov,5,2,229,51,189,139,200,79.5,75.0,0.0,0.0,Equal_equlaity\Equal_equlaity_05_2.npy,validation
+339,58,Error,Error_01_1.mov,1,1,144,29,124,96,200,42.0,0.0,6.5,0.0,Error\Error_01_1.npy,test
+340,58,Error,Error_01_2.mov,1,2,224,36,191,156,200,71.5,1.0,11.5,0.0,Error\Error_01_2.npy,test
+341,58,Error,Error_02_1.mov,2,1,166,23,140,118,200,72.0,0.0,1.0,0.0,Error\Error_02_1.npy,train
+342,58,Error,Error_02_2.mov,2,2,234,47,217,171,200,71.0,0.0,0.5,0.0,Error\Error_02_2.npy,train
+343,58,Error,Error_05_1.mov,5,1,157,42,142,101,200,64.0,2.0,0.0,0.0,Error\Error_05_1.npy,validation
+344,58,Error,Error_05_2.mov,5,2,228,45,227,183,200,36.5,1.0,0.0,0.0,Error\Error_05_2.npy,validation
+345,59,Example,Example_01_1.mov,1,1,134,25,112,88,200,49.0,0.0,0.0,0.0,Example\Example_01_1.npy,test
+346,59,Example,Example_01_2.mov,1,2,163,18,148,131,200,53.5,0.0,0.0,0.0,Example\Example_01_2.npy,test
+347,59,Example,Example_02_1.mov,2,1,130,11,110,100,200,56.0,0.0,1.0,0.0,Example\Example_02_1.npy,train
+348,59,Example,Example_02_2.mov,2,2,232,21,193,173,200,76.0,0.0,1.0,0.0,Example\Example_02_2.npy,train
+349,59,Example,Example_05_1.mov,5,1,156,20,105,86,200,74.0,0.0,1.0,0.0,Example\Example_05_1.npy,validation
+350,59,Example,Example_05_2.mov,5,2,175,21,119,99,200,77.0,0.0,1.0,0.0,Example\Example_05_2.npy,validation
+351,60,Exercise,Exercise_02_1.MOV,2,1,131,10,109,100,200,70.0,0.0,0.0,0.0,Exercise\Exercise_02_1.npy,train
+352,60,Exercise,Exercise_02_2.MOV,2,2,170,28,162,135,200,75.0,0.0,0.5,0.0,Exercise\Exercise_02_2.npy,train
+353,60,Exercise,Exercise_03_1.MOV,3,1,113,9,96,88,200,58.0,0.0,1.5,0.0,Exercise\Exercise_03_1.npy,test
+354,60,Exercise,Exercise_03_2.MOV,3,2,189,25,186,162,200,75.0,0.0,0.5,0.0,Exercise\Exercise_03_2.npy,test
+355,60,Exercise,Exercise_06_1.MOV,6,1,109,33,98,66,200,58.0,0.0,0.0,0.0,Exercise\Exercise_06_1.npy,train
+356,60,Exercise,Exercise_06_2.MOV,6,2,108,24,100,77,200,71.0,0.0,0.0,0.0,Exercise\Exercise_06_2.npy,train
+357,61,Exist,Exist_01_1.MOV,1,1,164,0,148,149,200,18.5,37.0,16.0,8.0,Exist\Exist_01_1.npy,test
+358,61,Exist,Exist_01_2.MOV,1,2,100,21,87,67,200,48.5,51.5,10.5,1.5,Exist\Exist_01_2.npy,test
+359,61,Exist,Exist_05_1.MOV,5,1,139,42,130,89,200,52.0,51.0,0.0,0.0,Exist\Exist_05_1.npy,validation
+360,61,Exist,Exist_05_2.MOV,5,2,116,33,95,63,200,46.5,45.0,1.5,0.0,Exist\Exist_05_2.npy,validation
+361,61,Exist,Exist_06_1.MOV,6,1,125,30,99,70,200,54.5,52.0,0.0,1.5,Exist\Exist_06_1.npy,train
+362,61,Exist,Exist_06_2.MOV,6,2,105,24,85,62,200,55.5,54.0,0.0,0.0,Exist\Exist_06_2.npy,train
+363,62,Figure,Figure_01_1.mov,1,1,91,10,82,73,200,38.5,31.0,0.0,5.0,Figure\Figure_01_1.npy,test
+364,62,Figure,Figure_01_2.MOV,1,2,145,19,135,117,200,73.0,68.5,0.0,0.0,Figure\Figure_01_2.npy,test
+365,62,Figure,Figure_05_1.MOV,5,1,116,21,88,68,200,49.0,53.5,0.0,0.0,Figure\Figure_05_1.npy,validation
+366,62,Figure,Figure_05_2.mov,5,2,112,23,105,83,200,63.0,61.5,0.0,0.0,Figure\Figure_05_2.npy,validation
+367,62,Figure,Figure_06_1.mov,6,1,88,22,87,66,200,64.0,64.0,0.0,0.0,Figure\Figure_06_1.npy,train
+368,62,Figure,Figure_06_2.mov,6,2,82,24,78,55,200,58.5,62.5,0.0,0.0,Figure\Figure_06_2.npy,train
+369,63,First out,First out_02_1.MOV,2,1,136,24,111,88,200,49.0,57.0,5.0,0.0,First out\First out_02_1.npy,train
+370,63,First out,First out_02_2.MOV,2,2,163,19,156,138,200,62.0,43.5,1.0,3.0,First out\First out_02_2.npy,train
+371,63,First out,First out_03_1.MOV,3,1,229,42,228,187,200,83.5,67.0,0.0,0.0,First out\First out_03_1.npy,test
+372,63,First out,First out_03_2.MOV,3,2,154,44,147,104,200,67.5,47.5,3.0,7.5,First out\First out_03_2.npy,test
+373,63,First out,First out_05_1.MOV,5,1,157,27,142,116,200,65.5,35.5,7.0,0.0,First out\First out_05_1.npy,validation
+374,63,First out,First out_05_2.MOV,5,2,122,28,107,80,200,67.0,27.5,1.0,0.0,First out\First out_05_2.npy,validation
+375,63,First out,First out_06_1.MOV,6,1,116,0,105,106,200,60.5,80.0,1.0,4.0,First out\First out_06_1.npy,train
+376,63,First out,First out_06_2.MOV,6,2,142,37,134,98,200,73.0,51.5,5.0,2.0,First out\First out_06_2.npy,train
+377,64,Foreign key,Foreign key_01_1.MOV,1,1,152,25,136,112,200,63.0,58.5,3.5,4.5,Foreign key\Foreign key_01_1.npy,test
+378,64,Foreign key,Foreign key_01_2.MOV,1,2,236,20,212,193,200,70.0,85.5,2.0,1.0,Foreign key\Foreign key_01_2.npy,test
+379,64,Foreign key,Foreign key_02_1.MOV,2,1,216,9,215,207,200,78.5,91.0,0.0,2.0,Foreign key\Foreign key_02_1.npy,train
+380,64,Foreign key,Foreign key_02_2.MOV,2,2,155,16,151,136,200,69.0,76.5,1.0,3.0,Foreign key\Foreign key_02_2.npy,train
+381,64,Foreign key,Foreign key_07_1.mp4,7,1,196,0,195,196,200,81.5,86.0,1.5,0.0,Foreign key\Foreign key_07_1.npy,train
+382,65,Front,Front_01_1.MOV,1,1,105,19,79,61,200,51.5,0.0,1.5,0.0,Front\Front_01_1.npy,test
+383,65,Front,Front_01_2.MOV,1,2,157,0,135,136,200,51.0,0.0,0.0,0.0,Front\Front_01_2.npy,test
+384,65,Front,Front_05_1.MOV,5,1,106,29,96,68,200,62.0,59.0,0.0,0.0,Front\Front_05_1.npy,validation
+385,65,Front,Front_05_2.MOV,5,2,114,32,109,78,200,65.0,64.5,3.5,0.0,Front\Front_05_2.npy,validation
+386,65,Front,Front_06_1.MOV,6,1,97,25,88,64,200,53.5,58.5,0.0,0.0,Front\Front_06_1.npy,train
+387,65,Front,Front_06_2.MOV,6,2,98,23,95,73,200,58.0,63.5,0.0,1.5,Front\Front_06_2.npy,train
+388,66,Full,Full_01_1.MOV,1,1,90,12,73,62,200,26.0,16.0,8.5,13.5,Full\Full_01_1.npy,test
+389,66,Full,Full_01_2.MOV,1,2,141,35,127,93,200,58.0,57.5,7.0,18.0,Full\Full_01_2.npy,test
+390,66,Full,Full_05_1.MOV,5,1,119,53,114,62,200,50.5,55.5,11.5,0.0,Full\Full_05_1.npy,validation
+391,66,Full,Full_05_2.MOV,5,2,98,22,97,76,200,72.5,74.5,7.5,0.0,Full\Full_05_2.npy,validation
+392,66,Full,Full_06_1.MOV,6,1,96,25,82,58,200,53.0,54.0,10.0,0.0,Full\Full_06_1.npy,train
+393,66,Full,Full_06_2.MOV,6,2,116,31,98,68,200,56.5,56.0,7.0,0.0,Full\Full_06_2.npy,train
+394,67,Function,function_01_1.MOV,1,1,175,9,145,137,200,34.0,66.5,0.0,4.0,Function\function_01_1.npy,test
+395,67,Function,function_01_2.MOV,1,2,85,0,68,69,200,46.5,43.0,0.0,12.5,Function\function_01_2.npy,test
+396,67,Function,function_02_1.MOV,2,1,129,10,128,119,200,55.5,75.0,2.5,0.0,Function\function_02_1.npy,train
+397,67,Function,function_02_2.MOV,2,2,201,12,182,171,200,53.5,77.5,1.0,1.0,Function\function_02_2.npy,train
+398,67,Function,function_07_1.mp4,7,1,224,21,198,178,200,81.0,84.0,2.0,0.0,Function\function_07_1.npy,train
+399,68,Graphics,Graphics_02_1.MOV,2,1,273,27,272,246,200,64.5,90.5,7.0,4.0,Graphics\Graphics_02_1.npy,train
+400,68,Graphics,Graphics_02_2.MOV,2,2,129,13,128,116,200,54.0,59.0,6.5,14.0,Graphics\Graphics_02_2.npy,train
+401,68,Graphics,Graphics_03_1.MOV,3,1,172,37,156,120,200,63.5,75.5,3.5,0.0,Graphics\Graphics_03_1.npy,test
+402,68,Graphics,Graphics_03_2.MOV,3,2,312,53,286,234,200,75.5,86.0,2.5,0.5,Graphics\Graphics_03_2.npy,test
+403,68,Graphics,Graphics_05_1.MOV,5,1,147,31,146,116,200,52.0,51.5,10.5,4.0,Graphics\Graphics_05_1.npy,validation
+404,68,Graphics,Graphics_05_2.MOV,5,2,157,28,152,125,200,76.5,69.5,1.5,7.5,Graphics\Graphics_05_2.npy,validation
+405,69,Hashtag,Hashtag_01_1.MOV,1,1,95,13,84,72,200,59.0,0.0,2.5,0.0,Hashtag\Hashtag_01_1.npy,test
+406,69,Hashtag,Hashtag_01_2.MOV,1,2,161,24,159,136,200,66.5,0.0,1.5,0.0,Hashtag\Hashtag_01_2.npy,test
+407,69,Hashtag,Hashtag_05_1.MOV,5,1,93,21,92,72,200,60.0,0.0,0.0,0.0,Hashtag\Hashtag_05_1.npy,validation
+408,69,Hashtag,Hashtag_05_2.MOV,5,2,113,19,112,94,200,64.5,0.0,0.0,0.0,Hashtag\Hashtag_05_2.npy,validation
+409,69,Hashtag,Hashtag_06_1.MOV,6,1,85,12,84,73,200,56.0,0.0,3.0,0.0,Hashtag\Hashtag_06_1.npy,train
+410,69,Hashtag,Hashtag_06_2.MOV,6,2,111,23,110,88,200,66.5,0.0,2.0,0.0,Hashtag\Hashtag_06_2.npy,train
+411,70,Higher,Higher_01_1.MOV,1,1,106,20,105,86,200,33.0,64.5,1.0,10.5,Higher\Higher_01_1.npy,test
+412,70,Higher,Higher_01_2.MOV,1,2,168,26,167,142,200,51.5,70.5,4.5,7.5,Higher\Higher_01_2.npy,test
+413,70,Higher,Higher_03_1.MOV,3,1,105,28,79,52,200,54.5,47.0,2.0,0.0,Higher\Higher_03_1.npy,test
+414,70,Higher,Higher_03_2.MOV,3,2,126,33,108,76,200,49.0,58.5,1.5,0.0,Higher\Higher_03_2.npy,test
+415,70,Higher,Higher_06_1.MOV,6,1,103,15,84,70,200,65.0,63.5,0.0,0.0,Higher\Higher_06_1.npy,train
+416,70,Higher,Higher_06_2.MOV,6,2,115,17,100,84,200,67.0,72.0,0.0,2.5,Higher\Higher_06_2.npy,train
+417,71,Hold,Hold_01_1.MOV,1,1,161,27,149,123,200,48.0,56.5,0.0,10.5,Hold\Hold_01_1.npy,test
+418,71,Hold,Hold_01_2.MOV,1,2,232,53,231,179,200,51.0,72.0,1.0,8.0,Hold\Hold_01_2.npy,test
+419,71,Hold,Hold_05_1.MOV,5,1,123,30,108,79,200,60.0,60.5,3.5,1.0,Hold\Hold_05_1.npy,validation
+420,71,Hold,Hold_05_2.MOV,5,2,142,35,126,92,200,74.5,62.0,0.0,9.0,Hold\Hold_05_2.npy,validation
+421,71,Hold,Hold_06_1.MOV,6,1,90,17,84,68,200,62.0,37.5,1.5,17.5,Hold\Hold_06_1.npy,train
+422,71,Hold,Hold_06_2.MOV,6,2,131,25,126,102,200,67.0,63.0,1.0,12.0,Hold\Hold_06_2.npy,train
+423,72,Id- identifier,Id- identifier_02_1.MOV,2,1,178,11,177,167,200,82.0,0.0,0.5,0.0,Id- identifier\Id- identifier_02_1.npy,train
+424,72,Id- identifier,Id- identifier_02_2.MOV,2,2,128,13,119,107,200,67.5,0.0,0.0,0.0,Id- identifier\Id- identifier_02_2.npy,train
+425,72,Id- identifier,Id- identifier_03_1.MOV,3,1,128,14,114,101,200,64.0,0.0,0.0,0.0,Id- identifier\Id- identifier_03_1.npy,test
+426,72,Id- identifier,Id- identifier_03_2.MOV,3,2,177,28,156,129,200,66.5,0.0,0.0,0.0,Id- identifier\Id- identifier_03_2.npy,test
+427,72,Id- identifier,Id- identifier_05_1.MOV,5,1,147,33,146,114,200,59.5,0.0,2.5,0.0,Id- identifier\Id- identifier_05_1.npy,validation
+428,72,Id- identifier,Id- identifier_05_2.MOV,5,2,140,34,139,106,200,49.5,2.5,0.0,1.0,Id- identifier\Id- identifier_05_2.npy,validation
+429,73,If,If_01_1.MOV,1,1,130,5,107,103,200,71.0,37.0,1.0,0.0,If\If_01_1.npy,test
+430,73,If,If_01_2.MOV,1,2,179,18,158,141,200,79.5,47.5,1.5,0.0,If\If_01_2.npy,test
+431,73,If,If_05_1.MOV,5,1,119,13,106,94,200,71.5,36.0,3.5,1.0,If\If_05_1.npy,validation
+432,73,If,If_05_2.MOV,5,2,139,27,138,112,200,72.5,38.0,2.0,1.0,If\If_05_2.npy,validation
+433,73,If,If_06_1.MOV,6,1,130,25,117,93,200,71.0,38.0,5.5,1.0,If\If_06_1.npy,train
+434,73,If,If_06_2.MOV,6,2,155,28,147,120,200,78.5,39.5,1.0,2.0,If\If_06_2.npy,train
+435,74,Inaccessible,Inaccessible_02_1.MOV,2,1,187,18,157,140,200,66.0,31.0,0.0,1.0,Inaccessible\Inaccessible_02_1.npy,train
+436,74,Inaccessible,Inaccessible_02_2.MOV,2,2,103,11,79,69,200,60.0,48.0,1.5,10.5,Inaccessible\Inaccessible_02_2.npy,train
+437,74,Inaccessible,Inaccessible_03_1.MOV,3,1,195,31,185,155,200,59.5,30.5,2.0,2.5,Inaccessible\Inaccessible_03_1.npy,test
+438,74,Inaccessible,Inaccessible_03_2.MOV,3,2,126,31,108,78,200,57.5,34.0,5.5,6.0,Inaccessible\Inaccessible_03_2.npy,test
+439,74,Inaccessible,Inaccessible_05_1.MOV,5,1,134,36,113,78,200,51.0,43.5,9.5,9.5,Inaccessible\Inaccessible_05_1.npy,validation
+440,74,Inaccessible,Inaccessible_05_2.MOV,5,2,148,36,131,96,200,73.5,58.0,2.0,10.0,Inaccessible\Inaccessible_05_2.npy,validation
+441,75,Include,include_03_1.MOV,3,1,138,13,129,117,200,80.0,25.5,0.0,3.5,Include\include_03_1.npy,test
+442,75,Include,include_03_2.MOV,3,2,199,22,176,155,200,81.5,30.0,1.5,1.0,Include\include_03_2.npy,test
+443,75,Include,include_05_1.MOV,5,1,193,37,165,129,200,78.0,28.5,0.5,1.5,Include\include_05_1.npy,validation
+444,75,Include,include_05_2.MOV,5,2,150,27,116,90,200,71.0,23.5,1.5,4.5,Include\include_05_2.npy,validation
+445,75,Include,include_06_1.MOV,6,1,142,24,141,118,200,80.5,33.0,2.0,0.0,Include\include_06_1.npy,train
+446,75,Include,include_06_2.MOV,6,2,134,28,124,97,200,76.0,29.0,1.0,1.0,Include\include_06_2.npy,train
+447,76,Index,Index_01_1.MOV,1,1,119,16,111,96,200,72.5,60.5,2.0,11.5,Index\Index_01_1.npy,test
+448,76,Index,Index_01_2.MOV,1,2,166,6,159,154,200,76.0,59.5,0.0,7.0,Index\Index_01_2.npy,test
+449,76,Index,Index_05_1.MOV,5,1,141,24,132,109,200,71.5,57.5,1.0,6.5,Index\Index_05_1.npy,validation
+450,76,Index,Index_05_2.MOV,5,2,184,24,157,134,200,78.5,76.5,1.0,1.0,Index\Index_05_2.npy,validation
+451,76,Index,Index_06_1.MOV,6,1,148,17,136,120,200,78.0,78.0,1.5,1.5,Index\Index_06_1.npy,train
+452,76,Index,Index_06_2.MOV,6,2,133,11,110,100,200,73.0,74.0,0.0,1.0,Index\Index_06_2.npy,train
+453,77,Information,information_01_1.MOV,1,1,205,5,200,196,200,69.0,0.0,0.0,0.0,Information\information_01_1.npy,test
+454,77,Information,information_01_2.MOV,1,2,131,2,98,97,200,60.0,0.0,0.0,0.0,Information\information_01_2.npy,test
+455,77,Information,information_02_1.MOV,2,1,180,9,169,161,200,70.0,0.0,0.0,0.0,Information\information_02_1.npy,train
+456,77,Information,information_02_2.MOV,2,2,104,6,101,96,200,55.5,0.0,2.0,0.0,Information\information_02_2.npy,train
+457,77,Information,information_07_1.mp4,7,1,98,0,83,84,200,0.0,73.5,0.0,2.0,Information\information_07_1.npy,train
+458,78,Initialize,Initialize_02_1.MOV,2,1,347,21,321,301,200,82.5,38.5,2.5,0.0,Initialize\Initialize_02_1.npy,train
+459,78,Initialize,Initialize_02_2.MOV,2,2,170,7,153,147,200,75.0,33.0,10.0,2.0,Initialize\Initialize_02_2.npy,train
+460,78,Initialize,Initialize_03_1.MOV,3,1,222,18,207,190,200,84.5,32.5,0.0,0.0,Initialize\Initialize_03_1.npy,test
+461,78,Initialize,Initialize_03_2.MOV,3,2,392,43,371,329,200,87.0,38.5,1.0,0.0,Initialize\Initialize_03_2.npy,test
+462,78,Initialize,Initialize_05_1.MOV,5,1,256,41,251,211,200,73.5,18.5,0.0,0.5,Initialize\Initialize_05_1.npy,validation
+463,78,Initialize,Initialize_05_2.MOV,5,2,208,34,194,161,200,71.5,19.0,2.0,2.5,Initialize\Initialize_05_2.npy,validation
+464,79,Input-enter,Input-enter_02_1.MOV,2,1,121,17,95,79,200,55.0,23.5,0.0,5.0,Input-enter\Input-enter_02_1.npy,train
+465,79,Input-enter,Input-enter_02_2.MOV,2,2,260,107,229,123,200,79.5,66.0,0.0,5.5,Input-enter\Input-enter_02_2.npy,train
+466,79,Input-enter,Input-enter_05_1.MOV,5,1,202,64,167,104,200,78.0,72.5,2.0,0.0,Input-enter\Input-enter_05_1.npy,validation
+467,79,Input-enter,Input-enter_05_2.MOV,5,2,164,54,143,90,200,73.5,65.0,0.0,0.0,Input-enter\Input-enter_05_2.npy,validation
+468,79,Input-enter,Input-enter_08_1.MOV,8,1,145,35,122,88,200,72.0,56.0,0.0,0.0,Input-enter\Input-enter_08_1.npy,test
+469,79,Input-enter,Input-enter_08_2.MOV,8,2,243,63,222,160,200,82.5,62.0,0.0,2.5,Input-enter\Input-enter_08_2.npy,test
+470,80,int,int_02_1.MOV,2,1,146,38,134,97,200,61.5,0.0,8.0,0.0,int\int_02_1.npy,train
+471,80,int,int_02_2.MOV,2,2,108,16,99,84,200,65.5,0.0,3.0,0.0,int\int_02_2.npy,train
+472,80,int,int_03_1.MOV,3,1,110,15,93,79,200,56.0,0.0,0.0,0.0,int\int_03_1.npy,test
+473,80,int,int_03_2.MOV,3,2,203,29,186,158,200,73.0,0.0,0.0,0.0,int\int_03_2.npy,test
+474,80,int,int_06_1.MOV,6,1,101,19,81,63,200,62.5,0.0,0.0,0.0,int\int_06_1.npy,train
+475,80,int,int_06_2.MOV,6,2,122,22,102,81,200,68.0,0.0,1.5,0.0,int\int_06_2.npy,train
+476,81,Last in,Last in_02_1.MOV,2,1,135,12,126,115,200,61.5,69.0,2.5,5.5,Last in\Last in_02_1.npy,train
+477,81,Last in,Last in_02_2.MOV,2,2,207,27,203,177,200,74.5,77.5,2.5,2.0,Last in\Last in_02_2.npy,train
+478,81,Last in,Last in_03_1.MOV,3,1,150,28,138,111,200,53.5,66.0,8.0,0.0,Last in\Last in_03_1.npy,test
+479,81,Last in,Last in_03_2.MOV,3,2,235,59,218,160,200,61.5,73.5,4.5,0.5,Last in\Last in_03_2.npy,test
+480,81,Last in,Last in_06_1.MOV,6,1,122,28,118,91,200,67.0,73.5,0.0,2.0,Last in\Last in_06_1.npy,train
+481,81,Last in,Last in_06_2.MOV,6,2,146,28,144,117,200,75.5,70.0,3.5,3.0,Last in\Last in_06_2.npy,train
+482,82,Library,Library_01_1.MOV,1,1,112,20,97,78,200,50.5,38.5,10.5,7.0,Library\Library_01_1.npy,test
+483,82,Library,Library_01_2.MOV,1,2,198,29,175,147,200,67.0,74.0,7.5,3.0,Library\Library_01_2.npy,test
+484,82,Library,Library_05_1.MOV,5,1,94,28,91,64,200,57.0,41.0,0.0,9.5,Library\Library_05_1.npy,validation
+485,82,Library,Library_05_2.MOV,5,2,111,23,103,81,200,66.0,47.5,0.0,5.0,Library\Library_05_2.npy,validation
+486,82,Library,Library_06_1.MOV,6,1,111,25,95,71,200,63.5,62.0,1.5,1.5,Library\Library_06_1.npy,train
+487,82,Library,Library_06_2.MOV,6,2,114,19,106,88,200,67.0,65.5,2.5,0.0,Library\Library_06_2.npy,train
+488,83,Line,Line_02_1.MOV,2,1,94,11,80,70,200,63.5,62.0,0.0,0.0,Line\Line_02_1.npy,train
+489,83,Line,Line_02_2.MOV,2,2,136,28,135,108,200,70.5,68.0,0.0,0.0,Line\Line_02_2.npy,train
+490,83,Line,Line_03_1.MOV,3,1,101,11,88,78,200,61.0,60.5,0.0,0.0,Line\Line_03_1.npy,test
+491,83,Line,Line_03_2.MOV,3,2,177,33,162,130,200,67.0,67.5,0.0,2.0,Line\Line_03_2.npy,test
+492,83,Line,Line_06_1.MOV,6,1,105,30,87,58,200,33.0,54.0,0.0,0.0,Line\Line_06_1.npy,train
+493,83,Line,Line_06_2.MOV,6,2,127,33,106,74,200,61.5,65.0,1.0,1.5,Line\Line_06_2.npy,train
+494,84,List,list_03_1.MOV,3,1,103,21,97,77,200,65.5,54.0,0.0,0.0,List\list_03_1.npy,test
+495,84,List,list_03_2.MOV,3,2,98,14,93,80,200,71.5,54.5,0.0,0.0,List\list_03_2.npy,test
+496,84,List,list_05_1.MOV,5,1,120,37,101,65,200,57.5,31.0,0.0,0.0,List\list_05_1.npy,validation
+497,84,List,list_05_2.MOV,5,2,115,22,114,93,200,72.5,53.0,0.0,0.0,List\list_05_2.npy,validation
+498,84,List,list_06_1.MOV,6,1,123,23,108,86,200,71.5,72.0,0.0,1.0,List\list_06_1.npy,train
+499,84,List,list_06_2.MOV,6,2,111,27,99,73,200,66.0,70.0,0.0,3.0,List\list_06_2.npy,train
+500,85,Logical,logical_01_1.MOV,1,1,230,37,204,168,200,76.5,0.0,1.0,0.0,Logical\logical_01_1.npy,test
+501,85,Logical,logical_01_2.MOV,1,2,128,10,104,95,200,62.5,0.0,5.5,0.0,Logical\logical_01_2.npy,test
+502,85,Logical,logical_02_1.MOV,2,1,229,30,212,183,200,72.0,0.5,3.0,0.0,Logical\logical_02_1.npy,train
+503,85,Logical,logical_02_2.MOV,2,2,127,6,105,100,200,59.0,0.0,0.0,0.0,Logical\logical_02_2.npy,train
+504,85,Logical,logical_07_1.mp4,7,1,86,3,76,74,200,0.0,68.5,0.0,1.0,Logical\logical_07_1.npy,train
+505,86,Loop,Loop_01_1.mov,1,1,117,13,94,82,200,34.0,0.0,7.0,0.0,Loop\Loop_01_1.npy,test
+506,86,Loop,Loop_01_2.mov,1,2,215,35,188,154,200,66.5,0.0,5.0,0.0,Loop\Loop_01_2.npy,test
+507,86,Loop,Loop_05_1.mov,5,1,103,12,85,74,200,61.0,0.0,0.0,0.0,Loop\Loop_05_1.npy,validation
+508,86,Loop,Loop_05_2.mov,5,2,126,10,108,99,200,77.0,0.0,0.0,0.0,Loop\Loop_05_2.npy,validation
+509,86,Loop,Loop_06_1.mov,6,1,107,22,106,85,200,60.0,0.0,0.0,0.0,Loop\Loop_06_1.npy,train
+510,86,Loop,Loop_06_2.mov,6,2,122,0,115,116,200,46.0,0.0,0.5,0.0,Loop\Loop_06_2.npy,train
+511,87,Many to many,Many to many_02_1.MOV,2,1,287,23,286,264,200,70.0,66.5,0.0,0.5,Many to many\Many to many_02_1.npy,train
+512,87,Many to many,Many to many_02_2.MOV,2,2,158,15,151,137,200,62.5,54.5,0.5,1.0,Many to many\Many to many_02_2.npy,train
+513,87,Many to many,Many to many_03_1.MOV,3,1,343,35,321,287,200,65.0,61.5,0.0,1.5,Many to many\Many to many_03_1.npy,test
+514,87,Many to many,Many to many_03_2.MOV,3,2,249,33,226,194,200,62.0,54.5,1.0,1.0,Many to many\Many to many_03_2.npy,test
+515,87,Many to many,Many to many_05_1.MOV,5,1,227,33,200,168,200,59.5,56.5,1.5,2.5,Many to many\Many to many_05_1.npy,validation
+516,87,Many to many,Many to many_05_2.MOV,5,2,200,38,187,150,200,55.5,44.5,4.0,6.0,Many to many\Many to many_05_2.npy,validation
+517,88,Many to one,Many to one_02_1.MOV,2,1,159,13,139,127,200,65.5,73.0,1.0,0.0,Many to one\Many to one_02_1.npy,train
+518,88,Many to one,Many to one_02_2.MOV,2,2,96,10,89,80,200,64.0,61.5,0.0,0.0,Many to one\Many to one_02_2.npy,train
+519,88,Many to one,Many to one_03_1.MOV,3,1,207,33,206,174,200,48.5,67.0,0.0,0.0,Many to one\Many to one_03_1.npy,test
+520,88,Many to one,Many to one_03_2.MOV,3,2,123,36,116,81,200,25.0,49.5,0.0,1.5,Many to one\Many to one_03_2.npy,test
+521,88,Many to one,Many to one_05_1.MOV,5,1,137,27,125,99,200,27.5,63.0,1.0,0.0,Many to one\Many to one_05_1.npy,validation
+522,88,Many to one,Many to one_05_2.MOV,5,2,143,27,133,107,200,32.0,59.0,0.0,2.0,Many to one\Many to one_05_2.npy,validation
+523,89,Max,Max_01_1.mov,1,1,141,34,122,89,200,55.5,22.0,2.0,3.0,Max\Max_01_1.npy,test
+524,89,Max,Max_01_2.mov,1,2,189,23,171,149,200,65.5,28.5,0.5,1.5,Max\Max_01_2.npy,test
+525,89,Max,Max_05_1.mov,5,1,123,27,116,90,200,44.0,44.5,5.5,1.0,Max\Max_05_1.npy,validation
+526,89,Max,Max_05_2.mov,5,2,133,21,132,112,200,73.5,47.5,7.0,0.0,Max\Max_05_2.npy,validation
+527,89,Max,Max_06_1.mov,6,1,100,17,91,75,200,58.5,39.5,11.5,1.0,Max\Max_06_1.npy,train
+528,89,Max,Max_06_2.mov,6,2,117,15,116,102,200,77.0,43.5,1.0,1.0,Max\Max_06_2.npy,train
+529,91,Memory leak,Memory leak_02_1.MOV,2,1,118,7,111,105,200,66.0,33.5,1.0,0.0,Memory leak\Memory leak_02_1.npy,train
+530,91,Memory leak,Memory leak_02_2.MOV,2,2,222,25,213,189,200,80.0,47.5,1.0,0.0,Memory leak\Memory leak_02_2.npy,train
+531,91,Memory leak,Memory leak_03_1.MOV,3,1,132,12,121,110,200,69.5,33.0,0.0,1.0,Memory leak\Memory leak_03_1.npy,test
+532,91,Memory leak,Memory leak_03_2.MOV,3,2,225,18,213,196,200,81.5,37.5,0.0,0.5,Memory leak\Memory leak_03_2.npy,test
+533,91,Memory leak,Memory leak_06_1.MOV,6,1,107,21,98,78,200,68.5,33.5,0.0,0.0,Memory leak\Memory leak_06_1.npy,train
+534,91,Memory leak,Memory leak_06_2.MOV,6,2,144,29,136,108,200,74.5,34.5,0.0,0.0,Memory leak\Memory leak_06_2.npy,train
+535,90,Memory,memory_01_1.mov,1,1,151,20,150,131,200,88.0,0.0,1.5,0.0,Memory\memory_01_1.npy,test
+536,90,Memory,memory_01_2.mov,1,2,172,45,151,107,200,70.0,0.0,0.0,0.0,Memory\memory_01_2.npy,test
+537,90,Memory,memory_02_1.mov,2,1,177,8,176,169,200,0.0,60.5,0.0,0.0,Memory\memory_02_1.npy,train
+538,90,Memory,memory_02_2.mov,2,2,147,7,115,109,200,0.0,67.5,0.0,1.0,Memory\memory_02_2.npy,train
+539,90,Memory,memory_05_1.mov,5,1,143,0,130,131,200,0.0,59.0,0.0,1.0,Memory\memory_05_1.npy,validation
+540,90,Memory,memory_05_2.mov,5,2,141,50,135,86,200,0.0,65.5,0.0,0.0,Memory\memory_05_2.npy,validation
+541,92,Message,Message_03_1.mov,3,1,109,28,108,81,200,42.5,56.5,0.0,3.5,Message\Message_03_1.npy,test
+542,92,Message,Message_03_2.mov,3,2,135,30,131,102,200,50.0,65.5,5.0,11.5,Message\Message_03_2.npy,test
+543,92,Message,Message_05_1.mov,5,1,133,35,108,74,200,65.5,53.0,0.0,1.5,Message\Message_05_1.npy,validation
+544,92,Message,Message_05_2.mov,5,2,174,50,144,95,200,63.5,58.5,4.0,5.0,Message\Message_05_2.npy,validation
+545,92,Message,Message_06_1.mov,6,1,108,31,86,56,200,63.5,60.0,0.0,0.0,Message\Message_06_1.npy,train
+546,92,Message,Message_06_2.mov,6,2,117,32,111,80,200,64.0,76.0,0.0,6.5,Message\Message_06_2.npy,train
+547,93,Min,Min_01_1.MOV,1,1,114,5,97,93,200,67.5,7.0,4.0,6.0,Min\Min_01_1.npy,test
+548,93,Min,Min_01_2.MOV,1,2,167,5,154,150,200,80.0,7.5,2.5,5.0,Min\Min_01_2.npy,test
+549,93,Min,Min_05_1.MOV,5,1,132,27,118,92,200,72.5,27.5,1.0,0.0,Min\Min_05_1.npy,validation
+550,93,Min,Min_05_2.MOV,5,2,127,20,126,107,200,77.0,34.0,0.0,0.0,Min\Min_05_2.npy,validation
+551,93,Min,Min_06_1.MOV,6,1,117,19,108,90,200,76.0,34.5,0.0,0.0,Min\Min_06_1.npy,train
+552,93,Min,Min_06_2.MOV,6,2,128,21,127,107,200,80.5,35.5,2.0,1.0,Min\Min_06_2.npy,train
+553,94,Multiple,multiple_02_1.MOV,2,1,239,19,229,211,200,87.0,34.0,0.0,0.0,Multiple\multiple_02_1.npy,train
+554,94,Multiple,multiple_02_2.MOV,2,2,113,3,98,96,200,75.0,32.5,0.0,0.0,Multiple\multiple_02_2.npy,train
+555,94,Multiple,multiple_03_1.MOV,3,1,147,26,142,117,200,70.0,22.5,0.0,4.0,Multiple\multiple_03_1.npy,test
+556,94,Multiple,multiple_03_2.MOV,3,2,280,29,255,227,200,84.0,36.5,0.0,0.5,Multiple\multiple_03_2.npy,test
+557,94,Multiple,multiple_05_1.MOV,5,1,156,30,129,100,200,69.0,28.0,3.0,6.0,Multiple\multiple_05_1.npy,validation
+558,94,Multiple,multiple_05_2.MOV,5,2,170,30,169,140,200,60.5,29.5,0.0,3.5,Multiple\multiple_05_2.npy,validation
+559,95,Name,name_01_1.MOV,1,1,188,22,183,162,200,88.0,4.0,0.0,2.0,Name\name_01_1.npy,test
+560,95,Name,name_01_2.MOV,1,2,149,26,144,119,200,74.5,20.0,3.0,7.0,Name\name_01_2.npy,test
+561,95,Name,name_02_1.MOV,2,1,142,15,131,117,200,71.5,0.0,2.5,0.0,Name\name_02_1.npy,train
+562,95,Name,name_02_2.MOV,2,2,235,24,230,207,200,79.5,3.0,0.5,1.0,Name\name_02_2.npy,train
+563,95,Name,name_07_1.mp4,7,1,230,0,229,230,200,78.5,100.0,1.5,0.0,Name\name_07_1.npy,train
+564,96,New,New_01_1.mov,1,1,154,5,118,114,200,64.0,68.0,0.5,0.0,New\New_01_1.npy,test
+565,96,New,New_01_2.mov,1,2,293,19,268,250,200,75.0,79.5,0.5,0.0,New\New_01_2.npy,test
+566,96,New,New_02_1.mov,2,1,168,11,129,119,200,72.5,71.5,0.0,2.0,New\New_02_1.npy,train
+567,96,New,New_02_2.mov,2,2,267,19,251,233,200,86.0,86.5,0.0,0.0,New\New_02_2.npy,train
+568,96,New,New_05_1.mov,5,1,181,59,159,101,200,72.0,64.0,0.0,3.0,New\New_05_1.npy,validation
+569,96,New,New_05_2.mov,5,2,172,41,157,117,200,80.5,77.5,0.0,0.0,New\New_05_2.npy,validation
+570,97,Next,Next_01_1.MOV,1,1,107,15,99,85,200,25.5,0.0,8.0,0.0,Next\Next_01_1.npy,test
+571,97,Next,Next_01_2.MOV,1,2,141,21,139,119,200,41.5,0.0,5.0,0.0,Next\Next_01_2.npy,test
+572,97,Next,Next_05_1.MOV,5,1,100,29,99,71,200,55.0,0.0,6.0,0.0,Next\Next_05_1.npy,validation
+573,97,Next,Next_05_2.MOV,5,2,110,31,109,79,200,57.5,0.0,1.5,0.0,Next\Next_05_2.npy,validation
+574,97,Next,Next_06_1.MOV,6,1,86,12,73,62,200,57.0,0.0,0.0,0.0,Next\Next_06_1.npy,train
+575,97,Next,Next_06_2.MOV,6,2,90,15,89,75,200,59.5,0.0,4.0,0.0,Next\Next_06_2.npy,train
+576,98,Non binary relationship,Non binary relationship_02_1.MOV,2,1,182,8,179,172,200,81.5,8.0,5.0,4.0,Non binary relationship\Non binary relationship_02_1.npy,train
+577,98,Non binary relationship,Non binary relationship_02_2.MOV,2,2,410,25,381,357,200,88.5,11.0,0.0,2.5,Non binary relationship\Non binary relationship_02_2.npy,train
+578,98,Non binary relationship,Non binary relationship_03_1.MOV,3,1,304,51,282,232,200,78.0,19.5,7.0,0.0,Non binary relationship\Non binary relationship_03_1.npy,test
+579,98,Non binary relationship,Non binary relationship_03_2.MOV,3,2,232,48,209,162,200,70.5,20.0,2.0,1.0,Non binary relationship\Non binary relationship_03_2.npy,test
+580,98,Non binary relationship,Non binary relationship_05_1.MOV,5,1,206,27,184,158,200,69.5,25.0,4.0,1.0,Non binary relationship\Non binary relationship_05_1.npy,validation
+581,98,Non binary relationship,Non binary relationship_05_2.MOV,5,2,188,41,167,127,200,71.5,6.5,4.5,1.5,Non binary relationship\Non binary relationship_05_2.npy,validation
+582,99,Null,Null_01_1.mov,1,1,140,28,114,87,200,72.0,65.5,0.0,5.0,Null\Null_01_1.npy,test
+583,99,Null,Null_01_2.mov,1,2,214,30,188,159,200,78.0,66.0,4.5,13.0,Null\Null_01_2.npy,test
+584,99,Null,Null_02_1.mov,2,1,177,25,144,120,200,71.0,23.5,0.0,1.0,Null\Null_02_1.npy,train
+585,99,Null,Null_02_2.mov,2,2,188,23,176,154,200,74.5,63.0,0.0,7.5,Null\Null_02_2.npy,train
+586,99,Null,Null_05_1.mov,5,1,155,27,131,105,200,74.0,39.0,0.0,6.5,Null\Null_05_1.npy,validation
+587,99,Null,Null_05_2.mov,5,2,174,21,125,105,200,79.0,70.0,1.0,4.5,Null\Null_05_2.npy,validation
+588,100,Object,Object_01_1.MOV,1,1,107,14,75,62,200,58.5,0.0,0.0,0.0,Object\Object_01_1.npy,test
+589,100,Object,Object_01_2.MOV,1,2,158,30,154,125,200,68.0,0.0,2.0,0.0,Object\Object_01_2.npy,test
+590,100,Object,Object_05_1.MOV,5,1,99,27,92,66,200,53.5,0.0,1.5,0.0,Object\Object_05_1.npy,validation
+591,100,Object,Object_05_2.MOV,5,2,103,19,102,84,200,59.5,0.0,2.0,0.0,Object\Object_05_2.npy,validation
+592,100,Object,Object_06_1.MOV,6,1,85,20,83,64,200,55.0,0.0,10.0,0.0,Object\Object_06_1.npy,train
+593,100,Object,Object_06_2.MOV,6,2,101,21,96,76,200,67.5,0.0,1.5,0.0,Object\Object_06_2.npy,train
+594,101,One to many,One to many_02_1.MOV,2,1,301,20,282,263,200,42.0,48.5,0.0,2.5,One to many\One to many_02_1.npy,train
+595,101,One to many,One to many_02_2.MOV,2,2,143,7,125,119,200,43.0,39.0,0.0,0.0,One to many\One to many_02_2.npy,train
+596,101,One to many,One to many_03_1.MOV,3,1,201,28,191,164,200,32.5,28.5,0.5,0.0,One to many\One to many_03_1.npy,test
+597,101,One to many,One to many_03_2.MOV,3,2,272,42,260,219,200,42.0,48.0,1.0,0.0,One to many\One to many_03_2.npy,test
+598,101,One to many,One to many_05_1.MOV,5,1,189,35,169,135,200,42.5,41.0,1.0,7.0,One to many\One to many_05_1.npy,validation
+599,101,One to many,One to many_05_2.MOV,5,2,205,34,184,151,200,44.5,42.5,1.0,4.0,One to many\One to many_05_2.npy,validation
+600,102,One to one,One to one_02_1.MOV,2,1,171,17,141,125,200,76.0,34.0,0.0,0.0,One to one\One to one_02_1.npy,train
+601,102,One to one,One to one_02_2.MOV,2,2,83,7,64,58,200,54.0,24.0,0.0,0.0,One to one\One to one_02_2.npy,train
+602,102,One to one,One to one_03_1.MOV,3,1,271,51,240,190,200,72.0,30.5,1.5,0.0,One to one\One to one_03_1.npy,test
+603,102,One to one,One to one_03_2.MOV,3,2,125,0,112,113,200,41.0,19.5,0.0,1.0,One to one\One to one_03_2.npy,test
+604,102,One to one,One to one_05_1.MOV,5,1,129,28,126,99,200,64.0,26.5,3.0,1.0,One to one\One to one_05_1.npy,validation
+605,102,One to one,One to one_05_2.MOV,5,2,137,28,132,105,200,49.0,23.0,0.0,1.0,One to one\One to one_05_2.npy,validation
+606,103,Operation,Operation_02_1.MOV,2,1,192,15,167,153,200,80.5,38.5,2.0,1.5,Operation\Operation_02_1.npy,train
+607,103,Operation,Operation_02_2.MOV,2,2,160,12,148,137,200,71.0,42.0,0.0,0.0,Operation\Operation_02_2.npy,train
+608,103,Operation,Operation_03_1.MOV,3,1,262,37,240,204,200,68.0,30.0,0.0,0.0,Operation\Operation_03_1.npy,test
+609,103,Operation,Operation_03_2.MOV,3,2,139,20,119,100,200,69.0,30.0,0.0,0.0,Operation\Operation_03_2.npy,test
+610,103,Operation,Operation_05_1.MOV,5,1,152,24,133,110,200,75.5,33.5,2.0,0.0,Operation\Operation_05_1.npy,validation
+611,103,Operation,Operation_05_2.MOV,5,2,116,21,103,83,200,65.5,29.0,3.5,0.0,Operation\Operation_05_2.npy,validation
+612,104,Order,Order_01_1.mov,1,1,120,20,119,100,200,60.0,73.0,2.0,7.0,Order\Order_01_1.npy,test
+613,104,Order,Order_01_2.mov,1,2,197,24,179,156,200,66.5,81.5,1.5,1.5,Order\Order_01_2.npy,test
+614,104,Order,Order_05_1.mov,5,1,133,34,112,79,200,58.5,56.5,0.0,0.0,Order\Order_05_1.npy,validation
+615,104,Order,Order_05_2.mov,5,2,135,36,124,89,200,66.5,65.5,0.0,0.0,Order\Order_05_2.npy,validation
+616,104,Order,Order_06_1.mov,6,1,99,18,83,66,200,62.5,64.0,0.0,0.0,Order\Order_06_1.npy,train
+617,104,Order,Order_06_2.mov,6,2,146,30,126,97,200,61.0,75.0,2.0,1.0,Order\Order_06_2.npy,train
+618,105,Page,Page_01_1.mov,1,1,140,25,139,115,200,53.0,54.5,22.5,13.5,Page\Page_01_1.npy,test
+619,105,Page,Page_01_2.mov,1,2,269,26,250,225,200,53.0,61.0,6.5,7.5,Page\Page_01_2.npy,test
+620,105,Page,Page_05_1.mov,5,1,113,27,112,86,200,67.0,66.5,1.0,0.0,Page\Page_05_1.npy,validation
+621,105,Page,Page_05_2.mov,5,2,139,23,138,116,200,78.5,76.0,1.0,4.0,Page\Page_05_2.npy,validation
+622,105,Page,Page_06_1.mov,6,1,99,22,87,66,200,64.0,68.5,1.5,0.0,Page\Page_06_1.npy,train
+623,105,Page,Page_06_2.mov,6,2,126,17,113,97,200,77.0,77.0,2.0,0.0,Page\Page_06_2.npy,train
+624,106,Pointer,Pointer_01_1.mov,1,1,127,20,105,86,200,68.0,0.0,0.0,0.0,Pointer\Pointer_01_1.npy,test
+625,106,Pointer,Pointer_01_2.mov,1,2,157,11,148,138,200,82.0,0.0,0.0,0.0,Pointer\Pointer_01_2.npy,test
+626,106,Pointer,Pointer_05_1.mov,5,1,105,0,95,96,200,41.0,0.0,0.0,0.0,Pointer\Pointer_05_1.npy,validation
+627,106,Pointer,Pointer_05_2.mov,5,2,137,23,133,111,200,73.0,0.0,0.0,0.0,Pointer\Pointer_05_2.npy,validation
+628,106,Pointer,Pointer_06_1.mov,6,1,85,9,81,73,200,70.0,0.0,3.0,0.0,Pointer\Pointer_06_1.npy,train
+629,106,Pointer,Pointer_06_2.mov,6,2,127,14,126,113,200,62.0,1.0,2.0,0.0,Pointer\Pointer_06_2.npy,train
+630,107,Primary key,Primary key_02_1.MOV,2,1,183,16,182,167,200,85.0,0.0,0.5,0.0,Primary key\Primary key_02_1.npy,train
+631,107,Primary key,Primary key_02_2.MOV,2,2,121,13,105,93,200,72.0,0.0,0.0,0.0,Primary key\Primary key_02_2.npy,train
+632,107,Primary key,Primary key_03_1.MOV,3,1,197,33,182,150,200,72.0,0.0,1.5,0.0,Primary key\Primary key_03_1.npy,test
+633,107,Primary key,Primary key_03_2.MOV,3,2,144,29,132,104,200,62.0,0.0,0.0,0.0,Primary key\Primary key_03_2.npy,test
+634,107,Primary key,Primary key_05_1.MOV,5,1,151,21,132,112,200,64.5,0.0,2.0,0.0,Primary key\Primary key_05_1.npy,validation
+635,107,Primary key,Primary key_05_2.MOV,5,2,149,41,131,91,200,69.5,0.0,0.0,0.0,Primary key\Primary key_05_2.npy,validation
+636,108,Priority,Priority_01_1.mov,1,1,167,17,145,129,200,57.0,75.0,0.0,4.5,Priority\Priority_01_1.npy,test
+637,108,Priority,Priority_01_2.mov,1,2,249,50,245,196,200,75.0,42.5,0.0,18.5,Priority\Priority_01_2.npy,test
+638,108,Priority,Priority_05_1.mov,5,1,136,37,127,91,200,56.5,58.5,0.0,0.0,Priority\Priority_05_1.npy,validation
+639,108,Priority,Priority_05_2.mov,5,2,150,37,135,99,200,68.0,65.0,0.0,1.0,Priority\Priority_05_2.npy,validation
+640,108,Priority,Priority_06_1.mov,6,1,134,16,118,103,200,70.0,73.0,0.0,1.0,Priority\Priority_06_1.npy,train
+641,108,Priority,Priority_06_2.mov,6,2,172,25,169,145,200,74.0,80.0,2.0,1.5,Priority\Priority_06_2.npy,train
+642,109,Private,private_03_1.MOV,3,1,103,0,102,103,200,55.5,0.0,5.0,0.0,Private\private_03_1.npy,test
+643,109,Private,private_03_2.MOV,3,2,94,21,79,59,200,59.0,0.0,3.0,0.0,Private\private_03_2.npy,test
+644,109,Private,private_05_1.MOV,5,1,126,25,118,94,200,59.0,0.0,0.0,0.0,Private\private_05_1.npy,validation
+645,109,Private,private_05_2.MOV,5,2,113,30,103,74,200,60.0,0.0,0.0,0.0,Private\private_05_2.npy,validation
+646,109,Private,private_06_1.MOV,6,1,93,26,80,55,200,56.5,0.0,2.0,0.0,Private\private_06_1.npy,train
+647,109,Private,private_06_2.MOV,6,2,89,30,83,54,200,60.0,0.0,2.0,0.0,Private\private_06_2.npy,train
+648,110,Procedure,procedure_01_1.MOV,1,1,228,35,226,192,200,86.5,87.0,0.5,0.5,Procedure\procedure_01_1.npy,test
+649,110,Procedure,procedure_01_2.MOV,1,2,128,17,115,99,200,64.0,70.0,4.0,3.0,Procedure\procedure_01_2.npy,test
+650,110,Procedure,procedure_02_1.MOV,2,1,207,14,202,189,200,87.0,86.0,1.5,2.0,Procedure\procedure_02_1.npy,train
+651,110,Procedure,procedure_02_2.MOV,2,2,100,10,98,89,200,75.5,70.5,2.5,5.5,Procedure\procedure_02_2.npy,train
+652,110,Procedure,procedure_07_1.mp4,7,1,194,0,187,188,200,81.5,84.0,0.0,0.0,Procedure\procedure_07_1.npy,train
+653,111,Produce,produce_01_1.MOV,1,1,183,36,176,141,200,75.5,79.5,6.0,0.0,Produce\produce_01_1.npy,test
+654,111,Produce,Produce_01_2.MOV,1,2,133,14,125,112,200,84.5,79.0,1.5,0.0,Produce\Produce_01_2.npy,test
+655,111,Produce,produce_02_1.MOV,2,1,164,8,147,140,200,63.5,85.0,0.0,0.0,Produce\produce_02_1.npy,train
+656,111,Produce,Produce_02_2.MOV,2,2,102,11,101,91,200,99.0,99.0,1.0,0.0,Produce\Produce_02_2.npy,train
+657,111,Produce,produce_07_1.mp4,7,1,198,5,191,187,200,80.0,69.5,0.0,3.0,Produce\produce_07_1.npy,train
+658,112,Program,program_01_1.mov,1,1,188,36,161,126,200,58.0,81.5,1.0,0.5,Program\program_01_1.npy,test
+659,112,Program,program_01_2.mov,1,2,260,33,237,205,200,64.0,85.5,1.0,1.5,Program\program_01_2.npy,test
+660,112,Program,program_02_1.mov,2,1,228,24,145,122,200,70.0,67.5,1.5,1.5,Program\program_02_1.npy,train
+661,112,Program,program_02_2.mov,2,2,243,42,212,171,200,71.5,77.0,3.5,1.5,Program\program_02_2.npy,train
+662,112,Program,program_05_1.mov,5,1,197,42,158,117,200,82.0,75.0,0.0,2.5,Program\program_05_1.npy,validation
+663,112,Program,program_05_2.mov,5,2,177,42,169,128,200,81.5,73.0,0.5,1.5,Program\program_05_2.npy,validation
+664,113,Prompt,Prompt_02_1.mov,2,1,116,7,98,92,200,61.0,57.5,0.0,7.0,Prompt\Prompt_02_1.npy,train
+665,113,Prompt,Prompt_02_2.mov,2,2,167,30,148,119,200,78.5,74.5,0.0,2.0,Prompt\Prompt_02_2.npy,train
+666,113,Prompt,Prompt_03_1.mov,3,1,133,32,125,94,200,58.0,54.5,0.0,0.0,Prompt\Prompt_03_1.npy,test
+667,113,Prompt,Prompt_03_2.mov,3,2,197,30,194,165,200,67.0,67.5,0.0,3.0,Prompt\Prompt_03_2.npy,test
+668,113,Prompt,Prompt_05_1.mov,5,1,153,28,152,125,200,55.5,51.0,4.0,7.5,Prompt\Prompt_05_1.npy,validation
+669,113,Prompt,Prompt_05_2.mov,5,2,181,30,160,131,200,74.0,64.0,2.0,9.5,Prompt\Prompt_05_2.npy,validation
+670,114,Public,public_03_1.MOV,3,1,142,35,141,107,200,68.5,72.0,1.0,2.0,Public\public_03_1.npy,test
+671,114,Public,public_03_2.MOV,3,2,105,21,100,80,200,68.0,62.5,4.0,6.5,Public\public_03_2.npy,test
+672,114,Public,public_05_1.MOV,5,1,131,43,130,88,200,77.5,76.5,1.5,0.0,Public\public_05_1.npy,validation
+673,114,Public,public_05_2.MOV,5,2,116,26,108,83,200,70.5,67.5,0.0,1.5,Public\public_05_2.npy,validation
+674,114,Public,public_06_1.MOV,6,1,109,28,95,68,200,59.5,58.0,5.5,0.0,Public\public_06_1.npy,train
+675,114,Public,public_06_2.MOV,6,2,110,30,89,60,200,61.0,64.0,5.0,2.0,Public\public_06_2.npy,train
+676,115,Queue,Queue_01_1.mov,1,1,161,27,149,123,200,48.0,56.5,0.0,10.5,Queue\Queue_01_1.npy,test
+677,115,Queue,Queue_01_2.mov,1,2,232,53,231,179,200,51.0,72.0,1.0,8.0,Queue\Queue_01_2.npy,test
+678,115,Queue,Queue_05_1.mov,5,1,106,38,100,63,200,50.0,50.0,0.0,0.0,Queue\Queue_05_1.npy,validation
+679,115,Queue,Queue_05_2.mov,5,2,109,0,108,109,200,30.5,32.5,4.5,10.0,Queue\Queue_05_2.npy,validation
+680,115,Queue,Queue_06_1.mov,6,1,102,21,91,71,200,49.5,48.5,6.0,14.0,Queue\Queue_06_1.npy,train
+681,115,Queue,Queue_06_2.mov,6,2,104,21,96,76,200,61.0,51.5,2.5,1.5,Queue\Queue_06_2.npy,train
+682,116,Rear,Rear_01_1.mov,1,1,179,45,159,115,200,71.0,0.0,5.5,0.0,Rear\Rear_01_1.npy,test
+683,116,Rear,Rear_01_2.mov,1,2,121,24,84,61,200,53.0,0.0,2.0,0.0,Rear\Rear_01_2.npy,test
+684,116,Rear,Rear_05_1.mov,5,1,106,0,105,106,200,35.0,0.0,3.0,0.0,Rear\Rear_05_1.npy,validation
+685,116,Rear,Rear_05_2.mov,5,2,126,33,125,93,200,61.5,0.0,2.0,0.0,Rear\Rear_05_2.npy,validation
+686,116,Rear,Rear_06_1.mov,6,1,98,23,77,55,200,41.5,0.0,17.5,0.0,Rear\Rear_06_1.npy,train
+687,116,Rear,Rear_06_2.mov,6,2,122,32,110,79,200,56.0,0.0,4.0,0.0,Rear\Rear_06_2.npy,train
+688,117,Rectangle,rectangle_01_1.MOV,1,1,162,17,146,130,200,64.5,62.5,3.5,5.5,Rectangle\rectangle_01_1.npy,test
+689,117,Rectangle,rectangle_01_2.MOV,1,2,93,11,90,80,200,54.0,49.0,4.0,9.0,Rectangle\rectangle_01_2.npy,test
+690,117,Rectangle,rectangle_02_1.MOV,2,1,192,22,170,149,200,72.5,74.0,2.5,4.0,Rectangle\rectangle_02_1.npy,train
+691,117,Rectangle,rectangle_02_2.MOV,2,2,102,12,94,83,200,58.5,54.5,0.0,0.0,Rectangle\rectangle_02_2.npy,train
+692,117,Rectangle,rectangle_07_1.mp4,7,1,69,4,63,60,200,74.5,72.5,0.0,2.0,Rectangle\rectangle_07_1.npy,train
+693,118,Relation,Relation_02_1.MOV,2,1,197,29,177,149,200,71.0,45.5,0.0,3.0,Relation\Relation_02_1.npy,train
+694,118,Relation,Relation_02_2.MOV,2,2,142,21,130,110,200,66.5,43.5,0.0,3.5,Relation\Relation_02_2.npy,train
+695,118,Relation,Relation_03_1.MOV,3,1,146,15,131,117,200,72.0,24.5,0.0,8.0,Relation\Relation_03_1.npy,test
+696,118,Relation,Relation_03_2.MOV,3,2,100,6,85,80,200,54.0,40.5,0.0,2.5,Relation\Relation_03_2.npy,test
+697,118,Relation,Relation_05_1.mov,5,1,172,40,164,125,200,76.0,67.0,3.5,7.0,Relation\Relation_05_1.npy,validation
+698,118,Relation,Relation_05_2.mov,5,2,202,48,170,123,200,73.0,70.5,4.0,2.5,Relation\Relation_05_2.npy,validation
+699,119,Represent,Represent_01_1.MOV,1,1,181,32,162,131,200,62.5,25.5,3.5,6.5,Represent\Represent_01_1.npy,test
+700,119,Represent,Represent_01_2.MOV,1,2,95,13,78,66,200,52.0,23.0,0.0,1.5,Represent\Represent_01_2.npy,test
+701,119,Represent,Represent_02_1.MOV,2,1,166,13,157,145,200,82.5,52.5,0.0,0.0,Represent\Represent_02_1.npy,train
+702,119,Represent,Represent_02_2.MOV,2,2,84,0,80,81,200,74.5,53.5,0.0,0.0,Represent\Represent_02_2.npy,train
+703,119,Represent,Represent_07_1.mp4,7,1,75,4,72,69,200,73.5,66.0,0.0,0.0,Represent\Represent_07_1.npy,train
+704,120,Reserved,Reserved_02_1.mov,2,1,112,19,111,93,200,49.0,1.0,0.0,0.0,Reserved\Reserved_02_1.npy,train
+705,120,Reserved,Reserved_02_2.mov,2,2,146,44,143,100,200,56.0,8.0,1.0,1.0,Reserved\Reserved_02_2.npy,train
+706,120,Reserved,Reserved_03_1.mov,3,1,98,10,77,68,200,60.5,34.0,3.0,10.5,Reserved\Reserved_03_1.npy,test
+707,120,Reserved,Reserved_03_2.mov,3,2,152,18,139,122,200,61.5,47.5,3.5,7.0,Reserved\Reserved_03_2.npy,test
+708,120,Reserved,Reserved_06_1.mov,6,1,88,27,82,56,200,54.5,50.5,0.0,2.0,Reserved\Reserved_06_1.npy,train
+709,120,Reserved,Reserved_06_2.mov,6,2,116,37,115,79,200,61.5,48.5,1.0,2.5,Reserved\Reserved_06_2.npy,train
+710,121,Row,row_01_1.MOV,1,1,124,19,121,103,200,0.0,73.0,0.0,2.0,Row\row_01_1.npy,test
+711,121,Row,row_01_2.MOV,1,2,80,0,55,56,200,0.0,40.0,0.0,0.0,Row\row_01_2.npy,test
+712,121,Row,row_02_1.MOV,2,1,101,0,87,88,200,0.0,75.5,0.0,0.0,Row\row_02_1.npy,train
+713,121,Row,row_02_2.MOV,2,2,55,0,45,46,200,0.0,68.5,0.0,0.0,Row\row_02_2.npy,train
+714,121,Row,row_07_1.mp4,7,1,194,1,167,167,200,76.5,100.0,1.0,0.0,Row\row_07_1.npy,train
+715,122,Rules,Rules_02_1.mov,2,1,148,13,145,133,200,38.0,0.0,3.5,0.0,Rules\Rules_02_1.npy,train
+716,122,Rules,Rules_02_2.mov,2,2,176,28,175,148,200,48.0,0.0,3.0,0.0,Rules\Rules_02_2.npy,train
+717,122,Rules,Rules_03_1.mov,3,1,134,20,120,101,200,67.0,0.0,0.0,0.0,Rules\Rules_03_1.npy,test
+718,122,Rules,Rules_03_2.mov,3,2,207,35,204,170,200,80.0,0.0,0.0,0.0,Rules\Rules_03_2.npy,test
+719,122,Rules,Rules_06_1.mov,6,1,98,21,92,72,200,67.0,0.0,3.0,0.0,Rules\Rules_06_1.npy,train
+720,122,Rules,Rules_06_2.mov,6,2,119,25,118,94,200,76.0,0.0,1.0,0.0,Rules\Rules_06_2.npy,train
+721,124,Run time error,Run time error_02_1.mov,2,1,159,14,144,131,200,77.5,0.0,0.5,0.0,Run time error\Run time error_02_1.npy,train
+722,124,Run time error,Run time error_02_2.mov,2,2,123,14,103,90,200,67.0,0.0,0.0,0.0,Run time error\Run time error_02_2.npy,train
+723,124,Run time error,Run time error_03_1.mov,3,1,176,24,169,146,200,72.5,0.0,0.0,0.0,Run time error\Run time error_03_1.npy,test
+724,124,Run time error,Run time error_03_2.mov,3,2,159,0,158,159,200,60.5,0.0,0.5,0.0,Run time error\Run time error_03_2.npy,test
+725,124,Run time error,Run time error_05_1.mov,5,1,114,27,104,78,200,66.0,0.0,1.5,0.0,Run time error\Run time error_05_1.npy,validation
+726,124,Run time error,Run time error_05_2.mov,5,2,128,15,121,107,200,75.0,0.0,0.0,0.0,Run time error\Run time error_05_2.npy,validation
+727,123,Run,Run_02_1.mov,2,1,83,14,73,60,200,49.0,52.5,0.0,1.5,Run\Run_02_1.npy,train
+728,123,Run,Run_02_2.mov,2,2,113,24,105,82,200,65.0,67.5,0.0,0.0,Run\Run_02_2.npy,train
+729,123,Run,Run_03_1.mov,3,1,107,20,94,75,200,59.0,57.5,1.5,0.0,Run\Run_03_1.npy,test
+730,123,Run,Run_03_2.mov,3,2,178,0,167,168,200,48.5,48.5,1.0,1.0,Run\Run_03_2.npy,test
+731,123,Run,Run_05_1.mov,5,1,134,41,108,68,200,55.0,52.0,1.5,0.0,Run\Run_05_1.npy,validation
+732,123,Run,Run_05_2.mov,5,2,148,24,129,106,200,63.5,63.5,0.0,2.0,Run\Run_05_2.npy,validation
+733,125,Semicolon,Semicolon_01_1.mov,1,1,123,14,110,97,200,52.0,0.0,5.0,0.0,Semicolon\Semicolon_01_1.npy,test
+734,125,Semicolon,Semicolon_01_2.mov,1,2,242,0,228,229,200,64.0,0.0,2.0,0.0,Semicolon\Semicolon_01_2.npy,test
+735,125,Semicolon,Semicolon_05_1.mov,5,1,114,24,86,63,200,57.5,0.0,0.0,0.0,Semicolon\Semicolon_05_1.npy,validation
+736,125,Semicolon,Semicolon_05_2.mov,5,2,110,16,101,86,200,64.5,0.0,0.0,0.0,Semicolon\Semicolon_05_2.npy,validation
+737,125,Semicolon,Semicolon_06_1.mov,6,1,91,17,86,70,200,63.0,0.0,6.0,0.0,Semicolon\Semicolon_06_1.npy,train
+738,125,Semicolon,Semicolon_06_2.mov,6,2,101,11,94,84,200,68.0,0.0,7.5,0.0,Semicolon\Semicolon_06_2.npy,train
+739,126,Sequence,Sequence_01_1.mov,1,1,148,17,122,106,200,56.0,39.0,0.0,9.5,Sequence\Sequence_01_1.npy,test
+740,126,Sequence,Sequence_01_2.mov,1,2,100,11,84,74,200,51.0,34.5,6.5,9.5,Sequence\Sequence_01_2.npy,test
+741,126,Sequence,Sequence_05_1.mov,5,1,126,32,113,82,200,73.0,62.5,2.0,1.5,Sequence\Sequence_05_1.npy,validation
+742,126,Sequence,Sequence_05_2.mov,5,2,108,33,101,69,200,58.5,58.5,3.0,0.0,Sequence\Sequence_05_2.npy,validation
+743,126,Sequence,Sequence_06_1.mov,6,1,107,26,99,74,200,57.5,64.0,5.5,1.5,Sequence\Sequence_06_1.npy,train
+744,126,Sequence,Sequence_06_2.mov,6,2,126,21,116,96,200,70.0,69.0,3.5,2.5,Sequence\Sequence_06_2.npy,train
+745,127,Server,Server_01_1.mov,1,1,160,11,132,122,200,72.0,68.5,6.5,2.0,Server\Server_01_1.npy,test
+746,127,Server,Server_01_2.mov,1,2,203,0,202,203,200,79.5,77.5,0.0,0.5,Server\Server_01_2.npy,test
+747,127,Server,Server_02_1.mov,2,1,212,0,192,193,200,80.5,67.0,2.5,5.5,Server\Server_02_1.npy,train
+748,127,Server,Server_02_2.mov,2,2,379,2,338,337,200,76.0,68.0,0.0,8.0,Server\Server_02_2.npy,train
+749,127,Server,Server_07_1.mp4,7,1,156,6,150,145,200,86.0,84.0,1.5,3.0,Server\Server_07_1.npy,train
+750,128,Simple_Basic,Simple_Basic_01_1.MOV,1,1,158,0,157,158,200,0.0,60.0,0.0,4.0,Simple_Basic\Simple_Basic_01_1.npy,test
+751,128,Simple_Basic,Simple_Basic_01_2.MOV,1,2,85,20,84,65,200,0.0,60.5,0.0,0.0,Simple_Basic\Simple_Basic_01_2.npy,test
+752,128,Simple_Basic,Simple_Basic_02_1.MOV,2,1,225,38,212,175,200,0.0,59.5,0.0,7.5,Simple_Basic\Simple_Basic_02_1.npy,train
+753,128,Simple_Basic,Simple_Basic_02_2.MOV,2,2,96,15,84,70,200,0.0,61.5,0.0,9.0,Simple_Basic\Simple_Basic_02_2.npy,train
+754,128,Simple_Basic,Simple_Basic_07_1.mp4,7,1,168,11,166,156,200,0.0,74.0,0.0,1.0,Simple_Basic\Simple_Basic_07_1.npy,train
+755,129,Size,size_03_1.MOV,3,1,135,30,119,90,200,75.0,74.0,0.0,0.0,Size\size_03_1.npy,test
+756,129,Size,size_03_2.MOV,3,2,118,16,94,79,200,68.0,68.0,0.0,0.0,Size\size_03_2.npy,test
+757,129,Size,size_05_1.MOV,5,1,129,35,102,68,200,55.0,55.0,0.0,0.0,Size\size_05_1.npy,validation
+758,129,Size,size_05_2.MOV,5,2,123,28,116,89,200,62.0,61.0,1.0,0.0,Size\size_05_2.npy,validation
+759,129,Size,size_06_1.MOV,6,1,118,24,103,80,200,60.5,62.0,2.5,2.5,Size\size_06_1.npy,train
+760,129,Size,size_06_2.MOV,6,2,105,17,81,65,200,59.5,57.5,6.0,3.0,Size\size_06_2.npy,train
+761,130,Small,Small_01_1.mov,1,1,111,18,94,77,200,57.5,34.0,0.0,7.5,Small\Small_01_1.npy,test
+762,130,Small,Small_01_2.mov,1,2,159,33,147,115,200,70.5,26.5,2.0,11.0,Small\Small_01_2.npy,test
+763,130,Small,Small_05_1.mov,5,1,105,28,87,60,200,61.0,55.0,1.5,2.0,Small\Small_05_1.npy,validation
+764,130,Small,Small_05_2.mov,5,2,126,35,125,91,200,55.5,50.5,0.0,0.0,Small\Small_05_2.npy,validation
+765,130,Small,Small_06_1.mov,6,1,75,18,73,56,200,50.5,50.5,3.5,5.5,Small\Small_06_1.npy,train
+766,130,Small,Small_06_2.mov,6,2,113,29,104,76,200,61.0,61.0,0.0,6.5,Small\Small_06_2.npy,train
+767,131,Source,Source_02_1.mov,2,1,96,7,70,64,200,54.0,37.0,0.0,8.5,Source\Source_02_1.npy,train
+768,131,Source,Source_02_2.mov,2,2,166,34,158,125,200,73.5,42.5,0.0,4.0,Source\Source_02_2.npy,train
+769,131,Source,Source_03_1.mov,3,1,123,33,110,78,200,45.5,53.5,0.0,6.0,Source\Source_03_1.npy,test
+770,131,Source,Source_03_2.mov,3,2,186,37,170,134,200,62.5,72.0,1.5,0.0,Source\Source_03_2.npy,test
+771,131,Source,Source_05_1.mov,5,1,122,23,87,65,200,65.5,51.5,1.5,4.5,Source\Source_05_1.npy,validation
+772,131,Source,Source_05_2.mov,5,2,140,32,121,90,200,70.5,57.5,1.0,9.5,Source\Source_05_2.npy,validation
+773,132,Specify,specify_03_1.MOV,3,1,128,24,123,100,200,35.0,50.0,0.0,3.0,Specify\specify_03_1.npy,test
+774,132,Specify,specify_03_2.MOV,3,2,92,12,73,62,200,28.0,47.5,3.0,6.0,Specify\specify_03_2.npy,test
+775,132,Specify,specify_05_1.MOV,5,1,122,32,100,69,200,28.0,42.5,15.5,5.5,Specify\specify_05_1.npy,validation
+776,132,Specify,specify_05_2.MOV,5,2,129,32,113,82,200,48.5,58.5,10.5,1.5,Specify\specify_05_2.npy,validation
+777,132,Specify,specify_06_1.MOV,6,1,98,35,94,60,200,63.0,55.0,3.0,7.0,Specify\specify_06_1.npy,train
+778,132,Specify,specify_06_2.MOV,6,2,97,27,79,53,200,50.0,52.0,9.5,5.5,Specify\specify_06_2.npy,train
+779,133,Stack,Stack_01_1.mov,1,1,134,3,118,116,200,72.5,43.0,0.0,11.0,Stack\Stack_01_1.npy,test
+780,133,Stack,Stack_01_2.mov,1,2,243,28,222,195,200,74.0,46.5,7.0,6.5,Stack\Stack_01_2.npy,test
+781,133,Stack,Stack_02_1.mov,2,1,103,0,92,93,200,72.5,44.5,0.0,4.5,Stack\Stack_02_1.npy,train
+782,133,Stack,Stack_02_2.mov,2,2,186,7,183,177,200,80.0,51.5,0.0,1.0,Stack\Stack_02_2.npy,train
+783,133,Stack,Stack_07_1.mp4,7,1,103,0,96,97,200,79.0,68.5,0.0,1.0,Stack\Stack_07_1.npy,train
+784,134,Start,Start_01_1.mov,1,1,133,23,115,93,200,63.0,55.0,5.0,0.0,Start\Start_01_1.npy,test
+785,134,Start,Start_01_2.mov,1,2,187,22,152,131,200,67.5,58.0,10.5,13.0,Start\Start_01_2.npy,test
+786,134,Start,Start_05_1.mov,5,1,121,22,95,74,200,64.0,53.5,0.0,1.5,Start\Start_05_1.npy,validation
+787,134,Start,Start_05_2.mov,5,2,129,21,115,95,200,69.0,68.5,0.0,2.5,Start\Start_05_2.npy,validation
+788,134,Start,Start_06_1.mov,6,1,81,20,80,61,200,57.5,53.0,2.0,5.0,Start\Start_06_1.npy,train
+789,134,Start,Start_06_2.mov,6,2,130,26,129,104,200,70.5,68.5,2.0,0.0,Start\Start_06_2.npy,train
+790,135,Step,Step_01_1.mov,1,1,151,23,126,104,200,41.5,17.0,16.5,8.0,Step\Step_01_1.npy,test
+791,135,Step,Step_01_2.mov,1,2,242,34,222,189,200,54.5,36.5,12.0,10.5,Step\Step_01_2.npy,test
+792,135,Step,Step_05_1.mov,5,1,129,36,128,93,200,70.0,62.0,0.0,3.0,Step\Step_05_1.npy,validation
+793,135,Step,Step_05_2.mov,5,2,152,39,151,113,200,74.5,70.0,0.0,0.0,Step\Step_05_2.npy,validation
+794,135,Step,Step_06_1.mov,6,1,123,26,101,76,200,67.0,60.0,3.0,9.0,Step\Step_06_1.npy,train
+795,135,Step,Step_06_2.mov,6,2,130,17,123,107,200,59.5,76.0,0.5,6.5,Step\Step_06_2.npy,train
+796,136,store,store_01_1.mov,1,1,147,17,111,95,200,76.5,57.5,0.0,0.0,store\store_01_1.npy,test
+797,136,store,store_01_2.mov,1,2,218,26,178,153,200,75.0,55.5,2.0,0.0,store\store_01_2.npy,test
+798,136,store,store_02_1.mov,2,1,205,36,147,112,200,66.0,68.0,3.0,1.0,store\store_02_1.npy,train
+799,136,store,store_02_2.mov,2,2,233,27,180,154,200,78.0,79.5,2.5,0.0,store\store_02_2.npy,train
+800,136,store,store_05_1.mov,5,1,177,25,121,97,200,59.5,69.5,15.0,0.0,store\store_05_1.npy,validation
+801,136,store,store_05_2.mov,5,2,171,33,138,106,200,66.0,72.0,6.5,0.0,store\store_05_2.npy,validation
+802,137,Straightforward- clear,Straightforward- clear_01_1.mov,1,1,120,0,84,85,200,40.5,39.0,1.0,5.0,Straightforward- clear\Straightforward- clear_01_1.npy,test
+803,137,Straightforward- clear,Straightforward- clear_01_2.mov,1,2,231,54,187,134,200,76.0,57.5,2.5,10.0,Straightforward- clear\Straightforward- clear_01_2.npy,test
+804,137,Straightforward- clear,Straightforward- clear_02_1.mov,2,1,93,19,82,64,200,54.0,53.5,1.5,1.5,Straightforward- clear\Straightforward- clear_02_1.npy,train
+805,137,Straightforward- clear,Straightforward- clear_02_2.mov,2,2,177,43,168,126,200,69.0,72.0,4.0,4.0,Straightforward- clear\Straightforward- clear_02_2.npy,train
+806,137,Straightforward- clear,Straightforward- clear_07_1.mp4,7,1,60,0,52,53,200,73.0,71.0,0.0,2.0,Straightforward- clear\Straightforward- clear_07_1.npy,train
+807,138,String,String_01_1.mov,1,1,119,14,99,86,200,58.5,43.5,0.0,11.5,String\String_01_1.npy,test
+808,138,String,String_01_2.mov,1,2,212,19,188,170,200,61.0,51.0,0.0,6.5,String\String_01_2.npy,test
+809,138,String,String_05_1.mov,5,1,115,37,105,69,200,64.5,61.5,1.5,0.0,String\String_05_1.npy,validation
+810,138,String,String_05_2.mov,5,2,136,34,127,94,200,70.5,66.5,1.0,3.0,String\String_05_2.npy,validation
+811,138,String,String_06_1.mov,6,1,104,19,99,81,200,69.0,72.0,1.5,3.5,String\String_06_1.npy,train
+812,138,String,String_06_2.mov,6,2,128,26,124,99,200,75.0,75.0,3.0,0.0,String\String_06_2.npy,train
+813,139,Strong,strong_01_1.MOV,1,1,136,33,123,91,200,58.5,0.0,7.5,0.0,Strong\strong_01_1.npy,test
+814,139,Strong,strong_01_2.MOV,1,2,102,29,86,58,200,38.5,0.0,0.0,0.0,Strong\strong_01_2.npy,test
+815,139,Strong,strong_02_1.MOV,2,1,144,45,126,82,200,69.0,0.0,1.0,0.0,Strong\strong_02_1.npy,train
+816,139,Strong,strong_02_2.MOV,2,2,78,17,68,52,200,49.0,0.0,2.0,0.0,Strong\strong_02_2.npy,train
+817,139,Strong,strong_07_1.mp4,7,1,49,2,44,43,200,0.0,56.5,0.0,0.0,Strong\strong_07_1.npy,train
+818,140,Structure,Structure_02_1.MOV,2,1,203,39,202,164,200,66.0,74.5,0.5,1.5,Structure\Structure_02_1.npy,train
+819,140,Structure,Structure_02_2.MOV,2,2,147,19,134,116,200,61.0,73.5,0.0,1.5,Structure\Structure_02_2.npy,train
+820,140,Structure,Structure_03_1.MOV,3,1,231,47,215,169,200,79.0,68.0,0.0,1.0,Structure\Structure_03_1.npy,test
+821,140,Structure,Structure_03_2.MOV,3,2,121,11,116,106,200,63.5,54.0,0.0,0.0,Structure\Structure_03_2.npy,test
+822,140,Structure,Structure_07_1.mp4,7,1,206,4,200,197,200,81.0,81.5,0.0,0.0,Structure\Structure_07_1.npy,train
+823,141,Student,Student_01_1.MOV,1,1,217,51,214,164,200,0.0,78.0,0.0,0.0,Student\Student_01_1.npy,test
+824,141,Student,student_01_2.MOV,1,2,136,34,125,92,200,0.0,53.5,0.0,0.0,Student\student_01_2.npy,test
+825,141,Student,student_02_1.MOV,2,1,128,24,118,95,200,0.0,66.0,0.0,4.0,Student\student_02_1.npy,train
+826,141,Student,student_02_2.MOV,2,2,214,22,200,179,200,0.0,79.5,0.0,0.0,Student\student_02_2.npy,train
+827,141,Student,student_07_1.mp4,7,1,49,4,48,45,200,0.0,70.0,0.0,2.5,Student\student_07_1.npy,train
+828,142,Subtract,Subtract_01_1.mov,1,1,105,19,79,61,200,51.5,0.0,1.5,0.0,Subtract\Subtract_01_1.npy,test
+829,142,Subtract,Subtract_01_2.mov,1,2,157,0,135,136,200,51.0,0.0,0.0,0.0,Subtract\Subtract_01_2.npy,test
+830,142,Subtract,Subtract_05_1.mov,5,1,104,31,88,58,200,38.0,0.0,0.0,0.0,Subtract\Subtract_05_1.npy,validation
+831,142,Subtract,Subtract_05_2.mov,5,2,100,0,98,99,200,34.5,0.0,0.0,0.0,Subtract\Subtract_05_2.npy,validation
+832,142,Subtract,Subtract_06_1.mov,6,1,85,17,71,55,200,38.5,0.0,0.0,0.0,Subtract\Subtract_06_1.npy,train
+833,142,Subtract,Subtract_06_2.mov,6,2,83,14,76,63,200,51.0,0.0,0.0,0.0,Subtract\Subtract_06_2.npy,train
+834,143,Super key,Super Key_02_1.mov,2,1,117,13,116,104,200,77.0,0.0,0.0,0.0,Super key\Super Key_02_1.npy,train
+835,143,Super key,Super Key_02_2.mov,2,2,199,21,198,178,200,86.5,0.0,0.0,0.0,Super key\Super Key_02_2.npy,train
+836,143,Super key,Super Key_03_1.mov,3,1,151,23,140,118,200,55.0,0.0,8.0,0.0,Super key\Super Key_03_1.npy,test
+837,143,Super key,Super Key_03_2.mov,3,2,274,0,273,274,200,49.5,0.0,5.0,0.0,Super key\Super Key_03_2.npy,test
+838,143,Super key,Super Key_05_1.mov,5,1,143,0,122,123,200,54.5,1.0,0.0,0.0,Super key\Super Key_05_1.npy,validation
+839,143,Super key,Super Key_05_2.mov,5,2,165,34,152,119,200,75.0,1.0,0.0,0.0,Super key\Super Key_05_2.npy,validation
+840,144,System,system_03_1.mov,3,1,110,15,89,75,200,66.0,70.0,0.0,0.0,System\system_03_1.npy,test
+841,144,System,system_03_2.mov,3,2,151,24,143,120,200,66.0,70.0,0.0,3.5,System\system_03_2.npy,test
+842,144,System,system_05_1.mov,5,1,125,48,117,70,200,65.0,54.5,0.0,3.0,System\system_05_1.npy,validation
+843,144,System,system_05_2.mov,5,2,137,35,129,95,200,73.0,65.0,0.0,4.0,System\system_05_2.npy,validation
+844,144,System,system_06_1.mov,6,1,111,34,100,67,200,56.0,59.0,3.0,6.0,System\system_06_1.npy,train
+845,144,System,system_06_2.mov,6,2,127,28,102,75,200,62.0,64.5,2.5,5.5,System\system_06_2.npy,train
+846,145,Table,table_01_1.MOV,1,1,195,35,170,136,200,43.0,74.5,4.0,4.5,Table\table_01_1.npy,test
+847,145,Table,table_01_2.MOV,1,2,102,12,89,78,200,38.0,70.0,1.0,5.0,Table\table_01_2.npy,test
+848,145,Table,Table_02_1.MOV,2,1,123,7,108,102,200,55.0,72.0,3.0,11.0,Table\Table_02_1.npy,train
+849,145,Table,table_02_2.MOV,2,2,112,0,92,93,200,62.5,74.0,0.0,7.0,Table\table_02_2.npy,train
+850,145,Table,table_07_1.mp4,7,1,212,0,196,197,200,76.5,91.5,2.5,0.0,Table\table_07_1.npy,train
+851,146,Template,Template_01_1.MOV,1,1,82,11,79,69,200,48.5,39.5,3.0,0.0,Template\Template_01_1.npy,test
+852,146,Template,Template_01_2.MOV,1,2,139,11,137,127,200,57.0,41.5,0.0,2.0,Template\Template_01_2.npy,test
+853,146,Template,Template_02_1.MOV,2,1,145,16,124,109,200,71.5,68.0,0.0,0.0,Template\Template_02_1.npy,train
+854,146,Template,Template_02_2.MOV,2,2,62,0,42,43,200,66.5,66.0,0.0,0.0,Template\Template_02_2.npy,train
+855,146,Template,Template_07_1.mp4,7,1,66,7,65,59,200,68.5,75.5,10.5,0.0,Template\Template_07_1.npy,train
+856,147,Terminate-end,Terminate-end_01_1.mov,1,1,133,9,115,107,200,53.5,75.0,2.0,2.0,Terminate-end\Terminate-end_01_1.npy,test
+857,147,Terminate-end,Terminate-end_01_2.mov,1,2,215,30,208,179,200,57.5,83.0,0.0,2.0,Terminate-end\Terminate-end_01_2.npy,test
+858,147,Terminate-end,Terminate-end_02_1.mov,2,1,278,26,253,228,200,53.5,84.0,1.5,1.0,Terminate-end\Terminate-end_02_1.npy,train
+859,147,Terminate-end,Terminate-end_02_2.mov,2,2,213,19,163,145,200,57.0,74.5,0.5,1.5,Terminate-end\Terminate-end_02_2.npy,train
+860,147,Terminate-end,Terminate-end_05_1.mov,5,1,180,23,152,130,200,47.0,41.5,1.0,4.0,Terminate-end\Terminate-end_05_1.npy,validation
+861,147,Terminate-end,Terminate-end_05_2.mov,5,2,175,26,141,116,200,79.0,73.5,0.5,1.5,Terminate-end\Terminate-end_05_2.npy,validation
+862,148,Ternary,Ternary_02_1.mov,2,1,169,10,155,146,200,78.5,11.0,2.5,1.5,Ternary\Ternary_02_1.npy,train
+863,148,Ternary,Ternary_02_2.mov,2,2,322,21,298,278,200,87.5,15.5,1.0,0.5,Ternary\Ternary_02_2.npy,train
+864,148,Ternary,Ternary_03_1.mov,3,1,201,27,188,162,200,79.0,23.5,0.0,0.0,Ternary\Ternary_03_1.npy,test
+865,148,Ternary,Ternary_03_2.mov,3,2,307,44,297,254,200,80.0,28.5,3.5,0.0,Ternary\Ternary_03_2.npy,test
+866,148,Ternary,Ternary_05_1.mov,5,1,203,41,181,141,200,57.0,9.0,8.5,0.0,Ternary\Ternary_05_1.npy,validation
+867,148,Ternary,Ternary_05_2.mov,5,2,227,50,208,159,200,61.5,21.5,7.5,4.0,Ternary\Ternary_05_2.npy,validation
+868,149,Top,top_03_1.MOV,3,1,143,17,135,119,200,64.0,37.0,0.0,2.0,Top\top_03_1.npy,test
+869,149,Top,top_03_2.MOV,3,2,127,21,103,83,200,68.0,40.0,0.0,1.0,Top\top_03_2.npy,test
+870,149,Top,top_05_1.MOV,5,1,190,33,167,135,200,64.5,38.5,3.5,0.5,Top\top_05_1.npy,validation
+871,149,Top,top_05_2.MOV,5,2,149,32,126,95,200,43.0,36.0,8.5,0.0,Top\top_05_2.npy,validation
+872,149,Top,top_06_1.MOV,6,1,132,31,120,90,200,73.5,51.0,2.5,0.0,Top\top_06_1.npy,train
+873,149,Top,top_06_2.MOV,6,2,111,26,94,69,200,63.0,56.0,3.0,5.5,Top\top_06_2.npy,train
+874,150,Total-Summation,Total-Summation_01_1.mov,1,1,107,12,91,80,200,61.5,61.5,1.5,1.0,Total-Summation\Total-Summation_01_1.npy,test
+875,150,Total-Summation,Total-Summation_01_2.mov,1,2,188,35,161,127,200,69.0,67.5,9.0,5.5,Total-Summation\Total-Summation_01_2.npy,test
+876,150,Total-Summation,Total-Summation_05_1.mov,5,1,115,30,85,56,200,58.0,52.5,0.0,0.0,Total-Summation\Total-Summation_05_1.npy,validation
+877,150,Total-Summation,Total-Summation_05_2.mov,5,2,123,33,98,66,200,61.0,58.0,0.0,0.0,Total-Summation\Total-Summation_05_2.npy,validation
+878,150,Total-Summation,Total-Summation_06_1.mov,6,1,113,26,91,66,200,64.0,59.5,3.0,6.0,Total-Summation\Total-Summation_06_1.npy,train
+879,150,Total-Summation,Total-Summation_06_2.mov,6,2,119,18,98,81,200,73.5,70.5,3.5,4.0,Total-Summation\Total-Summation_06_2.npy,train
+880,151,Transaction,Transaction_01_1.mov,1,1,100,21,87,67,200,48.5,51.5,10.5,1.5,Transaction\Transaction_01_1.npy,test
+881,151,Transaction,Transaction_01_2.mov,1,2,164,0,148,149,200,18.5,37.0,16.0,8.0,Transaction\Transaction_01_2.npy,test
+882,151,Transaction,Transaction_05_1.mov,5,1,101,25,86,62,200,54.0,0.0,0.0,0.0,Transaction\Transaction_05_1.npy,validation
+883,151,Transaction,Transaction_05_2.mov,5,2,111,14,98,85,200,60.5,0.0,1.0,0.0,Transaction\Transaction_05_2.npy,validation
+884,151,Transaction,Transaction_06_1.mov,6,1,73,0,63,64,200,22.5,0.0,0.0,0.0,Transaction\Transaction_06_1.npy,train
+885,151,Transaction,Transaction_06_2.mov,6,2,89,17,81,65,200,57.5,0.0,0.0,0.0,Transaction\Transaction_06_2.npy,train
+886,152,Transform,Transform_01_1.mov,1,1,82,10,67,58,200,52.5,0.0,1.5,0.0,Transform\Transform_01_1.npy,test
+887,152,Transform,Transform_01_2.mov,1,2,196,39,184,146,200,62.5,0.0,0.0,0.0,Transform\Transform_01_2.npy,test
+888,152,Transform,Transform_02_1.mov,2,1,89,18,78,61,200,56.5,0.0,1.5,0.0,Transform\Transform_02_1.npy,train
+889,152,Transform,Transform_02_2.mov,2,2,193,33,174,142,200,74.5,0.0,4.5,0.0,Transform\Transform_02_2.npy,train
+890,152,Transform,Transform_07_1.mp4,7,1,54,0,50,51,200,0.0,70.0,0.0,6.0,Transform\Transform_07_1.npy,train
+891,153,Under-down-below,Under-down-below_01_1.mov,1,1,121,26,105,80,200,53.0,0.0,0.0,0.0,Under-down-below\Under-down-below_01_1.npy,test
+892,153,Under-down-below,Under-down-below_01_2.mov,1,2,167,0,143,144,200,55.0,0.0,0.0,0.0,Under-down-below\Under-down-below_01_2.npy,test
+893,153,Under-down-below,Under-down-below_05_1.mov,5,1,84,10,76,67,200,36.5,0.0,12.0,0.0,Under-down-below\Under-down-below_05_1.npy,validation
+894,153,Under-down-below,Under-down-below_05_2.mov,5,2,106,19,97,79,200,66.5,0.0,0.0,0.0,Under-down-below\Under-down-below_05_2.npy,validation
+895,153,Under-down-below,Under-down-below_06_1.mov,6,1,89,23,79,57,200,53.5,0.0,0.0,0.0,Under-down-below\Under-down-below_06_1.npy,train
+896,153,Under-down-below,Under-down-below_06_2.mov,6,2,94,18,91,74,200,59.0,0.0,1.0,0.0,Under-down-below\Under-down-below_06_2.npy,train
+897,154,Union,union_01_1.MOV,1,1,121,28,102,75,200,67.5,67.5,4.0,2.5,Union\union_01_1.npy,test
+898,154,Union,union_01_2.MOV,1,2,210,39,183,145,200,80.0,77.0,2.0,3.0,Union\union_01_2.npy,test
+899,154,Union,union_02_1.MOV,2,1,220,36,186,151,200,77.5,78.0,2.0,2.0,Union\union_02_1.npy,train
+900,154,Union,union_02_2.MOV,2,2,116,26,104,79,200,75.5,74.0,0.0,0.0,Union\union_02_2.npy,train
+901,154,Union,union_07_1.mp4,7,1,282,12,281,270,200,61.0,99.5,0.0,0.0,Union\union_07_1.npy,train
+902,155,Unnecessary,Unnecessary_02_1.mov,2,1,90,4,87,84,200,72.0,0.0,0.0,0.0,Unnecessary\Unnecessary_02_1.npy,train
+903,155,Unnecessary,Unnecessary_02_2.mov,2,2,192,20,191,172,200,83.0,0.0,0.0,0.0,Unnecessary\Unnecessary_02_2.npy,train
+904,155,Unnecessary,Unnecessary_03_1.mov,3,1,134,24,124,101,200,77.0,0.0,0.0,0.0,Unnecessary\Unnecessary_03_1.npy,test
+905,155,Unnecessary,Unnecessary_03_2.mov,3,2,188,37,175,139,200,80.0,0.0,0.0,0.0,Unnecessary\Unnecessary_03_2.npy,test
+906,155,Unnecessary,Unnecessary_05_1.mov,5,1,134,32,104,73,200,69.0,0.0,0.0,0.0,Unnecessary\Unnecessary_05_1.npy,validation
+907,155,Unnecessary,Unnecessary_05_2.mov,5,2,160,27,150,124,200,72.5,1.5,0.0,0.0,Unnecessary\Unnecessary_05_2.npy,validation
+908,156,Unrelated,Unrelated_02_1.mov,2,1,111,8,106,99,200,74.0,17.0,0.0,8.5,Unrelated\Unrelated_02_1.npy,train
+909,156,Unrelated,Unrelated_02_2.mov,2,2,189,18,188,171,200,85.0,34.5,0.0,1.0,Unrelated\Unrelated_02_2.npy,train
+910,156,Unrelated,Unrelated_03_1.mov,3,1,152,33,138,106,200,71.5,37.0,0.0,2.0,Unrelated\Unrelated_03_1.npy,test
+911,156,Unrelated,Unrelated_03_2.mov,3,2,260,43,252,210,200,83.5,44.0,0.0,2.0,Unrelated\Unrelated_03_2.npy,test
+912,156,Unrelated,Unrelated_05_1.mov,5,1,157,36,129,94,200,48.5,15.5,5.5,2.5,Unrelated\Unrelated_05_1.npy,validation
+913,156,Unrelated,Unrelated_05_2.mov,5,2,159,31,141,111,200,49.0,25.0,0.0,2.5,Unrelated\Unrelated_05_2.npy,validation
+914,157,Up-above,Up-above_01_1.mov,1,1,112,31,108,78,200,49.0,0.0,0.0,0.0,Up-above\Up-above_01_1.npy,test
+915,157,Up-above,Up-above_01_2.mov,1,2,126,30,123,94,200,74.0,0.0,0.0,0.0,Up-above\Up-above_01_2.npy,test
+916,157,Up-above,Up-above_05_1.mov,5,1,94,17,77,61,200,38.5,0.0,5.0,0.0,Up-above\Up-above_05_1.npy,validation
+917,157,Up-above,Up-above_05_2.mov,5,2,102,15,92,78,200,55.5,0.0,0.0,0.0,Up-above\Up-above_05_2.npy,validation
+918,157,Up-above,Up-above_06_1.mov,6,1,87,20,77,58,200,50.0,0.0,4.0,0.0,Up-above\Up-above_06_1.npy,train
+919,157,Up-above,Up-above_06_2.mov,6,2,104,23,92,70,200,56.5,0.0,4.0,0.0,Up-above\Up-above_06_2.npy,train
+920,158,Update,Update_01_1.mov,1,1,130,30,129,100,200,49.0,75.0,5.0,3.0,Update\Update_01_1.npy,test
+921,158,Update,Update_01_2.mov,1,2,250,35,228,194,200,59.5,76.0,1.0,2.0,Update\Update_01_2.npy,test
+922,158,Update,Update_02_1.mov,2,1,123,8,122,115,200,64.5,83.5,9.0,2.0,Update\Update_02_1.npy,train
+923,158,Update,Update_02_2.mov,2,2,205,21,198,178,200,60.0,87.0,6.0,0.5,Update\Update_02_2.npy,train
+924,158,Update,Update_07_1.mp4,7,1,218,0,207,208,200,65.5,65.0,0.5,0.0,Update\Update_07_1.npy,train
+925,159,User,user_03_1.MOV,3,1,162,17,155,139,200,66.0,83.5,0.0,0.0,User\user_03_1.npy,test
+926,159,User,user_03_2.MOV,3,2,118,26,109,84,200,54.5,72.0,7.0,1.0,User\user_03_2.npy,test
+927,159,User,user_05_1.MOV,5,1,138,36,128,93,200,65.5,58.5,0.0,0.0,User\user_05_1.npy,validation
+928,159,User,user_05_2.MOV,5,2,118,28,99,72,200,58.5,47.5,0.0,0.0,User\user_05_2.npy,validation
+929,159,User,user_06_1.MOV,6,1,115,23,85,63,200,60.5,59.5,3.5,0.0,User\user_06_1.npy,train
+930,159,User,user_06_2.MOV,6,2,85,25,77,53,200,57.5,51.5,0.0,0.0,User\user_06_2.npy,train
+931,160,Value-arithmetic,Value-arithmetic_01_1.mov,1,1,130,18,129,112,200,76.0,0.0,0.0,0.0,Value-arithmetic\Value-arithmetic_01_1.npy,test
+932,160,Value-arithmetic,Value-arithmetic_01_2.mov,1,2,134,15,108,94,200,75.0,0.0,1.0,0.0,Value-arithmetic\Value-arithmetic_01_2.npy,test
+933,160,Value-arithmetic,Value-arithmetic_02_1.mov,2,1,216,24,166,143,200,78.0,0.0,1.0,0.0,Value-arithmetic\Value-arithmetic_02_1.npy,train
+934,160,Value-arithmetic,Value-arithmetic_02_2.mov,2,2,214,0,171,172,200,49.0,0.0,0.0,0.0,Value-arithmetic\Value-arithmetic_02_2.npy,train
+935,160,Value-arithmetic,Value-arithmetic_03_1.mov,3,1,167,0,155,156,200,63.0,0.0,0.0,0.0,Value-arithmetic\Value-arithmetic_03_1.npy,test
+936,160,Value-arithmetic,Value-arithmetic_03_2.mov,3,2,132,0,128,129,200,63.5,0.0,0.0,0.0,Value-arithmetic\Value-arithmetic_03_2.npy,test
+937,160,Value-arithmetic,Value-arithmetic_05_1.mov,5,1,154,45,147,103,200,73.0,0.0,0.0,0.0,Value-arithmetic\Value-arithmetic_05_1.npy,validation
+938,160,Value-arithmetic,Value-arithmetic_05_2.mov,5,2,126,21,113,93,200,55.0,0.0,3.5,0.0,Value-arithmetic\Value-arithmetic_05_2.npy,validation
+939,160,Value-arithmetic,Value-arithmetic_05_3.mov,5,3,177,0,151,152,200,49.5,0.5,0.5,0.0,Value-arithmetic\Value-arithmetic_05_3.npy,validation
+940,160,Value-arithmetic,Value-arithmetic_05_4.mov,5,4,139,24,106,83,200,69.5,2.0,1.0,0.0,Value-arithmetic\Value-arithmetic_05_4.npy,validation
+941,160,Value-arithmetic,Value-arithmetic_06_1.mov,6,1,112,7,93,87,200,70.5,0.0,1.5,0.0,Value-arithmetic\Value-arithmetic_06_1.npy,train
+942,160,Value-arithmetic,Value-arithmetic_06_2.mov,6,2,100,7,70,64,200,60.0,0.0,0.0,0.0,Value-arithmetic\Value-arithmetic_06_2.npy,train
+943,161,Variable,Variable_02_1.mov,2,1,245,36,237,202,200,45.5,0.0,5.0,0.0,Variable\Variable_02_1.npy,train
+944,161,Variable,Variable_02_2.mov,2,2,165,25,153,129,200,59.5,0.0,0.5,0.0,Variable\Variable_02_2.npy,train
+945,161,Variable,Variable_03_1.mov,3,1,118,7,85,79,200,61.5,0.0,0.0,0.0,Variable\Variable_03_1.npy,test
+946,161,Variable,Variable_03_2.mov,3,2,164,29,146,118,200,74.0,0.0,1.0,0.0,Variable\Variable_03_2.npy,test
+947,161,Variable,Variable_06_1.mov,6,1,90,27,87,61,200,54.5,0.0,2.0,0.0,Variable\Variable_06_1.npy,train
+948,161,Variable,Variable_06_2.mov,6,2,101,0,94,95,200,39.5,0.0,4.0,0.0,Variable\Variable_06_2.npy,train
+949,162,Very,Very_01_1.mov,1,1,93,19,78,60,200,27.0,35.0,5.0,13.5,Very\Very_01_1.npy,test
+950,162,Very,Very_01_2.mov,1,2,180,14,145,132,200,50.0,33.5,2.5,9.0,Very\Very_01_2.npy,test
+951,162,Very,Very_05_1.mov,5,1,108,30,98,69,200,57.0,55.5,0.0,0.0,Very\Very_05_1.npy,validation
+952,162,Very,Very_05_2.mov,5,2,103,21,99,79,200,56.5,54.0,1.0,3.5,Very\Very_05_2.npy,validation
+953,162,Very,Very_06_1.mov,6,1,84,17,77,61,200,40.0,43.0,1.5,0.0,Very\Very_06_1.npy,train
+954,162,Very,Very_06_2.mov,6,2,99,21,95,75,200,47.0,43.0,0.0,0.0,Very\Very_06_2.npy,train
+955,163,With-within,With-within_01_1.mov,1,1,107,32,106,75,200,19.5,31.5,15.5,5.0,With-within\With-within_01_1.npy,test
+956,163,With-within,With-within_01_2.mov,1,2,162,17,145,129,200,33.0,22.5,2.5,10.0,With-within\With-within_01_2.npy,test
+957,163,With-within,With-within_05_1.mov,5,1,82,11,74,64,200,63.0,58.5,0.0,0.0,With-within\With-within_05_1.npy,validation
+958,163,With-within,With-within_05_2.mov,5,2,102,20,98,79,200,60.5,56.0,1.0,0.0,With-within\With-within_05_2.npy,validation
+959,163,With-within,With-within_06_1.mov,6,1,81,23,76,54,200,53.5,51.0,3.0,3.5,With-within\With-within_06_1.npy,train
+960,163,With-within,With-within_06_2.mov,6,2,86,13,79,67,200,42.5,38.0,1.5,4.5,With-within\With-within_06_2.npy,train
+961,164,Zero,Zero_01_1.mov,1,1,159,30,149,120,200,63.5,0.0,0.5,0.0,Zero\Zero_01_1.npy,test
+962,164,Zero,Zero_01_2.mov,1,2,110,0,92,93,200,29.0,0.0,0.0,0.0,Zero\Zero_01_2.npy,test
+963,164,Zero,Zero_01_3.mov,1,3,95,14,72,59,200,51.5,0.0,2.0,0.0,Zero\Zero_01_3.npy,test
+964,164,Zero,Zero_05_1.mov,5,1,100,26,89,64,200,57.0,0.0,1.5,0.0,Zero\Zero_05_1.npy,validation
+965,164,Zero,Zero_06_1.mov,6,1,64,13,62,50,200,38.5,0.0,0.0,0.0,Zero\Zero_06_1.npy,train
+966,164,Zero,Zero_06_2.mov,6,2,79,14,78,65,200,59.0,0.0,0.0,0.0,Zero\Zero_06_2.npy,train

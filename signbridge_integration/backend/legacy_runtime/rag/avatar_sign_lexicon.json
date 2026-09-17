@@ -1,0 +1,885 @@
+{
+  "version": "4.8.1",
+  "description": "SignBridge Avatar Concept Lexicon V4.8.1. Adds Arabic field aliases (حقل، حقول، الحقول) to COLUMN; otherwise unchanged from V4.8.",
+  "entries": [
+    {
+      "token": "STACK",
+      "motion_id": "STACK",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "stack",
+        "stacks",
+        "مكدس",
+        "المكدس",
+        "الـstack"
+      ]
+    },
+    {
+      "token": "QUEUE",
+      "motion_id": "QUEUE",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "queue",
+        "queues",
+        "طابور",
+        "الطابور",
+        "الـqueue"
+      ]
+    },
+    {
+      "token": "POINTER",
+      "motion_id": "POINTER",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "pointer",
+        "pointers",
+        "مؤشر",
+        "المؤشر",
+        "مؤشرات"
+      ]
+    },
+    {
+      "token": "DATABASE",
+      "motion_id": "DATABASE",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "database",
+        "db",
+        "قاعدة بيانات",
+        "قواعد البيانات"
+      ]
+    },
+    {
+      "token": "DATA_STRUCTURE",
+      "motion_id": "DATA_STRUCTURE",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "data structure",
+        "هيكل بيانات",
+        "بنية بيانات",
+        "طابور بيانات",
+        "بنية بيانات طابور"
+      ]
+    },
+    {
+      "token": "LIFO",
+      "motion_id": "LIFO",
+      "motion_file": null,
+      "priority": 20,
+      "aliases": [
+        "lifo",
+        "last in first out",
+        "آخر يدخل أول يخرج",
+        "اخر يدخل اول يخرج",
+        "آخر عنصر يدخل أول عنصر يخرج",
+        "اخر عنصر يدخل اول عنصر يخرج",
+        "آخر ما يدخل أول ما يخرج",
+        "اخر ما يدخل اول ما يخرج",
+        "آخر عنصر يدخل هو أول عنصر يخرج",
+        "اخر عنصر يدخل هو اول عنصر يخرج",
+        "آخر ما يدخل هو أول ما يخرج",
+        "اخر ما يدخل هو اول ما يخرج"
+      ]
+    },
+    {
+      "token": "FIFO",
+      "motion_id": "FIFO",
+      "motion_file": null,
+      "priority": 20,
+      "aliases": [
+        "fifo",
+        "first in first out",
+        "أول يدخل أول يخرج",
+        "اول يدخل اول يخرج",
+        "أول عنصر يدخل أول عنصر يخرج",
+        "اول عنصر يدخل اول عنصر يخرج",
+        "أول عنصر يدخل هو أول عنصر يخرج",
+        "اول عنصر يدخل هو اول عنصر يخرج",
+        "أول ما يدخل هو أول ما يخرج",
+        "اول ما يدخل هو اول ما يخرج",
+        "أول داخل أول خارج",
+        "اول داخل اول خارج",
+        "أول داخل أولاً خارج",
+        "اول داخل اولا خارج",
+        "أول داخل هو أول خارج",
+        "اول داخل هو اول خارج",
+        "أول دخول أول خروج",
+        "اول دخول اول خروج",
+        "أول دخول أولاً خروج",
+        "اول دخول اولا خروج",
+        "أول دخول هو أول خروج",
+        "اول دخول هو اول خروج",
+        "أول من يدخل أول من يخرج",
+        "اول من يدخل اول من يخرج",
+        "العنصر الذي يدخل أولا يخرج أولا",
+        "العنصر الذي يدخل اولا يخرج اولا",
+        "يخرج أول عنصر دخل أولاً",
+        "يخرج اول عنصر دخل اولا",
+        "أول عنصر دخل أول عنصر يخرج",
+        "اول عنصر دخل اول عنصر يخرج",
+        "أول عنصر دخل يخرج أولاً",
+        "اول عنصر دخل يخرج اولا"
+      ]
+    },
+    {
+      "token": "PUSH",
+      "motion_id": "PUSH",
+      "motion_file": null,
+      "priority": 20,
+      "aliases": [
+        "push",
+        "إضافة إلى المكدس",
+        "اضافة الى المكدس",
+        "إدخال إلى المكدس",
+        "ادخال الى المكدس"
+      ]
+    },
+    {
+      "token": "POP",
+      "motion_id": "POP",
+      "motion_file": null,
+      "priority": 20,
+      "aliases": [
+        "pop",
+        "إزالة من المكدس",
+        "ازالة من المكدس",
+        "حذف من المكدس",
+        "إخراج من المكدس",
+        "اخراج من المكدس"
+      ]
+    },
+    {
+      "token": "ENQUEUE",
+      "motion_id": "ENQUEUE",
+      "motion_file": null,
+      "priority": 20,
+      "aliases": [
+        "enqueue",
+        "addqueue",
+        "إضافة إلى الطابور",
+        "اضافة الى الطابور",
+        "إدخال إلى الطابور",
+        "ادخال الى الطابور"
+      ]
+    },
+    {
+      "token": "DEQUEUE",
+      "motion_id": "DEQUEUE",
+      "motion_file": null,
+      "priority": 20,
+      "aliases": [
+        "dequeue",
+        "deletequeue",
+        "إزالة من الطابور",
+        "ازالة من الطابور",
+        "حذف من الطابور",
+        "إخراج من الطابور",
+        "اخراج من الطابور"
+      ]
+    },
+    {
+      "token": "TOP",
+      "motion_id": "TOP",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "top",
+        "الأعلى",
+        "الاعلى",
+        "أعلى",
+        "اعلى",
+        "من الأعلى",
+        "من الاعلى",
+        "أعلى المكدس",
+        "اعلى المكدس",
+        "الموضع الاعلى",
+        "الموضع الأعلى",
+        "المكان الاعلى",
+        "المكان الأعلى"
+      ]
+    },
+    {
+      "token": "FRONT",
+      "motion_id": "FRONT",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "front",
+        "مقدمة الطابور",
+        "بداية الطابور",
+        "المقدمة",
+        "البداية"
+      ]
+    },
+    {
+      "token": "REAR",
+      "motion_id": "REAR",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "rear",
+        "back",
+        "مؤخرة الطابور",
+        "نهاية الطابور",
+        "المؤخرة",
+        "النهاية"
+      ]
+    },
+    {
+      "token": "ADD",
+      "motion_id": "ADD",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "add",
+        "adds",
+        "adding",
+        "إضافة",
+        "اضافة",
+        "يضيف",
+        "تضاف",
+        "أضف",
+        "اضف",
+        "إدخال",
+        "ادخال",
+        "يدخل",
+        "زيادة عنصر",
+        "يضيفه",
+        "ويضيفه",
+        "يضيفها",
+        "ويضيفها",
+        "نضيف",
+        "نضيفه",
+        "نضيفها",
+        "ندخل",
+        "ندخله",
+        "ندخلها"
+      ]
+    },
+    {
+      "token": "REMOVE",
+      "motion_id": "REMOVE",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "remove",
+        "removes",
+        "removing",
+        "إزالة",
+        "ازالة",
+        "يزيل",
+        "تزال",
+        "حذف",
+        "يحذف",
+        "الحذف",
+        "إخراج",
+        "اخراج",
+        "يخرج",
+        "يزيله",
+        "ويزيله",
+        "يزيلها",
+        "ويزيلها",
+        "نحذف",
+        "نحذفه",
+        "نحذفها",
+        "نزيل",
+        "نزيله",
+        "نزيلها",
+        "تحذف",
+        "تُحذف"
+      ]
+    },
+    {
+      "token": "ELEMENT",
+      "motion_id": "ELEMENT",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "element",
+        "elements",
+        "عنصر",
+        "العنصر",
+        "عناصر",
+        "العناصر"
+      ]
+    },
+    {
+      "token": "ARRAY",
+      "motion_id": "ARRAY",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "array",
+        "arrays",
+        "مصفوفة",
+        "المصفوفة",
+        "مصفوفات"
+      ]
+    },
+    {
+      "token": "STORE",
+      "motion_id": "STORE",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "store",
+        "stored",
+        "storage",
+        "يخزن",
+        "تخزين",
+        "مخزن",
+        "تخزن",
+        "يحتوي",
+        "يحتوي على"
+      ]
+    },
+    {
+      "token": "LENGTH",
+      "motion_id": "LENGTH",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "length",
+        "الطول",
+        "طول",
+        "عدد العناصر",
+        "يعد العناصر",
+        "يعدد العناصر"
+      ]
+    },
+    {
+      "token": "ZERO",
+      "motion_id": "ZERO",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "zero",
+        "0",
+        "صفر",
+        "صفرا",
+        "صفرًا"
+      ]
+    },
+    {
+      "token": "INCREMENT",
+      "motion_id": "INCREMENT",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "increment",
+        "increase",
+        "increases",
+        "يزيد",
+        "تزيد",
+        "زيادة",
+        "تزداد"
+      ]
+    },
+    {
+      "token": "DECREMENT",
+      "motion_id": "DECREMENT",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "decrement",
+        "decrease",
+        "decreases",
+        "ينقص",
+        "تنقص",
+        "نقص",
+        "يقل"
+      ]
+    },
+    {
+      "token": "FULL",
+      "motion_id": "FULL",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "full",
+        "ممتلئ",
+        "ممتلئة",
+        "مليء",
+        "مليئة"
+      ]
+    },
+    {
+      "token": "EMPTY",
+      "motion_id": "EMPTY",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "empty",
+        "فارغ",
+        "فارغة"
+      ]
+    },
+    {
+      "token": "START",
+      "motion_id": "START",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "start",
+        "starts",
+        "begin",
+        "begins",
+        "يبدأ",
+        "يبدا",
+        "تبدأ",
+        "تبدا",
+        "البداية",
+        "بداية"
+      ]
+    },
+    {
+      "token": "MAX_SIZE",
+      "motion_id": "MAX_SIZE",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "max size",
+        "max_size",
+        "maximum size",
+        "السعة القصوى",
+        "الحجم الاقصى",
+        "الحجم الأقصى",
+        "اقصى حجم",
+        "أقصى حجم"
+      ]
+    },
+    {
+      "token": "ADDRESS",
+      "motion_id": "ADDRESS",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "address",
+        "memory address",
+        "عنوان",
+        "عنوان الذاكرة",
+        "موقعها",
+        "موقعه",
+        "موقع القيمة",
+        "موقع القيمه",
+        "مكانها",
+        "مكان القيمة",
+        "مكان القيمه"
+      ]
+    },
+    {
+      "token": "MEMORY",
+      "motion_id": "MEMORY",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "memory",
+        "ذاكرة",
+        "الذاكرة"
+      ]
+    },
+    {
+      "token": "VALUE",
+      "motion_id": "VALUE",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "value",
+        "values",
+        "قيمة",
+        "القيمة",
+        "قيم"
+      ]
+    },
+    {
+      "token": "VARIABLE",
+      "motion_id": "VARIABLE",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "variable",
+        "variables",
+        "متغير",
+        "المتغير",
+        "متغيرات"
+      ]
+    },
+    {
+      "token": "REFERENCE",
+      "motion_id": "REFERENCE",
+      "motion_file": null,
+      "priority": 5,
+      "aliases": [
+        "reference",
+        "refer",
+        "مرجع",
+        "إشارة إلى",
+        "اشارة الى"
+      ]
+    },
+    {
+      "token": "SCHEMA",
+      "motion_id": "SCHEMA",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "schema",
+        "database schema",
+        "مخطط قاعدة البيانات",
+        "مخطط",
+        "وصف بنية قاعدة البيانات",
+        "وصف بنيه قاعده البيانات",
+        "بنية قاعدة البيانات",
+        "بنيه قاعده البيانات",
+        "يحدد الجداول والعلاقات",
+        "الجداول والعلاقات",
+        "الجداول و العلاقات"
+      ]
+    },
+    {
+      "token": "INSTANCE",
+      "motion_id": "INSTANCE",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "instance",
+        "database instance",
+        "مثيل",
+        "حالة قاعدة البيانات",
+        "محتوى قاعدة البيانات",
+        "محتوى قاعدة البيانات في وقت معين",
+        "حالة قاعدة البيانات في وقت معين",
+        "البيانات الفعلية في وقت معين",
+        "البيانات الفعليه في وقت معين",
+        "بيانات فعلية في وقت معين",
+        "بيانات فعليه في وقت معين",
+        "البيانات الفعلية",
+        "البيانات الفعليه"
+      ]
+    },
+    {
+      "token": "ENTITY",
+      "motion_id": "ENTITY",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "entity",
+        "كيان",
+        "الكيان"
+      ]
+    },
+    {
+      "token": "RELATIONSHIP",
+      "motion_id": "RELATIONSHIP",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "relationship",
+        "relation",
+        "علاقة",
+        "العلاقة",
+        "relationships",
+        "علاقات",
+        "العلاقات"
+      ]
+    },
+    {
+      "token": "ATTRIBUTE",
+      "motion_id": "ATTRIBUTE",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "attribute",
+        "attributes",
+        "صفة",
+        "الصفة",
+        "خصائص",
+        "خاصية",
+        "صفات",
+        "الصفات",
+        "يحتوي على صفات",
+        "يحتوي علي صفات",
+        "سمات",
+        "السمات",
+        "يحتوي على سمات",
+        "يحتوي علي سمات"
+      ]
+    },
+    {
+      "token": "PRIMARY_KEY",
+      "motion_id": "PRIMARY_KEY",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "primary key",
+        "المفتاح الاساسي",
+        "المفتاح الأساسي"
+      ]
+    },
+    {
+      "token": "FOREIGN_KEY",
+      "motion_id": "FOREIGN_KEY",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "foreign key",
+        "المفتاح الاجنبي",
+        "المفتاح الأجنبي"
+      ]
+    },
+    {
+      "token": "NORMALIZATION",
+      "motion_id": "NORMALIZATION",
+      "motion_file": null,
+      "priority": 8,
+      "aliases": [
+        "normalization",
+        "التطبيع",
+        "تطبيع"
+      ]
+    },
+    {
+      "token": "FUNCTIONAL_DEPENDENCY",
+      "motion_id": "FUNCTIONAL_DEPENDENCY",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "functional dependency",
+        "اعتمادية وظيفية",
+        "اعتماد وظيفي",
+        "التبعية الوظيفية"
+      ]
+    },
+    {
+      "token": "PARTIAL_DEPENDENCY",
+      "motion_id": "PARTIAL_DEPENDENCY",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "partial dependency",
+        "اعتماد جزئي",
+        "اعتمادية جزئية"
+      ]
+    },
+    {
+      "token": "TRANSITIVE_DEPENDENCY",
+      "motion_id": "TRANSITIVE_DEPENDENCY",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "transitive dependency",
+        "اعتماد انتقالي",
+        "اعتمادية انتقالية"
+      ]
+    },
+    {
+      "token": "ONE_NF",
+      "motion_id": "ONE_NF",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "1nf",
+        "first normal form",
+        "الشكل الطبيعي الاول",
+        "الشكل الطبيعي الأول"
+      ]
+    },
+    {
+      "token": "TWO_NF",
+      "motion_id": "TWO_NF",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "2nf",
+        "second normal form",
+        "الشكل الطبيعي الثاني"
+      ]
+    },
+    {
+      "token": "THREE_NF",
+      "motion_id": "THREE_NF",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "3nf",
+        "third normal form",
+        "الشكل الطبيعي الثالث"
+      ]
+    },
+    {
+      "token": "READ",
+      "motion_id": "READ",
+      "motion_file": null,
+      "priority": 7,
+      "aliases": [
+        "read",
+        "reading",
+        "reads",
+        "قراءة",
+        "قراءه",
+        "يقرأ",
+        "يقرا",
+        "اقرأ",
+        "اقرا",
+        "للقراءة",
+        "للقراءه",
+        "لقراءة",
+        "لقراءه"
+      ]
+    },
+    {
+      "token": "CAPACITY",
+      "motion_id": "CAPACITY",
+      "motion_file": null,
+      "priority": 7,
+      "aliases": [
+        "capacity",
+        "fixed capacity",
+        "السعة",
+        "السعه",
+        "سعة",
+        "سعه",
+        "ثابتة السعة",
+        "ثابته السعه",
+        "سعة ثابتة",
+        "سعه ثابته"
+      ]
+    },
+    {
+      "token": "DATA_TYPE",
+      "aliases": [
+        "data type",
+        "datatype",
+        "نوع البيانات",
+        "نوع بيانات",
+        "نوع البيانات المتوقعة",
+        "نوع البيانات المتوقعه"
+      ],
+      "motion_id": "DATA_TYPE"
+    },
+    {
+      "token": "NOT",
+      "aliases": [
+        "لا",
+        "ليس",
+        "ليست",
+        "ليس من",
+        "لا يقوم"
+      ],
+      "motion_id": "NOT"
+    },
+    {
+      "token": "CHANGE",
+      "aliases": [
+        "يتغير",
+        "تتغير",
+        "تغير",
+        "تتبدل",
+        "يتبدل",
+        "تتغير مع الوقت"
+      ],
+      "motion_id": "CHANGE"
+    },
+    {
+      "token": "ROW",
+      "aliases": [
+        "صف",
+        "صفوف",
+        "السطر",
+        "الصف",
+        "الصفوف",
+        "rows",
+        "row"
+      ],
+      "motion_id": "ROW"
+    },
+    {
+      "token": "CANDIDATE_KEY",
+      "aliases": [
+        "candidate key",
+        "candidate keys",
+        "مفتاح مرشح",
+        "المفتاح المرشح",
+        "مفاتيح مرشحة",
+        "المفاتيح المرشحة"
+      ],
+      "motion_id": "CANDIDATE_KEY"
+    },
+    {
+      "token": "SELECT",
+      "aliases": [
+        "يختار",
+        "يُختار",
+        "اختيار",
+        "مختار",
+        "يتم اختياره",
+        "يتم اختيار"
+      ],
+      "motion_id": "SELECT"
+    },
+    {
+      "token": "UNIQUE",
+      "aliases": [
+        "فريد",
+        "فريدا",
+        "فريدًا",
+        "بشكل فريد",
+        "بصورة فريدة",
+        "unique",
+        "uniquely",
+        "يميز",
+        "يحدد بشكل فريد"
+      ],
+      "motion_id": "UNIQUE"
+    },
+    {
+      "token": "EXTRA",
+      "aliases": [
+        "زائد",
+        "زائدة",
+        "زائده",
+        "غير ضرورية",
+        "غير ضروري",
+        "extra",
+        "unnecessary"
+      ],
+      "motion_id": "EXTRA"
+    },
+    {
+      "token": "TABLE",
+      "motion_id": "TABLE",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "table",
+        "tables",
+        "جدول",
+        "الجداول",
+        "جداول"
+      ]
+    },
+    {
+      "token": "COLUMN",
+      "motion_id": "COLUMN",
+      "motion_file": null,
+      "priority": 10,
+      "aliases": [
+        "column",
+        "columns",
+        "عمود",
+        "اعمدة",
+        "أعمدة",
+        "الاعمدة",
+        "الأعمدة",
+        "حقل",
+        "حقول",
+        "الحقول"
+      ]
+    }
+  ]
+}

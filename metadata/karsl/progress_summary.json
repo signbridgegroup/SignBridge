@@ -1,0 +1,13 @@
+{
+  "inventory_videos": 75514,
+  "successfully_sharded": 75514,
+  "remaining": 0,
+  "failed_attempts_this_run": 0,
+  "saved_split_counts": {
+    "train": 42387,
+    "validation": 8040,
+    "test": 25087
+  },
+  "complete": true,
+  "updated_unix_time": 1788484115.8914933
+}

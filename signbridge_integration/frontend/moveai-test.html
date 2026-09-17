@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>SignBridge - Move AI Test</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #eef7f5;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #panel {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      width: min(390px, calc(100vw - 40px));
+      padding: 18px;
+      border: 1px solid #cce3df;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 12px 35px rgba(20, 80, 70, 0.13);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #173d38;
+      font-size: 21px;
+    }
+
+    #status {
+      margin: 0;
+      color: #47645f;
+      line-height: 1.7;
+    }
+
+    #restart {
+      display: none;
+      width: 100%;
+      margin-top: 14px;
+      padding: 11px;
+      border: 0;
+      border-radius: 10px;
+      color: white;
+      background: #20a98f;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    #restart:hover {
+      background: #188c77;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="panel">
+    <h1>اختبار حركة Move AI</h1>
+
+    <p id="status">
+      جارٍ تحميل حركة Stack...
+    </p>
+
+    <button id="restart" type="button">
+      إعادة تشغيل الحركة
+    </button>
+  </section>
+
+  <script type="module">
+    import * as THREE from "three";
+
+    import { GLTFLoader } from
+      "three/addons/loaders/GLTFLoader.js";
+
+    import { OrbitControls } from
+      "three/addons/controls/OrbitControls.js";
+
+    const statusElement =
+      document.getElementById("status");
+
+    const restartButton =
+      document.getElementById("restart");
+
+    const scene = new THREE.Scene();
+
+    scene.background =
+      new THREE.Color(0xeef7f5);
+
+    const camera = new THREE.PerspectiveCamera(
+      35,
+      window.innerWidth / window.innerHeight,
+      0.01,
+      1000
+    );
+
+    const renderer = new THREE.WebGLRenderer({
+      antialias: true
+    });
+
+    renderer.setSize(
+      window.innerWidth,
+      window.innerHeight
+    );
+
+    renderer.setPixelRatio(
+      Math.min(window.devicePixelRatio, 2)
+    );
+
+    renderer.outputColorSpace =
+      THREE.SRGBColorSpace;
+
+    renderer.toneMapping =
+      THREE.ACESFilmicToneMapping;
+
+    renderer.toneMappingExposure = 1.15;
+
+    renderer.shadowMap.enabled = true;
+
+    document.body.appendChild(
+      renderer.domElement
+    );
+
+    const controls = new OrbitControls(
+      camera,
+      renderer.domElement
+    );
+
+    controls.enableDamping = true;
+
+    scene.add(
+      new THREE.HemisphereLight(
+        0xffffff,
+        0x8da9a3,
+        2.2
+      )
+    );
+
+    const mainLight =
+      new THREE.DirectionalLight(
+        0xffffff,
+        3
+      );
+
+    mainLight.position.set(3, 6, 5);
+    mainLight.castShadow = true;
+
+    scene.add(mainLight);
+
+    const fillLight =
+      new THREE.DirectionalLight(
+        0xbdefff,
+        1.5
+      );
+
+    fillLight.position.set(-4, 3, 2);
+
+    scene.add(fillLight);
+
+    const clock = new THREE.Clock();
+
+    let mixer = null;
+    let action = null;
+
+    const loader = new GLTFLoader();
+
+    loader.load(
+      "/moveai/Stack_01_1/main_glb.glb",
+
+      (gltf) => {
+        const moveModel = gltf.scene;
+
+        moveModel.traverse((object) => {
+          if (object.isMesh) {
+            object.castShadow = true;
+            object.receiveShadow = true;
+          }
+        });
+
+        scene.add(moveModel);
+
+        moveModel.updateMatrixWorld(true);
+
+        const initialBox =
+          new THREE.Box3().setFromObject(
+            moveModel
+          );
+
+        const center =
+          initialBox.getCenter(
+            new THREE.Vector3()
+          );
+
+        moveModel.position.x -= center.x;
+        moveModel.position.y -= initialBox.min.y;
+        moveModel.position.z -= center.z;
+
+        moveModel.updateMatrixWorld(true);
+
+        const fittedBox =
+          new THREE.Box3().setFromObject(
+            moveModel
+          );
+
+        const size =
+          fittedBox.getSize(
+            new THREE.Vector3()
+          );
+
+        const modelHeight =
+          Math.max(size.y, 1);
+
+        camera.position.set(
+          0,
+          modelHeight * 0.58,
+          modelHeight * 2.05
+        );
+
+        controls.target.set(
+          0,
+          modelHeight * 0.56,
+          0
+        );
+
+        controls.update();
+
+        const floor =
+          new THREE.Mesh(
+            new THREE.CircleGeometry(
+              modelHeight * 1.3,
+              64
+            ),
+            new THREE.MeshStandardMaterial({
+              color: 0xdcece8,
+              roughness: 0.9
+            })
+          );
+
+        floor.rotation.x = -Math.PI / 2;
+        floor.position.y = -0.005;
+        floor.receiveShadow = true;
+
+        scene.add(floor);
+
+        if (
+          gltf.animations &&
+          gltf.animations.length > 0
+        ) {
+          mixer =
+            new THREE.AnimationMixer(
+              moveModel
+            );
+
+          const clip = gltf.animations[0];
+
+          action = mixer.clipAction(clip);
+
+          action.setLoop(
+            THREE.LoopRepeat,
+            Infinity
+          );
+
+          action.reset();
+          action.play();
+
+          statusElement.textContent =
+            `تم تحميل الحركة بنجاح. ` +
+            `المدة: ${clip.duration.toFixed(2)} ثانية.`;
+
+          restartButton.style.display =
+            "block";
+        } else {
+          statusElement.textContent =
+            "تم تحميل المجسم، لكن لم نجد حركة داخله.";
+        }
+      },
+
+      (progressEvent) => {
+        if (progressEvent.total > 0) {
+          const percentage =
+            Math.round(
+              (
+                progressEvent.loaded /
+                progressEvent.total
+              ) * 100
+            );
+
+          statusElement.textContent =
+            `جارٍ تحميل الحركة: ${percentage}%`;
+        }
+      },
+
+      (error) => {
+        console.error(error);
+
+        statusElement.textContent =
+          "فشل تحميل ملف الحركة. افتحي Console وصوري الخطأ.";
+      }
+    );
+
+    restartButton.addEventListener(
+      "click",
+      () => {
+        if (!action) {
+          return;
+        }
+
+        action.reset();
+        action.play();
+      }
+    );
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      const delta = clock.getDelta();
+
+      if (mixer) {
+        mixer.update(delta);
+      }
+
+      controls.update();
+
+      renderer.render(
+        scene,
+        camera
+      );
+    }
+
+    animate();
+
+    window.addEventListener(
+      "resize",
+      () => {
+        camera.aspect =
+          window.innerWidth /
+          window.innerHeight;
+
+        camera.updateProjectionMatrix();
+
+        renderer.setSize(
+          window.innerWidth,
+          window.innerHeight
+        );
+      }
+    );
+  </script>
+</body>
+</html>

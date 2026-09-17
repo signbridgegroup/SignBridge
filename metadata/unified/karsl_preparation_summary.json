@@ -1,0 +1,24 @@
+{
+  "karsl_samples": 75514,
+  "karsl_sign_ids": 502,
+  "existing_real_tokens_before_karsl": 845,
+  "karsl_sign_ids_mapped_to_existing_tokens": 93,
+  "new_unique_karsl_tokens": 409,
+  "unified_real_tokens": 1254,
+  "vocabulary_including_special_tokens": 1256,
+  "split_counts": {
+    "train": 42387,
+    "validation": 8040,
+    "test": 25087
+  },
+  "excluded_impossible_training_samples": 4,
+  "validation_and_test_quality_filtering": false,
+  "karsl_feature_file": "C:\\SignBridge_Project\\data\\processed\\karsl_shared198\\features_flat.npy",
+  "karsl_feature_count": 198,
+  "checks": {
+    "metadata_arrays_aligned": true,
+    "all_502_sign_ids_present": true,
+    "all_sign_ids_have_eligible_training_data": true,
+    "source_features_unchanged": true
+  }
+}

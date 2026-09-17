@@ -1,0 +1,58 @@
+{
+  "dataset": "Isharah-1000",
+  "features_per_frame": 198,
+  "dtype": "float32",
+  "normalization": {
+    "global_xy": "shoulder midpoint and shoulder-width scale",
+    "local_hands": "wrist-relative and wrist-to-middle-MCP scale",
+    "short_hand_gap_interpolation_frames": 5,
+    "coordinate_clip": [
+      -10.0,
+      10.0
+    ]
+  },
+  "feature_blocks_end_exclusive": {
+    "upper_pose_global_xy": [
+      0,
+      28
+    ],
+    "left_hand_global_xy": [
+      28,
+      70
+    ],
+    "right_hand_global_xy": [
+      70,
+      112
+    ],
+    "left_hand_local_xy": [
+      112,
+      154
+    ],
+    "right_hand_local_xy": [
+      154,
+      196
+    ],
+    "left_hand_observed": [
+      196,
+      197
+    ],
+    "right_hand_observed": [
+      197,
+      198
+    ]
+  },
+  "velocity": "derived during training from consecutive prepared frames",
+  "train_vocabulary_size": 680,
+  "oov_glosses": {
+    "dev": [
+      "اثنين",
+      "سمك",
+      "صوت_جرس"
+    ],
+    "test": [
+      "دال",
+      "سبع_ساعات"
+    ]
+  },
+  "processing_seconds": 39.17707100000007
+}

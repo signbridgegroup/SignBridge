@@ -1,0 +1,14 @@
+{
+  "karsl_labels": 501,
+  "isharah_vocabulary_entries": 685,
+  "jordanian_it_vocabulary_entries": 166,
+  "karsl_overlap_with_isharah": 103,
+  "karsl_overlap_with_jordanian_it": 0,
+  "karsl_new_labels": 398,
+  "note": "Overlap is based on normalized label text and is not a linguistic/dialect equivalence check.",
+  "sources": {
+    "karsl_labels": "C:\\SignBridge_Project\\data\\external\\karsl\\KARSL-502_Labels.xlsx",
+    "isharah_vocabulary": "C:\\SignBridge_Project\\data\\processed\\isharah1000_shared198\\gloss_vocabulary.json",
+    "jordanian_it_vocabulary": "C:\\SignBridge_Project\\data\\processed\\model_data\\label_map.json"
+  }
+}

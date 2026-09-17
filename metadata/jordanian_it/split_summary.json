@@ -1,0 +1,67 @@
+{
+  "random_seed": 42,
+  "total_samples": 967,
+  "total_classes": 165,
+  "all_signers": [
+    "01",
+    "02",
+    "03",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "test_signers": [
+    "01",
+    "03",
+    "08"
+  ],
+  "train_validation_signers": [
+    "02",
+    "05",
+    "06",
+    "07"
+  ],
+  "train": {
+    "samples": 468,
+    "classes": 165,
+    "signer_counts": {
+      "02": 141,
+      "05": 172,
+      "06": 134,
+      "07": 21
+    },
+    "minimum_samples_per_class": 2
+  },
+  "validation": {
+    "samples": 164,
+    "classes": 164,
+    "excluded_labels_to_preserve_training_samples": [
+      "Higher"
+    ],
+    "signer_counts": {
+      "02": 55,
+      "05": 59,
+      "06": 40,
+      "07": 10
+    }
+  },
+  "test": {
+    "samples": 335,
+    "classes": 165,
+    "signer_counts": {
+      "01": 193,
+      "03": 140,
+      "08": 2
+    },
+    "minimum_samples_per_class": 2
+  },
+  "checks": {
+    "all_samples_assigned_once": true,
+    "no_index_overlap": true,
+    "train_test_signer_disjoint": true,
+    "validation_test_signer_disjoint": true,
+    "all_classes_in_train": true,
+    "all_classes_in_test": true
+  }
+}

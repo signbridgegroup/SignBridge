@@ -1,0 +1,55 @@
+# Secrets
+.env
+*.env
+!.env.example
+key.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Node / frontend build
+node_modules/
+dist/
+.vite/
+
+# IDE / OS
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Temporary / generated files
+*.tmp
+*.log
+tmp_uploads/
+debug/
+motion_library_cache/
+
+# Frontend backups
+signbridge_integration/frontend/.backup-before-*/
+
+# Duplicate / temporary backend copy
+signbridge_integration/backend_from_friend_ui/
+
+# Generated motion-builder logs
+signbridge_integration/tools/motion_library_builder/batch_*.log
+signbridge_integration/tools/motion_library_builder/batch_*.flag
+signbridge_integration/tools/motion_library_builder/batch_*_time.txt
+
+# Large raw/external datasets are not stored in GitHub
+data/
+external_data/
+
+# Local frontend backup files
+signbridge_integration/frontend/src/*backup*
+
+# Local MoveAI experiment outputs
+signbridge_integration/moveai_results/
+
+

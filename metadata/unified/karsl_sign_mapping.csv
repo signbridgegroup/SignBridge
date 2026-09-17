@@ -1,0 +1,503 @@
+﻿sign_id,label_ar,label_en,unified_token,unified_token_id,status
+0001,0,0,0,847,new_token
+0002,1,1,1,848,new_token
+0003,2,2,2,849,new_token
+0004,3,3,3,850,new_token
+0005,4,4,4,851,new_token
+0006,5,5,5,852,new_token
+0007,6,6,6,853,new_token
+0008,7,7,7,854,new_token
+0009,8,8,8,855,new_token
+0010,9,9,9,856,new_token
+0011,10,10,10,857,new_token
+0012,20,20,20,858,new_token
+0013,30,30,30,859,new_token
+0014,40,40,40,860,new_token
+0015,50,50,50,861,new_token
+0016,60,60,60,862,new_token
+0017,70,70,70,863,new_token
+0018,80,80,80,864,new_token
+0019,90,90,90,865,new_token
+0020,100,100,100,866,new_token
+0021,200,200,200,867,new_token
+0022,300,300,300,868,new_token
+0023,400,400,400,869,new_token
+0024,500,500,500,870,new_token
+0025,600,600,600,871,new_token
+0026,700,700,700,872,new_token
+0027,800,800,800,873,new_token
+0028,900,900,900,874,new_token
+0029,1000,1000,1000,875,new_token
+0030,1000000,1000000,1000000,876,new_token
+0031,10000000,10000000,10000000,877,new_token
+0032,ا,alif,ا,2,existing_token
+0033,ب,baa,ب,112,existing_token
+0034,ت,ta,ت,139,existing_token
+0035,ث,tha,ث,878,new_token
+0036,ج,Jiim,ج,195,existing_token
+0037,ح,Haa,ح,220,existing_token
+0038,خ,kha,خ,250,existing_token
+0039,د,daal,د,273,existing_token
+0040,ذ,thal,ذ,879,new_token
+0041,ر,raa,ر,297,existing_token
+0042,ز,zay,ز,321,existing_token
+0043,س,siin,س,330,existing_token
+0044,ش,shiin,ش,880,new_token
+0045,ص,Saad,ص,881,new_token
+0046,ض,Daad,ض,882,new_token
+0047,ط,Taa,ط,883,new_token
+0048,ظ,Zaa,ظ,884,new_token
+0049,ع,Ayn,ع,433,existing_token
+0050,غ,ghayn,غ,885,new_token
+0051,ف,faa,ف,886,new_token
+0052,ق,qaaf,ق,492,existing_token
+0053,ك,kaaf,ك,887,new_token
+0054,ل,laam,ل,545,existing_token
+0055,م,miim,م,559,existing_token
+0056,ن,noon,ن,634,existing_token
+0057,ه,haa,ه,654,existing_token
+0058,و,waaw,و,662,existing_token
+0059,ي,yaa,ي,677,existing_token
+0060,ة,taa marbuuTa,ة,888,new_token
+0061,أ,alif with hamza above,ا,2,existing_token
+0062,ؤ,Waaw with hamza,ؤ,889,new_token
+0063,ئ,Alif maqsoura with hamza,ئ,890,new_token
+0064,ئـ,hamza on line,ئـ,891,new_token
+0065,ء,hamza,ء,892,new_token
+0066,إ,alif with hamza below,ا,2,existing_token
+0067,آ,ALif with maad,ا,2,existing_token
+0068,ى,Alif maqsoura,ي,677,existing_token
+0069,لا,laam Alif,لا,546,existing_token
+0070,ال,Al,ال,69,existing_token
+0071,هيكل عظمي,Skeleton,هيكل_عظمي,893,new_token
+0072,جمجة,skull,جمجة,894,new_token
+0073,عمود فقري,Backbone,عمود_فقري,895,new_token
+0074,قفص صدري,Chest,قفص_صدري,896,new_token
+0075,جهاز تنفسي,Respiratory device,جهاز_تنفسي,897,new_token
+0076,قصبة هوائية,Trachea,قصبة_هوائية,898,new_token
+0077,رئتان,lungs,رئتان,899,new_token
+0078,شهيق - زفير,Ins and Outs,شهيق_-_زفير,900,new_token
+0079,جهاز هضمي,digestive system,جهاز_هضمي,901,new_token
+0080,وجه,Face,وجه,665,existing_token
+0081,بلعوم,pharynx,بلعوم,902,new_token
+0082,كبد,liver,كبد,903,new_token
+0083,البنكرياس,pancreas,البنكرياس,904,new_token
+0084,الأمعاء الدقيقة,Small intestine,الأمعاء_الدقيقة,905,new_token
+0085,الأمعاء الغليظة,Large intestine,الأمعاء_الغليظة,906,new_token
+0086,الزائدة الدودية,Appendix,الزائدة_الدودية,907,new_token
+0087,جهاز عصبي,nervous system,جهاز_عصبي,908,new_token
+0088,قلب,heart,قلب,512,existing_token
+0089,حواس خمس,five senses,حواس_خمس,909,new_token
+0090,عضلة,muscle,عضلة,910,new_token
+0091,أنسجة,tissue,أنسجة,911,new_token
+0092,مستشفى,hospital,مستشفى,587,existing_token
+0093,إسعافات أولية,first aid,إسعافات_أولية,912,new_token
+0094,جرح نازف,wound,جرح_نازف,913,new_token
+0095,حروق,burning,حروق,914,new_token
+0096,مخدر/ بنج,anesthetist,مخدر_بنج,915,new_token
+0097,عملية جراحية,surgery,عملية_جراحية,916,new_token
+0098,شاش / ضمادة,gauze,شاش_ضمادة,917,new_token
+0099,شريط لاصق / بلاستر,adhesive tape,شريط_لاصق_بلاستر,918,new_token
+0100,صيدلية,pharmacy,صيدلية,919,new_token
+0101,تحليل دم,blood analysis,تحليل_دم,920,new_token
+0102,فحص سريري,physical examination,فحص_سريري,921,new_token
+0103,فحص النظر,sight examination,فحص_النظر,922,new_token
+0104,ميزان حرارة,thermometer,ميزان_حرارة,923,new_token
+0105,سماعة أذن,stethoscope,سماعة_أذن,924,new_token
+0106,جهاز قياس الضغط,sphygmometroscope,جهاز_قياس_الضغط,925,new_token
+0107,نبض القلب,pulse,نبض_القلب,926,new_token
+0108,تحليل طبي,analysis,تحليل_طبي,927,new_token
+0109,معمل التحاليل / مختبر,analysis laboratory,معمل_التحاليل_مختبر,928,new_token
+0110,صورة اشعة,ray photo,صورة_اشعة,929,new_token
+0111,التهاب,inflammation,التهاب,930,new_token
+0112,تورم,swelling,تورم,931,new_token
+0113,زكام,cold,زكام,323,existing_token
+0114,عدوى,infection,عدوى,932,new_token
+0115,صداع,headache,صداع,933,new_token
+0116,ألم,pain,الم,89,existing_token
+0117,حمى,fever,حمى,248,existing_token
+0118,إسهال,diarrhea,اسهال,52,existing_token
+0119,إمساك,constipation,إمساك,934,new_token
+0120,مغص,colic,مغص,935,new_token
+0121,مرض السكر / سكري,diabetes,مرض_السكر_سكري,936,new_token
+0122,أزمة قلبية,heart attack,أزمة_قلبية,937,new_token
+0123,سرطان,cancer,سرطان,938,new_token
+0124,مرض فقدان المناعة / الإيدز,Aids,مرض_فقدان_المناعة_الإيدز,939,new_token
+0125,تساقط الشعر,Loss of hair,تساقط_الشعر,940,new_token
+0126,سكتة قلبية,Heart failure,سكتة_قلبية,941,new_token
+0127,شلل نصفي,hemiplegia,شلل_نصفي,942,new_token
+0128,شلل دماغي,Cerebral paralysis,شلل_دماغي,943,new_token
+0129,ضغط الدم,blood pressure,ضغط_الدم,944,new_token
+0130,حساسية,allergy,حساسية,945,new_token
+0131,حكة / هرش,itch,حكة_هرش,946,new_token
+0132,دواء,medicine,دواء,287,existing_token
+0133,دورة شهرية,monthly circulation,دورة_شهرية,947,new_token
+0134,مريض / مرض,sick,مريض_مرض,948,new_token
+0135,كبسولة,capsule,كبسولة,949,new_token
+0136,دواء شراب,liquid medicine,دواء_شراب,950,new_token
+0137,مرهم,ointment,مرهم,951,new_token
+0138,قطارة,dropper,قطارة,952,new_token
+0139,أخذ إبرة,acupuncture,أخذ_إبرة,953,new_token
+0140,تلقيح,pollination,تلقيح,954,new_token
+0141,تطعيم,inoculation,تطعيم,955,new_token
+0142,أشعة ليزر,laser ray,أشعة_ليزر,956,new_token
+0143,مخدرات,drug's,مخدرات,577,existing_token
+0144,إدمان,addiction,إدمان,957,new_token
+0145,توحد / أوتيزم,oneness,توحد_أوتيزم,958,new_token
+0146,منغولي,mongoloid,منغولي,959,new_token
+0147,بكتريا,bacterium,بكتريا,960,new_token
+0148,جرثومة,microbe,جرثومة,961,new_token
+0149,فيروس,virus,فيروس,962,new_token
+0150,إنتشار,spread,إنتشار,963,new_token
+0151,إعاقة,hindrance,إعاقة,964,new_token
+0152,إعاقة ذهنية,mentality hindrance,إعاقة_ذهنية,965,new_token
+0153,اعاقة جسدية,physical disability,اعاقة_جسدية,966,new_token
+0154,اعاقة بصرية,visual impairment,اعاقة_بصرية,967,new_token
+0155,إعاقة سمعية,hearing hindrance,إعاقة_سمعية,968,new_token
+0156,وباء,epidemic,وباء,969,new_token
+0157,مناعة,immunity,مناعة,970,new_token
+0158,عصب,nerve,عصب,971,new_token
+0159,معافى,healthy,معافى,972,new_token
+0160,يأكل,eat,يأكل,973,new_token
+0161,يشرب,drink,يشرب,974,new_token
+0162,ينام,sleep,ينام,975,new_token
+0163,يستيقظ,wake up,يستيقظ,976,new_token
+0164,يسمع,hear,يسمع,977,new_token
+0165,يسكت,silence,يسكت,978,new_token
+0166,يشم,inhale,يشم,979,new_token
+0167,يصعد,rise,يصعد,980,new_token
+0168,ينزل,descend,ينزل,981,new_token
+0169,يفتح,open,يفتح,982,new_token
+0170,يقفل ( يغلق ),close,يقفل_يغلق,983,new_token
+0171,يبني,build,يبني,984,new_token
+0172,يكسر,break,يكسر,985,new_token
+0173,يمشي,walk,يمشي,986,new_token
+0174,يحب,love,يحب,987,new_token
+0175,يكره,hate,يكره,678,existing_token
+0176,يشوي,grill,يشوي,988,new_token
+0177,يحرث,plow,يحرث,989,new_token
+0178,يزرع,plant,يزرع,990,new_token
+0179,يسقي,irrigate,يسقي,991,new_token
+0180,يحصد,harvest,يحصد,992,new_token
+0181,يفكر,think,يفكر,993,new_token
+0182,يساعد,help,يساعد,994,new_token
+0183,يدخن,smoke,يدخن,995,new_token
+0184,يدعم,support,يدعم,996,new_token
+0185,يختار,choose,يختار,997,new_token
+0186,ينادي,call,ينادي,998,new_token
+0187,يتنامى,grow,يتنامى,999,new_token
+0188,يصبغ,dye,يصبغ,1000,new_token
+0189,يقف,stand,يقف,1001,new_token
+0190,يستحم,bathe,يستحم,1002,new_token
+0191,يدخل,enter,يدخل,1003,new_token
+0192,أسرة,family,أسرة,1004,new_token
+0193,جدة,grandmother,جدة,1005,new_token
+0194,جد,grandfather,جد,202,existing_token
+0195,أب,father,اب,3,existing_token
+0196,أم,mother,ام,92,existing_token
+0197,أخت,sister,اخت,21,existing_token
+0198,أخ,brother,اخ,18,existing_token
+0199,بنت,girl,بنت,130,existing_token
+0200,رضيع,baby,رضيع,1006,new_token
+0201,توأم,twin,توأم,1007,new_token
+0202,رجل,man,رجل,1008,new_token
+0203,شاب,young man,شاب,364,existing_token
+0204,شابة,young woman,شابة,1009,new_token
+0205,حفيد,grandchild,حفيد,240,existing_token
+0206,زواج,wedding,زواج,325,existing_token
+0207,حمل,pregnant,حمل,1010,new_token
+0208,ولادة,childbirth,ولادة,1011,new_token
+0209,عم,uncle,عم,455,existing_token
+0210,عمة,aunt,عمة,1012,new_token
+0211,خال,maternal uncle,خال,253,existing_token
+0212,خالة,maternal aunt,خالة,1013,new_token
+0213,ابن الأخ,nephew,ابن_الأخ,1014,new_token
+0214,ابن الأخت,nephew,ابن_الأخت,1015,new_token
+0215,ابن العم,cousin,ابن_العم,1016,new_token
+0216,ابن,son,ابن,5,existing_token
+0217,ابنة,daughter,ابنة,1017,new_token
+0218,ناس,people,ناس,1018,new_token
+0219,طلاق,divorce,طلاق,1019,new_token
+0220,خطوبة,engagement,خطوبة,1020,new_token
+0221,حفلة,party,حفلة,1021,new_token
+0222,وفاة,death,وفاة,1022,new_token
+0223,طفل,child,طفل,427,existing_token
+0224,جميل,beautiful,جميل,211,existing_token
+0225,قبيح,ugly,قبيح,496,existing_token
+0226,طويل,long,طويل,429,existing_token
+0227,قصير,short,قصير,506,existing_token
+0228,نحيف,thin,نحيف,639,existing_token
+0229,سمين,fat,سمين,1023,new_token
+0230,غني,rich,غني,469,existing_token
+0231,فقير,poor,فقير,479,existing_token
+0232,محبط,offended,محبط,1024,new_token
+0233,مشمئز,disgusted,مشمئز,1025,new_token
+0234,مرتبك,confused,مرتبك,1026,new_token
+0235,قلق,worried,قلق,1027,new_token
+0236,مشوش,deranged,مشوش,1028,new_token
+0237,خائف,afraid,خائف,1029,new_token
+0238,سعيد (مسرور),happy,سعيد_مسرور,1030,new_token
+0239,حزين,sad,حزين,235,existing_token
+0240,شجاع,courageous,شجاع,1031,new_token
+0241,جبان,coward,جبان,1032,new_token
+0242,طموح,ambitious,طموح,1033,new_token
+0243,معجب,admirable,معجب,1034,new_token
+0244,غائر من,to be jealous of,غائر_من,1035,new_token
+0245,غائر على,to protect jealously,غائر_على,1036,new_token
+0246,ودود,affectionate,ودود,1037,new_token
+0247,كريم,generous,كريم,528,existing_token
+0248,بخيل,miserly,بخيل,1038,new_token
+0249,طماع,greedy,طماع,1039,new_token
+0250,كذاب,liar,كذاب,1040,new_token
+0251,أناني,selfish,أناني,1041,new_token
+0252,متكبر,proud,متكبر,1042,new_token
+0253,متواضع,humble,متواضع,1043,new_token
+0254,شعور,feeling,شعور,378,existing_token
+0255,تعب,tired,تعب,166,existing_token
+0256,بكاء,crying,بكاء,128,existing_token
+0257,احتقار,contempt,احتقار,1044,new_token
+0258,اعتماد على الذات,self-dependence,اعتماد_على_الذات,1045,new_token
+0259,خفيف,light,خفيف,264,existing_token
+0260,ثقيل,heavy,ثقيل,188,existing_token
+0261,قديم,old,قديم,498,existing_token
+0262,حسد,envy,حسد,1046,new_token
+0263,صدق,believe,صدق,397,existing_token
+0264,غدر,betrayal,غدر,1047,new_token
+0265,صبر,patient,صبر,1048,new_token
+0266,لوم,blame,لوم,1049,new_token
+0267,الحق,truth,الحق,1050,new_token
+0268,خيانة,treason,خيانة,1051,new_token
+0269,إيثار,preference,إيثار,1052,new_token
+0270,تضحية,self sacrifice,تضحية,1053,new_token
+0271,شفقة,pity,شفقة,1054,new_token
+0272,ذكي,intelligent,ذكي,293,existing_token
+0273,أمام,in front of,امام,93,existing_token
+0274,بجانب,side,بجانب,1055,new_token
+0275,بعيد,far,بعيد,125,existing_token
+0276,بين,between,بين,1056,new_token
+0277,تحت,under,تحت,147,existing_token
+0278,حول,around,حول,1057,new_token
+0279,خارج,outside,خارج,251,existing_token
+0280,خلف,back,خلف,267,existing_token
+0281,داخل,inside,داخل,274,existing_token
+0282,فوق,up,فوق,486,existing_token
+0283,قريب,near,قريب,503,existing_token
+0284,من خلال,through,من_خلال,1058,new_token
+0285,هنا,here,هنا,658,existing_token
+0286,هناك,there,هناك,1059,new_token
+0287,يسار,left,يسار,1060,new_token
+0288,يمين,right,يمين,679,existing_token
+0289,أهلا وسهلاً,welcome,أهلا_وسهلاً,1061,new_token
+0290,السلام عليكم,greeting,السلام_عليكم,84,existing_token
+0291,تفضل,here you are,تفضل,173,existing_token
+0292,جار,neighbor,جار,196,existing_token
+0293,شكراً,thanks,شكراً,1062,new_token
+0294,صديق,friend,صديق,399,existing_token
+0295,ضيف,guest,ضيف,1063,new_token
+0296,عدو,enemy,عدو,1064,new_token
+0297,عيب,fault,عيب,1065,new_token
+0298,هدية,gift,هدية,1066,new_token
+0299,بيت,house,بيت,1067,new_token
+0300,جدار,wall,جدار,203,existing_token
+0301,سقف,roof,سقف,1068,new_token
+0302,باب,door,باب,113,existing_token
+0303,شباك,window,شباك,1069,new_token
+0304,غرفة,room,غرفة,1070,new_token
+0305,غرفة نوم,bedroom,غرفة_نوم,1071,new_token
+0306,سرير,bed,سرير,342,existing_token
+0307,مرتبة سرير ( حشية),mattress,مرتبة_سرير_حشية,1072,new_token
+0308,شرشف ( غطاء سرير),bedsheet,شرشف_غطاء_سرير,1073,new_token
+0309,وسادة ( مخدة),pillow,وسادة_مخدة,1074,new_token
+0310,شماعة ( مشجب),clothes rail,شماعة_مشجب,1075,new_token
+0311,خزانة ملابس,wardrobe,خزانة_ملابس,1076,new_token
+0312,مطبخ,kitchen,مطبخ,1077,new_token
+0313,فرن غازي,Oven,فرن_غازي,1078,new_token
+0314,بوتاغاز (طابخ),cooker,بوتاغاز_طابخ,1079,new_token
+0315,طبق ( صحن),dish,طبق_صحن,1080,new_token
+0316,سكين,knife,سكين,1081,new_token
+0317,شوكة,fork,شوكة,1082,new_token
+0318,ملعقة,spoon,ملعقة,1083,new_token
+0319,فنجان,cupful,فنجان,1084,new_token
+0320,مجمد (فريزر),freezer,مجمد_فريزر,1085,new_token
+0321,كأس ( كوب),cup,كأس_كوب,1086,new_token
+0322,حافظ حرارة ( ترمس),thermos,حافظ_حرارة_ترمس,1087,new_token
+0323,غرفة طعام,food room,غرفة_طعام,1088,new_token
+0324,إبريق,pitcher,إبريق,1089,new_token
+0325,طاولة,table,طاولة,1090,new_token
+0326,كنكة ( دلة),dalah,كنكة_دلة,1091,new_token
+0327,دورة مياه (حمام),bathroom,دورة_مياه_حمام,1092,new_token
+0328,كرسي,chair,كرسي,525,existing_token
+0329,غسالة,washing machine,غسالة,1093,new_token
+0330,منشفة,towel carpet,منشفة,1094,new_token
+0331,سجادة (زربية),carpet,سجادة_زربية,1095,new_token
+0332,موكيت ( فرش أرضي) moquette,moquette,موكيت_فرش_أرضي_moquette,1096,new_token
+0333,ثريا (نجفة),chandelier,ثريا_نجفة,1097,new_token
+0334,مسجل,cassette,مسجل,1098,new_token
+0335,شريط كاست,cassette tape,شريط_كاست,1099,new_token
+0336,تلفزيون (تلفاز),television,تلفزيون_تلفاز,1100,new_token
+0337,طبق هوائي (دش),satellite,طبق_هوائي_دش,1101,new_token
+0338,شريط فيديو,video tape,شريط_فيديو,1102,new_token
+0339,كاميرا فيديو,video camera,كاميرا_فيديو,1103,new_token
+0340,كاميرا فوتوغرافية,photo camera,كاميرا_فوتوغرافية,1104,new_token
+0341,هاتف ( تلفون),telephone,هاتف_تلفون,1105,new_token
+0342,غرفة ضيوف,guests room,غرفة_ضيوف,1106,new_token
+0343,فيديو,video,فيديو,1107,new_token
+0344,مبخرة,censer,مبخرة,1108,new_token
+0345,مدفأة,heater,مدفأة,1109,new_token
+0346,مفتاح,key,مفتاح,1110,new_token
+0347,مروحة,fan,مروحة,1111,new_token
+0348,تدفئة مركزية,central heater,تدفئة_مركزية,1112,new_token
+0349,كهرباء,electrics,كهرباء,1113,new_token
+0350,مكيف,air conditioner,مكيف,1114,new_token
+0351,سلك كهربائي,wire,سلك_كهربائي,1115,new_token
+0352,قابس كهربائي ( فيش),plug,قابس_كهربائي_فيش,1116,new_token
+0353,حقيبة سفر,bag,حقيبة_سفر,1117,new_token
+0354,مكواة,iron,مكواة,1118,new_token
+0355,ميزان حرارة جوي,thermometer,ميزان_حرارة_جوي,1119,new_token
+0356,الله تعالى,God,الله_تعالى,1120,new_token
+0357,محمد رسول الله,Muhammad is the Messenger of Allah,محمد_رسول_الله,1121,new_token
+0358,عيسى المسيح,Essa Christ,عيسى_المسيح,1122,new_token
+0359,القرآن الكريم,The Holy Quran,القرآن_الكريم,1123,new_token
+0360,الخلفاء الراشدون,Rightly Guided Caliphs,الخلفاء_الراشدون,1124,new_token
+0361,السنة النبوية,Sunnah,السنة_النبوية,1125,new_token
+0362,أركان الإسلام,Pillars of Islam,أركان_الإسلام,1126,new_token
+0363,أركان الإيمان,Pillars of Faith,أركان_الإيمان,1127,new_token
+0364,الشهادتين,The two certificates,الشهادتين,1128,new_token
+0365,يصلي / الصلاة,pray,يصلي_الصلاة,1129,new_token
+0366,الزكاة,zakat,الزكاة,1130,new_token
+0367,الصوم,Fasting,الصوم,1131,new_token
+0368,العمرة,Umrah,العمرة,1132,new_token
+0369,الحج,Pilgrimage,الحج,1133,new_token
+0370,ملائكة,Angels,ملائكة,1134,new_token
+0371,رسول,messenger,رسول,1135,new_token
+0372,يوم القيامة,Doomsday,يوم_القيامة,1136,new_token
+0373,القضاء والقدر,Fate and destiny,القضاء_والقدر,1137,new_token
+0374,أركان الصلاة,Pillars of prayer,أركان_الصلاة,1138,new_token
+0375,خير,Good,خير,272,existing_token
+0376,النية,Intention,النية,1139,new_token
+0377,شر,Evil,شر,1140,new_token
+0378,طهارة,purity,طهارة,1141,new_token
+0379,مبطلات الصلاة,Prayer invalidators,مبطلات_الصلاة,1142,new_token
+0380,تيمم,tayammum,تيمم,1143,new_token
+0381,يتوضأ / وضوء,ablution,يتوضأ_وضوء,1144,new_token
+0382,يؤذن,authorized,يؤذن,1145,new_token
+0383,مسح على الخفين,Wipe on the slippers,مسح_على_الخفين,1146,new_token
+0384,صلاة الفجر,Al-fajr prayer,صلاة_الفجر,1147,new_token
+0385,صلاة الظهر,Salat Aduher,صلاة_الظهر,1148,new_token
+0386,صلاة العصر,Asr prayer,صلاة_العصر,1149,new_token
+0387,صلاة المغرب,Maghreb's prayer,صلاة_المغرب,1150,new_token
+0388,صلاة العشاء,eshaa pray,صلاة_العشاء,1151,new_token
+0389,خطبة,speech,خطبة,1152,new_token
+0390,خطبة الجمعة,Friday sermon,خطبة_الجمعة,1153,new_token
+0391,خطيب,Fiance,خطيب,1154,new_token
+0392,خطبة العيد,Eid sermon,خطبة_العيد,1155,new_token
+0393,مسجد,Mosque,مسجد,590,existing_token
+0394,سورة,surah,سورة,1156,new_token
+0395,إمام,Before,امام,93,existing_token
+0396,سورة الفاتحة,Al-Fatihah,سورة_الفاتحة,1157,new_token
+0397,آية,any,آية,1158,new_token
+0398,ليلة القدر,Night of Power,ليلة_القدر,1159,new_token
+0399,عيد,Feast,عيد,461,existing_token
+0400,عيد الفطر,Eid al-Fitr,عيد_الفطر,1160,new_token
+0401,عيد الأضحى,Eid al-Adha,عيد_الأضحى,1161,new_token
+0402,إحرام,Ihram,احرام,16,existing_token
+0403,مكة,Mecca,مكة,1162,new_token
+0404,الكعبة,Kaaba,الكعبة,1163,new_token
+0405,المدينة المنورة,Medina,المدينة_المنورة,1164,new_token
+0406,منى,Mona,منى,1165,new_token
+0407,جبل عرفات,Arafat Mountain,جبل_عرفات,1166,new_token
+0408,الصفا والمروة,Safa and Marwa,الصفا_والمروة,1167,new_token
+0409,مزدلفة,Muzdalifah,مزدلفة,1168,new_token
+0410,رمي الجمرات,Throwing pebbles,رمي_الجمرات,1169,new_token
+0411,طواف,circumambulation,طواف,1170,new_token
+0412,ماء زمزم,Zamzam water,ماء_زمزم,1171,new_token
+0413,الأضحية,the sacrifice,الأضحية,1172,new_token
+0414,فك الإحرام,break the ihram,فك_الإحرام,1173,new_token
+0415,طواف الوداع,farewell circumambulation,طواف_الوداع,1174,new_token
+0416,المسجد الأقصى,Al-Aqsa Mosque,المسجد_الأقصى,1175,new_token
+0417,يسبح,swim,يسبح,1176,new_token
+0418,الحمد لله,Thank God,الحمد_لله,1177,new_token
+0419,سبحان الله,How great is our God,سبحان_الله,1178,new_token
+0420,إيمان,Faith,إيمان,1179,new_token
+0421,الشرك بالله,Polytheism,الشرك_بالله,1180,new_token
+0422,أعوذ بالله,I seek refuge in God,أعوذ_بالله,1181,new_token
+0423,شيطان,Satan,شيطان,1182,new_token
+0424,جن,genie,جن,1183,new_token
+0425,الضالون,the lost,الضالون,1184,new_token
+0426,المغضوب عليهم,angered them,المغضوب_عليهم,1185,new_token
+0427,صنم,fetish,صنم,1186,new_token
+0428,زنى,fornication,زنى,1187,new_token
+0429,الجنة,the Paradise,الجنة,1188,new_token
+0430,النار,fire,النار,1189,new_token
+0431,روح,spirit,روح,1190,new_token
+0432,حقوق,rights,حقوق,1191,new_token
+0433,واجبات,Duties,واجبات,1192,new_token
+0434,حسنات,Deeds,حسنات,1193,new_token
+0435,سيئات,sins,سيئات,1194,new_token
+0436,حلال,halal,حلال,1195,new_token
+0437,حرام,forbidden,حرام,1196,new_token
+0438,مغفرة,forgiveness,مغفرة,1197,new_token
+0439,دين,religion,دين,1198,new_token
+0440,مسيحي,Christian,مسيحي,1199,new_token
+0441,يهودي,Jewish,يهودي,1200,new_token
+0442,كنيسة,church,كنيسة,1201,new_token
+0443,إسراء ومعراج,Isra and Miraj,إسراء_ومعراج,1202,new_token
+0444,حواء,Eve,حواء,1203,new_token
+0445,آدم,Adam,آدم,1204,new_token
+0446,صدقة,charity,صدقة,1205,new_token
+0447,نبي,Prophet,نبي,1206,new_token
+0448,هداية,guidance,هداية,1207,new_token
+0449,أمانة,honesty,أمانة,1208,new_token
+0450,شهيد,martyr,شهيد,1209,new_token
+0451,حقوق الوالدين,Parental rights,حقوق_الوالدين,1210,new_token
+0452,عقوق الوالدين,Disobedience to parents,عقوق_الوالدين,1211,new_token
+0453,مسلم,Muslim,مسلم,592,existing_token
+0454,رحمة,Mercy,رحمة,1212,new_token
+0455,عيد رأس السنة,New Year's Holiday,عيد_رأس_السنة,1213,new_token
+0456,فروض,homework,فروض,1214,new_token
+0457,قبة الصخرة,Dome of the Rock,قبة_الصخرة,1215,new_token
+0458,خلق,Create,خلق,1216,new_token
+0459,مهندس,engineer,مهندس,1217,new_token
+0460,مصور فوتوغرافي,photographer,مصور_فوتوغرافي,1218,new_token
+0461,جزار / قصاب,Meat man,جزار_قصاب,1219,new_token
+0462,سائق,driver,سائق,1220,new_token
+0463,صائغ,jeweler,صائغ,1221,new_token
+0464,خادم,servant,خادم,1222,new_token
+0465,رئيس قسم,chairman,رئيس_قسم,1223,new_token
+0466,حداد,blacksmith,حداد,229,existing_token
+0467,لحام كهربائي,weld,لحام_كهربائي,1224,new_token
+0468,مترجم لغة الإشارة,Sign language translator,مترجم_لغة_الإشارة,1225,new_token
+0469,مذيع,announcer,مذيع,1226,new_token
+0470,مترجم لغات,translator,مترجم_لغات,1227,new_token
+0471,مدير,manager,مدير,579,existing_token
+0472,سفير,ambassador,سفير,1228,new_token
+0473,وزير,minister,وزير,1229,new_token
+0474,ملك / سلطان,King,ملك_سلطان,1230,new_token
+0475,أمير البلاد / رئيس الجمهورية,Premier Minister,أمير_البلاد_رئيس_الجمهورية,1231,new_token
+0476,شيخ,sheikh,شيخ,1232,new_token
+0477,محافظ / وال,governor,محافظ_وال,1233,new_token
+0478,ولي عهد / وكيل وزارة,under secretary of state,ولي_عهد_وكيل_وزارة,1234,new_token
+0479,رئيس مجلس الشعب (النواب),speaker,رئيس_مجلس_الشعب_النواب,1235,new_token
+0480,أمين عام,general secretary,أمين_عام,1236,new_token
+0481,صحفي,journalist,صحفي,1237,new_token
+0482,رسام,draftsman,رسام,1238,new_token
+0483,خياط / تارزي,tailor,خياط_تارزي,1239,new_token
+0484,ضابط,policeman,ضابط,1240,new_token
+0485,طيار,pilot,طيار,1241,new_token
+0486,جندي,soldier,جندي,1242,new_token
+0487,حلاق,barber,حلاق,1243,new_token
+0488,صباغ,dyer,صباغ,1244,new_token
+0489,رجل إطفاء / دفاع مدني,fireman,رجل_إطفاء_دفاع_مدني,1245,new_token
+0490,نجار,carpenter,نجار,1246,new_token
+0491,معلم / مدرس,teacher,معلم_مدرس,1247,new_token
+0492,طباخ,chef,طباخ,1248,new_token
+0493,فلاح,farmer,فلاح,480,existing_token
+0494,موظف,agent,موظف,1249,new_token
+0495,أمين صندوق,treasurer,أمين_صندوق,1250,new_token
+0496,صيدلي,pharmacist,صيدلي,1251,new_token
+0497,طبيب,doctor,طبيب,423,existing_token
+0498,ممرضة,nurse,ممرضة,1252,new_token
+0499,ممرض,orderly,ممرض,1253,new_token
+0500,محام,lawyer,محام,1254,new_token
+0501,انتقال,traveling,انتقال,1255,new_token
+0502,تعيين,appointment,تعيين,170,existing_token

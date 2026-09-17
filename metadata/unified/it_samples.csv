@@ -1,0 +1,968 @@
+﻿sample_index,split,label,original_label_id,unified_token_id,signer_id,video,original_active_frames,prepared_frames,start,end
+0,test,&,0,682,01,&_01_1.mov,132,132,0,132
+1,test,&,0,682,01,&_01_2.mov,125,125,132,257
+2,train,&,0,682,02,&_02_1.mov,158,158,257,415
+3,train,&,0,682,02,&_02_2.mov,97,97,415,512
+4,validation,&,0,682,05,&_05_1.mov,89,89,512,601
+5,validation,&,0,682,05,&_05_2.mov,99,99,601,700
+6,train,++,1,683,02,++_02_1.mov,56,56,700,756
+7,train,++,1,683,02,++_02_2.mov,95,95,756,851
+8,test,++,1,683,03,++_03_1.mov,71,71,851,922
+9,test,++,1,683,03,++_03_2.mov,112,112,922,1034
+10,train,++,1,683,06,++_06_1.mov,54,54,1034,1088
+11,train,++,1,683,06,++_06_2.mov,72,72,1088,1160
+12,train,- -,2,684,02,- -_02_1.mov,64,64,1160,1224
+13,train,- -,2,684,02,- -_02_2.mov,111,111,1224,1335
+14,test,- -,2,684,03,- -_03_1.mov,85,85,1335,1420
+15,test,- -,2,684,03,- -_03_2.mov,114,114,1420,1534
+16,train,- -,2,684,06,- -_06_1.mov,59,59,1534,1593
+17,train,- -,2,684,06,- -_06_2.mov,79,79,1593,1672
+18,train,_p,3,685,02,_p_02_1.mov,121,121,1672,1793
+19,train,_p,3,685,02,_p_02_2.mov,120,120,1793,1913
+20,test,_p,3,685,03,_p_03_1.mov,104,104,1913,2017
+21,test,_p,3,685,03,_p_03_2.mov,171,171,2017,2188
+22,validation,_p,3,685,05,_p_05_1.mov,91,91,2188,2279
+23,validation,_p,3,685,05,_p_05_2.mov,100,100,2279,2379
+24,train,Access,4,686,02,Access_02_1.mov,98,98,2379,2477
+25,train,Access,4,686,02,Access_02_2.mov,163,163,2477,2640
+26,test,Access,4,686,03,Access_03_1.mov,88,88,2640,2728
+27,test,Access,4,686,03,Access_03_2.mov,132,132,2728,2860
+28,train,Access,4,686,06,Access_06_1.mov,61,61,2860,2921
+29,train,Access,4,686,06,Access_06_2.mov,83,83,2921,3004
+30,test,Act,5,687,01,Act_01_1.mov,113,113,3004,3117
+31,test,Act,5,687,01,Act_01_2.mov,121,121,3117,3238
+32,train,Act,5,687,02,Act_02_1.mov,99,99,3238,3337
+33,train,Act,5,687,02,Act_02_2.mov,126,126,3337,3463
+34,train,Act,5,687,07,Act_07_1.mp4,58,58,3463,3521
+35,test,Add,6,688,03,Add_03_1.mov,81,81,3521,3602
+36,test,Add,6,688,03,Add_03_2.mov,91,91,3602,3693
+37,validation,Add,6,688,05,Add_05_1.mov,71,71,3693,3764
+38,validation,Add,6,688,05,Add_05_2.mov,79,79,3764,3843
+39,train,Add,6,688,06,Add_06_1.mov,60,60,3843,3903
+40,train,Add,6,688,06,Add_06_2.mov,71,71,3903,3974
+41,train,Address,7,689,02,Address_02_1.mov,131,131,3974,4105
+42,train,Address,7,689,02,Address_02_2.mov,198,198,4105,4303
+43,test,Address,7,689,03,Address_03_1.mov,105,105,4303,4408
+44,test,Address,7,689,03,Address_03_2.mov,162,162,4408,4570
+45,train,Address,7,689,06,Address_06_1.mov,72,72,4570,4642
+46,train,Address,7,689,06,Address_06_2.mov,115,115,4642,4757
+47,test,After,8,690,01,After_01_1.mov,66,66,4757,4823
+48,test,After,8,690,01,After_01_2.mov,133,133,4823,4956
+49,validation,After,8,690,05,After_05_1.mov,79,79,4956,5035
+50,validation,After,8,690,05,After_05_2.mov,82,82,5035,5117
+51,train,After,8,690,06,After_06_1.mov,59,59,5117,5176
+52,train,After,8,690,06,After_06_2.mov,99,99,5176,5275
+53,test,Apply,9,691,03,apply_03_1.MOV,162,162,5275,5437
+54,test,Apply,9,691,03,apply_03_2.MOV,88,88,5437,5525
+55,validation,Apply,9,691,05,apply_05_1.MOV,75,75,5525,5600
+56,validation,Apply,9,691,05,apply_05_2.MOV,90,90,5600,5690
+57,train,Apply,9,691,06,apply_06_1.MOV,63,63,5690,5753
+58,train,Apply,9,691,06,apply_06_2.MOV,70,70,5753,5823
+59,test,Array,10,692,03,Array_03_1.mov,79,79,5823,5902
+60,test,Array,10,692,03,Array_03_2.mov,76,76,5902,5978
+61,validation,Array,10,692,05,Array_05_1.mov,86,86,5978,6064
+62,validation,Array,10,692,05,Array_05_2.mov,100,100,6064,6164
+63,train,Array,10,692,06,Array_06_1.mov,75,75,6164,6239
+64,train,Array,10,692,06,Array_06_2.mov,86,86,6239,6325
+65,train,Arrow,11,693,02,Arrow_02_1.mov,91,91,6325,6416
+66,train,Arrow,11,693,02,Arrow_02_2.mov,161,161,6416,6577
+67,test,Arrow,11,693,03,Arrow_03_1.mov,80,80,6577,6657
+68,test,Arrow,11,693,03,Arrow_03_2.mov,132,132,6657,6789
+69,train,Arrow,11,693,06,Arrow_06_1.mov,65,65,6789,6854
+70,train,Arrow,11,693,06,Arrow_06_2.mov,80,80,6854,6934
+71,test,Average,12,694,01,Average_01_1.mov,96,96,6934,7030
+72,test,Average,12,694,01,Average_01_2.mov,156,156,7030,7186
+73,validation,Average,12,694,05,Average_05_1.mov,80,80,7186,7266
+74,validation,Average,12,694,05,Average_05_2.mov,117,117,7266,7383
+75,train,Average,12,694,06,Average_06_1.mov,90,90,7383,7473
+76,train,Average,12,694,06,Average_06_2.mov,103,103,7473,7576
+77,test,Before,13,695,01,Before_01_1.mov,67,67,7576,7643
+78,test,Before,13,695,01,Before_01_2.mov,139,139,7643,7782
+79,validation,Before,13,695,05,Before_05_1.mov,65,65,7782,7847
+80,validation,Before,13,695,05,Before_05_2.mov,103,103,7847,7950
+81,train,Before,13,695,06,Before_06_1.mov,52,52,7950,8002
+82,train,Before,13,695,06,Before_06_2.mov,66,66,8002,8068
+83,test,Big,14,696,01,Big_01_1.mov,76,76,8068,8144
+84,test,Big,14,696,01,Big_01_2.mov,123,123,8144,8267
+85,validation,Big,14,696,05,Big_05_1.mov,68,68,8267,8335
+86,validation,Big,14,696,05,Big_05_2.mov,83,83,8335,8418
+87,train,Big,14,696,06,Big_06_1.mov,55,55,8418,8473
+88,train,Big,14,696,06,Big_06_2.mov,76,76,8473,8549
+89,train,Binary relationship,15,697,02,Binary relationship_02_1.mov,129,129,8549,8678
+90,train,Binary relationship,15,697,02,Binary relationship_02_2.mov,223,200,8678,8878
+91,test,Binary relationship,15,697,03,Binary relationship_03_1.mov,134,134,8878,9012
+92,test,Binary relationship,15,697,03,Binary relationship_03_2.mov,201,200,9012,9212
+93,validation,Binary relationship,15,697,05,Binary relationship_05_1.mov,116,116,9212,9328
+94,validation,Binary relationship,15,697,05,Binary relationship_05_2.mov,163,163,9328,9491
+95,test,Book,16,698,03,book_03_1.MOV,90,90,9491,9581
+96,test,Book,16,698,03,book_03_2.MOV,68,68,9581,9649
+97,validation,Book,16,698,05,book_05_1.MOV,95,95,9649,9744
+98,validation,Book,16,698,05,book_05_2.MOV,78,78,9744,9822
+99,train,Book,16,698,06,book_06_1.MOV,86,86,9822,9908
+100,train,Book,16,698,06,book_06_2.MOV,56,56,9908,9964
+101,test,Bool,17,699,01,Bool_01_1.mov,79,79,9964,10043
+102,test,Bool,17,699,01,Bool_01_2.mov,140,140,10043,10183
+103,validation,Bool,17,699,05,Bool_05_1.mov,65,65,10183,10248
+104,validation,Bool,17,699,05,Bool_05_2.mov,72,72,10248,10320
+105,train,Bool,17,699,06,Bool_06_1.mov,57,57,10320,10377
+106,train,Bool,17,699,06,Bool_06_2.mov,75,75,10377,10452
+107,test,Box,18,700,03,Box_03_1.MOV,75,75,10452,10527
+108,test,Box,18,700,03,Box_03_2.MOV,100,100,10527,10627
+109,validation,Box,18,700,05,box_05_1.MOV,109,109,10627,10736
+110,validation,Box,18,700,05,Box_05_2.MOV,74,74,10736,10810
+111,train,Box,18,700,06,Box_06_1.MOV,57,57,10810,10867
+112,train,Box,18,700,06,Box_06_2.MOV,68,68,10867,10935
+113,test,C++,19,701,01,C++_01_1.mov,173,173,10935,11108
+114,test,C++,19,701,01,C++_01_2.mov,115,115,11108,11223
+115,train,C++,19,701,02,C++_02_1.mov,222,200,11223,11423
+116,train,C++,19,701,02,C++_02_2.mov,138,138,11423,11561
+117,validation,C++,19,701,05,C++_05_1.mov,116,116,11561,11677
+118,validation,C++,19,701,05,C++_05_2.mov,89,89,11677,11766
+119,train,Call,20,702,02,Call_02_1.mov,125,125,11766,11891
+120,train,Call,20,702,02,Call_02_2.mov,184,184,11891,12075
+121,test,Call,20,702,03,Call_03_1.mov,113,113,12075,12188
+122,test,Call,20,702,03,Call_03_2.mov,162,162,12188,12350
+123,validation,Call,20,702,05,Call_05_1.mov,95,95,12350,12445
+124,validation,Call,20,702,05,Call_05_2.mov,102,102,12445,12547
+125,train,Char,21,703,02,Char_02_1.mov,62,62,12547,12609
+126,train,Char,21,703,02,Char_02_2.mov,154,154,12609,12763
+127,test,Char,21,703,03,Char_03_1.mov,66,66,12763,12829
+128,test,Char,21,703,03,Char_03_2.mov,112,112,12829,12941
+129,train,Char,21,703,06,Char_06_1.mov,58,58,12941,12999
+130,train,Char,21,703,06,Char_06_2.mov,59,59,12999,13058
+131,test,Check,22,704,01,Check_01_1.mov,70,70,13058,13128
+132,test,Check,22,704,01,Check_01_2.mov,149,149,13128,13277
+133,validation,Check,22,704,05,Check_05_1.mov,77,77,13277,13354
+134,validation,Check,22,704,05,Check_05_2.mov,103,103,13354,13457
+135,train,Check,22,704,06,Check_06_1.mov,66,66,13457,13523
+136,train,Check,22,704,06,Check_06_2.mov,79,79,13523,13602
+137,train,Class,23,705,02,Class_02_1.mov,121,121,13602,13723
+138,train,Class,23,705,02,Class_02_2.mov,215,200,13723,13923
+139,test,Class,23,705,03,Class_03_1.mov,117,117,13923,14040
+140,test,Class,23,705,03,Class_03_2.mov,206,200,14040,14240
+141,validation,Class,23,705,05,Class_05_1.mov,98,98,14240,14338
+142,validation,Class,23,705,05,Class_05_2.mov,138,138,14338,14476
+143,test,Code,24,706,01,Code_01_1.mov,70,70,14476,14546
+144,test,Code,24,706,01,Code_01_2.mov,135,135,14546,14681
+145,validation,Code,24,706,05,Code_05_1.mov,88,88,14681,14769
+146,validation,Code,24,706,05,Code_05_2.mov,118,118,14769,14887
+147,train,Code,24,706,06,Code_06_1.mov,72,72,14887,14959
+148,train,Code,24,706,06,Code_06_2.mov,99,99,14959,15058
+149,test,Coin,25,707,03,coin_03_1.MOV,122,122,15058,15180
+150,test,Coin,25,707,03,coin_03_2.MOV,73,73,15180,15253
+151,validation,Coin,25,707,05,coin_05_1.MOV,95,95,15253,15348
+152,validation,Coin,25,707,05,coin_05_2.MOV,78,78,15348,15426
+153,train,Coin,25,707,06,coin_06_1.MOV,121,121,15426,15547
+154,train,Coin,25,707,06,coin_06_2.MOV,53,53,15547,15600
+155,test,Colon,26,708,01,Colon_01_1.mov,98,98,15600,15698
+156,test,Colon,26,708,01,Colon_01_2.mov,65,65,15698,15763
+157,validation,Colon,26,708,05,Colon_05_1.mov,74,74,15763,15837
+158,validation,Colon,26,708,05,Colon_05_2.mov,86,86,15837,15923
+159,train,Colon,26,708,06,Colon_06_1.mov,75,75,15923,15998
+160,train,Colon,26,708,06,Colon_06_2.mov,69,69,15998,16067
+161,test,Column,27,709,01,column_01_1.MOV,103,103,16067,16170
+162,test,Column,27,709,01,column_01_2.MOV,55,55,16170,16225
+163,train,Column,27,709,02,Column_02_1.mov,114,114,16225,16339
+164,train,Column,27,709,02,column_02_2.MOV,40,40,16339,16379
+165,train,Column,27,709,07,column_07_1.mp4,146,146,16379,16525
+166,test,Comment,28,710,01,Comment_01_1.mov,120,120,16525,16645
+167,test,Comment,28,710,01,Comment_01_2.mov,185,185,16645,16830
+168,validation,Comment,28,710,05,Comment_05_1.mov,70,70,16830,16900
+169,validation,Comment,28,710,05,Comment_05_2.mov,95,95,16900,16995
+170,train,Comment,28,710,06,Comment_06_1.mov,63,63,16995,17058
+171,train,Comment,28,710,06,Comment_06_2.mov,82,82,17058,17140
+172,train,Compare,29,711,02,Compare_02_1.mov,73,73,17140,17213
+173,train,Compare,29,711,02,Compare_02_2.mov,122,122,17213,17335
+174,test,Compare,29,711,03,Compare_03_1.mov,89,89,17335,17424
+175,test,Compare,29,711,03,Compare_03_2.mov,138,138,17424,17562
+176,train,Compare,29,711,06,Compare_06_1.mov,64,64,17562,17626
+177,train,Compare,29,711,06,Compare_06_2.mov,75,75,17626,17701
+178,train,Compiler,30,712,02,Compiler_02_1.mov,99,99,17701,17800
+179,train,Compiler,30,712,02,Compiler_02_2.mov,160,160,17800,17960
+180,test,Compiler,30,712,03,Compiler_03_1.mov,107,107,17960,18067
+181,test,Compiler,30,712,03,Compiler_03_2.mov,175,175,18067,18242
+182,validation,Compiler,30,712,05,Compiler_05_1.mov,123,123,18242,18365
+183,validation,Compiler,30,712,05,Compiler_05_2.mov,113,113,18365,18478
+184,test,Complex- composite,31,713,01,Complex- composite_01_1.MOV,243,200,18478,18678
+185,test,Complex- composite,31,713,01,Complex- composite_01_2.MOV,107,107,18678,18785
+186,train,Complex- composite,31,713,02,Complex- composite_02_1.MOV,134,134,18785,18919
+187,train,Complex- composite,31,713,02,Complex- composite_02_2.MOV,244,200,18919,19119
+188,train,Complex- composite,31,713,07,Complex- composite_07_1.mp4,200,200,19119,19319
+189,test,Constant,32,714,01,constant_01_1.mov,84,84,19319,19403
+190,test,Constant,32,714,01,constant_01_2.mov,130,130,19403,19533
+191,train,Constant,32,714,02,constant_02_1.mov,98,98,19533,19631
+192,train,Constant,32,714,02,constant_02_2.mov,133,133,19631,19764
+193,validation,Constant,32,714,05,constant_05_1.mov,93,93,19764,19857
+194,validation,Constant,32,714,05,constant_05_2.mov,123,123,19857,19980
+195,test,Content,33,715,03,content_03_1.mov,93,93,19980,20073
+196,test,Content,33,715,03,content_03_2.mov,138,138,20073,20211
+197,validation,Content,33,715,05,content_05_1.mov,98,98,20211,20309
+198,validation,Content,33,715,05,content_05_2.mov,127,127,20309,20436
+199,train,Content,33,715,06,content_06_1.mov,79,79,20436,20515
+200,train,Content,33,715,06,content_06_2.mov,97,97,20515,20612
+201,test,Copy,34,716,03,copy_03_1.MOV,107,107,20612,20719
+202,test,Copy,34,716,03,copy_03_2.MOV,72,72,20719,20791
+203,validation,Copy,34,716,05,copy_05_1.MOV,90,90,20791,20881
+204,validation,Copy,34,716,05,copy_05_2.MOV,69,69,20881,20950
+205,train,Copy,34,716,06,copy_06_1.MOV,65,65,20950,21015
+206,train,Copy,34,716,06,copy_06_2.MOV,56,56,21015,21071
+207,test,Cout-print-output,35,717,01,Cout-print-output_01_1.mov,126,126,21071,21197
+208,test,Cout-print-output,35,717,01,Cout-print-output_01_2.mov,229,200,21197,21397
+209,train,Cout-print-output,35,717,02,Cout-print-output_02_1.mov,120,120,21397,21517
+210,train,Cout-print-output,35,717,02,Cout-print-output_02_2.mov,157,157,21517,21674
+211,validation,Cout-print-output,35,717,05,Cout-print-output_05_1.mov,93,93,21674,21767
+212,validation,Cout-print-output,35,717,05,Cout-print-output_05_2.mov,100,100,21767,21867
+213,test,Create,36,718,01,Create_01_1.mov,85,85,21867,21952
+214,test,Create,36,718,01,Create_01_2.mov,141,141,21952,22093
+215,validation,Create,36,718,05,Create_05_1.mov,82,82,22093,22175
+216,validation,Create,36,718,05,Create_05_2.mov,95,95,22175,22270
+217,train,Create,36,718,06,Create_06_1.mov,74,74,22270,22344
+218,train,Create,36,718,06,Create_06_2.mov,82,82,22344,22426
+219,train,Customer,37,719,02,Customer_02_1.MOV,111,111,22426,22537
+220,train,Customer,37,719,02,Customer_02_2.MOV,72,72,22537,22609
+221,test,Customer,37,719,03,Customer_03_1.MOV,87,87,22609,22696
+222,test,Customer,37,719,03,Customer_03_2.MOV,198,198,22696,22894
+223,validation,Customer,37,719,05,Customer_05_1.MOV,103,103,22894,22997
+224,validation,Customer,37,719,05,Customer_05_2.MOV,64,64,22997,23061
+225,test,Data,38,720,01,Data_01_1.mov,96,96,23061,23157
+226,test,Data,38,720,01,Data_01_2.mov,159,159,23157,23316
+227,train,Data,38,720,02,Data_02_1.mov,201,200,23316,23516
+228,train,Data,38,720,02,Data_02_2.mov,117,117,23516,23633
+229,validation,Data,38,720,05,Data_05_1.mov,97,97,23633,23730
+230,validation,Data,38,720,05,Data_05_2.mov,84,84,23730,23814
+231,test,Database,39,721,01,database_01_1.MOV,184,184,23814,23998
+232,test,Database,39,721,01,database_01_2.MOV,95,95,23998,24093
+233,train,Database,39,721,02,database_02_1.MOV,93,93,24093,24186
+234,train,Database,39,721,02,database_02_2.MOV,223,200,24186,24386
+235,train,Database,39,721,07,database_07_1.mp4,223,200,24386,24586
+236,test,Datatype,40,722,01,Datatype_01_1.mov,239,200,24586,24786
+237,test,Datatype,40,722,01,Datatype_01_2.mov,169,169,24786,24955
+238,train,Datatype,40,722,02,Datatype_02_1.mov,255,200,24955,25155
+239,train,Datatype,40,722,02,Datatype_02_2.mov,152,152,25155,25307
+240,validation,Datatype,40,722,05,Datatype_05_1.mov,165,165,25307,25472
+241,validation,Datatype,40,722,05,Datatype_05_2.mov,131,131,25472,25603
+242,test,Date,41,723,01,date_01_1.MOV,163,163,25603,25766
+243,test,Date,41,723,01,date_01_2.MOV,70,70,25766,25836
+244,train,Date,41,723,02,date_02_1.MOV,185,185,25836,26021
+245,train,Date,41,723,02,date_02_2.MOV,96,96,26021,26117
+246,train,Date,41,723,07,date_07_1.mp4,47,47,26117,26164
+247,train,Declare,42,724,02,Declare_02_1.mov,148,148,26164,26312
+248,train,Declare,42,724,02,Declare_02_2.mov,238,200,26312,26512
+249,test,Declare,42,724,03,Declare_03_1.mov,106,106,26512,26618
+250,test,Declare,42,724,03,Declare_03_2.mov,194,194,26618,26812
+251,train,Declare,42,724,06,Declare_06_1.mov,77,77,26812,26889
+252,train,Declare,42,724,06,Declare_06_2.mov,99,99,26889,26988
+253,test,Definition,43,725,01,Definition_01_1.mov,79,79,26988,27067
+254,test,Definition,43,725,01,Definition_01_2.mov,176,176,27067,27243
+255,validation,Definition,43,725,05,Definition_05_1.mov,62,62,27243,27305
+256,validation,Definition,43,725,05,Definition_05_2.mov,84,84,27305,27389
+257,train,Definition,43,725,06,Definition_06_1.mov,67,67,27389,27456
+258,train,Definition,43,725,06,Definition_06_2.mov,88,88,27456,27544
+259,test,Delete-remove-pop,44,726,01,Delete-remove-pop_01_1.mov,100,100,27544,27644
+260,test,Delete-remove-pop,44,726,01,Delete-remove-pop_01_2.mov,172,172,27644,27816
+261,train,Delete-remove-pop,44,726,02,Delete-remove-pop_02_1.mov,117,117,27816,27933
+262,train,Delete-remove-pop,44,726,02,Delete-remove-pop_02_2.mov,168,168,27933,28101
+263,validation,Delete-remove-pop,44,726,05,Delete-remove-pop_05_1.mov,89,89,28101,28190
+264,validation,Delete-remove-pop,44,726,05,Delete-remove-pop_05_2.mov,115,115,28190,28305
+265,train,Depend,45,727,02,Depend_02_1.MOV,101,101,28305,28406
+266,train,Depend,45,727,02,Depend_02_2.MOV,58,58,28406,28464
+267,test,Depend,45,727,03,Depend_03_1.MOV,107,107,28464,28571
+268,test,Depend,45,727,03,Depend_03_2.MOV,61,61,28571,28632
+269,validation,Depend,45,727,05,Depend_05_1.MOV,64,64,28632,28696
+270,validation,Depend,45,727,05,Depend_05_2.MOV,88,88,28696,28784
+271,test,Derived,46,728,01,Derived_01_1.MOV,122,122,28784,28906
+272,test,Derived,46,728,01,Derived_01_2.MOV,337,200,28906,29106
+273,train,Derived,46,728,02,Derived_02_1.MOV,154,154,29106,29260
+274,train,Derived,46,728,02,Derived_02_2.MOV,302,200,29260,29460
+275,train,Derived,46,728,07,Derived_07_1.mp4,260,200,29460,29660
+276,train,Description,47,729,02,Description_02_1.MOV,234,200,29660,29860
+277,train,Description,47,729,02,Description_02_2.MOV,155,155,29860,30015
+278,test,Description,47,729,03,Description_03_1.MOV,265,200,30015,30215
+279,test,Description,47,729,03,Description_03_2.MOV,168,168,30215,30383
+280,validation,Description,47,729,05,Description_05_1.MOV,164,164,30383,30547
+281,validation,Description,47,729,05,Description_05_2.MOV,127,127,30547,30674
+282,test,Destroy,48,730,01,Destroy_01_1.mov,54,54,30674,30728
+283,test,Destroy,48,730,01,Destroy_01_2.mov,105,105,30728,30833
+284,train,Destroy,48,730,02,Destroy_02_1.mov,77,77,30833,30910
+285,train,Destroy,48,730,02,Destroy_02_2.mov,100,100,30910,31010
+286,validation,Destroy,48,730,05,Destroy_05_1.mov,89,89,31010,31099
+287,validation,Destroy,48,730,05,Destroy_05_2.mov,105,105,31099,31204
+288,test,Diamond,49,731,01,diamond_01_1.MOV,145,145,31204,31349
+289,test,Diamond,49,731,01,diamond_01_2.MOV,72,72,31349,31421
+290,train,Diamond,49,731,02,diamond_02_1.MOV,220,200,31421,31621
+291,train,Diamond,49,731,02,diamond_02_2.MOV,99,99,31621,31720
+292,train,Diamond,49,731,07,diamond_07_1.mp4,60,60,31720,31780
+293,test,Disjoint,50,732,01,disjoint_01_1.MOV,90,90,31780,31870
+294,test,Disjoint,50,732,01,disjoint_01_2.MOV,55,55,31870,31925
+295,train,Disjoint,50,732,02,disjoint_02_1.MOV,131,131,31925,32056
+296,train,Disjoint,50,732,02,disjoint_02_2.MOV,72,72,32056,32128
+297,train,Disjoint,50,732,07,disjoint_07_1.mp4,50,50,32128,32178
+298,test,Domain,51,733,01,domain_01_1.MOV,174,174,32178,32352
+299,test,Domain,51,733,01,domain_01_2.MOV,91,91,32352,32443
+300,train,Domain,51,733,02,domain_02_1.MOV,217,200,32443,32643
+301,train,Domain,51,733,02,domain_02_2.MOV,104,104,32643,32747
+302,train,Domain,51,733,07,domain_07_1.mp4,160,160,32747,32907
+303,train,dot operator,52,734,02,dot operator_02_1.mov,58,58,32907,32965
+304,train,dot operator,52,734,02,dot operator_02_2.mov,157,157,32965,33122
+305,test,dot operator,52,734,03,dot operator_03_1.mov,56,56,33122,33178
+306,test,dot operator,52,734,03,dot operator_03_2.mov,107,107,33178,33285
+307,train,dot operator,52,734,06,dot operator_06_1.mov,59,59,33285,33344
+308,train,dot operator,52,734,06,dot operator_06_2.mov,68,68,33344,33412
+309,train,Double,53,735,02,Double_02_1.mov,99,99,33412,33511
+310,train,Double,53,735,02,Double_02_2.mov,221,200,33511,33711
+311,test,Double,53,735,03,Double_03_1.mov,88,88,33711,33799
+312,test,Double,53,735,03,Double_03_3.mov,133,133,33799,33932
+313,train,Double,53,735,06,Double_06_1.mov,60,60,33932,33992
+314,train,Double,53,735,06,Double_06_2.mov,81,81,33992,34073
+315,test,element,54,736,03,element_03_1.MOV,135,135,34073,34208
+316,test,element,54,736,03,element_03_2.MOV,94,94,34208,34302
+317,validation,element,54,736,05,element_05_1.MOV,95,95,34302,34397
+318,validation,element,54,736,05,element_05_2.MOV,73,73,34397,34470
+319,train,element,54,736,06,element_06_1.MOV,69,69,34470,34539
+320,train,element,54,736,06,element_06_2.MOV,59,59,34539,34598
+321,test,Else,55,737,01,Else_01_1.MOV,73,73,34598,34671
+322,test,Else,55,737,01,Else_01_2.MOV,166,166,34671,34837
+323,validation,Else,55,737,05,Else_05_1.MOV,56,56,34837,34893
+324,validation,Else,55,737,05,Else_05_2.MOV,95,95,34893,34988
+325,train,Else,55,737,06,Else_06_1.MOV,53,53,34988,35041
+326,train,Else,55,737,06,Else_06_2.MOV,84,84,35041,35125
+327,test,End,56,738,01,End_01_1.MOV,83,83,35125,35208
+328,test,End,56,738,01,End_01_2.MOV,139,139,35208,35347
+329,validation,End,56,738,05,End_05_1.MOV,70,70,35347,35417
+330,validation,End,56,738,05,End_05_2.MOV,103,103,35417,35520
+331,train,End,56,738,06,End_06_1.MOV,79,79,35520,35599
+332,train,End,56,738,06,End_06_2.MOV,99,99,35599,35698
+333,test,Equal_equlaity,57,739,01,Equal_equlaity_01_1.mov,104,104,35698,35802
+334,test,Equal_equlaity,57,739,01,Equal_equlaity_01_2.mov,177,177,35802,35979
+335,train,Equal_equlaity,57,739,02,Equal_equlaity_02_1.mov,123,123,35979,36102
+336,train,Equal_equlaity,57,739,02,Equal_equlaity_02_2.mov,184,184,36102,36286
+337,validation,Equal_equlaity,57,739,05,Equal_equlaity_05_1.mov,109,109,36286,36395
+338,validation,Equal_equlaity,57,739,05,Equal_equlaity_05_2.mov,139,139,36395,36534
+339,test,Error,58,740,01,Error_01_1.mov,96,96,36534,36630
+340,test,Error,58,740,01,Error_01_2.mov,156,156,36630,36786
+341,train,Error,58,740,02,Error_02_1.mov,118,118,36786,36904
+342,train,Error,58,740,02,Error_02_2.mov,171,171,36904,37075
+343,validation,Error,58,740,05,Error_05_1.mov,101,101,37075,37176
+344,validation,Error,58,740,05,Error_05_2.mov,183,183,37176,37359
+345,test,Example,59,741,01,Example_01_1.mov,88,88,37359,37447
+346,test,Example,59,741,01,Example_01_2.mov,131,131,37447,37578
+347,train,Example,59,741,02,Example_02_1.mov,100,100,37578,37678
+348,train,Example,59,741,02,Example_02_2.mov,173,173,37678,37851
+349,validation,Example,59,741,05,Example_05_1.mov,86,86,37851,37937
+350,validation,Example,59,741,05,Example_05_2.mov,99,99,37937,38036
+351,train,Exercise,60,742,02,Exercise_02_1.MOV,100,100,38036,38136
+352,train,Exercise,60,742,02,Exercise_02_2.MOV,135,135,38136,38271
+353,test,Exercise,60,742,03,Exercise_03_1.MOV,88,88,38271,38359
+354,test,Exercise,60,742,03,Exercise_03_2.MOV,162,162,38359,38521
+355,train,Exercise,60,742,06,Exercise_06_1.MOV,66,66,38521,38587
+356,train,Exercise,60,742,06,Exercise_06_2.MOV,77,77,38587,38664
+357,test,Exist,61,743,01,Exist_01_1.MOV,149,149,38664,38813
+358,test,Exist,61,743,01,Exist_01_2.MOV,67,67,38813,38880
+359,validation,Exist,61,743,05,Exist_05_1.MOV,89,89,38880,38969
+360,validation,Exist,61,743,05,Exist_05_2.MOV,63,63,38969,39032
+361,train,Exist,61,743,06,Exist_06_1.MOV,70,70,39032,39102
+362,train,Exist,61,743,06,Exist_06_2.MOV,62,62,39102,39164
+363,test,Figure,62,744,01,Figure_01_1.mov,73,73,39164,39237
+364,test,Figure,62,744,01,Figure_01_2.MOV,117,117,39237,39354
+365,validation,Figure,62,744,05,Figure_05_1.MOV,68,68,39354,39422
+366,validation,Figure,62,744,05,Figure_05_2.mov,83,83,39422,39505
+367,train,Figure,62,744,06,Figure_06_1.mov,66,66,39505,39571
+368,train,Figure,62,744,06,Figure_06_2.mov,55,55,39571,39626
+369,train,First out,63,745,02,First out_02_1.MOV,88,88,39626,39714
+370,train,First out,63,745,02,First out_02_2.MOV,138,138,39714,39852
+371,test,First out,63,745,03,First out_03_1.MOV,187,187,39852,40039
+372,test,First out,63,745,03,First out_03_2.MOV,104,104,40039,40143
+373,validation,First out,63,745,05,First out_05_1.MOV,116,116,40143,40259
+374,validation,First out,63,745,05,First out_05_2.MOV,80,80,40259,40339
+375,train,First out,63,745,06,First out_06_1.MOV,106,106,40339,40445
+376,train,First out,63,745,06,First out_06_2.MOV,98,98,40445,40543
+377,test,Foreign key,64,746,01,Foreign key_01_1.MOV,112,112,40543,40655
+378,test,Foreign key,64,746,01,Foreign key_01_2.MOV,193,193,40655,40848
+379,train,Foreign key,64,746,02,Foreign key_02_1.MOV,207,200,40848,41048
+380,train,Foreign key,64,746,02,Foreign key_02_2.MOV,136,136,41048,41184
+381,train,Foreign key,64,746,07,Foreign key_07_1.mp4,196,196,41184,41380
+382,test,Front,65,747,01,Front_01_1.MOV,61,61,41380,41441
+383,test,Front,65,747,01,Front_01_2.MOV,136,136,41441,41577
+384,validation,Front,65,747,05,Front_05_1.MOV,68,68,41577,41645
+385,validation,Front,65,747,05,Front_05_2.MOV,78,78,41645,41723
+386,train,Front,65,747,06,Front_06_1.MOV,64,64,41723,41787
+387,train,Front,65,747,06,Front_06_2.MOV,73,73,41787,41860
+388,test,Full,66,748,01,Full_01_1.MOV,62,62,41860,41922
+389,test,Full,66,748,01,Full_01_2.MOV,93,93,41922,42015
+390,validation,Full,66,748,05,Full_05_1.MOV,62,62,42015,42077
+391,validation,Full,66,748,05,Full_05_2.MOV,76,76,42077,42153
+392,train,Full,66,748,06,Full_06_1.MOV,58,58,42153,42211
+393,train,Full,66,748,06,Full_06_2.MOV,68,68,42211,42279
+394,test,Function,67,749,01,function_01_1.MOV,137,137,42279,42416
+395,test,Function,67,749,01,function_01_2.MOV,69,69,42416,42485
+396,train,Function,67,749,02,function_02_1.MOV,119,119,42485,42604
+397,train,Function,67,749,02,function_02_2.MOV,171,171,42604,42775
+398,train,Function,67,749,07,function_07_1.mp4,178,178,42775,42953
+399,train,Graphics,68,750,02,Graphics_02_1.MOV,246,200,42953,43153
+400,train,Graphics,68,750,02,Graphics_02_2.MOV,116,116,43153,43269
+401,test,Graphics,68,750,03,Graphics_03_1.MOV,120,120,43269,43389
+402,test,Graphics,68,750,03,Graphics_03_2.MOV,234,200,43389,43589
+403,validation,Graphics,68,750,05,Graphics_05_1.MOV,116,116,43589,43705
+404,validation,Graphics,68,750,05,Graphics_05_2.MOV,125,125,43705,43830
+405,test,Hashtag,69,751,01,Hashtag_01_1.MOV,72,72,43830,43902
+406,test,Hashtag,69,751,01,Hashtag_01_2.MOV,136,136,43902,44038
+407,validation,Hashtag,69,751,05,Hashtag_05_1.MOV,72,72,44038,44110
+408,validation,Hashtag,69,751,05,Hashtag_05_2.MOV,94,94,44110,44204
+409,train,Hashtag,69,751,06,Hashtag_06_1.MOV,73,73,44204,44277
+410,train,Hashtag,69,751,06,Hashtag_06_2.MOV,88,88,44277,44365
+411,test,Higher,70,752,01,Higher_01_1.MOV,86,86,44365,44451
+412,test,Higher,70,752,01,Higher_01_2.MOV,142,142,44451,44593
+413,test,Higher,70,752,03,Higher_03_1.MOV,52,52,44593,44645
+414,test,Higher,70,752,03,Higher_03_2.MOV,76,76,44645,44721
+415,train,Higher,70,752,06,Higher_06_1.MOV,70,70,44721,44791
+416,train,Higher,70,752,06,Higher_06_2.MOV,84,84,44791,44875
+417,test,Hold,71,753,01,Hold_01_1.MOV,123,123,44875,44998
+418,test,Hold,71,753,01,Hold_01_2.MOV,179,179,44998,45177
+419,validation,Hold,71,753,05,Hold_05_1.MOV,79,79,45177,45256
+420,validation,Hold,71,753,05,Hold_05_2.MOV,92,92,45256,45348
+421,train,Hold,71,753,06,Hold_06_1.MOV,68,68,45348,45416
+422,train,Hold,71,753,06,Hold_06_2.MOV,102,102,45416,45518
+423,train,Id- identifier,72,754,02,Id- identifier_02_1.MOV,167,167,45518,45685
+424,train,Id- identifier,72,754,02,Id- identifier_02_2.MOV,107,107,45685,45792
+425,test,Id- identifier,72,754,03,Id- identifier_03_1.MOV,101,101,45792,45893
+426,test,Id- identifier,72,754,03,Id- identifier_03_2.MOV,129,129,45893,46022
+427,validation,Id- identifier,72,754,05,Id- identifier_05_1.MOV,114,114,46022,46136
+428,validation,Id- identifier,72,754,05,Id- identifier_05_2.MOV,106,106,46136,46242
+429,test,If,73,755,01,If_01_1.MOV,103,103,46242,46345
+430,test,If,73,755,01,If_01_2.MOV,141,141,46345,46486
+431,validation,If,73,755,05,If_05_1.MOV,94,94,46486,46580
+432,validation,If,73,755,05,If_05_2.MOV,112,112,46580,46692
+433,train,If,73,755,06,If_06_1.MOV,93,93,46692,46785
+434,train,If,73,755,06,If_06_2.MOV,120,120,46785,46905
+435,train,Inaccessible,74,756,02,Inaccessible_02_1.MOV,140,140,46905,47045
+436,train,Inaccessible,74,756,02,Inaccessible_02_2.MOV,69,69,47045,47114
+437,test,Inaccessible,74,756,03,Inaccessible_03_1.MOV,155,155,47114,47269
+438,test,Inaccessible,74,756,03,Inaccessible_03_2.MOV,78,78,47269,47347
+439,validation,Inaccessible,74,756,05,Inaccessible_05_1.MOV,78,78,47347,47425
+440,validation,Inaccessible,74,756,05,Inaccessible_05_2.MOV,96,96,47425,47521
+441,test,Include,75,757,03,include_03_1.MOV,117,117,47521,47638
+442,test,Include,75,757,03,include_03_2.MOV,155,155,47638,47793
+443,validation,Include,75,757,05,include_05_1.MOV,129,129,47793,47922
+444,validation,Include,75,757,05,include_05_2.MOV,90,90,47922,48012
+445,train,Include,75,757,06,include_06_1.MOV,118,118,48012,48130
+446,train,Include,75,757,06,include_06_2.MOV,97,97,48130,48227
+447,test,Index,76,758,01,Index_01_1.MOV,96,96,48227,48323
+448,test,Index,76,758,01,Index_01_2.MOV,154,154,48323,48477
+449,validation,Index,76,758,05,Index_05_1.MOV,109,109,48477,48586
+450,validation,Index,76,758,05,Index_05_2.MOV,134,134,48586,48720
+451,train,Index,76,758,06,Index_06_1.MOV,120,120,48720,48840
+452,train,Index,76,758,06,Index_06_2.MOV,100,100,48840,48940
+453,test,Information,77,759,01,information_01_1.MOV,196,196,48940,49136
+454,test,Information,77,759,01,information_01_2.MOV,97,97,49136,49233
+455,train,Information,77,759,02,information_02_1.MOV,161,161,49233,49394
+456,train,Information,77,759,02,information_02_2.MOV,96,96,49394,49490
+457,train,Information,77,759,07,information_07_1.mp4,84,84,49490,49574
+458,train,Initialize,78,760,02,Initialize_02_1.MOV,301,200,49574,49774
+459,train,Initialize,78,760,02,Initialize_02_2.MOV,147,147,49774,49921
+460,test,Initialize,78,760,03,Initialize_03_1.MOV,190,190,49921,50111
+461,test,Initialize,78,760,03,Initialize_03_2.MOV,329,200,50111,50311
+462,validation,Initialize,78,760,05,Initialize_05_1.MOV,211,200,50311,50511
+463,validation,Initialize,78,760,05,Initialize_05_2.MOV,161,161,50511,50672
+464,train,Input-enter,79,761,02,Input-enter_02_1.MOV,79,79,50672,50751
+465,train,Input-enter,79,761,02,Input-enter_02_2.MOV,123,123,50751,50874
+466,validation,Input-enter,79,761,05,Input-enter_05_1.MOV,104,104,50874,50978
+467,validation,Input-enter,79,761,05,Input-enter_05_2.MOV,90,90,50978,51068
+468,test,Input-enter,79,761,08,Input-enter_08_1.MOV,88,88,51068,51156
+469,test,Input-enter,79,761,08,Input-enter_08_2.MOV,160,160,51156,51316
+470,train,int,80,762,02,int_02_1.MOV,97,97,51316,51413
+471,train,int,80,762,02,int_02_2.MOV,84,84,51413,51497
+472,test,int,80,762,03,int_03_1.MOV,79,79,51497,51576
+473,test,int,80,762,03,int_03_2.MOV,158,158,51576,51734
+474,train,int,80,762,06,int_06_1.MOV,63,63,51734,51797
+475,train,int,80,762,06,int_06_2.MOV,81,81,51797,51878
+476,train,Last in,81,763,02,Last in_02_1.MOV,115,115,51878,51993
+477,train,Last in,81,763,02,Last in_02_2.MOV,177,177,51993,52170
+478,test,Last in,81,763,03,Last in_03_1.MOV,111,111,52170,52281
+479,test,Last in,81,763,03,Last in_03_2.MOV,160,160,52281,52441
+480,train,Last in,81,763,06,Last in_06_1.MOV,91,91,52441,52532
+481,train,Last in,81,763,06,Last in_06_2.MOV,117,117,52532,52649
+482,test,Library,82,764,01,Library_01_1.MOV,78,78,52649,52727
+483,test,Library,82,764,01,Library_01_2.MOV,147,147,52727,52874
+484,validation,Library,82,764,05,Library_05_1.MOV,64,64,52874,52938
+485,validation,Library,82,764,05,Library_05_2.MOV,81,81,52938,53019
+486,train,Library,82,764,06,Library_06_1.MOV,71,71,53019,53090
+487,train,Library,82,764,06,Library_06_2.MOV,88,88,53090,53178
+488,train,Line,83,765,02,Line_02_1.MOV,70,70,53178,53248
+489,train,Line,83,765,02,Line_02_2.MOV,108,108,53248,53356
+490,test,Line,83,765,03,Line_03_1.MOV,78,78,53356,53434
+491,test,Line,83,765,03,Line_03_2.MOV,130,130,53434,53564
+492,train,Line,83,765,06,Line_06_1.MOV,58,58,53564,53622
+493,train,Line,83,765,06,Line_06_2.MOV,74,74,53622,53696
+494,test,List,84,766,03,list_03_1.MOV,77,77,53696,53773
+495,test,List,84,766,03,list_03_2.MOV,80,80,53773,53853
+496,validation,List,84,766,05,list_05_1.MOV,65,65,53853,53918
+497,validation,List,84,766,05,list_05_2.MOV,93,93,53918,54011
+498,train,List,84,766,06,list_06_1.MOV,86,86,54011,54097
+499,train,List,84,766,06,list_06_2.MOV,73,73,54097,54170
+500,test,Logical,85,767,01,logical_01_1.MOV,168,168,54170,54338
+501,test,Logical,85,767,01,logical_01_2.MOV,95,95,54338,54433
+502,train,Logical,85,767,02,logical_02_1.MOV,183,183,54433,54616
+503,train,Logical,85,767,02,logical_02_2.MOV,100,100,54616,54716
+504,train,Logical,85,767,07,logical_07_1.mp4,74,74,54716,54790
+505,test,Loop,86,768,01,Loop_01_1.mov,82,82,54790,54872
+506,test,Loop,86,768,01,Loop_01_2.mov,154,154,54872,55026
+507,validation,Loop,86,768,05,Loop_05_1.mov,74,74,55026,55100
+508,validation,Loop,86,768,05,Loop_05_2.mov,99,99,55100,55199
+509,train,Loop,86,768,06,Loop_06_1.mov,85,85,55199,55284
+510,train,Loop,86,768,06,Loop_06_2.mov,116,116,55284,55400
+511,train,Many to many,87,769,02,Many to many_02_1.MOV,264,200,55400,55600
+512,train,Many to many,87,769,02,Many to many_02_2.MOV,137,137,55600,55737
+513,test,Many to many,87,769,03,Many to many_03_1.MOV,287,200,55737,55937
+514,test,Many to many,87,769,03,Many to many_03_2.MOV,194,194,55937,56131
+515,validation,Many to many,87,769,05,Many to many_05_1.MOV,168,168,56131,56299
+516,validation,Many to many,87,769,05,Many to many_05_2.MOV,150,150,56299,56449
+517,train,Many to one,88,770,02,Many to one_02_1.MOV,127,127,56449,56576
+518,train,Many to one,88,770,02,Many to one_02_2.MOV,80,80,56576,56656
+519,test,Many to one,88,770,03,Many to one_03_1.MOV,174,174,56656,56830
+520,test,Many to one,88,770,03,Many to one_03_2.MOV,81,81,56830,56911
+521,validation,Many to one,88,770,05,Many to one_05_1.MOV,99,99,56911,57010
+522,validation,Many to one,88,770,05,Many to one_05_2.MOV,107,107,57010,57117
+523,test,Max,89,771,01,Max_01_1.mov,89,89,57117,57206
+524,test,Max,89,771,01,Max_01_2.mov,149,149,57206,57355
+525,validation,Max,89,771,05,Max_05_1.mov,90,90,57355,57445
+526,validation,Max,89,771,05,Max_05_2.mov,112,112,57445,57557
+527,train,Max,89,771,06,Max_06_1.mov,75,75,57557,57632
+528,train,Max,89,771,06,Max_06_2.mov,102,102,57632,57734
+529,train,Memory leak,91,773,02,Memory leak_02_1.MOV,105,105,57734,57839
+530,train,Memory leak,91,773,02,Memory leak_02_2.MOV,189,189,57839,58028
+531,test,Memory leak,91,773,03,Memory leak_03_1.MOV,110,110,58028,58138
+532,test,Memory leak,91,773,03,Memory leak_03_2.MOV,196,196,58138,58334
+533,train,Memory leak,91,773,06,Memory leak_06_1.MOV,78,78,58334,58412
+534,train,Memory leak,91,773,06,Memory leak_06_2.MOV,108,108,58412,58520
+535,test,Memory,90,772,01,memory_01_1.mov,131,131,58520,58651
+536,test,Memory,90,772,01,memory_01_2.mov,107,107,58651,58758
+537,train,Memory,90,772,02,memory_02_1.mov,169,169,58758,58927
+538,train,Memory,90,772,02,memory_02_2.mov,109,109,58927,59036
+539,validation,Memory,90,772,05,memory_05_1.mov,131,131,59036,59167
+540,validation,Memory,90,772,05,memory_05_2.mov,86,86,59167,59253
+541,test,Message,92,774,03,Message_03_1.mov,81,81,59253,59334
+542,test,Message,92,774,03,Message_03_2.mov,102,102,59334,59436
+543,validation,Message,92,774,05,Message_05_1.mov,74,74,59436,59510
+544,validation,Message,92,774,05,Message_05_2.mov,95,95,59510,59605
+545,train,Message,92,774,06,Message_06_1.mov,56,56,59605,59661
+546,train,Message,92,774,06,Message_06_2.mov,80,80,59661,59741
+547,test,Min,93,775,01,Min_01_1.MOV,93,93,59741,59834
+548,test,Min,93,775,01,Min_01_2.MOV,150,150,59834,59984
+549,validation,Min,93,775,05,Min_05_1.MOV,92,92,59984,60076
+550,validation,Min,93,775,05,Min_05_2.MOV,107,107,60076,60183
+551,train,Min,93,775,06,Min_06_1.MOV,90,90,60183,60273
+552,train,Min,93,775,06,Min_06_2.MOV,107,107,60273,60380
+553,train,Multiple,94,776,02,multiple_02_1.MOV,211,200,60380,60580
+554,train,Multiple,94,776,02,multiple_02_2.MOV,96,96,60580,60676
+555,test,Multiple,94,776,03,multiple_03_1.MOV,117,117,60676,60793
+556,test,Multiple,94,776,03,multiple_03_2.MOV,227,200,60793,60993
+557,validation,Multiple,94,776,05,multiple_05_1.MOV,100,100,60993,61093
+558,validation,Multiple,94,776,05,multiple_05_2.MOV,140,140,61093,61233
+559,test,Name,95,777,01,name_01_1.MOV,162,162,61233,61395
+560,test,Name,95,777,01,name_01_2.MOV,119,119,61395,61514
+561,train,Name,95,777,02,name_02_1.MOV,117,117,61514,61631
+562,train,Name,95,777,02,name_02_2.MOV,207,200,61631,61831
+563,train,Name,95,777,07,name_07_1.mp4,230,200,61831,62031
+564,test,New,96,778,01,New_01_1.mov,114,114,62031,62145
+565,test,New,96,778,01,New_01_2.mov,250,200,62145,62345
+566,train,New,96,778,02,New_02_1.mov,119,119,62345,62464
+567,train,New,96,778,02,New_02_2.mov,233,200,62464,62664
+568,validation,New,96,778,05,New_05_1.mov,101,101,62664,62765
+569,validation,New,96,778,05,New_05_2.mov,117,117,62765,62882
+570,test,Next,97,779,01,Next_01_1.MOV,85,85,62882,62967
+571,test,Next,97,779,01,Next_01_2.MOV,119,119,62967,63086
+572,validation,Next,97,779,05,Next_05_1.MOV,71,71,63086,63157
+573,validation,Next,97,779,05,Next_05_2.MOV,79,79,63157,63236
+574,train,Next,97,779,06,Next_06_1.MOV,62,62,63236,63298
+575,train,Next,97,779,06,Next_06_2.MOV,75,75,63298,63373
+576,train,Non binary relationship,98,780,02,Non binary relationship_02_1.MOV,172,172,63373,63545
+577,train,Non binary relationship,98,780,02,Non binary relationship_02_2.MOV,357,200,63545,63745
+578,test,Non binary relationship,98,780,03,Non binary relationship_03_1.MOV,232,200,63745,63945
+579,test,Non binary relationship,98,780,03,Non binary relationship_03_2.MOV,162,162,63945,64107
+580,validation,Non binary relationship,98,780,05,Non binary relationship_05_1.MOV,158,158,64107,64265
+581,validation,Non binary relationship,98,780,05,Non binary relationship_05_2.MOV,127,127,64265,64392
+582,test,Null,99,781,01,Null_01_1.mov,87,87,64392,64479
+583,test,Null,99,781,01,Null_01_2.mov,159,159,64479,64638
+584,train,Null,99,781,02,Null_02_1.mov,120,120,64638,64758
+585,train,Null,99,781,02,Null_02_2.mov,154,154,64758,64912
+586,validation,Null,99,781,05,Null_05_1.mov,105,105,64912,65017
+587,validation,Null,99,781,05,Null_05_2.mov,105,105,65017,65122
+588,test,Object,100,782,01,Object_01_1.MOV,62,62,65122,65184
+589,test,Object,100,782,01,Object_01_2.MOV,125,125,65184,65309
+590,validation,Object,100,782,05,Object_05_1.MOV,66,66,65309,65375
+591,validation,Object,100,782,05,Object_05_2.MOV,84,84,65375,65459
+592,train,Object,100,782,06,Object_06_1.MOV,64,64,65459,65523
+593,train,Object,100,782,06,Object_06_2.MOV,76,76,65523,65599
+594,train,One to many,101,783,02,One to many_02_1.MOV,263,200,65599,65799
+595,train,One to many,101,783,02,One to many_02_2.MOV,119,119,65799,65918
+596,test,One to many,101,783,03,One to many_03_1.MOV,164,164,65918,66082
+597,test,One to many,101,783,03,One to many_03_2.MOV,219,200,66082,66282
+598,validation,One to many,101,783,05,One to many_05_1.MOV,135,135,66282,66417
+599,validation,One to many,101,783,05,One to many_05_2.MOV,151,151,66417,66568
+600,train,One to one,102,784,02,One to one_02_1.MOV,125,125,66568,66693
+601,train,One to one,102,784,02,One to one_02_2.MOV,58,58,66693,66751
+602,test,One to one,102,784,03,One to one_03_1.MOV,190,190,66751,66941
+603,test,One to one,102,784,03,One to one_03_2.MOV,113,113,66941,67054
+604,validation,One to one,102,784,05,One to one_05_1.MOV,99,99,67054,67153
+605,validation,One to one,102,784,05,One to one_05_2.MOV,105,105,67153,67258
+606,train,Operation,103,785,02,Operation_02_1.MOV,153,153,67258,67411
+607,train,Operation,103,785,02,Operation_02_2.MOV,137,137,67411,67548
+608,test,Operation,103,785,03,Operation_03_1.MOV,204,200,67548,67748
+609,test,Operation,103,785,03,Operation_03_2.MOV,100,100,67748,67848
+610,validation,Operation,103,785,05,Operation_05_1.MOV,110,110,67848,67958
+611,validation,Operation,103,785,05,Operation_05_2.MOV,83,83,67958,68041
+612,test,Order,104,786,01,Order_01_1.mov,100,100,68041,68141
+613,test,Order,104,786,01,Order_01_2.mov,156,156,68141,68297
+614,validation,Order,104,786,05,Order_05_1.mov,79,79,68297,68376
+615,validation,Order,104,786,05,Order_05_2.mov,89,89,68376,68465
+616,train,Order,104,786,06,Order_06_1.mov,66,66,68465,68531
+617,train,Order,104,786,06,Order_06_2.mov,97,97,68531,68628
+618,test,Page,105,787,01,Page_01_1.mov,115,115,68628,68743
+619,test,Page,105,787,01,Page_01_2.mov,225,200,68743,68943
+620,validation,Page,105,787,05,Page_05_1.mov,86,86,68943,69029
+621,validation,Page,105,787,05,Page_05_2.mov,116,116,69029,69145
+622,train,Page,105,787,06,Page_06_1.mov,66,66,69145,69211
+623,train,Page,105,787,06,Page_06_2.mov,97,97,69211,69308
+624,test,Pointer,106,788,01,Pointer_01_1.mov,86,86,69308,69394
+625,test,Pointer,106,788,01,Pointer_01_2.mov,138,138,69394,69532
+626,validation,Pointer,106,788,05,Pointer_05_1.mov,96,96,69532,69628
+627,validation,Pointer,106,788,05,Pointer_05_2.mov,111,111,69628,69739
+628,train,Pointer,106,788,06,Pointer_06_1.mov,73,73,69739,69812
+629,train,Pointer,106,788,06,Pointer_06_2.mov,113,113,69812,69925
+630,train,Primary key,107,789,02,Primary key_02_1.MOV,167,167,69925,70092
+631,train,Primary key,107,789,02,Primary key_02_2.MOV,93,93,70092,70185
+632,test,Primary key,107,789,03,Primary key_03_1.MOV,150,150,70185,70335
+633,test,Primary key,107,789,03,Primary key_03_2.MOV,104,104,70335,70439
+634,validation,Primary key,107,789,05,Primary key_05_1.MOV,112,112,70439,70551
+635,validation,Primary key,107,789,05,Primary key_05_2.MOV,91,91,70551,70642
+636,test,Priority,108,790,01,Priority_01_1.mov,129,129,70642,70771
+637,test,Priority,108,790,01,Priority_01_2.mov,196,196,70771,70967
+638,validation,Priority,108,790,05,Priority_05_1.mov,91,91,70967,71058
+639,validation,Priority,108,790,05,Priority_05_2.mov,99,99,71058,71157
+640,train,Priority,108,790,06,Priority_06_1.mov,103,103,71157,71260
+641,train,Priority,108,790,06,Priority_06_2.mov,145,145,71260,71405
+642,test,Private,109,791,03,private_03_1.MOV,103,103,71405,71508
+643,test,Private,109,791,03,private_03_2.MOV,59,59,71508,71567
+644,validation,Private,109,791,05,private_05_1.MOV,94,94,71567,71661
+645,validation,Private,109,791,05,private_05_2.MOV,74,74,71661,71735
+646,train,Private,109,791,06,private_06_1.MOV,55,55,71735,71790
+647,train,Private,109,791,06,private_06_2.MOV,54,54,71790,71844
+648,test,Procedure,110,792,01,procedure_01_1.MOV,192,192,71844,72036
+649,test,Procedure,110,792,01,procedure_01_2.MOV,99,99,72036,72135
+650,train,Procedure,110,792,02,procedure_02_1.MOV,189,189,72135,72324
+651,train,Procedure,110,792,02,procedure_02_2.MOV,89,89,72324,72413
+652,train,Procedure,110,792,07,procedure_07_1.mp4,188,188,72413,72601
+653,test,Produce,111,793,01,produce_01_1.MOV,141,141,72601,72742
+654,test,Produce,111,793,01,Produce_01_2.MOV,112,112,72742,72854
+655,train,Produce,111,793,02,produce_02_1.MOV,140,140,72854,72994
+656,train,Produce,111,793,02,Produce_02_2.MOV,91,91,72994,73085
+657,train,Produce,111,793,07,produce_07_1.mp4,187,187,73085,73272
+658,test,Program,112,794,01,program_01_1.mov,126,126,73272,73398
+659,test,Program,112,794,01,program_01_2.mov,205,200,73398,73598
+660,train,Program,112,794,02,program_02_1.mov,122,122,73598,73720
+661,train,Program,112,794,02,program_02_2.mov,171,171,73720,73891
+662,validation,Program,112,794,05,program_05_1.mov,117,117,73891,74008
+663,validation,Program,112,794,05,program_05_2.mov,128,128,74008,74136
+664,train,Prompt,113,795,02,Prompt_02_1.mov,92,92,74136,74228
+665,train,Prompt,113,795,02,Prompt_02_2.mov,119,119,74228,74347
+666,test,Prompt,113,795,03,Prompt_03_1.mov,94,94,74347,74441
+667,test,Prompt,113,795,03,Prompt_03_2.mov,165,165,74441,74606
+668,validation,Prompt,113,795,05,Prompt_05_1.mov,125,125,74606,74731
+669,validation,Prompt,113,795,05,Prompt_05_2.mov,131,131,74731,74862
+670,test,Public,114,796,03,public_03_1.MOV,107,107,74862,74969
+671,test,Public,114,796,03,public_03_2.MOV,80,80,74969,75049
+672,validation,Public,114,796,05,public_05_1.MOV,88,88,75049,75137
+673,validation,Public,114,796,05,public_05_2.MOV,83,83,75137,75220
+674,train,Public,114,796,06,public_06_1.MOV,68,68,75220,75288
+675,train,Public,114,796,06,public_06_2.MOV,60,60,75288,75348
+676,test,Queue,115,797,01,Queue_01_1.mov,123,123,75348,75471
+677,test,Queue,115,797,01,Queue_01_2.mov,179,179,75471,75650
+678,validation,Queue,115,797,05,Queue_05_1.mov,63,63,75650,75713
+679,validation,Queue,115,797,05,Queue_05_2.mov,109,109,75713,75822
+680,train,Queue,115,797,06,Queue_06_1.mov,71,71,75822,75893
+681,train,Queue,115,797,06,Queue_06_2.mov,76,76,75893,75969
+682,test,Rear,116,798,01,Rear_01_1.mov,115,115,75969,76084
+683,test,Rear,116,798,01,Rear_01_2.mov,61,61,76084,76145
+684,validation,Rear,116,798,05,Rear_05_1.mov,106,106,76145,76251
+685,validation,Rear,116,798,05,Rear_05_2.mov,93,93,76251,76344
+686,train,Rear,116,798,06,Rear_06_1.mov,55,55,76344,76399
+687,train,Rear,116,798,06,Rear_06_2.mov,79,79,76399,76478
+688,test,Rectangle,117,799,01,rectangle_01_1.MOV,130,130,76478,76608
+689,test,Rectangle,117,799,01,rectangle_01_2.MOV,80,80,76608,76688
+690,train,Rectangle,117,799,02,rectangle_02_1.MOV,149,149,76688,76837
+691,train,Rectangle,117,799,02,rectangle_02_2.MOV,83,83,76837,76920
+692,train,Rectangle,117,799,07,rectangle_07_1.mp4,60,60,76920,76980
+693,train,Relation,118,800,02,Relation_02_1.MOV,149,149,76980,77129
+694,train,Relation,118,800,02,Relation_02_2.MOV,110,110,77129,77239
+695,test,Relation,118,800,03,Relation_03_1.MOV,117,117,77239,77356
+696,test,Relation,118,800,03,Relation_03_2.MOV,80,80,77356,77436
+697,validation,Relation,118,800,05,Relation_05_1.mov,125,125,77436,77561
+698,validation,Relation,118,800,05,Relation_05_2.mov,123,123,77561,77684
+699,test,Represent,119,801,01,Represent_01_1.MOV,131,131,77684,77815
+700,test,Represent,119,801,01,Represent_01_2.MOV,66,66,77815,77881
+701,train,Represent,119,801,02,Represent_02_1.MOV,145,145,77881,78026
+702,train,Represent,119,801,02,Represent_02_2.MOV,81,81,78026,78107
+703,train,Represent,119,801,07,Represent_07_1.mp4,69,69,78107,78176
+704,train,Reserved,120,802,02,Reserved_02_1.mov,93,93,78176,78269
+705,train,Reserved,120,802,02,Reserved_02_2.mov,100,100,78269,78369
+706,test,Reserved,120,802,03,Reserved_03_1.mov,68,68,78369,78437
+707,test,Reserved,120,802,03,Reserved_03_2.mov,122,122,78437,78559
+708,train,Reserved,120,802,06,Reserved_06_1.mov,56,56,78559,78615
+709,train,Reserved,120,802,06,Reserved_06_2.mov,79,79,78615,78694
+710,test,Row,121,803,01,row_01_1.MOV,103,103,78694,78797
+711,test,Row,121,803,01,row_01_2.MOV,56,56,78797,78853
+712,train,Row,121,803,02,row_02_1.MOV,88,88,78853,78941
+713,train,Row,121,803,02,row_02_2.MOV,46,46,78941,78987
+714,train,Row,121,803,07,row_07_1.mp4,167,167,78987,79154
+715,train,Rules,122,804,02,Rules_02_1.mov,133,133,79154,79287
+716,train,Rules,122,804,02,Rules_02_2.mov,148,148,79287,79435
+717,test,Rules,122,804,03,Rules_03_1.mov,101,101,79435,79536
+718,test,Rules,122,804,03,Rules_03_2.mov,170,170,79536,79706
+719,train,Rules,122,804,06,Rules_06_1.mov,72,72,79706,79778
+720,train,Rules,122,804,06,Rules_06_2.mov,94,94,79778,79872
+721,train,Run time error,124,806,02,Run time error_02_1.mov,131,131,79872,80003
+722,train,Run time error,124,806,02,Run time error_02_2.mov,90,90,80003,80093
+723,test,Run time error,124,806,03,Run time error_03_1.mov,146,146,80093,80239
+724,test,Run time error,124,806,03,Run time error_03_2.mov,159,159,80239,80398
+725,validation,Run time error,124,806,05,Run time error_05_1.mov,78,78,80398,80476
+726,validation,Run time error,124,806,05,Run time error_05_2.mov,107,107,80476,80583
+727,train,Run,123,805,02,Run_02_1.mov,60,60,80583,80643
+728,train,Run,123,805,02,Run_02_2.mov,82,82,80643,80725
+729,test,Run,123,805,03,Run_03_1.mov,75,75,80725,80800
+730,test,Run,123,805,03,Run_03_2.mov,168,168,80800,80968
+731,validation,Run,123,805,05,Run_05_1.mov,68,68,80968,81036
+732,validation,Run,123,805,05,Run_05_2.mov,106,106,81036,81142
+733,test,Semicolon,125,807,01,Semicolon_01_1.mov,97,97,81142,81239
+734,test,Semicolon,125,807,01,Semicolon_01_2.mov,229,200,81239,81439
+735,validation,Semicolon,125,807,05,Semicolon_05_1.mov,63,63,81439,81502
+736,validation,Semicolon,125,807,05,Semicolon_05_2.mov,86,86,81502,81588
+737,train,Semicolon,125,807,06,Semicolon_06_1.mov,70,70,81588,81658
+738,train,Semicolon,125,807,06,Semicolon_06_2.mov,84,84,81658,81742
+739,test,Sequence,126,808,01,Sequence_01_1.mov,106,106,81742,81848
+740,test,Sequence,126,808,01,Sequence_01_2.mov,74,74,81848,81922
+741,validation,Sequence,126,808,05,Sequence_05_1.mov,82,82,81922,82004
+742,validation,Sequence,126,808,05,Sequence_05_2.mov,69,69,82004,82073
+743,train,Sequence,126,808,06,Sequence_06_1.mov,74,74,82073,82147
+744,train,Sequence,126,808,06,Sequence_06_2.mov,96,96,82147,82243
+745,test,Server,127,809,01,Server_01_1.mov,122,122,82243,82365
+746,test,Server,127,809,01,Server_01_2.mov,203,200,82365,82565
+747,train,Server,127,809,02,Server_02_1.mov,193,193,82565,82758
+748,train,Server,127,809,02,Server_02_2.mov,337,200,82758,82958
+749,train,Server,127,809,07,Server_07_1.mp4,145,145,82958,83103
+750,test,Simple_Basic,128,810,01,Simple_Basic_01_1.MOV,158,158,83103,83261
+751,test,Simple_Basic,128,810,01,Simple_Basic_01_2.MOV,65,65,83261,83326
+752,train,Simple_Basic,128,810,02,Simple_Basic_02_1.MOV,175,175,83326,83501
+753,train,Simple_Basic,128,810,02,Simple_Basic_02_2.MOV,70,70,83501,83571
+754,train,Simple_Basic,128,810,07,Simple_Basic_07_1.mp4,156,156,83571,83727
+755,test,Size,129,811,03,size_03_1.MOV,90,90,83727,83817
+756,test,Size,129,811,03,size_03_2.MOV,79,79,83817,83896
+757,validation,Size,129,811,05,size_05_1.MOV,68,68,83896,83964
+758,validation,Size,129,811,05,size_05_2.MOV,89,89,83964,84053
+759,train,Size,129,811,06,size_06_1.MOV,80,80,84053,84133
+760,train,Size,129,811,06,size_06_2.MOV,65,65,84133,84198
+761,test,Small,130,812,01,Small_01_1.mov,77,77,84198,84275
+762,test,Small,130,812,01,Small_01_2.mov,115,115,84275,84390
+763,validation,Small,130,812,05,Small_05_1.mov,60,60,84390,84450
+764,validation,Small,130,812,05,Small_05_2.mov,91,91,84450,84541
+765,train,Small,130,812,06,Small_06_1.mov,56,56,84541,84597
+766,train,Small,130,812,06,Small_06_2.mov,76,76,84597,84673
+767,train,Source,131,813,02,Source_02_1.mov,64,64,84673,84737
+768,train,Source,131,813,02,Source_02_2.mov,125,125,84737,84862
+769,test,Source,131,813,03,Source_03_1.mov,78,78,84862,84940
+770,test,Source,131,813,03,Source_03_2.mov,134,134,84940,85074
+771,validation,Source,131,813,05,Source_05_1.mov,65,65,85074,85139
+772,validation,Source,131,813,05,Source_05_2.mov,90,90,85139,85229
+773,test,Specify,132,814,03,specify_03_1.MOV,100,100,85229,85329
+774,test,Specify,132,814,03,specify_03_2.MOV,62,62,85329,85391
+775,validation,Specify,132,814,05,specify_05_1.MOV,69,69,85391,85460
+776,validation,Specify,132,814,05,specify_05_2.MOV,82,82,85460,85542
+777,train,Specify,132,814,06,specify_06_1.MOV,60,60,85542,85602
+778,train,Specify,132,814,06,specify_06_2.MOV,53,53,85602,85655
+779,test,Stack,133,815,01,Stack_01_1.mov,116,116,85655,85771
+780,test,Stack,133,815,01,Stack_01_2.mov,195,195,85771,85966
+781,train,Stack,133,815,02,Stack_02_1.mov,93,93,85966,86059
+782,train,Stack,133,815,02,Stack_02_2.mov,177,177,86059,86236
+783,train,Stack,133,815,07,Stack_07_1.mp4,97,97,86236,86333
+784,test,Start,134,816,01,Start_01_1.mov,93,93,86333,86426
+785,test,Start,134,816,01,Start_01_2.mov,131,131,86426,86557
+786,validation,Start,134,816,05,Start_05_1.mov,74,74,86557,86631
+787,validation,Start,134,816,05,Start_05_2.mov,95,95,86631,86726
+788,train,Start,134,816,06,Start_06_1.mov,61,61,86726,86787
+789,train,Start,134,816,06,Start_06_2.mov,104,104,86787,86891
+790,test,Step,135,817,01,Step_01_1.mov,104,104,86891,86995
+791,test,Step,135,817,01,Step_01_2.mov,189,189,86995,87184
+792,validation,Step,135,817,05,Step_05_1.mov,93,93,87184,87277
+793,validation,Step,135,817,05,Step_05_2.mov,113,113,87277,87390
+794,train,Step,135,817,06,Step_06_1.mov,76,76,87390,87466
+795,train,Step,135,817,06,Step_06_2.mov,107,107,87466,87573
+796,test,store,136,818,01,store_01_1.mov,95,95,87573,87668
+797,test,store,136,818,01,store_01_2.mov,153,153,87668,87821
+798,train,store,136,818,02,store_02_1.mov,112,112,87821,87933
+799,train,store,136,818,02,store_02_2.mov,154,154,87933,88087
+800,validation,store,136,818,05,store_05_1.mov,97,97,88087,88184
+801,validation,store,136,818,05,store_05_2.mov,106,106,88184,88290
+802,test,Straightforward- clear,137,819,01,Straightforward- clear_01_1.mov,85,85,88290,88375
+803,test,Straightforward- clear,137,819,01,Straightforward- clear_01_2.mov,134,134,88375,88509
+804,train,Straightforward- clear,137,819,02,Straightforward- clear_02_1.mov,64,64,88509,88573
+805,train,Straightforward- clear,137,819,02,Straightforward- clear_02_2.mov,126,126,88573,88699
+806,train,Straightforward- clear,137,819,07,Straightforward- clear_07_1.mp4,53,53,88699,88752
+807,test,String,138,820,01,String_01_1.mov,86,86,88752,88838
+808,test,String,138,820,01,String_01_2.mov,170,170,88838,89008
+809,validation,String,138,820,05,String_05_1.mov,69,69,89008,89077
+810,validation,String,138,820,05,String_05_2.mov,94,94,89077,89171
+811,train,String,138,820,06,String_06_1.mov,81,81,89171,89252
+812,train,String,138,820,06,String_06_2.mov,99,99,89252,89351
+813,test,Strong,139,821,01,strong_01_1.MOV,91,91,89351,89442
+814,test,Strong,139,821,01,strong_01_2.MOV,58,58,89442,89500
+815,train,Strong,139,821,02,strong_02_1.MOV,82,82,89500,89582
+816,train,Strong,139,821,02,strong_02_2.MOV,52,52,89582,89634
+817,train,Strong,139,821,07,strong_07_1.mp4,43,43,89634,89677
+818,train,Structure,140,822,02,Structure_02_1.MOV,164,164,89677,89841
+819,train,Structure,140,822,02,Structure_02_2.MOV,116,116,89841,89957
+820,test,Structure,140,822,03,Structure_03_1.MOV,169,169,89957,90126
+821,test,Structure,140,822,03,Structure_03_2.MOV,106,106,90126,90232
+822,train,Structure,140,822,07,Structure_07_1.mp4,197,197,90232,90429
+823,test,Student,141,823,01,Student_01_1.MOV,164,164,90429,90593
+824,test,Student,141,823,01,student_01_2.MOV,92,92,90593,90685
+825,train,Student,141,823,02,student_02_1.MOV,95,95,90685,90780
+826,train,Student,141,823,02,student_02_2.MOV,179,179,90780,90959
+827,train,Student,141,823,07,student_07_1.mp4,45,45,90959,91004
+828,test,Subtract,142,824,01,Subtract_01_1.mov,61,61,91004,91065
+829,test,Subtract,142,824,01,Subtract_01_2.mov,136,136,91065,91201
+830,validation,Subtract,142,824,05,Subtract_05_1.mov,58,58,91201,91259
+831,validation,Subtract,142,824,05,Subtract_05_2.mov,99,99,91259,91358
+832,train,Subtract,142,824,06,Subtract_06_1.mov,55,55,91358,91413
+833,train,Subtract,142,824,06,Subtract_06_2.mov,63,63,91413,91476
+834,train,Super key,143,825,02,Super Key_02_1.mov,104,104,91476,91580
+835,train,Super key,143,825,02,Super Key_02_2.mov,178,178,91580,91758
+836,test,Super key,143,825,03,Super Key_03_1.mov,118,118,91758,91876
+837,test,Super key,143,825,03,Super Key_03_2.mov,274,200,91876,92076
+838,validation,Super key,143,825,05,Super Key_05_1.mov,123,123,92076,92199
+839,validation,Super key,143,825,05,Super Key_05_2.mov,119,119,92199,92318
+840,test,System,144,826,03,system_03_1.mov,75,75,92318,92393
+841,test,System,144,826,03,system_03_2.mov,120,120,92393,92513
+842,validation,System,144,826,05,system_05_1.mov,70,70,92513,92583
+843,validation,System,144,826,05,system_05_2.mov,95,95,92583,92678
+844,train,System,144,826,06,system_06_1.mov,67,67,92678,92745
+845,train,System,144,826,06,system_06_2.mov,75,75,92745,92820
+846,test,Table,145,827,01,table_01_1.MOV,136,136,92820,92956
+847,test,Table,145,827,01,table_01_2.MOV,78,78,92956,93034
+848,train,Table,145,827,02,Table_02_1.MOV,102,102,93034,93136
+849,train,Table,145,827,02,table_02_2.MOV,93,93,93136,93229
+850,train,Table,145,827,07,table_07_1.mp4,197,197,93229,93426
+851,test,Template,146,828,01,Template_01_1.MOV,69,69,93426,93495
+852,test,Template,146,828,01,Template_01_2.MOV,127,127,93495,93622
+853,train,Template,146,828,02,Template_02_1.MOV,109,109,93622,93731
+854,train,Template,146,828,02,Template_02_2.MOV,43,43,93731,93774
+855,train,Template,146,828,07,Template_07_1.mp4,59,59,93774,93833
+856,test,Terminate-end,147,829,01,Terminate-end_01_1.mov,107,107,93833,93940
+857,test,Terminate-end,147,829,01,Terminate-end_01_2.mov,179,179,93940,94119
+858,train,Terminate-end,147,829,02,Terminate-end_02_1.mov,228,200,94119,94319
+859,train,Terminate-end,147,829,02,Terminate-end_02_2.mov,145,145,94319,94464
+860,validation,Terminate-end,147,829,05,Terminate-end_05_1.mov,130,130,94464,94594
+861,validation,Terminate-end,147,829,05,Terminate-end_05_2.mov,116,116,94594,94710
+862,train,Ternary,148,830,02,Ternary_02_1.mov,146,146,94710,94856
+863,train,Ternary,148,830,02,Ternary_02_2.mov,278,200,94856,95056
+864,test,Ternary,148,830,03,Ternary_03_1.mov,162,162,95056,95218
+865,test,Ternary,148,830,03,Ternary_03_2.mov,254,200,95218,95418
+866,validation,Ternary,148,830,05,Ternary_05_1.mov,141,141,95418,95559
+867,validation,Ternary,148,830,05,Ternary_05_2.mov,159,159,95559,95718
+868,test,Top,149,831,03,top_03_1.MOV,119,119,95718,95837
+869,test,Top,149,831,03,top_03_2.MOV,83,83,95837,95920
+870,validation,Top,149,831,05,top_05_1.MOV,135,135,95920,96055
+871,validation,Top,149,831,05,top_05_2.MOV,95,95,96055,96150
+872,train,Top,149,831,06,top_06_1.MOV,90,90,96150,96240
+873,train,Top,149,831,06,top_06_2.MOV,69,69,96240,96309
+874,test,Total-Summation,150,832,01,Total-Summation_01_1.mov,80,80,96309,96389
+875,test,Total-Summation,150,832,01,Total-Summation_01_2.mov,127,127,96389,96516
+876,validation,Total-Summation,150,832,05,Total-Summation_05_1.mov,56,56,96516,96572
+877,validation,Total-Summation,150,832,05,Total-Summation_05_2.mov,66,66,96572,96638
+878,train,Total-Summation,150,832,06,Total-Summation_06_1.mov,66,66,96638,96704
+879,train,Total-Summation,150,832,06,Total-Summation_06_2.mov,81,81,96704,96785
+880,test,Transaction,151,833,01,Transaction_01_1.mov,67,67,96785,96852
+881,test,Transaction,151,833,01,Transaction_01_2.mov,149,149,96852,97001
+882,validation,Transaction,151,833,05,Transaction_05_1.mov,62,62,97001,97063
+883,validation,Transaction,151,833,05,Transaction_05_2.mov,85,85,97063,97148
+884,train,Transaction,151,833,06,Transaction_06_1.mov,64,64,97148,97212
+885,train,Transaction,151,833,06,Transaction_06_2.mov,65,65,97212,97277
+886,test,Transform,152,834,01,Transform_01_1.mov,58,58,97277,97335
+887,test,Transform,152,834,01,Transform_01_2.mov,146,146,97335,97481
+888,train,Transform,152,834,02,Transform_02_1.mov,61,61,97481,97542
+889,train,Transform,152,834,02,Transform_02_2.mov,142,142,97542,97684
+890,train,Transform,152,834,07,Transform_07_1.mp4,51,51,97684,97735
+891,test,Under-down-below,153,835,01,Under-down-below_01_1.mov,80,80,97735,97815
+892,test,Under-down-below,153,835,01,Under-down-below_01_2.mov,144,144,97815,97959
+893,validation,Under-down-below,153,835,05,Under-down-below_05_1.mov,67,67,97959,98026
+894,validation,Under-down-below,153,835,05,Under-down-below_05_2.mov,79,79,98026,98105
+895,train,Under-down-below,153,835,06,Under-down-below_06_1.mov,57,57,98105,98162
+896,train,Under-down-below,153,835,06,Under-down-below_06_2.mov,74,74,98162,98236
+897,test,Union,154,836,01,union_01_1.MOV,75,75,98236,98311
+898,test,Union,154,836,01,union_01_2.MOV,145,145,98311,98456
+899,train,Union,154,836,02,union_02_1.MOV,151,151,98456,98607
+900,train,Union,154,836,02,union_02_2.MOV,79,79,98607,98686
+901,train,Union,154,836,07,union_07_1.mp4,270,200,98686,98886
+902,train,Unnecessary,155,837,02,Unnecessary_02_1.mov,84,84,98886,98970
+903,train,Unnecessary,155,837,02,Unnecessary_02_2.mov,172,172,98970,99142
+904,test,Unnecessary,155,837,03,Unnecessary_03_1.mov,101,101,99142,99243
+905,test,Unnecessary,155,837,03,Unnecessary_03_2.mov,139,139,99243,99382
+906,validation,Unnecessary,155,837,05,Unnecessary_05_1.mov,73,73,99382,99455
+907,validation,Unnecessary,155,837,05,Unnecessary_05_2.mov,124,124,99455,99579
+908,train,Unrelated,156,838,02,Unrelated_02_1.mov,99,99,99579,99678
+909,train,Unrelated,156,838,02,Unrelated_02_2.mov,171,171,99678,99849
+910,test,Unrelated,156,838,03,Unrelated_03_1.mov,106,106,99849,99955
+911,test,Unrelated,156,838,03,Unrelated_03_2.mov,210,200,99955,100155
+912,validation,Unrelated,156,838,05,Unrelated_05_1.mov,94,94,100155,100249
+913,validation,Unrelated,156,838,05,Unrelated_05_2.mov,111,111,100249,100360
+914,test,Up-above,157,839,01,Up-above_01_1.mov,78,78,100360,100438
+915,test,Up-above,157,839,01,Up-above_01_2.mov,94,94,100438,100532
+916,validation,Up-above,157,839,05,Up-above_05_1.mov,61,61,100532,100593
+917,validation,Up-above,157,839,05,Up-above_05_2.mov,78,78,100593,100671
+918,train,Up-above,157,839,06,Up-above_06_1.mov,58,58,100671,100729
+919,train,Up-above,157,839,06,Up-above_06_2.mov,70,70,100729,100799
+920,test,Update,158,840,01,Update_01_1.mov,100,100,100799,100899
+921,test,Update,158,840,01,Update_01_2.mov,194,194,100899,101093
+922,train,Update,158,840,02,Update_02_1.mov,115,115,101093,101208
+923,train,Update,158,840,02,Update_02_2.mov,178,178,101208,101386
+924,train,Update,158,840,07,Update_07_1.mp4,208,200,101386,101586
+925,test,User,159,841,03,user_03_1.MOV,139,139,101586,101725
+926,test,User,159,841,03,user_03_2.MOV,84,84,101725,101809
+927,validation,User,159,841,05,user_05_1.MOV,93,93,101809,101902
+928,validation,User,159,841,05,user_05_2.MOV,72,72,101902,101974
+929,train,User,159,841,06,user_06_1.MOV,63,63,101974,102037
+930,train,User,159,841,06,user_06_2.MOV,53,53,102037,102090
+931,test,Value-arithmetic,160,842,01,Value-arithmetic_01_1.mov,112,112,102090,102202
+932,test,Value-arithmetic,160,842,01,Value-arithmetic_01_2.mov,94,94,102202,102296
+933,train,Value-arithmetic,160,842,02,Value-arithmetic_02_1.mov,143,143,102296,102439
+934,train,Value-arithmetic,160,842,02,Value-arithmetic_02_2.mov,172,172,102439,102611
+935,test,Value-arithmetic,160,842,03,Value-arithmetic_03_1.mov,156,156,102611,102767
+936,test,Value-arithmetic,160,842,03,Value-arithmetic_03_2.mov,129,129,102767,102896
+937,validation,Value-arithmetic,160,842,05,Value-arithmetic_05_1.mov,103,103,102896,102999
+938,validation,Value-arithmetic,160,842,05,Value-arithmetic_05_2.mov,93,93,102999,103092
+939,validation,Value-arithmetic,160,842,05,Value-arithmetic_05_3.mov,152,152,103092,103244
+940,validation,Value-arithmetic,160,842,05,Value-arithmetic_05_4.mov,83,83,103244,103327
+941,train,Value-arithmetic,160,842,06,Value-arithmetic_06_1.mov,87,87,103327,103414
+942,train,Value-arithmetic,160,842,06,Value-arithmetic_06_2.mov,64,64,103414,103478
+943,train,Variable,161,843,02,Variable_02_1.mov,202,200,103478,103678
+944,train,Variable,161,843,02,Variable_02_2.mov,129,129,103678,103807
+945,test,Variable,161,843,03,Variable_03_1.mov,79,79,103807,103886
+946,test,Variable,161,843,03,Variable_03_2.mov,118,118,103886,104004
+947,train,Variable,161,843,06,Variable_06_1.mov,61,61,104004,104065
+948,train,Variable,161,843,06,Variable_06_2.mov,95,95,104065,104160
+949,test,Very,162,844,01,Very_01_1.mov,60,60,104160,104220
+950,test,Very,162,844,01,Very_01_2.mov,132,132,104220,104352
+951,validation,Very,162,844,05,Very_05_1.mov,69,69,104352,104421
+952,validation,Very,162,844,05,Very_05_2.mov,79,79,104421,104500
+953,train,Very,162,844,06,Very_06_1.mov,61,61,104500,104561
+954,train,Very,162,844,06,Very_06_2.mov,75,75,104561,104636
+955,test,With-within,163,845,01,With-within_01_1.mov,75,75,104636,104711
+956,test,With-within,163,845,01,With-within_01_2.mov,129,129,104711,104840
+957,validation,With-within,163,845,05,With-within_05_1.mov,64,64,104840,104904
+958,validation,With-within,163,845,05,With-within_05_2.mov,79,79,104904,104983
+959,train,With-within,163,845,06,With-within_06_1.mov,54,54,104983,105037
+960,train,With-within,163,845,06,With-within_06_2.mov,67,67,105037,105104
+961,test,Zero,164,846,01,Zero_01_1.mov,120,120,105104,105224
+962,test,Zero,164,846,01,Zero_01_2.mov,93,93,105224,105317
+963,test,Zero,164,846,01,Zero_01_3.mov,59,59,105317,105376
+964,validation,Zero,164,846,05,Zero_05_1.mov,64,64,105376,105440
+965,train,Zero,164,846,06,Zero_06_1.mov,50,50,105440,105490
+966,train,Zero,164,846,06,Zero_06_2.mov,65,65,105490,105555

@@ -1,0 +1,502 @@
+﻿sign_id,karsl_arabic,karsl_english,normalized_variants,already_in_isharah,already_in_jordanian_it,status
+2,1,1,1,False,False,NEW
+3,2,2,2,False,False,NEW
+4,3,3,3,False,False,NEW
+5,4,4,4,False,False,NEW
+6,5,5,5,False,False,NEW
+7,6,6,6,False,False,NEW
+8,7,7,7,False,False,NEW
+9,8,8,8,False,False,NEW
+10,9,9,9,False,False,NEW
+11,10,10,10,False,False,NEW
+12,20,20,20,False,False,NEW
+13,30,30,30,False,False,NEW
+14,40,40,40,False,False,NEW
+15,50,50,50,False,False,NEW
+16,60,60,60,False,False,NEW
+17,70,70,70,False,False,NEW
+18,80,80,80,False,False,NEW
+19,90,90,90,False,False,NEW
+20,100,100,100,False,False,NEW
+21,200,200,200,False,False,NEW
+22,300,300,300,False,False,NEW
+23,400,400,400,False,False,NEW
+24,500,500,500,False,False,NEW
+25,600,600,600,False,False,NEW
+26,700,700,700,False,False,NEW
+27,800,800,800,False,False,NEW
+28,900,900,900,False,False,NEW
+29,1000,1000,1000,False,False,NEW
+30,1000000,1000000,1000000,False,False,NEW
+31,10000000,10000000,10000000,False,False,NEW
+32,ا,alif,ا,True,False,OVERLAP
+33,ب,baa,ب,True,False,OVERLAP
+34,ت,ta,ت,True,False,OVERLAP
+35,ث,tha,ث,False,False,NEW
+36,ج,Jiim,ج,True,False,OVERLAP
+37,ح,Haa,ح,True,False,OVERLAP
+38,خ,kha,خ,True,False,OVERLAP
+39,د,daal,د,True,False,OVERLAP
+40,ذ,thal,ذ,False,False,NEW
+41,ر,raa,ر,True,False,OVERLAP
+42,ز,zay,ز,True,False,OVERLAP
+43,س,siin,س,True,False,OVERLAP
+44,ش,shiin,ش,False,False,NEW
+45,ص,Saad,ص,False,False,NEW
+46,ض,Daad,ض,False,False,NEW
+47,ط,Taa,ط,False,False,NEW
+48,ظ,Zaa,ظ,False,False,NEW
+49,ع,Ayn,ع,True,False,OVERLAP
+50,غ,ghayn,غ,False,False,NEW
+51,ف,faa,ف,False,False,NEW
+52,ق,qaaf,ق,True,False,OVERLAP
+53,ك,kaaf,ك,False,False,NEW
+54,ل,laam,ل,True,False,OVERLAP
+55,م,miim,م,True,False,OVERLAP
+56,ن,noon,ن,True,False,OVERLAP
+57,ه,haa,ه,True,False,OVERLAP
+58,و,waaw,و,True,False,OVERLAP
+59,ي,yaa,ي,True,False,OVERLAP
+60,ة,taa marbuuTa,ة,False,False,NEW
+61,أ,alif with hamza above,ا,True,False,OVERLAP
+62,ؤ,Waaw with hamza,ؤ,False,False,NEW
+63,ئ,Alif maqsoura with hamza,ئ,False,False,NEW
+64,ئـ,hamza on line,ئ,False,False,NEW
+65,ء,hamza,ء,False,False,NEW
+66,إ,alif with hamza below,ا,True,False,OVERLAP
+67,آ,ALif with maad,ا,True,False,OVERLAP
+68,ى,Alif maqsoura,ي,True,False,OVERLAP
+69,لا,laam Alif,لا,True,False,OVERLAP
+70,ال,Al,ال,True,False,OVERLAP
+71,هيكل عظمي,Skeleton,هيكل عظمي,False,False,NEW
+72,جمجة,skull,جمجة,False,False,NEW
+73,عمود فقري,Backbone,عمود فقري,False,False,NEW
+74,قفص صدري,Chest,قفص صدري,False,False,NEW
+75,جهاز تنفسي,Respiratory device,جهاز تنفسي,False,False,NEW
+76,قصبة هوائية,Trachea,قصبة هوائية,False,False,NEW
+77,رئتان,lungs,رئتان,False,False,NEW
+78,شهيق - زفير,Ins and Outs,زفير | شهيق | شهيق زفير,False,False,NEW
+79,جهاز هضمي,digestive system,جهاز هضمي,False,False,NEW
+80,وجه,Face,وجه,True,False,OVERLAP
+81,بلعوم,pharynx,بلعوم,False,False,NEW
+82,كبد,liver,كبد,False,False,NEW
+83,البنكرياس,pancreas,البنكرياس,False,False,NEW
+84,الأمعاء الدقيقة,Small intestine,الامعاء الدقيقة,False,False,NEW
+85,الأمعاء الغليظة,Large intestine,الامعاء الغليظة,False,False,NEW
+86,الزائدة الدودية,Appendix,الزائدة الدودية,False,False,NEW
+87,جهاز عصبي,nervous system,جهاز عصبي,False,False,NEW
+88,قلب,heart,قلب,True,False,OVERLAP
+89,حواس خمس,five senses,حواس خمس,False,False,NEW
+90,عضلة,muscle,عضلة,False,False,NEW
+91,أنسجة,tissue,انسجة,False,False,NEW
+92,مستشفى,hospital,مستشفي,True,False,OVERLAP
+93,إسعافات أولية,first aid,اسعافات اولية,False,False,NEW
+94,جرح نازف,wound,جرح نازف,False,False,NEW
+95,حروق,burning,حروق,False,False,NEW
+96,مخدر/ بنج,anesthetist,بنج | مخدر | مخدر بنج,False,False,NEW
+97,عملية جراحية,surgery,عملية جراحية,False,False,NEW
+98,شاش / ضمادة,gauze,شاش | شاش ضمادة | ضمادة,False,False,NEW
+99,شريط لاصق / بلاستر,adhesive tape,بلاستر | شريط لاصق | شريط لاصق بلاستر,False,False,NEW
+100,صيدلية,pharmacy,صيدلية,False,False,NEW
+101,تحليل دم,blood analysis,تحليل دم,False,False,NEW
+102,فحص سريري,physical examination,فحص سريري,False,False,NEW
+103,فحص النظر,sight examination,فحص النظر,False,False,NEW
+104,ميزان حرارة,thermometer,ميزان حرارة,False,False,NEW
+105,سماعة أذن,stethoscope,سماعة اذن,False,False,NEW
+106,جهاز قياس الضغط,sphygmometroscope,جهاز قياس الضغط,False,False,NEW
+107,نبض القلب,pulse,نبض القلب,False,False,NEW
+108,تحليل طبي,analysis,تحليل طبي,False,False,NEW
+109,معمل التحاليل / مختبر,analysis laboratory,مختبر | معمل التحاليل | معمل التحاليل مختبر,False,False,NEW
+110,صورة اشعة,ray photo,صورة اشعة,False,False,NEW
+111,التهاب,inflammation,التهاب,False,False,NEW
+112,تورم,swelling,تورم,False,False,NEW
+113,زكام,cold,زكام,True,False,OVERLAP
+114,عدوى,infection,عدوي,False,False,NEW
+115,صداع,headache,صداع,False,False,NEW
+116,ألم,pain,الم,True,False,OVERLAP
+117,حمى,fever,حمي,True,False,OVERLAP
+118,إسهال,diarrhea,اسهال,True,False,OVERLAP
+119,إمساك,constipation,امساك,False,False,NEW
+120,مغص,colic,مغص,False,False,NEW
+121,مرض السكر / سكري,diabetes,سكري | مرض السكر | مرض السكر سكري,False,False,NEW
+122,أزمة قلبية,heart attack,ازمة قلبية,False,False,NEW
+123,سرطان,cancer,سرطان,False,False,NEW
+124,مرض فقدان المناعة / الإيدز,Aids,الايدز | مرض فقدان المناعة | مرض فقدان المناعة الايدز,False,False,NEW
+125,تساقط الشعر,Loss of hair,تساقط الشعر,False,False,NEW
+126,سكتة قلبية,Heart failure,سكتة قلبية,False,False,NEW
+127,شلل نصفي,hemiplegia,شلل نصفي,False,False,NEW
+128,شلل دماغي,Cerebral paralysis,شلل دماغي,False,False,NEW
+129,ضغط الدم,blood pressure,ضغط الدم,False,False,NEW
+130,حساسية,allergy,حساسية,False,False,NEW
+131,حكة / هرش,itch,حكة | حكة هرش | هرش,False,False,NEW
+132,دواء,medicine,دواء,True,False,OVERLAP
+133,دورة شهرية,monthly circulation,دورة شهرية,False,False,NEW
+134,مريض / مرض,sick,مرض | مريض | مريض مرض,True,False,OVERLAP
+135,كبسولة,capsule,كبسولة,False,False,NEW
+136,دواء شراب,liquid medicine,دواء شراب,False,False,NEW
+137,مرهم,ointment,مرهم,False,False,NEW
+138,قطارة,dropper,قطارة,False,False,NEW
+139,أخذ إبرة,acupuncture,اخذ ابرة,False,False,NEW
+140,تلقيح,pollination,تلقيح,False,False,NEW
+141,تطعيم,inoculation,تطعيم,False,False,NEW
+142,أشعة ليزر,laser ray,اشعة ليزر,False,False,NEW
+143,مخدرات,drug's,مخدرات,True,False,OVERLAP
+144,إدمان,addiction,ادمان,False,False,NEW
+145,توحد / أوتيزم,oneness,اوتيزم | توحد | توحد اوتيزم,False,False,NEW
+146,منغولي,mongoloid,منغولي,False,False,NEW
+147,بكتريا,bacterium,بكتريا,False,False,NEW
+148,جرثومة,microbe,جرثومة,False,False,NEW
+149,فيروس,virus,فيروس,False,False,NEW
+150,إنتشار,spread,انتشار,False,False,NEW
+151,إعاقة,hindrance,اعاقة,False,False,NEW
+152,إعاقة ذهنية,mentality hindrance,اعاقة ذهنية,False,False,NEW
+153,اعاقة جسدية,physical disability,اعاقة جسدية,False,False,NEW
+154,اعاقة بصرية,visual impairment,اعاقة بصرية,False,False,NEW
+155,إعاقة سمعية,hearing hindrance,اعاقة سمعية,False,False,NEW
+156,وباء,epidemic,وباء,False,False,NEW
+157,مناعة,immunity,مناعة,False,False,NEW
+158,عصب,nerve,عصب,False,False,NEW
+159,معافى,healthy,معافي,False,False,NEW
+160,يأكل,eat,ياكل,False,False,NEW
+161,يشرب,drink,يشرب,False,False,NEW
+162,ينام,sleep,ينام,False,False,NEW
+163,يستيقظ,wake up,يستيقظ,False,False,NEW
+164,يسمع,hear,يسمع,False,False,NEW
+165,يسكت,silence,يسكت,False,False,NEW
+166,يشم,inhale,يشم,False,False,NEW
+167,يصعد,rise,يصعد,False,False,NEW
+168,ينزل,descend,ينزل,False,False,NEW
+169,يفتح,open,يفتح,False,False,NEW
+170,يقفل ( يغلق ),close,يغلق | يقفل | يقفل يغلق,False,False,NEW
+171,يبني,build,يبني,False,False,NEW
+172,يكسر,break,يكسر,False,False,NEW
+173,يمشي,walk,يمشي,False,False,NEW
+174,يحب,love,يحب,False,False,NEW
+175,يكره,hate,يكره,True,False,OVERLAP
+176,يشوي,grill,يشوي,False,False,NEW
+177,يحرث,plow,يحرث,False,False,NEW
+178,يزرع,plant,يزرع,False,False,NEW
+179,يسقي,irrigate,يسقي,False,False,NEW
+180,يحصد,harvest,يحصد,False,False,NEW
+181,يفكر,think,يفكر,False,False,NEW
+182,يساعد,help,يساعد,False,False,NEW
+183,يدخن,smoke,يدخن,False,False,NEW
+184,يدعم,support,يدعم,False,False,NEW
+185,يختار,choose,يختار,False,False,NEW
+186,ينادي,call,ينادي,False,False,NEW
+187,يتنامى,grow,يتنامي,False,False,NEW
+188,يصبغ,dye,يصبغ,False,False,NEW
+189,يقف,stand,يقف,False,False,NEW
+190,يستحم,bathe,يستحم,False,False,NEW
+191,يدخل,enter,يدخل,False,False,NEW
+192,أسرة,family,اسرة,False,False,NEW
+193,جدة,grandmother,جدة,False,False,NEW
+194,جد,grandfather,جد,True,False,OVERLAP
+195,أب,father,اب,True,False,OVERLAP
+196,أم,mother,ام,True,False,OVERLAP
+197,أخت,sister,اخت,True,False,OVERLAP
+198,أخ,brother,اخ,True,False,OVERLAP
+199,بنت,girl,بنت,True,False,OVERLAP
+200,رضيع,baby,رضيع,False,False,NEW
+201,توأم,twin,توام,False,False,NEW
+202,رجل,man,رجل,False,False,NEW
+203,شاب,young man,شاب,True,False,OVERLAP
+204,شابة,young woman,شابة,False,False,NEW
+205,حفيد,grandchild,حفيد,True,False,OVERLAP
+206,زواج,wedding,زواج,True,False,OVERLAP
+207,حمل,pregnant,حمل,False,False,NEW
+208,ولادة,childbirth,ولادة,False,False,NEW
+209,عم,uncle,عم,True,False,OVERLAP
+210,عمة,aunt,عمة,False,False,NEW
+211,خال,maternal uncle,خال,True,False,OVERLAP
+212,خالة,maternal aunt,خالة,False,False,NEW
+213,ابن الأخ,nephew,ابن الاخ,False,False,NEW
+214,ابن الأخت,nephew,ابن الاخت,False,False,NEW
+215,ابن العم,cousin,ابن العم,False,False,NEW
+216,ابن,son,ابن,True,False,OVERLAP
+217,ابنة,daughter,ابنة,False,False,NEW
+218,ناس,people,ناس,False,False,NEW
+219,طلاق,divorce,طلاق,False,False,NEW
+220,خطوبة,engagement,خطوبة,False,False,NEW
+221,حفلة,party,حفلة,False,False,NEW
+222,وفاة,death,وفاة,False,False,NEW
+223,طفل,child,طفل,True,False,OVERLAP
+224,جميل,beautiful,جميل,True,False,OVERLAP
+225,قبيح,ugly,قبيح,True,False,OVERLAP
+226,طويل,long,طويل,True,False,OVERLAP
+227,قصير,short,قصير,True,False,OVERLAP
+228,نحيف,thin,نحيف,True,False,OVERLAP
+229,سمين,fat,سمين,False,False,NEW
+230,غني,rich,غني,True,False,OVERLAP
+231,فقير,poor,فقير,True,False,OVERLAP
+232,محبط,offended,محبط,False,False,NEW
+233,مشمئز,disgusted,مشمئز,False,False,NEW
+234,مرتبك,confused,مرتبك,False,False,NEW
+235,قلق,worried,قلق,False,False,NEW
+236,مشوش,deranged,مشوش,False,False,NEW
+237,خائف,afraid,خائف,False,False,NEW
+238,سعيد (مسرور),happy,سعيد | سعيد مسرور | مسرور,True,False,OVERLAP
+239,حزين,sad,حزين,True,False,OVERLAP
+240,شجاع,courageous,شجاع,False,False,NEW
+241,جبان,coward,جبان,False,False,NEW
+242,طموح,ambitious,طموح,False,False,NEW
+243,معجب,admirable,معجب,False,False,NEW
+244,غائر من,to be jealous of,غائر من,False,False,NEW
+245,غائر على,to protect jealously,غائر علي,False,False,NEW
+246,ودود,affectionate,ودود,False,False,NEW
+247,كريم,generous,كريم,True,False,OVERLAP
+248,بخيل,miserly,بخيل,False,False,NEW
+249,طماع,greedy,طماع,False,False,NEW
+250,كذاب,liar,كذاب,False,False,NEW
+251,أناني,selfish,اناني,False,False,NEW
+252,متكبر,proud,متكبر,False,False,NEW
+253,متواضع,humble,متواضع,False,False,NEW
+254,شعور,feeling,شعور,True,False,OVERLAP
+255,تعب,tired,تعب,True,False,OVERLAP
+256,بكاء,crying,بكاء,True,False,OVERLAP
+257,احتقار,contempt,احتقار,False,False,NEW
+258,اعتماد على الذات,self-dependence,اعتماد علي الذات,False,False,NEW
+259,خفيف,light,خفيف,True,False,OVERLAP
+260,ثقيل,heavy,ثقيل,True,False,OVERLAP
+261,قديم,old,قديم,True,False,OVERLAP
+262,حسد,envy,حسد,False,False,NEW
+263,صدق,believe,صدق,True,False,OVERLAP
+264,غدر,betrayal,غدر,False,False,NEW
+265,صبر,patient,صبر,False,False,NEW
+266,لوم,blame,لوم,False,False,NEW
+267,الحق,truth,الحق,False,False,NEW
+268,خيانة,treason,خيانة,False,False,NEW
+269,إيثار,preference,ايثار,False,False,NEW
+270,تضحية,self sacrifice,تضحية,False,False,NEW
+271,شفقة,pity,شفقة,False,False,NEW
+272,ذكي,intelligent,ذكي,True,False,OVERLAP
+273,أمام,in front of,امام,True,False,OVERLAP
+274,بجانب,side,بجانب,False,False,NEW
+275,بعيد,far,بعيد,True,False,OVERLAP
+276,بين,between,بين,False,False,NEW
+277,تحت,under,تحت,True,False,OVERLAP
+278,حول,around,حول,False,False,NEW
+279,خارج,outside,خارج,True,False,OVERLAP
+280,خلف,back,خلف,True,False,OVERLAP
+281,داخل,inside,داخل,True,False,OVERLAP
+282,فوق,up,فوق,True,False,OVERLAP
+283,قريب,near,قريب,True,False,OVERLAP
+284,من خلال,through,من خلال,False,False,NEW
+285,هنا,here,هنا,True,False,OVERLAP
+286,هناك,there,هناك,False,False,NEW
+287,يسار,left,يسار,False,False,NEW
+288,يمين,right,يمين,True,False,OVERLAP
+289,أهلا وسهلاً,welcome,اهلا وسهلا,False,False,NEW
+290,السلام عليكم,greeting,السلام عليكم,True,False,OVERLAP
+291,تفضل,here you are,تفضل,True,False,OVERLAP
+292,جار,neighbor,جار,True,False,OVERLAP
+293,شكراً,thanks,شكرا,False,False,NEW
+294,صديق,friend,صديق,True,False,OVERLAP
+295,ضيف,guest,ضيف,False,False,NEW
+296,عدو,enemy,عدو,False,False,NEW
+297,عيب,fault,عيب,False,False,NEW
+298,هدية,gift,هدية,False,False,NEW
+299,بيت,house,بيت,False,False,NEW
+300,جدار,wall,جدار,True,False,OVERLAP
+301,سقف,roof,سقف,False,False,NEW
+302,باب,door,باب,True,False,OVERLAP
+303,شباك,window,شباك,False,False,NEW
+304,غرفة,room,غرفة,False,False,NEW
+305,غرفة نوم,bedroom,غرفة نوم,False,False,NEW
+306,سرير,bed,سرير,True,False,OVERLAP
+307,مرتبة سرير ( حشية),mattress,حشية | مرتبة سرير | مرتبة سرير حشية,False,False,NEW
+308,شرشف ( غطاء سرير),bedsheet,شرشف | شرشف غطاء سرير | غطاء سرير,False,False,NEW
+309,وسادة ( مخدة),pillow,مخدة | وسادة | وسادة مخدة,False,False,NEW
+310,شماعة ( مشجب),clothes rail,شماعة | شماعة مشجب | مشجب,False,False,NEW
+311,خزانة ملابس,wardrobe,خزانة ملابس,False,False,NEW
+312,مطبخ,kitchen,مطبخ,False,False,NEW
+313,فرن غازي,Oven,فرن غازي,False,False,NEW
+314,بوتاغاز (طابخ),cooker,بوتاغاز | بوتاغاز طابخ | طابخ,False,False,NEW
+315,طبق ( صحن),dish,صحن | طبق | طبق صحن,True,False,OVERLAP
+316,سكين,knife,سكين,False,False,NEW
+317,شوكة,fork,شوكة,False,False,NEW
+318,ملعقة,spoon,ملعقة,False,False,NEW
+319,فنجان,cupful,فنجان,False,False,NEW
+320,مجمد (فريزر),freezer,فريزر | مجمد | مجمد فريزر,False,False,NEW
+321,كأس ( كوب),cup,كاس | كاس كوب | كوب,True,False,OVERLAP
+322,حافظ حرارة ( ترمس),thermos,ترمس | حافظ حرارة | حافظ حرارة ترمس,False,False,NEW
+323,غرفة طعام,food room,غرفة طعام,False,False,NEW
+324,إبريق,pitcher,ابريق,False,False,NEW
+325,طاولة,table,طاولة,False,False,NEW
+326,كنكة ( دلة),dalah,دلة | كنكة | كنكة دلة,False,False,NEW
+327,دورة مياه (حمام),bathroom,حمام | دورة مياه | دورة مياه حمام,True,False,OVERLAP
+328,كرسي,chair,كرسي,True,False,OVERLAP
+329,غسالة,washing machine,غسالة,False,False,NEW
+330,منشفة,towel carpet,منشفة,False,False,NEW
+331,سجادة (زربية),carpet,زربية | سجادة | سجادة زربية,False,False,NEW
+332,موكيت ( فرش أرضي) moquette,moquette,فرش ارضي | موكيت moquette | موكيت فرش ارضي moquette,False,False,NEW
+333,ثريا (نجفة),chandelier,ثريا | ثريا نجفة | نجفة,False,False,NEW
+334,مسجل,cassette,مسجل,False,False,NEW
+335,شريط كاست,cassette tape,شريط كاست,False,False,NEW
+336,تلفزيون (تلفاز),television,تلفاز | تلفزيون | تلفزيون تلفاز,True,False,OVERLAP
+337,طبق هوائي (دش),satellite,دش | طبق هوائي | طبق هوائي دش,False,False,NEW
+338,شريط فيديو,video tape,شريط فيديو,False,False,NEW
+339,كاميرا فيديو,video camera,كاميرا فيديو,False,False,NEW
+340,كاميرا فوتوغرافية,photo camera,كاميرا فوتوغرافية,False,False,NEW
+341,هاتف ( تلفون),telephone,تلفون | هاتف | هاتف تلفون,True,False,OVERLAP
+342,غرفة ضيوف,guests room,غرفة ضيوف,False,False,NEW
+343,فيديو,video,فيديو,False,False,NEW
+344,مبخرة,censer,مبخرة,False,False,NEW
+345,مدفأة,heater,مدفاة,False,False,NEW
+346,مفتاح,key,مفتاح,False,False,NEW
+347,مروحة,fan,مروحة,False,False,NEW
+348,تدفئة مركزية,central heater,تدفئة مركزية,False,False,NEW
+349,كهرباء,electrics,كهرباء,False,False,NEW
+350,مكيف,air conditioner,مكيف,False,False,NEW
+351,سلك كهربائي,wire,سلك كهربائي,False,False,NEW
+352,قابس كهربائي ( فيش),plug,فيش | قابس كهربائي | قابس كهربائي فيش,False,False,NEW
+353,حقيبة سفر,bag,حقيبة سفر,False,False,NEW
+354,مكواة,iron,مكواة,False,False,NEW
+355,ميزان حرارة جوي,thermometer,ميزان حرارة جوي,False,False,NEW
+356,الله تعالى,God,الله تعالي,False,False,NEW
+357,محمد رسول الله,Muhammad is the Messenger of Allah,محمد رسول الله,False,False,NEW
+358,عيسى المسيح,Essa Christ,عيسي المسيح,False,False,NEW
+359,القرآن الكريم,The Holy Quran,القران الكريم,False,False,NEW
+360,الخلفاء الراشدون,Rightly Guided Caliphs,الخلفاء الراشدون,False,False,NEW
+361,السنة النبوية,Sunnah,السنة النبوية,False,False,NEW
+362,أركان الإسلام,Pillars of Islam,اركان الاسلام,False,False,NEW
+363,أركان الإيمان,Pillars of Faith,اركان الايمان,False,False,NEW
+364,الشهادتين,The two certificates,الشهادتين,False,False,NEW
+365,يصلي / الصلاة,pray,الصلاة | يصلي | يصلي الصلاة,False,False,NEW
+366,الزكاة,zakat,الزكاة,False,False,NEW
+367,الصوم,Fasting,الصوم,False,False,NEW
+368,العمرة,Umrah,العمرة,False,False,NEW
+369,الحج,Pilgrimage,الحج,False,False,NEW
+370,ملائكة,Angels,ملائكة,False,False,NEW
+371,رسول,messenger,رسول,False,False,NEW
+372,يوم القيامة,Doomsday,يوم القيامة,False,False,NEW
+373,القضاء والقدر,Fate and destiny,القضاء والقدر,False,False,NEW
+374,أركان الصلاة,Pillars of prayer,اركان الصلاة,False,False,NEW
+375,خير,Good,خير,True,False,OVERLAP
+376,النية,Intention,النية,False,False,NEW
+377,شر,Evil,شر,False,False,NEW
+378,طهارة,purity,طهارة,False,False,NEW
+379,مبطلات الصلاة,Prayer invalidators,مبطلات الصلاة,False,False,NEW
+380,تيمم,tayammum,تيمم,False,False,NEW
+381,يتوضأ / وضوء,ablution,وضوء | يتوضا | يتوضا وضوء,True,False,OVERLAP
+382,يؤذن,authorized,يؤذن,False,False,NEW
+383,مسح على الخفين,Wipe on the slippers,مسح علي الخفين,False,False,NEW
+384,صلاة الفجر,Al-fajr prayer,صلاة الفجر,False,False,NEW
+385,صلاة الظهر,Salat Aduher,صلاة الظهر,False,False,NEW
+386,صلاة العصر,Asr prayer,صلاة العصر,False,False,NEW
+387,صلاة المغرب,Maghreb's prayer,صلاة المغرب,False,False,NEW
+388,صلاة العشاء,eshaa pray,صلاة العشاء,False,False,NEW
+389,خطبة,speech,خطبة,False,False,NEW
+390,خطبة الجمعة,Friday sermon,خطبة الجمعة,False,False,NEW
+391,خطيب,Fiance,خطيب,False,False,NEW
+392,خطبة العيد,Eid sermon,خطبة العيد,False,False,NEW
+393,مسجد,Mosque,مسجد,True,False,OVERLAP
+394,سورة,surah,سورة,False,False,NEW
+395,إمام,Before,امام,True,False,OVERLAP
+396,سورة الفاتحة,Al-Fatihah,سورة الفاتحة,False,False,NEW
+397,آية,any,اية,False,False,NEW
+398,ليلة القدر,Night of Power,ليلة القدر,False,False,NEW
+399,عيد,Feast,عيد,True,False,OVERLAP
+400,عيد الفطر,Eid al-Fitr,عيد الفطر,False,False,NEW
+401,عيد الأضحى,Eid al-Adha,عيد الاضحي,False,False,NEW
+402,إحرام,Ihram,احرام,True,False,OVERLAP
+403,مكة,Mecca,مكة,False,False,NEW
+404,الكعبة,Kaaba,الكعبة,False,False,NEW
+405,المدينة المنورة,Medina,المدينة المنورة,False,False,NEW
+406,منى,Mona,مني,False,False,NEW
+407,جبل عرفات,Arafat Mountain,جبل عرفات,False,False,NEW
+408,الصفا والمروة,Safa and Marwa,الصفا والمروة,False,False,NEW
+409,مزدلفة,Muzdalifah,مزدلفة,False,False,NEW
+410,رمي الجمرات,Throwing pebbles,رمي الجمرات,False,False,NEW
+411,طواف,circumambulation,طواف,False,False,NEW
+412,ماء زمزم,Zamzam water,ماء زمزم,False,False,NEW
+413,الأضحية,the sacrifice,الاضحية,False,False,NEW
+414,فك الإحرام,break the ihram,فك الاحرام,False,False,NEW
+415,طواف الوداع,farewell circumambulation,طواف الوداع,False,False,NEW
+416,المسجد الأقصى,Al-Aqsa Mosque,المسجد الاقصي,False,False,NEW
+417,يسبح,swim,يسبح,False,False,NEW
+418,الحمد لله,Thank God,الحمد لله,False,False,NEW
+419,سبحان الله,How great is our God,سبحان الله,False,False,NEW
+420,إيمان,Faith,ايمان,False,False,NEW
+421,الشرك بالله,Polytheism,الشرك بالله,False,False,NEW
+422,أعوذ بالله,I seek refuge in God,اعوذ بالله,False,False,NEW
+423,شيطان,Satan,شيطان,False,False,NEW
+424,جن,genie,جن,False,False,NEW
+425,الضالون,the lost,الضالون,False,False,NEW
+426,المغضوب عليهم,angered them,المغضوب عليهم,False,False,NEW
+427,صنم,fetish,صنم,False,False,NEW
+428,زنى,fornication,زني,False,False,NEW
+429,الجنة,the Paradise,الجنة,False,False,NEW
+430,النار,fire,النار,False,False,NEW
+431,روح,spirit,روح,False,False,NEW
+432,حقوق,rights,حقوق,False,False,NEW
+433,واجبات,Duties,واجبات,False,False,NEW
+434,حسنات,Deeds,حسنات,False,False,NEW
+435,سيئات,sins,سيئات,False,False,NEW
+436,حلال,halal,حلال,False,False,NEW
+437,حرام,forbidden,حرام,False,False,NEW
+438,مغفرة,forgiveness,مغفرة,False,False,NEW
+439,دين,religion,دين,False,False,NEW
+440,مسيحي,Christian,مسيحي,False,False,NEW
+441,يهودي,Jewish,يهودي,False,False,NEW
+442,كنيسة,church,كنيسة,False,False,NEW
+443,إسراء ومعراج,Isra and Miraj,اسراء ومعراج,False,False,NEW
+444,حواء,Eve,حواء,False,False,NEW
+445,آدم,Adam,ادم,False,False,NEW
+446,صدقة,charity,صدقة,False,False,NEW
+447,نبي,Prophet,نبي,False,False,NEW
+448,هداية,guidance,هداية,False,False,NEW
+449,أمانة,honesty,امانة,False,False,NEW
+450,شهيد,martyr,شهيد,False,False,NEW
+451,حقوق الوالدين,Parental rights,حقوق الوالدين,False,False,NEW
+452,عقوق الوالدين,Disobedience to parents,عقوق الوالدين,False,False,NEW
+453,مسلم,Muslim,مسلم,True,False,OVERLAP
+454,رحمة,Mercy,رحمة,False,False,NEW
+455,عيد رأس السنة,New Year's Holiday,عيد راس السنة,False,False,NEW
+456,فروض,homework,فروض,False,False,NEW
+457,قبة الصخرة,Dome of the Rock,قبة الصخرة,False,False,NEW
+458,خلق,Create,خلق,False,False,NEW
+459,مهندس,engineer,مهندس,False,False,NEW
+460,مصور فوتوغرافي,photographer,مصور فوتوغرافي,False,False,NEW
+461,جزار / قصاب,Meat man,جزار | جزار قصاب | قصاب,False,False,NEW
+462,سائق,driver,سائق,False,False,NEW
+463,صائغ,jeweler,صائغ,False,False,NEW
+464,خادم,servant,خادم,False,False,NEW
+465,رئيس قسم,chairman,رئيس قسم,False,False,NEW
+466,حداد,blacksmith,حداد,True,False,OVERLAP
+467,لحام كهربائي,weld,لحام كهربائي,False,False,NEW
+468,مترجم لغة الإشارة,Sign language translator,مترجم لغة الاشارة,False,False,NEW
+469,مذيع,announcer,مذيع,False,False,NEW
+470,مترجم لغات,translator,مترجم لغات,False,False,NEW
+471,مدير,manager,مدير,True,False,OVERLAP
+472,سفير,ambassador,سفير,False,False,NEW
+473,وزير,minister,وزير,False,False,NEW
+474,ملك / سلطان,King,سلطان | ملك | ملك سلطان,True,False,OVERLAP
+475,أمير البلاد / رئيس الجمهورية,Premier Minister,امير البلاد | امير البلاد رئيس الجمهورية | رئيس الجمهورية,False,False,NEW
+476,شيخ,sheikh,شيخ,False,False,NEW
+477,محافظ / وال,governor,محافظ | محافظ وال | وال,False,False,NEW
+478,ولي عهد / وكيل وزارة,under secretary of state,وكيل وزارة | ولي عهد | ولي عهد وكيل وزارة,False,False,NEW
+479,رئيس مجلس الشعب (النواب),speaker,النواب | رئيس مجلس الشعب | رئيس مجلس الشعب النواب,False,False,NEW
+480,أمين عام,general secretary,امين عام,False,False,NEW
+481,صحفي,journalist,صحفي,False,False,NEW
+482,رسام,draftsman,رسام,False,False,NEW
+483,خياط / تارزي,tailor,تارزي | خياط | خياط تارزي,False,False,NEW
+484,ضابط,policeman,ضابط,False,False,NEW
+485,طيار,pilot,طيار,False,False,NEW
+486,جندي,soldier,جندي,False,False,NEW
+487,حلاق,barber,حلاق,False,False,NEW
+488,صباغ,dyer,صباغ,False,False,NEW
+489,رجل إطفاء / دفاع مدني,fireman,دفاع مدني | رجل اطفاء | رجل اطفاء دفاع مدني,False,False,NEW
+490,نجار,carpenter,نجار,False,False,NEW
+491,معلم / مدرس,teacher,مدرس | معلم | معلم مدرس,True,False,OVERLAP
+492,طباخ,chef,طباخ,False,False,NEW
+493,فلاح,farmer,فلاح,True,False,OVERLAP
+494,موظف,agent,موظف,False,False,NEW
+495,أمين صندوق,treasurer,امين صندوق,False,False,NEW
+496,صيدلي,pharmacist,صيدلي,False,False,NEW
+497,طبيب,doctor,طبيب,True,False,OVERLAP
+498,ممرضة,nurse,ممرضة,False,False,NEW
+499,ممرض,orderly,ممرض,False,False,NEW
+500,محام,lawyer,محام,False,False,NEW
+501,انتقال,traveling,انتقال,False,False,NEW
+502,تعيين,appointment,تعيين,True,False,OVERLAP

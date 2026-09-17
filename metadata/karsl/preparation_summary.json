@@ -1,0 +1,23 @@
+{
+  "samples": 75514,
+  "total_frames": 3091535,
+  "features_per_frame": 198,
+  "dtype": "float32",
+  "split_counts": {
+    "train": 42387,
+    "validation": 8040,
+    "test": 25087
+  },
+  "signer_counts": {
+    "01": 25111,
+    "02": 25316,
+    "03": 25087
+  },
+  "sign_ids": 502,
+  "finite_values": true,
+  "split_policy": {
+    "train": "01/train + 02/train",
+    "validation": "01/test + 02/test",
+    "test": "03/train + 03/test (untouched signer)"
+  }
+}

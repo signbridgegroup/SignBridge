@@ -1,0 +1,42 @@
+# Secrets
+.env
+key.env
+*.env.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Generated / runtime data (never web source)
+/data_manifests/generated/
+/backend/legacy_runtime/rag/data/**/*.tmp
+motion_library_cache/
+
+# Uploads / temp
+*.tmp
+tmp_uploads/
+
+# Motion-library batch run logs (not source, safe to regenerate)
+tools/motion_library_builder/batch_*.log
+tools/motion_library_builder/batch_*.flag
+tools/motion_library_builder/batch_*_time.txt
+
+# Local debug output (alignment diagnostics, contact-sheet previews, batch
+# reports) - kept on disk for review, never committed to the repository.
+debug/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Large external datasets are never expected inside this repo
+data/external/

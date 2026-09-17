@@ -1,0 +1,19 @@
+{
+  "name": "signbridge-frontend",
+  "version": "1.0.0",
+  "description": "SignBridge integrated production frontend (typed question, camera/upload recognition, avatar motion-sequence playback).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node src/camera-recorder.test.mjs"
+  },
+  "dependencies": {
+    "three": "^0.183.1"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

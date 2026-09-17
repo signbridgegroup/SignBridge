@@ -1,0 +1,72 @@
+{
+  "best_epoch": 21,
+  "best_selection_score": 0.24778558335960893,
+  "validation": {
+    "isharah": {
+      "loss": 0.763450434807688,
+      "wer": 0.16579770594369134,
+      "exact_accuracy": 0.545,
+      "top5_single_token_accuracy": 1.0,
+      "samples": 1000,
+      "tokens": 4795
+    },
+    "it": {
+      "accuracy": 0.5281385281385281,
+      "macro_precision": 0.39021645021645024,
+      "macro_recall": 0.3696969696969697,
+      "macro_f1": 0.36162578162578163,
+      "ctc_exact_accuracy": 0.5281385281385281,
+      "ctc_top5_accuracy": 0.7532467532467533,
+      "ctc_wer": 0.47186147186147187
+    },
+    "karsl": {
+      "accuracy": 0.972636815920398,
+      "macro_precision": 0.9767277783382107,
+      "macro_recall": 0.972835352775345,
+      "macro_f1": 0.9729603855792981,
+      "ctc_exact_accuracy": 0.9590796019900497,
+      "ctc_top5_accuracy": 0.9968905472636815
+    },
+    "synthetic": {
+      "loss": 2.704185515642166,
+      "wer": 0.49738610903659447,
+      "exact_accuracy": 0.036,
+      "top5_single_token_accuracy": null,
+      "samples": 250,
+      "tokens": 1339
+    }
+  },
+  "test": {
+    "isharah": {
+      "loss": 1.453516019642353,
+      "wer": 0.2621566685776828,
+      "exact_accuracy": 0.41525,
+      "top5_single_token_accuracy": 0.9285714285714286,
+      "samples": 4000,
+      "tokens": 19187
+    },
+    "it": {
+      "accuracy": 0.6746268656716418,
+      "macro_precision": 0.6268975468975468,
+      "macro_recall": 0.6787878787878788,
+      "macro_f1": 0.6251130351130351,
+      "ctc_exact_accuracy": 0.6268656716417911,
+      "ctc_top5_accuracy": 0.8656716417910447,
+      "ctc_wer": 0.3731343283582089
+    },
+    "karsl": {
+      "accuracy": 0.6999242635628015,
+      "macro_precision": 0.7108609828237263,
+      "macro_recall": 0.7004597321591565,
+      "macro_f1": 0.6707467220073939,
+      "ctc_exact_accuracy": 0.6616574321361661,
+      "ctc_top5_accuracy": 0.8755530752979631
+    }
+  },
+  "base_vocabulary": 847,
+  "source_aware_karsl_tokens": 502,
+  "final_vocabulary": 1349,
+  "synthetic_train_samples": 1500,
+  "test_policy": "Isharah, Jordanian IT, and signer-03 KArSL tests were untouched until final model selection",
+  "elapsed_seconds": 3012.2
+}

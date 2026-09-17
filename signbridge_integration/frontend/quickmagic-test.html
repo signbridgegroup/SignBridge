@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignBridge - QuickMagic FBX Compatibility Test</title>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #eef2f7;
+    }
+    canvas { display: block; }
+    #panel {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      width: min(400px, calc(100vw - 40px));
+      padding: 18px;
+      border: 1px solid #ccd7e3;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 12px 35px rgba(20, 40, 80, 0.13);
+    }
+    h1 {
+      margin: 0 0 10px;
+      color: #17233d;
+      font-size: 19px;
+    }
+    #status {
+      margin: 0 0 6px;
+      color: #47555f;
+      line-height: 1.6;
+      font-size: 14px;
+      min-height: 22px;
+    }
+    #anim-name {
+      margin: 0 0 14px;
+      color: #1f6f9c;
+      font-weight: bold;
+      font-size: 14px;
+      min-height: 20px;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .buttons button {
+      padding: 10px;
+      border: 0;
+      border-radius: 10px;
+      color: white;
+      background: #2a6fa9;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .buttons button:hover:not(:disabled) { background: #1f5987; }
+    .buttons button:disabled {
+      background: #b7c3d1;
+      cursor: not-allowed;
+    }
+    .buttons button.danger { background: #a93a2a; }
+    .buttons button.danger:hover:not(:disabled) { background: #872e21; }
+    .buttons button.wide { grid-column: 1 / -1; }
+    #facts {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid #e0e6ed;
+      font-size: 11px;
+      color: #7c8a99;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="panel">
+    <h1>اختبار توافق حركات QuickMagic (FBX)</h1>
+    <p id="status">جارٍ التحميل...</p>
+    <p id="anim-name"></p>
+
+    <div class="buttons">
+      <button id="btn-stack" type="button" disabled>Play Stack</button>
+      <button id="btn-binary" type="button" disabled>Play Binary Relationship</button>
+      <button id="btn-sequence" type="button" class="wide" disabled>Play Both as Sequence</button>
+      <button id="btn-replay" type="button" disabled>Replay</button>
+      <button id="btn-stop" type="button" class="danger" disabled>Stop</button>
+    </div>
+
+    <p id="facts">
+      اختبار معزول لأفاتار QuickMagic الذكر (Stack) مع تطبيق حركة Binary
+      Relationship من ملف الأنثى - المكدس العظمي والأسماء متطابقة بين
+      الملفين. لا يتصل هذا الاختبار بأي جزء من نظام SignBridge الرئيسي.
+    </p>
+  </section>
+
+  <script type="module">
+    import * as THREE from "three";
+    import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+    import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+    const MALE_FBX_URL = "/quickmagic/0_Stack_02_2_BoyFBX.fbx";
+    const FEMALE_FBX_URL = "/quickmagic/0_Binary_relationship_02_1_GirlFBX.fbx";
+
+    const BLEND_SECONDS = 0.35;
+    const REST_HOLD_SECONDS = 0.15;
+
+    const statusEl = document.getElementById("status");
+    const animNameEl = document.getElementById("anim-name");
+    const btnStack = document.getElementById("btn-stack");
+    const btnBinary = document.getElementById("btn-binary");
+    const btnSequence = document.getElementById("btn-sequence");
+    const btnStop = document.getElementById("btn-stop");
+    const btnReplay = document.getElementById("btn-replay");
+
+    let scene, camera, renderer, controls, clock;
+    let mixer = null;
+    let maleModel = null;
+    let rootBoneName = null;
+
+    let stackAction = null;
+    let binaryAction = null;
+    let restAction = null;
+    let currentAction = null;
+    let lastPlayed = null; // "stack" | "binary" | "sequence"
+    let sequenceRunId = 0;
+
+    initScene();
+    animate();
+    loadEverything();
+
+    function initScene() {
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xeef2f7);
+
+      camera = new THREE.PerspectiveCamera(
+        35,
+        window.innerWidth / window.innerHeight,
+        0.01,
+        2000,
+      );
+
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.NoToneMapping;
+      renderer.toneMappingExposure = 1;
+      renderer.shadowMap.enabled = true;
+      document.body.appendChild(renderer.domElement);
+
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+
+      // Neutral white lighting only - the previous tinted hemisphere/fill
+      // lights (ground color 0x8da9a3, blue fill 0xbdd6ff) were pushing the
+      // QuickMagic diffuse textures toward a cyan/green skin tone.
+      scene.add(new THREE.AmbientLight(0xffffff, 1.4));
+
+      const mainLight = new THREE.DirectionalLight(0xffffff, 1.0);
+      mainLight.position.set(3, 6, 5);
+      mainLight.castShadow = true;
+      scene.add(mainLight);
+
+      const fillLight = new THREE.DirectionalLight(0xffffff, 0.25);
+      fillLight.position.set(-4, 3, 2);
+      scene.add(fillLight);
+
+      clock = new THREE.Clock();
+
+      window.addEventListener("resize", onResize);
+      btnStack.addEventListener("click", () => playSingle("stack"));
+      btnBinary.addEventListener("click", () => playSingle("binary"));
+      btnSequence.addEventListener("click", () => { playSequence(); });
+      btnStop.addEventListener("click", stopAll);
+      btnReplay.addEventListener("click", replay);
+    }
+
+    async function loadEverything() {
+      try {
+        setStatus("جارٍ تحميل مجسم الأفاتار الذكر (Stack)...");
+        const maleFbx = await loadFBX(MALE_FBX_URL);
+        maleModel = maleFbx;
+
+        maleModel.traverse((object) => {
+          if (object.isMesh) {
+            object.castShadow = true;
+            object.receiveShadow = true;
+
+            // The QuickMagic FBX ships a geometry vertex-color attribute
+            // that most meshes (Head/Gloves/Jacket/Pants/Socks) set to
+            // ~[1, 0.013, 0], which MeshPhongMaterial's vertexColors=true
+            // then multiplies against the correct diffuse textures,
+            // producing the red/black appearance. This is a display-only
+            // fix on the loaded material/geometry instances - it does not
+            // touch animation loading, retargeting, or the diffuse maps
+            // themselves.
+            const materials = Array.isArray(object.material)
+              ? object.material
+              : [object.material];
+            for (const material of materials) {
+              if (!material) continue;
+              material.vertexColors = false;
+              material.color.set(0xffffff);
+              if (material.map) {
+                material.map.colorSpace = THREE.SRGBColorSpace;
+              }
+              // The FBX references two normal-map PNGs
+              // (M_Male001_Face_Normal / M_Male001_Body_Normal) that are
+              // not present in the downloaded package. A missing texture
+              // must not stay assigned to the material.
+              material.normalMap = null;
+              if ("shininess" in material) {
+                material.shininess = 5;
+              }
+              if (material.specular) {
+                material.specular.set(0x111111);
+              }
+              material.needsUpdate = true;
+            }
+            if (object.geometry && object.geometry.hasAttribute("color")) {
+              object.geometry.deleteAttribute("color");
+            }
+          }
+        });
+
+        scene.add(maleModel);
+        const height = frameCameraOnModel(maleModel);
+        addFloor(height);
+
+        if (!maleFbx.animations || !maleFbx.animations.length) {
+          throw new Error("لم يتم العثور على أي حركة داخل ملف الذكر (Stack).");
+        }
+
+        const stackSourceClip =
+          maleFbx.animations.find((clip) => /stack/i.test(clip.name)) ||
+          maleFbx.animations[0];
+        const stackClip = stackSourceClip.clone();
+        stackClip.name = "Stack";
+
+        mixer = new THREE.AnimationMixer(maleModel);
+        mixer.addEventListener("finished", onMixerFinished);
+
+        rootBoneName = findRootBoneName(maleModel);
+        if (!rootBoneName) {
+          console.warn(
+            "QuickMagic test: could not determine a root bone on the male " +
+            "skeleton; root-translation handling will be skipped for the " +
+            "retargeted clip.",
+          );
+        }
+
+        const restClip = buildRestPoseClip(maleModel, rootBoneName);
+
+        setStatus("جارٍ تحميل حركة Binary Relationship (مصدر مخفي)...");
+        const femaleFbx = await loadFBX(FEMALE_FBX_URL);
+        // femaleFbx is intentionally never added to the scene - it is only
+        // ever used as a source of animation tracks (task requirement #4).
+
+        if (!femaleFbx.animations || !femaleFbx.animations.length) {
+          throw new Error("لم يتم العثور على أي حركة داخل ملف الأنثى (Binary Relationship).");
+        }
+
+        const binarySourceClip =
+          femaleFbx.animations.find((clip) => /binary/i.test(clip.name)) ||
+          femaleFbx.animations[0];
+        const binaryClip = retargetClipOntoMaleSkeleton(binarySourceClip, rootBoneName);
+        binaryClip.name = "BinaryRelationship";
+
+        stackAction = mixer.clipAction(stackClip);
+        stackAction.loop = THREE.LoopOnce;
+        stackAction.clampWhenFinished = true;
+
+        binaryAction = mixer.clipAction(binaryClip);
+        binaryAction.loop = THREE.LoopOnce;
+        binaryAction.clampWhenFinished = true;
+
+        restAction = mixer.clipAction(restClip);
+        restAction.loop = THREE.LoopRepeat;
+
+        setStatus(
+          `تم تحميل كل شيء بنجاح. Stack: ${stackClip.duration.toFixed(2)} ثانية، ` +
+          `Binary Relationship: ${binaryClip.duration.toFixed(2)} ثانية.`,
+        );
+        enableButtons(true);
+      } catch (error) {
+        console.error("QuickMagic test load error:", error);
+        setStatus("خطأ: " + (error && error.message ? error.message : "فشل تحميل الملفات. افتحي Console."));
+        enableButtons(false);
+      }
+    }
+
+    function loadFBX(url) {
+      return new Promise((resolve, reject) => {
+        const loader = new FBXLoader();
+        loader.load(
+          url,
+          resolve,
+          undefined,
+          (error) => reject(new Error(`فشل تحميل ${url}: ${error && error.message ? error.message : error}`)),
+        );
+      });
+    }
+
+    function findRootBoneName(model) {
+      let rootBone = null;
+      model.traverse((object) => {
+        if (rootBone) return;
+        if (object.isBone && (!object.parent || !object.parent.isBone)) {
+          rootBone = object;
+        }
+      });
+      return rootBone ? rootBone.name : null;
+    }
+
+    // Keeps every rotation track (including all finger quaternions) exactly
+    // as authored, keeps ONLY the root bone's position track (re-baselined
+    // to a relative delta so the female skeleton's absolute stage position
+    // never gets applied - see rebaseRootPositionTrack), and drops every
+    // other bone's position/scale track entirely, since those encode the
+    // female body's own proportions and would deform the male character
+    // (task requirements #6, #7, #8).
+    function retargetClipOntoMaleSkeleton(sourceClip, rootBoneName) {
+      const filteredTracks = [];
+
+      for (const track of sourceClip.tracks) {
+        const dotIndex = track.name.lastIndexOf(".");
+        const boneName = track.name.slice(0, dotIndex);
+        const property = track.name.slice(dotIndex + 1);
+
+        if (property === "quaternion") {
+          filteredTracks.push(track.clone());
+          continue;
+        }
+
+        if (property === "position" && rootBoneName && boneName === rootBoneName) {
+          filteredTracks.push(rebaseRootPositionTrack(track));
+          continue;
+        }
+
+        // Non-root position tracks and any scale tracks are skipped on
+        // purpose (not applied to the male skeleton at all).
+      }
+
+      return new THREE.AnimationClip("BinaryRelationship", sourceClip.duration, filteredTracks);
+    }
+
+    function rebaseRootPositionTrack(track) {
+      const values = track.values.slice();
+      const baseX = values[0];
+      const baseY = values[1];
+      const baseZ = values[2];
+      for (let i = 0; i < values.length; i += 3) {
+        values[i] -= baseX;
+        values[i + 1] -= baseY;
+        values[i + 2] -= baseZ;
+      }
+      return new THREE.VectorKeyframeTrack(track.name, track.times.slice(), values);
+    }
+
+    // A short, static "hold the current bind pose" clip built directly from
+    // the male model's own bone transforms - used purely as a smooth
+    // neutral bridge between Stack and Binary Relationship during sequence
+    // playback (task requirement #10), never as a real animation source.
+    function buildRestPoseClip(model, rootBoneName) {
+      const tracks = [];
+      model.traverse((object) => {
+        if (!object.isBone) return;
+        const q = object.quaternion;
+        tracks.push(
+          new THREE.QuaternionKeyframeTrack(
+            `${object.name}.quaternion`,
+            [0, REST_HOLD_SECONDS],
+            [q.x, q.y, q.z, q.w, q.x, q.y, q.z, q.w],
+          ),
+        );
+        if (rootBoneName && object.name === rootBoneName) {
+          const p = object.position;
+          tracks.push(
+            new THREE.VectorKeyframeTrack(
+              `${object.name}.position`,
+              [0, REST_HOLD_SECONDS],
+              [p.x, p.y, p.z, p.x, p.y, p.z],
+            ),
+          );
+        }
+      });
+      return new THREE.AnimationClip("RestPose", REST_HOLD_SECONDS, tracks);
+    }
+
+    function frameCameraOnModel(model) {
+      model.updateMatrixWorld(true);
+      const initialBox = new THREE.Box3().setFromObject(model);
+      const center = initialBox.getCenter(new THREE.Vector3());
+
+      model.position.set(
+        model.position.x - center.x,
+        model.position.y - initialBox.min.y,
+        model.position.z - center.z,
+      );
+      model.updateMatrixWorld(true);
+
+      const fittedBox = new THREE.Box3().setFromObject(model);
+      const size = fittedBox.getSize(new THREE.Vector3());
+      const height = Math.max(size.y, 1);
+
+      camera.position.set(0, height * 0.58, height * 2.05);
+      controls.target.set(0, height * 0.56, 0);
+      controls.update();
+
+      return height;
+    }
+
+    function addFloor(height) {
+      const floor = new THREE.Mesh(
+        new THREE.CircleGeometry(height * 1.3, 64),
+        new THREE.MeshStandardMaterial({ color: 0xdde5ee, roughness: 0.9 }),
+      );
+      floor.rotation.x = -Math.PI / 2;
+      floor.position.set(0, -0.005, 0);
+      floor.receiveShadow = true;
+      scene.add(floor);
+    }
+
+    function playSingle(which) {
+      sequenceRunId += 1; // invalidate any in-flight sequence
+      stopAllActions();
+
+      const action = which === "stack" ? stackAction : binaryAction;
+      const label = which === "stack" ? "Stack" : "Binary Relationship";
+
+      action.reset();
+      action.setEffectiveWeight(1);
+      action.play();
+      currentAction = action;
+      lastPlayed = which;
+
+      setAnimName(label);
+      setStatus(`جارٍ تشغيل: ${label}`);
+    }
+
+    async function playSequence() {
+      sequenceRunId += 1;
+      const runId = sequenceRunId;
+      stopAllActions();
+      lastPlayed = "sequence";
+      setAnimName("Stack → Binary Relationship");
+      setStatus("جارٍ تشغيل: Stack");
+
+      stackAction.reset();
+      stackAction.setEffectiveWeight(1);
+      stackAction.play();
+      currentAction = stackAction;
+
+      await waitForActionFinish(stackAction);
+      if (runId !== sequenceRunId) return;
+
+      setStatus("جارٍ الانتقال إلى وضعية الراحة...");
+      await blendTo(stackAction, restAction, BLEND_SECONDS);
+      if (runId !== sequenceRunId) return;
+
+      await sleep(REST_HOLD_SECONDS * 1000);
+      if (runId !== sequenceRunId) return;
+
+      setStatus("جارٍ تشغيل: Binary Relationship");
+      setAnimName("Binary Relationship");
+      await blendTo(restAction, binaryAction, BLEND_SECONDS);
+      if (runId !== sequenceRunId) return;
+
+      await waitForActionFinish(binaryAction);
+      if (runId !== sequenceRunId) return;
+      setStatus("انتهى التسلسل.");
+    }
+
+    function blendTo(fromAction, toAction, duration) {
+      return new Promise((resolve) => {
+        toAction.reset();
+        toAction.enabled = true;
+        toAction.setEffectiveWeight(0);
+        toAction.play();
+        currentAction = toAction;
+
+        const startTime = performance.now();
+        function step() {
+          const t = Math.min(1, (performance.now() - startTime) / (duration * 1000));
+          if (fromAction) fromAction.setEffectiveWeight(1 - t);
+          toAction.setEffectiveWeight(t);
+          if (t < 1) {
+            requestAnimationFrame(step);
+          } else {
+            if (fromAction) {
+              fromAction.stop();
+              fromAction.setEffectiveWeight(0);
+            }
+            resolve();
+          }
+        }
+        requestAnimationFrame(step);
+      });
+    }
+
+    function waitForActionFinish(action) {
+      return new Promise((resolve) => {
+        function handler(event) {
+          if (event.action === action) {
+            mixer.removeEventListener("finished", handler);
+            resolve();
+          }
+        }
+        mixer.addEventListener("finished", handler);
+      });
+    }
+
+    function sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
+    function stopAllActions() {
+      [stackAction, binaryAction, restAction].forEach((action) => {
+        if (!action) return;
+        action.stop();
+        action.setEffectiveWeight(0);
+      });
+    }
+
+    function stopAll() {
+      sequenceRunId += 1;
+      stopAllActions();
+      currentAction = null;
+      setStatus("تم الإيقاف.");
+    }
+
+    function replay() {
+      if (lastPlayed === "sequence") {
+        playSequence();
+      } else if (lastPlayed === "stack") {
+        playSingle("stack");
+      } else if (lastPlayed === "binary") {
+        playSingle("binary");
+      } else {
+        setStatus("لا توجد حركة سابقة لإعادة تشغيلها.");
+      }
+    }
+
+    function onMixerFinished(event) {
+      if (lastPlayed !== "sequence" && event.action === currentAction) {
+        setStatus("انتهت الحركة.");
+      }
+    }
+
+    function setStatus(text) {
+      statusEl.textContent = text;
+    }
+
+    function setAnimName(text) {
+      animNameEl.textContent = text ? `الحركة الحالية: ${text}` : "";
+    }
+
+    function enableButtons(enabled) {
+      [btnStack, btnBinary, btnSequence, btnStop, btnReplay].forEach((button) => {
+        button.disabled = !enabled;
+      });
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      const delta = clock.getDelta();
+      if (mixer) mixer.update(delta);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    function onResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "best_epoch": 56,
+  "best_dev_wer": 0.16830031282586028,
+  "test_wer": 0.24912701308177412,
+  "elapsed_seconds": 2803.2,
+  "train_samples": 10000,
+  "dev_samples": 1000,
+  "test_samples": 4000,
+  "vocabulary_size_including_special_tokens": 682
+}
