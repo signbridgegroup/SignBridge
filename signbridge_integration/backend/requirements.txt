@@ -1,12 +1,12 @@
-# Newly required by this integration (installed into the EXISTING .venv;
-# see docs/ENVIRONMENT.md for what was already present and left untouched).
 fastapi
 uvicorn[standard]
 python-multipart
 python-dotenv
 groq
 
-# Already present in C:\SignBridge_Project\.venv and NOT reinstalled/upgraded
-# by this integration — listed here only so a fresh environment knows they
-# are required by the copied legacy_runtime modules:
-#   torch, numpy, pandas, opencv-contrib-python, mediapipe, pydantic
+numpy
+torch
+opencv-python
+pandas
+mediapipe
+pydantic
